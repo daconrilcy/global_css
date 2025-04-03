@@ -13,6 +13,42 @@ $breakpoints: (
 // === Génère les utilitaires margin/padding ===
 @each $bp, $bp-width in $breakpoints {
   @each $space in $spacings {
+    .m-#{$bp}-#{$space} {
+      @media (min-width: #{$bp-width}) {
+        margin: #{0.25rem * $space} !important;
+      }
+    }
+    .mx-#{$bp}-#{$space} {
+      @media (min-width: #{$bp-width}) {
+        margin-left: #{0.25rem * $space} !important;
+        margin-right: #{0.25rem * $space} !important;
+      }
+    }
+    .my-#{$bp}-#{$space} {
+      @media (min-width: #{$bp-width}) {
+        margin-top: #{0.25rem * $space} !important;
+        margin-bottom: #{0.25rem * $space} !important;
+      }
+    }
+    .p-#{$bp}-#{$space} {
+      @media (min-width: #{$bp-width}) {
+        padding: #{0.25rem * $space} !important;
+      }
+    }
+    .px-#{$bp}-#{$space} {
+      @media (min-width: #{$bp-width}) {
+        padding-left: #{0.25rem * $space} !important;
+        padding-right: #{0.25rem * $space} !important;
+      }
+    }
+    .py-#{$bp}-#{$space} {
+      @media (min-width: #{$bp-width}) {
+        padding-top: #{0.25rem * $space} !important;
+        padding-bottom: #{0.25rem * $space} !important;
+      }
+    }
+  }
+  @each $space in $spacings {
     .mt-#{$bp}-#{$space} {
       @media (min-width: #{$bp-width}) {
         margin-top: #{0.25rem * $space} !important;
