@@ -5614,6 +5614,19 @@ p {
   text-decoration: none;
   padding: 0.5rem;
 }
+.navbar .menu-toggle {
+  display: none;
+  font-size: 1.75rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: inherit;
+}
+@media (max-width: 768px) {
+  .navbar .menu-toggle {
+    display: block;
+  }
+}
 
 .container {
   width: 100%;
