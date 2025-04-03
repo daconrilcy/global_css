@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as *;
+
+// Conteneur par défaut (100%)
+.container {
+  width: 100%;
+  padding-left: calc(#{$bs-gutter-x} * 0.5);
+  padding-right: calc(#{$bs-gutter-x} * 0.5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Conteneurs responsives (max-width progressif)
+.container-sm {
+  @media (min-width: $breakpoint-sm) {
+    max-width: 540px;
+  }
+}
+.container-md {
+  @media (min-width: $breakpoint-md) {
+    max-width: 720px;
+  }
+}
+.container-lg {
+  @media (min-width: $breakpoint-lg) {
+    max-width: 960px;
+  }
+}
+.container-xl {
+  @media (min-width: $breakpoint-xl) {
+    max-width: 1140px;
+  }
+}
+.container-xxl {
+  @media (min-width: $breakpoint-xxl) {
+    max-width: 1320px;
+  }
+}
+
+// Conteneur fluide (100% tout le temps)
+.container-fluid {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(#{$bs-gutter-x} * 0.5);
+  padding-right: calc(#{$bs-gutter-x} * 0.5);
+}

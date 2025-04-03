@@ -1,0 +1,45 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/variables' as *;
+
+.card {
+  // Variables internes Bootstrap-like
+  --bs-card-title-color: #3E5B80;
+  --bs-card-subtitle-color: #606D80;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: auto;
+  word-wrap: break-word;
+
+  color: $bs-body-color;
+  background-color: $bs-body-bg;
+  background-clip: border-box;
+  border: $bs-border-width solid $bs-border-color-translucent;
+  border-radius: $bs-border-radius;
+  box-shadow: $default-card-shadow;
+
+  .card-header {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    color: inherit;
+    background-color: rgba($bs-body-color, 0.03);
+    border-bottom: $bs-border-width solid $bs-border-color-translucent;
+
+    &:first-child {
+      border-radius: calc(#{$bs-border-radius} - #{$bs-border-width}) calc(#{$bs-border-radius} - #{$bs-border-width}) 0 0;
+    }
+  }
+
+  .card-body {
+    flex: 1 1 auto;
+    padding: 1rem;
+    color: inherit;
+  }
+
+  .card-title {
+    margin-bottom: 0.5rem;
+    color: var(--bs-card-title-color);
+  }
+}

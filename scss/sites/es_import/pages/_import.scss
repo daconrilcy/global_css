@@ -1,0 +1,19 @@
+@use '../../../abstracts/variables' as *;
+@use '../../../abstracts/functions' as *;
+
+.import-section {
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: color(neutral-gray, medium);
+  }
+
+  .file-preview-container {
+    padding: 1rem;
+    background-color: color(light-gray, light);
+    border-radius: $bs-border-radius;
+    box-shadow: $default-card-shadow-inset;
+    margin-top: 1.5rem;
+  }
+}

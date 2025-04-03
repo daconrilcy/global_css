@@ -1,0 +1,31 @@
+@use "sass:map";
+@use 'colors' as *;
+
+@function color($palette-name, $variant) {
+  $palette: null;
+
+  @if $palette-name == blue-primary {
+    $palette: $blue-primary;
+  } @else if $palette-name == blue-light {
+    $palette: $blue-light;
+  } @else if $palette-name == yellow-orange {
+    $palette: $yellow-orange;
+  } @else if $palette-name == coral-pink {
+    $palette: $coral-pink;
+  } @else if $palette-name == soft-purple {
+    $palette: $soft-purple;
+  } @else if $palette-name == neutral-gray {
+    $palette: $neutral-gray;
+  } @else if $palette-name == light-gray {
+    $palette: $light-gray;
+  } @else {
+    @error "Palette `#{$palette-name}` non définie.";
+  }
+
+  @if map.has-key($palette, $variant) {
+    @return map.get($palette, $variant);
+  } @else {
+    @error "Variation `#{$variant}` introuvable dans `#{$palette-name}`.";
+  }
+}
+

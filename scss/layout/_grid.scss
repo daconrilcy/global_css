@@ -1,0 +1,108 @@
+@use '../abstracts/variables' as *;
+
+
+// Row
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-left: calc(-0.5 * #{$bs-gutter-x});
+  margin-right: calc(-0.5 * #{$bs-gutter-x});
+}
+
+// Breakpoints map
+$breakpoints: (
+  xs: $breakpoint-xs,
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+  xl: $breakpoint-xl,
+  xxl: $breakpoint-xxl
+);
+
+// === Colonnes classiques Bootstrap-like (12 cols)
+@each $bp, $bp-width in $breakpoints {
+  $base-width: calc(100% / 12);
+  @for $i from 1 through 12 {
+    .col-#{$bp}-#{$i} {
+      @media (min-width: $bp-width) {
+        flex: 0 0 auto;
+        width: #{calc($base-width * $i)};
+        padding-left: calc(#{$bs-gutter-x} * 0.5);
+        padding-right: calc(#{$bs-gutter-x} * 0.5);
+      }
+    }
+  }
+}
+
+// === Colonnes inversées (colx) : 1 à 24 colonnes par ligne
+@each $bp, $bp-width in $breakpoints {
+  $base-width: calc(100% / 12);
+  @for $i from 1 through 24 {
+    .colx-#{$bp}-#{$i} {
+      @media (min-width: $bp-width) {
+        flex: 0 0 auto;
+        width: #{calc(100% / $i)};
+        padding-left: calc(#{$bs-gutter-x} * 0.5);
+        padding-right: calc(#{$bs-gutter-x} * 0.5);
+      }
+    }
+  }
+}
+
+// === Colonnes fractionnaires d’une colonne .col-1 (~8.33%)
+
+$fraction-list: (2, 4, 8, 16, 32, 64);
+$base-width: calc(100% / 12);
+@each $bp, $bp-width in $breakpoints {
+  @each $f in $fraction-list {
+    $w: (calc($base-width / $f));
+
+    .col-01-#{$bp}-#{$f} {
+      @media (min-width: $bp-width) {
+        flex: 0 0 auto;
+        width: #{$w};
+        padding-left: calc(#{$bs-gutter-x} * 0.5);
+        padding-right: calc(#{$bs-gutter-x} * 0.5);
+      }
+    }
+  }
+}
+
+// === OFFSETS ===
+
+// Offsets Bootstrap-like (col-offset-[bp]-[1–11])
+$base-width: calc(100% / 12);
+@each $bp, $bp-width in $breakpoints {
+    @for $i from 1 through 11 {
+      .offset-#{$bp}-#{$i} {
+        @media (min-width: $bp-width) {
+          margin-left: #{$base-width * $i};
+        }
+      }
+    }
+  }
+  
+  // Offsets Inversés (colx-offset-[bp]-[1–23])
+  @each $bp, $bp-width in $breakpoints {
+    @for $i from 1 through 23 {
+      .offsetx-#{$bp}-#{$i} {
+        @media (min-width: $bp-width) {
+          margin-left: #{calc(100% / $i)};
+        }
+      }
+    }
+  }
+  
+  // Offsets Fractionnaires (col-01-offset-[bp]-[2,4,8,16,32,64])
+  @each $bp, $bp-width in $breakpoints {
+    @each $f in $fraction-list {
+      $w: calc($base-width / $f);
+      .offset-01-#{$bp}-#{$f} {
+        @media (min-width: $bp-width) {
+          margin-left: #{$w};
+        }
+      }
+    }
+  }
+  

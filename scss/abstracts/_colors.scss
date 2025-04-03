@@ -1,0 +1,56 @@
+// === Palette : Bleu Primaire ===
+$blue-primary: (
+  base: rgba(0, 119, 204, 1),
+  light: rgba(0, 119, 204, 0.3),
+  medium: rgba(0, 119, 204, 0.6),
+  dark: rgba(0, 119, 204, 1)
+);
+
+// === Palette : Bleu Clair ===
+$blue-light: (
+  base: rgba(0, 191, 179, 1),
+  light: rgba(0, 191, 179, 0.3),
+  medium: rgba(0, 191, 179, 0.6),
+  dark: rgba(0, 191, 179, 1)
+);
+
+// === Palette : Jaune Orangé ===
+$yellow-orange: (
+  base: rgba(254, 197, 20, 1),
+  light: rgba(254, 197, 20, 0.3),
+  medium: rgba(254, 197, 20, 0.6),
+  dark: rgba(254, 197, 20, 1)
+);
+
+// === Palette : Rose Corail ===
+$coral-pink: (
+  base: rgba(240, 78, 152, 1),
+  light: rgba(240, 78, 152, 0.3),
+  medium: rgba(240, 78, 152, 0.6),
+  dark: rgba(240, 78, 152, 1)
+);
+
+// === Palette : Violet Doux ===
+$soft-purple: (
+  base: rgba(115, 92, 221, 1),
+  light: rgba(115, 92, 221, 0.3),
+  medium: rgba(115, 92, 221, 0.6),
+  dark: rgba(115, 92, 221, 1)
+);
+
+// === Palette : Gris Neutre ===
+$neutral-gray: (
+  base: rgba(52, 55, 65, 1),
+  light: rgba(52, 55, 65, 0.3),
+  medium: rgba(52, 55, 65, 0.6),
+  dark: rgba(52, 55, 65, 1)
+);
+
+// === Palette : Gris Clair ===
+$light-gray: (
+  base: rgba(211, 218, 230, 1),
+  light: rgba(211, 218, 230, 0.3),
+  medium: rgba(211, 218, 230, 0.6),
+  medium-light: rgba(211, 218, 230, 0.5),
+  dark: rgba(211, 218, 230, 1)
+);

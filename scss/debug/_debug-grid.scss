@@ -1,0 +1,50 @@
+/*
+  DEBUG GRID SYSTEM
+  -----------------
+
+  Ce module permet de visualiser facilement la grille responsive pendant le développement.
+
+  ✅ Fonctionnement :
+  - Toutes les colonnes (`.col-*`, `.colx-*`, `.col-01-*`) reçoivent un fond bleu très clair et une bordure en pointillé.
+  - Les colonnes paires ont un fond rose clair pour un effet "zébré" (meilleure lisibilité des découpes).
+  - Le mode debug est activé automatiquement si ce fichier est importé,
+    ou manuellement via la classe `.debug-grid` sur le `<body>` (idéal pour un toggle JS).
+
+  💡 Utilisation recommandée :
+    - À importer uniquement en développement : `@use 'debug/debug-grid';`
+    - Pour activer/désactiver dynamiquement : ajouter ou retirer `.debug-grid` du `<body>`.
+
+  ❌ À ne **pas** inclure dans les builds de production.
+*/
+
+
+// Affiche un fond alterné + bordure pour visualiser les colonnes
+[class*='col-'],
+[class*='colx-'],
+[class*='col-01-'] {
+  background-color: rgba(0, 119, 204, 0.05); // bleu très léger
+  outline: 1px dashed rgba(0, 119, 204, 0.4);
+}
+
+// Applique un fond différent sur 2 colonnes sur 2 (zebra)
+.row {
+  > [class*='col-']:nth-child(even),
+  > [class*='colx-']:nth-child(even),
+  > [class*='col-01-']:nth-child(even) {
+    background-color: rgba(240, 78, 152, 0.05); // rose clair
+  }
+}
+
+// Optionnel : .debug-grid à mettre sur le body pour activer
+.debug-grid {
+  [class*='col-'],
+  [class*='colx-'],
+  [class*='col-01-'] {
+    background-color: rgba(0, 119, 204, 0.05);
+    outline: 1px dashed rgba(0, 119, 204, 0.4);
+  }
+
+  .row > *:nth-child(even) {
+    background-color: rgba(240, 78, 152, 0.05);
+  }
+}

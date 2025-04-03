@@ -1,0 +1,67 @@
+@use '../../../abstracts/functions' as *;
+@use '../../../abstracts/variables' as *;
+
+.preview-wrapper {
+  background-color: color(neutral-gray, light);
+  padding: 1rem;
+  border-radius: $bs-border-radius;
+  box-shadow: $default-card-shadow-inset;
+  margin-bottom: 2rem;
+}
+
+.preview-front {
+  background-color: $bs-body-bg;
+  border-radius: $bs-border-radius;
+  box-shadow: $default-card-shadow;
+  padding: 0;
+
+  .preview-header {
+    background-color: color(blue-primary, medium);
+    padding: 1rem;
+    border-radius: $bs-border-radius $bs-border-radius 0 0;
+    box-shadow: $default-card-shadow;
+    color: white;
+    margin: 0;
+  }
+}
+
+.preview-field-group {
+  padding: 1rem 0;
+
+  .preview-field {
+    margin: 0;
+    padding: 0.5rem 1rem;
+
+    input,
+    select {
+      border: 1px solid color(neutral-gray, light);
+      border-radius: $bs-border-radius;
+      padding: 0.25rem;
+      width: 100%;
+    }
+
+    &.disabled {
+      pointer-events: none;
+      opacity: 0.25;
+    }
+
+    select,
+    select option {
+      cursor: pointer;
+    }
+
+    button {
+      padding: 0.25rem 0;
+    }
+  }
+}
+
+.preview-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1rem;
+}

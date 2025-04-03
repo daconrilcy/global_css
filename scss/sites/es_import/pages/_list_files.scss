@@ -1,0 +1,89 @@
+@use '../../../abstracts/functions' as *;
+@use '../../../abstracts/variables' as *;
+
+.list-card {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  .list-card-header {
+    padding: 1rem;
+    background-color: color(blue-primary, medium);
+    color: white;
+    border-radius: $bs-border-radius $bs-border-radius 0 0;
+    font-weight: bold;
+  }
+
+  .list-card-body {
+    padding: 1rem;
+    background-color: $bs-body-bg;
+    border: 1px solid $bs-border-color-translucent;
+    border-top: none;
+    border-radius: 0 0 $bs-border-radius $bs-border-radius;
+  }
+}
+
+.list-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid $bs-border-color;
+  background-color: $bs-body-bg;
+  border-radius: $bs-border-radius;
+  margin-bottom: 0.5rem;
+
+  &.error {
+    background-color: rgba(255, 0, 0, 0.05);
+    font-style: italic;
+  }
+
+  &:hover {
+    background-color: color(neutral-gray, light);
+  }
+
+  &.active {
+    background-color: color(light-gray, light);
+  }
+
+  .file-name {
+    width: 100%;
+    font-weight: bold;
+    word-break: break-word;
+    background: transparent;
+    border: 1px solid color(light-gray, medium);
+    padding: 0.25rem 0.5rem;
+    border-radius: $bs-border-radius;
+  }
+
+  .separator-input {
+    padding: 0.25rem;
+    border: 1px solid $bs-border-color;
+    border-radius: $bs-border-radius;
+    width: 100%;
+    text-align: center;
+  }
+
+  .update-btn, .delete-btn {
+    padding: 0.5rem 0;
+    border: none;
+    border-radius: $bs-border-radius;
+    cursor: pointer;
+    width: 100%;
+
+    i {
+      pointer-events: none;
+    }
+  }
+
+  .update-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .delete-btn {
+    background-color: #f44336;
+    color: white;
+  }
+}

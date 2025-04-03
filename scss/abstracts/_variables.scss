@@ -1,0 +1,27 @@
+// === Typographie ===
+$font-default: 'Roboto', sans-serif;
+$taille-texte: 1rem;
+
+// === Layout & Espacements ===
+$bs-gutter-x: 1.5rem;
+$bs-border-width: 2px;
+$bs-border-radius: 0.25rem;
+
+// === Couleurs systèmes / Bootstrap ===
+$bs-body-color: #212529;
+$bs-body-bg: #fff;
+$bs-emphasis-color: #000;
+$bs-border-color: #dee2e6;
+$bs-border-color-translucent: rgba(0, 0, 0, 0.125);
+
+// === Ombres ===
+$default-card-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
+$default-card-shadow-inset: inset 3px 3px 8px rgba(0, 0, 0, 0.2);
+
+// === Breakpoints (optionnel) ===
+$breakpoint-xs: 0;        // Extra small devices (portrait phones)
+$breakpoint-sm: 576px;    // Small devices (landscape phones)
+$breakpoint-md: 768px;    // Medium devices (tablets)
+$breakpoint-lg: 992px;    // Large devices (desktops)
+$breakpoint-xl: 1200px;   // Extra large devices (large desktops)
+$breakpoint-xxl: 1400px;  // XXL screens (full HD+)

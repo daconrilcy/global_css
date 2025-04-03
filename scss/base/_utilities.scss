@@ -1,0 +1,224 @@
+@use '../abstracts/variables' as *;
+
+$spacings: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
+$breakpoints: (
+  xs: $breakpoint-xs,
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+  xl: $breakpoint-xl,
+  xxl: $breakpoint-xxl
+);
+
+// === Génère les utilitaires margin/padding ===
+@each $bp, $bp-width in $breakpoints {
+  @each $space in $spacings {
+    .mt-#{$bp}-#{$space} {
+      @media (min-width: #{$bp-width}) {
+        margin-top: #{0.25rem * $space} !important;
+      }
+    }
+    .mb-#{$bp}-#{$space} {
+      @media (min-width: #{$bp-width}) {
+        margin-bottom: #{0.25rem * $space} !important;
+      }
+    }
+    .ml-#{$bp}-#{$space} {
+      @media (min-width: #{$bp-width}) {
+        margin-left: #{0.25rem * $space} !important;
+      }
+    }
+    .mr-#{$bp}-#{$space} {
+      @media (min-width: #{$bp-width}) {
+        margin-right: #{0.25rem * $space} !important;
+      }
+    }
+    .mx-#{$bp}-#{$space} {
+      @media (min-width: #{$bp-width}) {
+        margin-left: #{0.25rem * $space} !important;
+        margin-right: #{0.25rem * $space} !important;
+      }
+    }
+    .my-#{$bp}-#{$space} {
+      @media (min-width: #{$bp-width}) {
+        margin-top: #{0.25rem * $space} !important;
+        margin-bottom: #{0.25rem * $space} !important;
+      }
+    }
+
+    .pt-#{$bp}-#{$space} {
+      @media (min-width: #{$bp-width}) {
+        padding-top: #{0.25rem * $space} !important;
+      }
+    }
+    .pb-#{$bp}-#{$space} {
+      @media (min-width: #{$bp-width}) {
+        padding-bottom: #{0.25rem * $space} !important;
+      }
+    }
+    .pl-#{$bp}-#{$space} {
+      @media (min-width: #{$bp-width}) {
+        padding-left: #{0.25rem * $space} !important;
+      }
+    }
+    .pr-#{$bp}-#{$space} {
+      @media (min-width: #{$bp-width}) {
+        padding-right: #{0.25rem * $space} !important;
+      }
+    }
+    .px-#{$bp}-#{$space} {
+      @media (min-width: #{$bp-width}) {
+        padding-left: #{0.25rem * $space} !important;
+        padding-right: #{0.25rem * $space} !important;
+      }
+    }
+    .py-#{$bp}-#{$space} {
+      @media (min-width: #{$bp-width}) {
+        padding-top: #{0.25rem * $space} !important;
+        padding-bottom: #{0.25rem * $space} !important;
+      }
+    }
+  }
+}
+
+// === Utilitaires fixes
+.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+.text-center { text-align: center !important; }
+.d-none { display: none !important; }
+.d-block { display: block !important; }
+.d-flex { display: flex !important; }
+.flex-column { flex-direction: column !important; }
+.flex-row { flex-direction: row !important; }
+.align-center { align-items: center !important; }
+.justify-center { justify-content: center !important; }
+.strong { font-weight: bold !important; }
+.hidden { display: none !important; }
+.text-uppercase { text-transform: uppercase !important; }
+
+
+// === GAP (gap, row-gap, column-gap) ===
+@each $bp, $bp-width in $breakpoints {
+    @each $space in $spacings {
+        .gap-#{$bp}-#{$space} {
+            @media (min-width: $bp-width) {
+                gap: #{0.25rem * $space} !important;
+            }
+        }
+        .row-gap-#{$bp}-#{$space} {
+            @media (min-width: $bp-width) {
+                row-gap: #{0.25rem * $space} !important;
+            }
+        }
+        .column-gap-#{$bp}-#{$space} {
+            @media (min-width: $bp-width) {
+                column-gap: #{0.25rem * $space} !important;
+            }
+        }
+    }
+}
+
+// === MARGES NÉGATIVES ===
+@each $bp, $bp-width in $breakpoints {
+    @each $space in $spacings {
+        .-mt-#{$bp}-#{$space} {
+            @media (min-width: $bp-width) {
+                margin-top: #{-0.25rem * $space} !important;
+            }
+        }
+        .-mb-#{$bp}-#{$space} {
+            @media (min-width: $bp-width) {
+                margin-bottom: #{-0.25rem * $space} !important;
+            }
+        }
+        .-ml-#{$bp}-#{$space} {
+            @media (min-width: $bp-width) {
+                margin-left: #{-0.25rem * $space} !important;
+            }
+        }
+        .-mr-#{$bp}-#{$space} {
+            @media (min-width: $bp-width) {
+                margin-right: #{-0.25rem * $space} !important;
+            }
+        }
+        .-mx-#{$bp}-#{$space} {
+            @media (min-width: $bp-width) {
+                margin-left: #{-0.25rem * $space} !important;
+                margin-right: #{-0.25rem * $space} !important;
+            }
+        }
+        .-my-#{$bp}-#{$space} {
+            @media (min-width: $bp-width) {
+                margin-top: #{-0.25rem * $space} !important;
+                margin-bottom: #{-0.25rem * $space} !important;
+            }
+        }
+    }
+}
+  
+  // === Z-INDEX ===
+@for $z from 0 through 5 {
+    .z-#{$z} {
+        z-index: #{$z} !important;
+    }
+}
+  
+// === OPACITY ===
+@for $i from 0 through 10 {
+    .opacity-#{ $i * 10 } {
+        opacity: #{ $i * 0.1 } !important;
+    }
+}
+  
+// === CURSOR ===
+.cursor-pointer      { cursor: pointer !important; }
+.cursor-default      { cursor: default !important; }
+.cursor-text         { cursor: text !important; }
+.cursor-move         { cursor: move !important; }
+.cursor-not-allowed  { cursor: not-allowed !important; }
+.cursor-wait         { cursor: wait !important; }
+.cursor-help         { cursor: help !important; }
+.cursor-crosshair    { cursor: crosshair !important; }
+
+// === POSITION ===
+.position-static    { position: static !important; }
+.position-relative  { position: relative !important; }
+.position-absolute  { position: absolute !important; }
+.position-fixed     { position: fixed !important; }
+.position-sticky    { position: sticky !important; }
+
+// === OVERFLOW ===
+.overflow-auto     { overflow: auto !important; }
+.overflow-hidden   { overflow: hidden !important; }
+.overflow-visible  { overflow: visible !important; }
+.overflow-scroll   { overflow: scroll !important; }
+
+.overflow-x-auto     { overflow-x: auto !important; }
+.overflow-x-hidden   { overflow-x: hidden !important; }
+.overflow-x-visible  { overflow-x: visible !important; }
+.overflow-x-scroll   { overflow-x: scroll !important; }
+
+.overflow-y-auto     { overflow-y: auto !important; }
+.overflow-y-hidden   { overflow-y: hidden !important; }
+.overflow-y-visible  { overflow-y: visible !important; }
+.overflow-y-scroll   { overflow-y: scroll !important; }
+
+
+// === WIDTH / HEIGHT ===
+$size-values: (0, 25, 50, 75, 100, auto);
+@each $bp, $bp-width in $breakpoints {
+  @each $val in $size-values {
+    // WIDTH
+    .w-#{$bp}-#{$val} {
+      @media (min-width: $bp-width) {
+        width: if($val == auto, auto, $val + '%') !important;
+      }
+    }
+
+    // HEIGHT
+    .h-#{$bp}-#{$val} {
+      @media (min-width: $bp-width) {
+        height: if($val == auto, auto, $val + '%') !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/variables' as *;
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin: 0;
+  border-radius: $bs-border-radius;
+
+  .list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: $bs-body-color;
+    background-color: $bs-body-bg;
+    border: $bs-border-width solid $bs-border-color;
+
+    &:first-child {
+      border-top-left-radius: $bs-border-radius;
+      border-top-right-radius: $bs-border-radius;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: $bs-border-radius;
+      border-bottom-right-radius: $bs-border-radius;
+    }
+
+    &:hover,
+    &:focus {
+      z-index: 1;
+      text-decoration: none;
+    }
+
+    & + .list-group-item {
+      border-top-width: 0;
+    }
+
+    &.list-files {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      cursor: pointer;
+      width: 100%;
+
+      &:hover {
+        background-color: color(neutral-gray, light);
+      }
+
+      &:active {
+        background-color: color(light-gray, medium);
+      }
+
+      &.active {
+        background-color: color(light-gray, light);
+      }
+
+      &.error {
+        background-color: red; // à remplacer par une palette dédiée si besoin
+        font-style: italic;
+      }
+    }
+  }
+
+  .list-group-numbered > .list-group-item::before {
+    content: counters(section, ".") ". ";
+    counter-increment: section;
+  }
+}

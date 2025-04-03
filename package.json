@@ -1,0 +1,14 @@
+{
+  "name": "global-css",
+  "version": "1.0.0",
+  "description": "",
+"scripts": {
+  "build": "npx sass scss/base.scss css/base.css && npx sass scss/sites/es_import/es_import.scss css/es_import.css",
+  "watch:base": "npx sass --watch scss/base.scss css/base.css",
+  "watch:es_import": "npx sass --watch scss/sites/es_import/es_import.scss css/es_import.css"
+},
+  "devDependencies": {
+    "sass": "^1.86.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
