@@ -14,18 +14,18 @@
     cursor: pointer;
     
     &.update-btn {
-        background: color(default-red, base);
+        background: color(default-green, base);
         color: white;
         &:hover {
-            background: color(default-red, light);
+            background: color(default-green, light);
         }
       }
     
       &.delete-btn {
-        background: color(default-green , base);
+        background: color(default-red , base);
         color: white;
         &:hover {
-            background: color(default-green, light);
+            background: color(default-red, light);
         }
       }
     
