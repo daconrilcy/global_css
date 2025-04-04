@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/colors" as *;
+@use "../abstracts/functions" as *;
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="tel"], input[type="url"], textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid color(light-gray, medium);
+    border-radius: $bs-border-radius;
+    font-size: 1rem;
+    font-family: $font-default;
+    transition: all 0.2s ease;
+
+    &:focus {
+        border-color: color(blue-primary, base);
+        box-shadow: $default-input-shadow;
+        outline: none;
+    }
+    &:hover {
+        border-color: color(blue-primary, light);
+        background: color(light-gray, light);
+        cursor: text;
+    }
+
+    &::placeholder {
+        color: color(light-gray, medium);
+        font-style: italic;
+    }
+}
