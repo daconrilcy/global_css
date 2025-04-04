@@ -5937,18 +5937,18 @@ form.dropzone {
   cursor: pointer;
 }
 .btn.update-btn {
-  background: rgb(255, 0, 0);
-  color: white;
-}
-.btn.update-btn:hover {
-  background: rgb(255, 71, 71);
-}
-.btn.delete-btn {
   background: rgb(0, 255, 0);
   color: white;
 }
-.btn.delete-btn:hover {
+.btn.update-btn:hover {
   background: rgb(125, 255, 125);
+}
+.btn.delete-btn {
+  background: rgb(255, 0, 0);
+  color: white;
+}
+.btn.delete-btn:hover {
+  background: rgb(255, 71, 71);
 }
 
 /*# sourceMappingURL=base.css.map */
