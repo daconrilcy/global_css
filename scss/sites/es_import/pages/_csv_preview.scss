@@ -27,6 +27,9 @@
         border-bottom: None;
     }
 }
+
+$alternate-color: color(blue-light, light);
+
 .csv-col{
     flex: 0 0 auto;
     overflow: hidden;
@@ -66,7 +69,7 @@
         background-color: white;
         
         &.pair{
-            background-color: color(blue-light, light);
+            background-color: $alternate-color;
         }
         &.interm{
             background-color: transparent;
@@ -91,7 +94,7 @@
         &.blurred-border{
             &.last{
                 background-color: transparent;
-                background: linear-gradient(to bottom, color(blue-light, base), rgba(215, 229, 241, 0));
+                background: linear-gradient(to bottom,$alternate-color, rgba(215, 229, 241, 0));
                 &.interm{
                     background: None;
                     background-color: transparent;
@@ -103,7 +106,7 @@
             }
             &.first{
                 background-color: transparent;
-                background: linear-gradient(to top, color(blue-light, base), rgba(215, 229, 241, 0));
+                background: linear-gradient(to top, $alternate-color, rgba(215, 229, 241, 0));
                 &.interm{
                     background: None;
                     background-color: transparent;

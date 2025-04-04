@@ -105,7 +105,7 @@
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
 }
 .preview-second-wrapper h2, .preview-second-wrapper .h2 {
-  color: rgb(211, 218, 230);
+  color: rgb(134, 138, 145);
   margin: 0;
 }
 .preview-second-wrapper h2 span.filename, .preview-second-wrapper .h2 span.filename {
@@ -321,7 +321,7 @@
 }
 .csv-col.content.blurred-border.last {
   background-color: transparent;
-  background: linear-gradient(to bottom, rgb(0, 191, 179), rgba(215, 229, 241, 0));
+  background: linear-gradient(to bottom, rgb(102, 221, 213), rgba(215, 229, 241, 0));
 }
 .csv-col.content.blurred-border.last.interm {
   background: None;
@@ -333,7 +333,7 @@
 }
 .csv-col.content.blurred-border.first {
   background-color: transparent;
-  background: linear-gradient(to top, rgb(0, 191, 179), rgba(215, 229, 241, 0));
+  background: linear-gradient(to top, rgb(102, 221, 213), rgba(215, 229, 241, 0));
 }
 .csv-col.content.blurred-border.first.interm {
   background: None;
