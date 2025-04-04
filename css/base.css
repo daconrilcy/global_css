@@ -5617,6 +5617,9 @@ p {
   color: #212529;
   text-decoration: none;
   padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .navbar .logo .img-logo {
   display: inline-block !important;
