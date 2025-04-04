@@ -5926,7 +5926,7 @@ form.dropzone {
 }
 
 .btn {
-  display: inline-block;
+  display: flex;
   padding: 0.5rem 0.5rem;
   font-size: 1rem;
   font-weight: bold;
@@ -5948,7 +5948,7 @@ form.dropzone {
   color: white;
 }
 .btn.delete-btn:hover {
-  background: rgb(71, 255, 71);
+  background: rgb(125, 255, 125);
 }
 
 /*# sourceMappingURL=base.css.map */
