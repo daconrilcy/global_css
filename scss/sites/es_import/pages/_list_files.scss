@@ -55,6 +55,10 @@
 
   &.active {
     background-color: color(light-gray, light);
+    input[type="text"]:hover {
+      background-color: $bs-body-bg;
+      color: color(blue-primary, base);
+    }
   }
 
 

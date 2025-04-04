@@ -64,6 +64,10 @@
 .list-item.active {
   background-color: rgb(220, 226, 238);
 }
+.list-item.active input[type=text]:hover {
+  background-color: #fff;
+  color: rgb(0, 119, 204);
+}
 .list-item .separator-input {
   text-align: center;
 }
