@@ -12,6 +12,7 @@
         background: None;
         box-shadow: $default-card-shadow;
         font-size: 0.9rem;
+        padding-bottom: 2rem;
     }
     .csv-separator{
         padding: 0.5rem;
@@ -28,7 +29,7 @@
     }
 }
 
-$alternate-color: color(blue-light, light);
+$alternate-color: color(blue-light, very-light);
 
 .csv-col{
     flex: 0 0 auto;

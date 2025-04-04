@@ -94,14 +94,14 @@
 .preview-wrapper {
   background-color: rgb(211, 218, 230);
   padding: 1rem;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 .preview-second-wrapper {
   background-color: #fff;
-  padding: 0.5rem;
-  border-radius: 0.25rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
 }
 .preview-second-wrapper h2, .preview-second-wrapper .h2 {
@@ -111,6 +111,25 @@
 .preview-second-wrapper h2 span.filename, .preview-second-wrapper .h2 span.filename {
   font-weight: 700;
   color: rgb(0, 119, 204);
+}
+.preview-second-wrapper .sub-sep {
+  padding: 0.5rem;
+  color: rgb(134, 138, 145);
+  font-size: 1.25rem;
+}
+.preview-second-wrapper .sub-sep span {
+  font-weight: 700;
+  color: rgb(0, 119, 204);
+}
+.preview-second-wrapper .btn-create-mapping {
+  display: inline-block;
+  background: rgb(0, 119, 204);
+  margin-bottom: 1rem;
+  width: auto;
+  color: white;
+}
+.preview-second-wrapper .btn-create-mapping:hover {
+  background: rgb(2, 80, 135);
 }
 
 .preview-front {
@@ -242,6 +261,7 @@
   background: None;
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
   font-size: 0.9rem;
+  padding-bottom: 2rem;
 }
 .csv-content .csv-separator {
   padding: 0.5rem;
@@ -297,7 +317,7 @@
   background-color: white;
 }
 .csv-col.content.pair {
-  background-color: rgb(102, 221, 213);
+  background-color: rgb(153, 238, 232);
 }
 .csv-col.content.interm {
   background-color: transparent;
@@ -322,7 +342,7 @@
 }
 .csv-col.content.blurred-border.last {
   background-color: transparent;
-  background: linear-gradient(to bottom, rgb(102, 221, 213), rgba(215, 229, 241, 0));
+  background: linear-gradient(to bottom, rgb(153, 238, 232), rgba(215, 229, 241, 0));
 }
 .csv-col.content.blurred-border.last.interm {
   background: None;
@@ -335,7 +355,7 @@
 }
 .csv-col.content.blurred-border.first {
   background-color: transparent;
-  background: linear-gradient(to top, rgb(102, 221, 213), rgba(215, 229, 241, 0));
+  background: linear-gradient(to top, rgb(153, 238, 232), rgba(215, 229, 241, 0));
 }
 .csv-col.content.blurred-border.first.interm {
   background: None;
