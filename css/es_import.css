@@ -65,6 +65,25 @@
   text-align: center;
 }
 
+.card-header.dropper {
+  background-color: rgba(240, 78, 152, 0.6);
+  color: white;
+  border-radius: 0.25rem 0.25rem 0 0;
+  font-weight: bold;
+  padding: 1rem;
+}
+.card-header.dropper h1, .card-header.dropper h2, .card-header.dropper h3, .card-header.dropper h4, .card-header.dropper h5 {
+  margin: 0;
+}
+
+.dropzone.dz-clickable {
+  background: rgba(240, 78, 152, 0.3);
+}
+.dropzone.dz-clickable .dz-message {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 .preview-wrapper {
   background-color: rgb(96, 102, 119);
   padding: 1rem;
