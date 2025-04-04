@@ -19,7 +19,7 @@ $navbar-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 $navbar-shadow-inset: inset 0 1rem 1rem rgba(0, 0, 0, 0.1);
 $default-card-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
 $default-card-shadow-inset: inset 3px 3px 8px rgba(0, 0, 0, 0.2);
-$default-input-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+$default-input-shadow-inset: 3px 3px 5px rgba(0, 0, 0, 0.2);
 
 // === Breakpoints (optionnel) ===
 $breakpoint-xs: 0;        // Extra small devices (portrait phones)

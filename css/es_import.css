@@ -52,20 +52,7 @@
 .list-item.active {
   background-color: rgb(220, 226, 238);
 }
-.list-item .file-name {
-  width: 100%;
-  font-weight: bold;
-  word-break: break-word;
-  background: transparent;
-  border: 1px solid rgb(134, 138, 145);
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-}
 .list-item .separator-input {
-  padding: 0.25rem;
-  border: 1px solid #dee2e6;
-  border-radius: 0.25rem;
-  width: 100%;
   text-align: center;
 }
 

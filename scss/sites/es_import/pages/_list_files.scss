@@ -48,21 +48,8 @@
     background-color: color(light-gray, light);
   }
 
-  .file-name {
-    width: 100%;
-    font-weight: bold;
-    word-break: break-word;
-    background: transparent;
-    border: 1px solid color(light-gray, medium);
-    padding: 0.25rem 0.5rem;
-    border-radius: $bs-border-radius;
-  }
 
   .separator-input {
-    padding: 0.25rem;
-    border: 1px solid $bs-border-color;
-    border-radius: $bs-border-radius;
-    width: 100%;
     text-align: center;
   }
 }

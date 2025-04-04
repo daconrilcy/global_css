@@ -5954,7 +5954,7 @@ form.dropzone {
 input[type=text], input[type=email], input[type=password], input[type=number], input[type=tel], input[type=url], textarea {
   width: 100%;
   padding: 0.5rem;
-  border: 1px solid rgb(134, 138, 145);
+  border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
@@ -5962,12 +5962,13 @@ input[type=text], input[type=email], input[type=password], input[type=number], i
 }
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=number]:focus, input[type=tel]:focus, input[type=url]:focus, textarea:focus {
   border-color: rgb(0, 119, 204);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   outline: none;
 }
 input[type=text]:hover, input[type=email]:hover, input[type=password]:hover, input[type=number]:hover, input[type=tel]:hover, input[type=url]:hover, textarea:hover {
   border-color: rgba(0, 119, 204, 0.3);
   background: rgb(220, 226, 238);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   cursor: text;
 }
 input[type=text]::placeholder, input[type=email]::placeholder, input[type=password]::placeholder, input[type=number]::placeholder, input[type=tel]::placeholder, input[type=url]::placeholder, textarea::placeholder {

@@ -5,7 +5,7 @@
 input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="tel"], input[type="url"], textarea {
     width: 100%;
     padding: 0.5rem;
-    border: 1px solid color(light-gray, medium);
+    border: 1px solid $bs-border-color;
     border-radius: $bs-border-radius;
     font-size: 1rem;
     font-family: $font-default;
@@ -13,12 +13,13 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
 
     &:focus {
         border-color: color(blue-primary, base);
-        box-shadow: $default-input-shadow;
+        box-shadow: $default-input-shadow-inset;
         outline: none;
     }
     &:hover {
         border-color: color(blue-primary, light);
         background: color(light-gray, light);
+        box-shadow: $default-input-shadow-inset;
         cursor: text;
     }
 
