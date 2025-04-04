@@ -46,7 +46,8 @@
   font-style: italic;
 }
 .list-item:hover {
-  background-color: rgb(96, 102, 119);
+  background-color: rgb(220, 226, 238);
+  cursor: se-resize;
 }
 .list-item.active {
   background-color: rgb(220, 226, 238);

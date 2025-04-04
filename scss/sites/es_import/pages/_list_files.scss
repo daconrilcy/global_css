@@ -40,7 +40,8 @@
   }
 
   &:hover {
-    background-color: color(neutral-gray, light);
+    background-color: color(light-gray, light);
+    cursor: se-resize; 
   }
 
   &.active {
