@@ -17,7 +17,7 @@
         box-shadow: $default-card-shadow;
     }
     
-    &.update-btn {
+    &.btn-update {
         background: color(default-green, base);
         color: white;
         &:hover {
@@ -25,11 +25,19 @@
         }
       }
     
-      &.delete-btn {
+      &.btn-delete {
         background: color(default-red , base);
         color: white;
         &:hover {
             background: color(default-red, light);
+        }
+      }
+      &.btn-submit {
+        display: inline-block;
+        width: 100%;
+        background: color(blue-primary, base);
+        &:hover {
+            background: color(blue-primary, dark)
         }
       }
     

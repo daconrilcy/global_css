@@ -10,12 +10,16 @@
   padding: 1rem;
   h1,h2,h3,h4,h5{
     margin: 0;
+    color: inherit;
+  }
+  h5,.h5{
+    font-weight: 700;
   }
 }
 .dropzone.dz-clickable{
     background: color(coral-pink, light);
     .dz-message{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: 700;
     }
 }

@@ -31,6 +31,9 @@
   margin: 0;
   color: inherit;
 }
+.list-card .list-card-header h5, .list-card .list-card-header .h5 {
+  font-weight: 700;
+}
 .list-card .list-card-body {
   padding: 1rem;
   background-color: #fff;
@@ -74,13 +77,17 @@
 }
 .card-header.dropper h1, .card-header.dropper h2, .card-header.dropper h3, .card-header.dropper h4, .card-header.dropper h5 {
   margin: 0;
+  color: inherit;
+}
+.card-header.dropper h5, .card-header.dropper .h5 {
+  font-weight: 700;
 }
 
 .dropzone.dz-clickable {
   background: rgba(240, 78, 152, 0.3);
 }
 .dropzone.dz-clickable .dz-message {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 

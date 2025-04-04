@@ -5940,19 +5940,27 @@ form.dropzone {
   text-decoration: none;
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
 }
-.btn.update-btn {
+.btn.btn-update {
   background: rgb(0, 255, 0);
   color: white;
 }
-.btn.update-btn:hover {
+.btn.btn-update:hover {
   background: rgb(125, 255, 125);
 }
-.btn.delete-btn {
+.btn.btn-delete {
   background: rgb(255, 0, 0);
   color: white;
 }
-.btn.delete-btn:hover {
+.btn.btn-delete:hover {
   background: rgb(255, 71, 71);
+}
+.btn.btn-submit {
+  display: inline-block;
+  width: 100%;
+  background: rgb(0, 119, 204);
+}
+.btn.btn-submit:hover {
+  background: rgb(0, 119, 204);
 }
 
 input[type=text], input[type=email], input[type=password], input[type=number], input[type=tel], input[type=url], textarea {
