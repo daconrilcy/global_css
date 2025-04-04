@@ -47,6 +47,14 @@ $breakpoints: (
         padding-right: calc(#{$bs-gutter-x} * 0.5);
       }
     }
+    .colx-#{$bp}-#{$i}.reduced {
+      @media (min-width: $bp-width) {
+        flex: 0 0 auto;
+        width: #{calc((100% / $i) - (36px/$i))};
+        padding-left: calc(#{$bs-gutter-x} * 0.5);
+        padding-right: calc(#{$bs-gutter-x} * 0.5);
+      }
+    }
   }
 }
 
