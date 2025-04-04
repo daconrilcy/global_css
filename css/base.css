@@ -34,6 +34,10 @@ img, picture, video, canvas, svg {
   max-width: 100%;
 }
 
+img, svg {
+  vertical-align: middle;
+}
+
 button, input, select, textarea {
   font: inherit;
   color: inherit;
@@ -5613,6 +5617,10 @@ p {
   color: #212529;
   text-decoration: none;
   padding: 0.5rem;
+}
+.navbar .logo .img-logo {
+  display: inline-block !important;
+  vertical-align: text-top !important;
 }
 .navbar .menu-toggle {
   display: none;

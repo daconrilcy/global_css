@@ -33,6 +33,10 @@
     color: $bs-body-color;
     text-decoration: none;
     padding: 0.5rem;
+    .img-logo {
+      display: inline-block !important;
+      vertical-align: text-top !important;
+    }
   }
 
   .menu-toggle {
