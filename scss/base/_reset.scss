@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 *,
 *::before,
 *::after {
@@ -13,10 +15,10 @@ html, body {
 }
 
 body {
-  font-family: var(--font-default, 'sans-serif');
-  font-size: var(--taille-texte, 1rem);
-  background-color: var(--bs-body-bg);
-  color: var(--bs-body-color);
+  font-family: $font-default;
+  font-size: $taille-texte;
+  background-color: $bs-body-bg;
+  color: $bs-body-color;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

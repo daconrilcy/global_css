@@ -40,17 +40,31 @@ $soft-purple: (
 
 // === Palette : Gris Neutre ===
 $neutral-gray: (
-  base: rgba(52, 55, 65, 1),
-  light: rgba(52, 55, 65, 0.3),
-  medium: rgba(52, 55, 65, 0.6),
-  dark: rgba(52, 55, 65, 1)
+  base: rgb(76, 80, 94),
+  light: rgb(96, 102, 119),
+  medium: rgb(69, 72, 85),
+  dark: rgb(47, 49, 59)
 );
 
 // === Palette : Gris Clair ===
 $light-gray: (
   base: rgba(211, 218, 230, 1),
-  light: rgba(211, 218, 230, 0.3),
-  medium: rgba(211, 218, 230, 0.6),
-  medium-light: rgba(211, 218, 230, 0.5),
-  dark: rgba(211, 218, 230, 1)
+  light: rgb(220, 226, 238),
+  medium: rgb(134, 138, 145),
+  medium-light: rgb(173, 179, 189),
+  dark: rgb(86, 89, 94)
+);
+
+$red: (
+  base: rgba(255, 0, 0, 1),
+  light: rgb(255, 71, 71),
+  medium: rgb(193, 2, 2),
+  dark: rgb(127, 0, 0)
+);
+
+$green: (
+  base: rgba(0, 255, 0, 1),
+  light: rgb(71, 255, 71),
+  medium: rgb(2, 193, 2),
+  dark: rgb(0, 127, 0)
 );

@@ -1,0 +1,31 @@
+@use "../abstracts/colors" as *;
+
+.btn{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    
+    &.update-btn {
+        background-color: color(red, base);
+        color: white;
+        &:hover {
+            background-color: color(red, light);
+        }
+      }
+    
+      &.delete-btn {
+        background-color: color(green , base);
+        color: white;
+        &:hover {
+            background-color: color(green, light);
+        }
+      }
+    
+
+}

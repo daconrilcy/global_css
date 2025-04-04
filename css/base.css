@@ -13,10 +13,10 @@ html, body {
 }
 
 body {
-  font-family: var(--font-default, "sans-serif");
-  font-size: var(--taille-texte, 1rem);
-  background-color: var(--bs-body-bg);
-  color: var(--bs-body-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #212529;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -44,46 +44,47 @@ a {
   text-decoration: none;
 }
 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(47, 49, 59);
+}
+
 h1, .h1 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: rgba(52, 55, 65, 0.6);
 }
 
 h2, .h2 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: rgba(52, 55, 65, 0.6);
 }
 
 h3, .h3 {
   font-size: 1.75rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: rgba(52, 55, 65, 0.6);
 }
 
 h4, .h4 {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
-  color: rgba(52, 55, 65, 0.6);
 }
 
 h5, .h5 {
   font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
-  color: rgba(52, 55, 65, 0.6);
 }
 
 h6, .h6 {
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
-  color: rgba(52, 55, 65, 0.6);
 }
 
 p {
@@ -5729,7 +5730,7 @@ p {
 .custom-checkbox .checkbox-box {
   width: 1.5rem;
   height: 1.5rem;
-  border: 1px solid rgba(52, 55, 65, 0.3);
+  border: 1px solid rgb(96, 102, 119);
   border-radius: 0.25rem;
   display: inline-block;
   position: relative;
@@ -5768,7 +5769,7 @@ p {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  background: rgba(211, 218, 230, 0.3);
+  background: rgb(220, 226, 238);
   cursor: pointer;
   font-family: "Roboto", sans-serif;
 }
@@ -5863,13 +5864,13 @@ form.dropzone {
   width: 100%;
 }
 .list-group .list-group-item.list-files:hover {
-  background-color: rgba(52, 55, 65, 0.3);
+  background-color: rgb(96, 102, 119);
 }
 .list-group .list-group-item.list-files:active {
-  background-color: rgba(211, 218, 230, 0.6);
+  background-color: rgb(134, 138, 145);
 }
 .list-group .list-group-item.list-files.active {
-  background-color: rgba(211, 218, 230, 0.3);
+  background-color: rgb(220, 226, 238);
 }
 .list-group .list-group-item.list-files.error {
   background-color: red;
@@ -5895,7 +5896,7 @@ form.dropzone {
 .custom-radio .radio-circle {
   width: 1.5rem;
   height: 1.5rem;
-  border: 1px solid rgba(52, 55, 65, 0.3);
+  border: 1px solid rgb(96, 102, 119);
   border-radius: 50%;
   display: inline-block;
   position: relative;

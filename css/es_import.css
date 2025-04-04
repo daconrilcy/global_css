@@ -1,12 +1,10 @@
 .import-section h2 {
   margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: rgba(52, 55, 65, 0.6);
+  margin-top: 1rem;
 }
 .import-section .file-preview-container {
   padding: 1rem;
-  background-color: rgba(211, 218, 230, 0.3);
+  background-color: rgb(220, 226, 238);
   border-radius: 0.25rem;
   box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.2);
   margin-top: 1.5rem;
@@ -48,17 +46,17 @@
   font-style: italic;
 }
 .list-item:hover {
-  background-color: rgba(52, 55, 65, 0.3);
+  background-color: rgb(96, 102, 119);
 }
 .list-item.active {
-  background-color: rgba(211, 218, 230, 0.3);
+  background-color: rgb(220, 226, 238);
 }
 .list-item .file-name {
   width: 100%;
   font-weight: bold;
   word-break: break-word;
   background: transparent;
-  border: 1px solid rgba(211, 218, 230, 0.6);
+  border: 1px solid rgb(134, 138, 145);
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
 }
@@ -79,17 +77,9 @@
 .list-item .update-btn i, .list-item .delete-btn i {
   pointer-events: none;
 }
-.list-item .update-btn {
-  background-color: #4CAF50;
-  color: white;
-}
-.list-item .delete-btn {
-  background-color: #f44336;
-  color: white;
-}
 
 .preview-wrapper {
-  background-color: rgba(52, 55, 65, 0.3);
+  background-color: rgb(96, 102, 119);
   padding: 1rem;
   border-radius: 0.25rem;
   box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.2);
@@ -120,7 +110,7 @@
 }
 .preview-field-group .preview-field input,
 .preview-field-group .preview-field select {
-  border: 1px solid rgba(52, 55, 65, 0.3);
+  border: 1px solid rgb(96, 102, 119);
   border-radius: 0.25rem;
   padding: 0.25rem;
   width: 100%;
@@ -178,17 +168,17 @@
   padding: 0.5rem;
 }
 .menu .menu-item:hover {
-  background-color: rgba(211, 218, 230, 0.5);
+  background-color: rgb(173, 179, 189);
 }
 .menu .menu-item:hover a {
   color: white;
 }
 .menu .menu-item.active {
-  background-color: rgba(52, 55, 65, 0.3);
+  background-color: rgb(96, 102, 119);
   font-weight: bold;
 }
 .menu .menu-item.active:hover {
-  background-color: rgba(211, 218, 230, 0.5);
+  background-color: rgb(173, 179, 189);
 }
 .menu .menu-item.active:hover a {
   color: white;
