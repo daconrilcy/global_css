@@ -13,7 +13,8 @@
   z-index: 1000;
 
   li {
-    display: inline;
+    display: flex;
+    align-items: center;
   }
 
   a {
