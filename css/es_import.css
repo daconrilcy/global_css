@@ -163,7 +163,8 @@
   z-index: 1000;
 }
 .menu li {
-  display: inline;
+  display: flex;
+  align-items: center;
 }
 .menu a {
   text-decoration: none;
