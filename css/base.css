@@ -5933,8 +5933,12 @@ form.dropzone {
   text-align: center;
   text-decoration: none;
   border-radius: 0.25rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color, box-shadow 0.3s ease, color 0.3s ease;
   cursor: pointer;
+}
+.btn:hover {
+  text-decoration: none;
+  box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
 }
 .btn.update-btn {
   background: rgb(0, 255, 0);

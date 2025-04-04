@@ -10,8 +10,12 @@
     text-align: center;
     text-decoration: none;
     border-radius: $bs-border-radius;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color, box-shadow 0.3s ease, color 0.3s ease;
     cursor: pointer;
+    &:hover {
+        text-decoration: none;
+        box-shadow: $default-card-shadow;
+    }
     
     &.update-btn {
         background: color(default-green, base);
