@@ -11,3 +11,10 @@
     margin: 0;
   }
 }
+.dropzone.dz-clickable{
+    background: color(coral-pink, light);
+    .dz-message{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}

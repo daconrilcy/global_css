@@ -2,6 +2,8 @@
   margin-bottom: 1rem;
   margin-top: 1rem;
   text-align: center;
+  color: rgba(0, 119, 204, 0.6);
+  font-weight: bold;
 }
 .import-section .file-preview-container {
   padding: 1rem;
