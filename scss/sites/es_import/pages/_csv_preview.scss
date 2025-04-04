@@ -1,0 +1,113 @@
+@use '../../../abstracts/colors' as *;
+@use '../../../abstracts/variables' as *;
+@use '../../../abstracts/functions' as *;
+
+.csv-content{
+    padding: 0.5rem;
+    box-shadow: $default-card-shadow-inset;
+    background-color: color(light-gray, light);
+    .row{
+        margin: 0;
+    }
+    .csv-content-data{
+        background: None;
+        box-shadow: $default-card-shadow;
+        font-size: 0.9rem;
+    }
+    .csv-separator{
+        padding: 0.5rem;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+    .blurred-border {
+        background: None;
+        border-bottom: None;
+    }
+}
+.csv-col{
+    flex: 0 0 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0.5rem;
+    background-color: $bs-body-bg;
+    hr{
+        margin: 10px 5px;
+        border-color: color(blue-primary, base);
+        border-style: dashed;
+    }
+    &.header{
+        font-weight: bold;
+        background-color: color(light-gray, medium);
+        border-bottom: 1px solid color(light-gray, medium);
+        text-align: center;
+        box-shadow: $default-card-shadow;
+        color: white;
+        z-index: 100;
+        &.interm{
+            background-color: transparent;
+            border-bottom:None;
+            text-align: center;
+            align-items: center;
+            box-shadow: none;
+            color: color(light-gray, medium);
+            width: 36px !important;
+        }
+    }
+    &.content{
+        border-left: 1px solid color(light-gray, base);
+        border-right: 1px solid color(light-gray, base);
+        background-color: white;
+        &.pair{
+            background-color: color(blue-light, light);
+        }
+        &.interm{
+            background-color: transparent;
+            border: None;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: color(blue-primary, base);
+            text-align: center;
+            width: 36px !important;
+        }
+        &.nocontent{
+            background: None;
+            background-color: transparent;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: color(blue-primary, base);
+            text-align: center;
+            padding-top: 0.125rem;
+            padding-bottom: 0.125rem;
+        }
+        &.blurred-border
+            &.last{
+                background-color: transparent;
+                background: linear-gradient(to bottom, color(blue-primary, base), rgba(215, 229, 241, 0));
+                &.interm{
+                    background: None;
+                    background-color: transparent;
+                    font-weight: 700;
+                    font-size: 1.25rem;
+                    color: color(blue-primary, base);
+                    text-align: center;
+                }
+            }
+            &.first{
+                background-color: transparent;
+                background: linear-gradient(to top, color(blue-primary, base), rgba(215, 229, 241, 0));
+                &.interm{
+                    background: None;
+                    background-color: transparent;
+                    font-weight: 700;
+                    font-size: 1.25rem;
+                    color: color(blue-primary, base);
+                    text-align: center;
+                }
+            }
+    }
+}

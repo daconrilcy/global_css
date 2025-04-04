@@ -37,8 +37,9 @@
     }
 
     &.active {
-      background-color: color(neutral-gray, light);
+      background-color: color(light-gray, light);
       font-weight: bold;
+      color: white;
 
       &:hover {
         background-color: color(light-gray, medium-light);

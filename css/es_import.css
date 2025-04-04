@@ -187,8 +187,9 @@
   color: white;
 }
 .menu .menu-item.active {
-  background-color: rgb(96, 102, 119);
+  background-color: rgb(220, 226, 238);
   font-weight: bold;
+  color: white;
 }
 .menu .menu-item.active:hover {
   background-color: rgb(173, 179, 189);
@@ -214,6 +215,116 @@
     display: block;
     margin-bottom: 0.5rem;
   }
+}
+
+.csv-content {
+  padding: 0.5rem;
+  box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgb(220, 226, 238);
+}
+.csv-content .row {
+  margin: 0;
+}
+.csv-content .csv-content-data {
+  background: None;
+  box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+}
+.csv-content .csv-separator {
+  padding: 0.5rem;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.csv-content .blurred-border {
+  background: None;
+  border-bottom: None;
+}
+
+.csv-col {
+  flex: 0 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0.5rem;
+  background-color: #fff;
+}
+.csv-col hr {
+  margin: 10px 5px;
+  border-color: rgb(0, 119, 204);
+  border-style: dashed;
+}
+.csv-col.header {
+  font-weight: bold;
+  background-color: rgb(134, 138, 145);
+  border-bottom: 1px solid rgb(134, 138, 145);
+  text-align: center;
+  box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  z-index: 100;
+}
+.csv-col.header.interm {
+  background-color: transparent;
+  border-bottom: None;
+  text-align: center;
+  align-items: center;
+  box-shadow: none;
+  color: rgb(134, 138, 145);
+  width: 36px !important;
+}
+.csv-col.content {
+  border-left: 1px solid rgb(211, 218, 230);
+  border-right: 1px solid rgb(211, 218, 230);
+  background-color: white;
+}
+.csv-col.content.pair {
+  background-color: rgba(0, 191, 179, 0.3);
+}
+.csv-col.content.interm {
+  background-color: transparent;
+  border: None;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: rgb(0, 119, 204);
+  text-align: center;
+  width: 36px !important;
+}
+.csv-col.content.nocontent {
+  background: None;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: rgb(0, 119, 204);
+  text-align: center;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+.csv-col.content.blurred-border .csv-col.content.last {
+  background-color: transparent;
+  background: linear-gradient(to bottom, rgb(0, 119, 204), rgba(215, 229, 241, 0));
+}
+.csv-col.content.blurred-border .csv-col.content.last.interm {
+  background: None;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: rgb(0, 119, 204);
+  text-align: center;
+}
+.csv-col.content.first {
+  background-color: transparent;
+  background: linear-gradient(to top, rgb(0, 119, 204), rgba(215, 229, 241, 0));
+}
+.csv-col.content.first.interm {
+  background: None;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: rgb(0, 119, 204);
+  text-align: center;
 }
 
 /*# sourceMappingURL=es_import.css.map */
