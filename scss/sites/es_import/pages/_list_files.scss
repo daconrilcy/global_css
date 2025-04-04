@@ -55,12 +55,14 @@
 
   &.active {
     background-color: color(light-gray, light);
+
+  }
+  &.active, &:hover{
     input[type="text"]:hover {
       background-color: $bs-body-bg;
       color: color(blue-primary, base);
     }
   }
-
 
   .separator-input {
     text-align: center;

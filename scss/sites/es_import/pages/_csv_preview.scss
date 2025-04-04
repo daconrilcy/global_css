@@ -3,7 +3,7 @@
 @use '../../../abstracts/functions' as *;
 
 .csv-content{
-    padding: 0rem;
+    padding: 0rem 0rem 2rem 0rem;
     background-color: $bs-body-bg;
     .row{
         margin: 0;
@@ -12,7 +12,6 @@
         background: None;
         box-shadow: $default-card-shadow;
         font-size: 0.9rem;
-        padding-bottom: 2rem;
     }
     .csv-separator{
         padding: 0.5rem;

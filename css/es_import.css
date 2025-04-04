@@ -64,7 +64,7 @@
 .list-item.active {
   background-color: rgb(220, 226, 238);
 }
-.list-item.active input[type=text]:hover {
+.list-item.active input[type=text]:hover, .list-item:hover input[type=text]:hover {
   background-color: #fff;
   color: rgb(0, 119, 204);
 }
@@ -255,7 +255,7 @@
 }
 
 .csv-content {
-  padding: 0rem;
+  padding: 0rem 0rem 2rem 0rem;
   background-color: #fff;
 }
 .csv-content .row {
@@ -265,7 +265,6 @@
   background: None;
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
   font-size: 0.9rem;
-  padding-bottom: 2rem;
 }
 .csv-content .csv-separator {
   padding: 0.5rem;
