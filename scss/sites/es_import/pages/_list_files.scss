@@ -64,16 +64,4 @@
     width: 100%;
     text-align: center;
   }
-
-  .update-btn, .delete-btn {
-    padding: 0.5rem 0;
-    border: none;
-    border-radius: $bs-border-radius;
-    cursor: pointer;
-    width: 100%;
-
-    i {
-      pointer-events: none;
-    }
-  }
 }

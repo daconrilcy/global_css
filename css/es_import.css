@@ -67,16 +67,6 @@
   width: 100%;
   text-align: center;
 }
-.list-item .update-btn, .list-item .delete-btn {
-  padding: 0.5rem 0;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  width: 100%;
-}
-.list-item .update-btn i, .list-item .delete-btn i {
-  pointer-events: none;
-}
 
 .preview-wrapper {
   background-color: rgb(96, 102, 119);
