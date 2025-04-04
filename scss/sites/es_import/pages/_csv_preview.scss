@@ -3,7 +3,7 @@
 @use '../../../abstracts/functions' as *;
 
 .csv-content{
-    padding: 0.5rem;
+    padding: 0rem;
     background-color: $bs-body-bg;
     .row{
         margin: 0;
@@ -79,6 +79,7 @@ $alternate-color: color(blue-light, light);
             color: color(blue-primary, base);
             text-align: center;
             width: 36px !important;
+            box-shadow: none;
         }
         &.nocontent{
             background: None;
@@ -102,6 +103,7 @@ $alternate-color: color(blue-light, light);
                     font-size: 1.25rem;
                     color: color(blue-primary, base);
                     text-align: center;
+                    box-shadow: none;
                 }
             }
             &.first{
@@ -114,6 +116,7 @@ $alternate-color: color(blue-light, light);
                     font-size: 1.25rem;
                     color: color(blue-primary, base);
                     text-align: center;
+                    box-shadow: none;
                 }
             }
         }

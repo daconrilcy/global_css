@@ -232,7 +232,7 @@
 }
 
 .csv-content {
-  padding: 0.5rem;
+  padding: 0rem;
   background-color: #fff;
 }
 .csv-content .row {
@@ -307,6 +307,7 @@
   color: rgb(0, 119, 204);
   text-align: center;
   width: 36px !important;
+  box-shadow: none;
 }
 .csv-col.content.nocontent {
   background: None;
@@ -330,6 +331,7 @@
   font-size: 1.25rem;
   color: rgb(0, 119, 204);
   text-align: center;
+  box-shadow: none;
 }
 .csv-col.content.blurred-border.first {
   background-color: transparent;
@@ -342,6 +344,7 @@
   font-size: 1.25rem;
   color: rgb(0, 119, 204);
   text-align: center;
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=es_import.css.map */
