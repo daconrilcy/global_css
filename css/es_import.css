@@ -92,19 +92,25 @@
 }
 
 .preview-wrapper {
-  background-color: rgb(96, 102, 119);
+  background-color: rgb(211, 218, 230);
   padding: 1rem;
   border-radius: 0.25rem;
   box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.2);
-  margin-bottom: 2rem;
 }
 
 .preview-second-wrapper {
   background-color: #fff;
-  padding: 0rem;
+  padding: 0.5rem;
   border-radius: 0.25rem;
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
-  margin-bottom: 2rem;
+}
+.preview-second-wrapper h2, .preview-second-wrapper .h2 {
+  color: rgb(211, 218, 230);
+  margin: 0;
+}
+.preview-second-wrapper h2 span.filename, .preview-second-wrapper .h2 span.filename {
+  font-weight: 700;
+  color: rgb(0, 119, 204);
 }
 
 .preview-front {
@@ -131,7 +137,7 @@
 }
 .preview-field-group .preview-field input,
 .preview-field-group .preview-field select {
-  border: 1px solid rgb(96, 102, 119);
+  border: 1px solid rgb(115, 122, 143);
   border-radius: 0.25rem;
   padding: 0.25rem;
   width: 100%;
@@ -227,7 +233,6 @@
 
 .csv-content {
   padding: 0.5rem;
-  box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.2);
   background-color: #fff;
 }
 .csv-content .row {
@@ -261,9 +266,10 @@
   background-color: #fff;
 }
 .csv-col hr {
-  margin: 10px 5px;
+  margin: 10px 0px;
   border-color: rgb(0, 119, 204);
   border-style: dashed;
+  border-width: 1px;
 }
 .csv-col.header {
   font-weight: bold;
@@ -283,6 +289,7 @@
   box-shadow: none;
   color: rgb(134, 138, 145);
   width: 36px !important;
+  border: none;
 }
 .csv-col.content {
   border-left: 1px solid rgb(211, 218, 230);
@@ -290,7 +297,7 @@
   background-color: white;
 }
 .csv-col.content.pair {
-  background-color: rgba(0, 191, 179, 0.3);
+  background-color: rgb(102, 221, 213);
 }
 .csv-col.content.interm {
   background-color: transparent;
@@ -310,6 +317,7 @@
   text-align: center;
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
+  border: none;
 }
 .csv-col.content.blurred-border.last {
   background-color: transparent;

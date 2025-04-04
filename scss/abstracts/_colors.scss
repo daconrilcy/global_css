@@ -8,10 +8,10 @@ $blue-primary: (
 
 // === Palette : Bleu Clair ===
 $blue-light: (
-  base: rgba(0, 191, 179, 1),
-  light: rgba(0, 191, 179, 0.3),
-  medium: rgba(0, 191, 179, 0.6),
-  dark: rgba(0, 191, 179, 1)
+  base: rgb(0, 191, 179),
+  light: rgb(102, 221, 213),
+  medium: rgb(0, 153, 143),
+  dark: rgb(0, 102, 95)
 );
 
 // === Palette : Jaune Orangé ===
@@ -41,7 +41,7 @@ $soft-purple: (
 // === Palette : Gris Neutre ===
 $neutral-gray: (
   base: rgb(76, 80, 94),
-  light: rgb(96, 102, 119),
+  light: rgb(115, 122, 143),
   medium: rgb(69, 72, 85),
   dark: rgb(47, 49, 59)
 );

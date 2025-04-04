@@ -2,18 +2,24 @@
 @use '../../../abstracts/variables' as *;
 
 .preview-wrapper {
-  background-color: color(neutral-gray, light);
+  background-color: color(light-gray, base);
   padding: 1rem;
   border-radius: $bs-border-radius;
   box-shadow: $default-card-shadow-inset;
-  margin-bottom: 2rem;
 }
 .preview-second-wrapper{
   background-color: $bs-body-bg;
-  padding: 0rem;
+  padding: 0.5rem;
   border-radius: $bs-border-radius;
   box-shadow: $default-card-shadow;
-  margin-bottom: 2rem;
+  h2,.h2{
+    color: color(light-gray, base);
+    margin: 0;
+    span.filename{
+      font-weight: 700;
+      color: color(blue-primary, base);
+    }
+  }
 }
 
 .preview-front {
