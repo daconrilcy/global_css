@@ -5925,4 +5925,30 @@ form.dropzone {
   user-select: none;
 }
 
+.btn {
+  display: inline-block;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+.btn.update-btn {
+  background: rgb(255, 0, 0);
+  color: white;
+}
+.btn.update-btn:hover {
+  background: rgb(255, 71, 71);
+}
+.btn.delete-btn {
+  background: rgb(0, 255, 0);
+  color: white;
+}
+.btn.delete-btn:hover {
+  background: rgb(71, 255, 71);
+}
+
 /*# sourceMappingURL=base.css.map */

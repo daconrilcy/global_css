@@ -1,4 +1,6 @@
 @use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/functions" as *;
 
 .btn{
     display: inline-block;
@@ -12,18 +14,18 @@
     cursor: pointer;
     
     &.update-btn {
-        background-color: color(red, base);
+        background: color(default-red, base);
         color: white;
         &:hover {
-            background-color: color(red, light);
+            background: color(default-red, light);
         }
       }
     
       &.delete-btn {
-        background-color: color(green , base);
+        background: color(default-green , base);
         color: white;
         &:hover {
-            background-color: color(green, light);
+            background: color(default-green, light);
         }
       }
     

@@ -18,6 +18,10 @@
     $palette: $neutral-gray;
   } @else if $palette-name == light-gray {
     $palette: $light-gray;
+  } @else if $palette-name == default-red {
+    $palette: $default-red;
+  } @else if $palette-name == default-green {
+    $palette: $default-green;
   } @else {
     @error "Palette `#{$palette-name}` non définie.";
   }
