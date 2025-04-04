@@ -5,7 +5,7 @@
 .csv-content{
     padding: 0.5rem;
     box-shadow: $default-card-shadow-inset;
-    background-color: color(light-gray, light);
+    background-color: $bs-body-bg;
     .row{
         margin: 0;
     }
@@ -42,8 +42,9 @@
     }
     &.header{
         font-weight: bold;
-        background-color: color(light-gray, medium);
-        border-bottom: 1px solid color(light-gray, medium);
+        background-color: color(blue-primary, medium);
+        border-left: 1px solid color(light-gray, base);
+        border-right: 1px solid color(light-gray, base);
         text-align: center;
         box-shadow: $default-card-shadow;
         color: white;
@@ -88,7 +89,7 @@
         &.blurred-border{
             &.last{
                 background-color: transparent;
-                background: linear-gradient(to bottom, color(blue-primary, base), rgba(215, 229, 241, 0));
+                background: linear-gradient(to bottom, color(blue-light, base), rgba(215, 229, 241, 0));
                 &.interm{
                     background: None;
                     background-color: transparent;
@@ -100,7 +101,7 @@
             }
             &.first{
                 background-color: transparent;
-                background: linear-gradient(to top, color(blue-primary, base), rgba(215, 229, 241, 0));
+                background: linear-gradient(to top, color(blue-light, base), rgba(215, 229, 241, 0));
                 &.interm{
                     background: None;
                     background-color: transparent;

@@ -8,6 +8,13 @@
   box-shadow: $default-card-shadow-inset;
   margin-bottom: 2rem;
 }
+.preview-second-wrapper{
+  background-color: $bs-body-bg;
+  padding: 0rem;
+  border-radius: $bs-border-radius;
+  box-shadow: $default-card-shadow;
+  margin-bottom: 2rem;
+}
 
 .preview-front {
   background-color: $bs-body-bg;
