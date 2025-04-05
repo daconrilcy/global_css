@@ -436,4 +436,21 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   background-color: rgb(220, 226, 238);
 }
 
+.btn.btn-save {
+  background: rgb(0, 255, 0);
+  color: white;
+}
+.btn.btn-save:hover {
+  background: rgb(0, 125, 0);
+  color: white;
+}
+.btn.btn-add-field {
+  background: rgb(254, 197, 20);
+  color: inherit;
+}
+.btn.btn-add-field:hover {
+  background: rgb(153, 119, 10);
+  color: inherit;
+}
+
 /*# sourceMappingURL=es_import.css.map */

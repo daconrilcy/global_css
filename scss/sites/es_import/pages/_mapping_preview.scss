@@ -84,3 +84,22 @@ h1,.h1, h2,.h2, h3,.h3, h4,.h4, h5,.h5, h6,.h6{
         background-color: color(light-gray, light);
     }
 }
+
+.btn{
+    &.btn-save{
+        background: color(default-green, base);
+        color: white;
+        &:hover {
+            background: color(default-green, dark);
+            color: white;
+        }
+    }
+    &.btn-add-field{
+        background: color(yellow-orange, base);
+        color: inherit;
+        &:hover {
+            background: color(yellow-orange, dark);
+            color: inherit;
+        }
+    }
+}

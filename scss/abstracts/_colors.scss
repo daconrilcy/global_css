@@ -17,10 +17,10 @@ $blue-light: (
 
 // === Palette : Jaune Orangé ===
 $yellow-orange: (
-  base: rgba(254, 197, 20, 1),
-  light: rgba(254, 197, 20, 0.3),
-  medium: rgba(254, 197, 20, 0.6),
-  dark: rgba(254, 197, 20, 1)
+  light: rgb(255, 221, 102),
+  base: rgb(254, 197, 20),
+  medium: rgb(204, 158, 16),
+  dark: rgb(153, 119, 10)
 );
 
 // === Palette : Rose Corail ===
