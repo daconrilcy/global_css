@@ -371,6 +371,9 @@
   align-items: center;
   margin-bottom: 0.5rem;
 }
+.row.field-preview div input.changed, .row.field-preview div select.changed {
+  border-color: rgb(255, 0, 0);
+}
 
 .fixed-value.disabled {
   pointer-events: none;
