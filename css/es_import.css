@@ -367,6 +367,12 @@
   text-align: center;
 }
 
+h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 span.filename select, h3 span.filename select, .h3 span.filename select, h4 span.filename select, .h4 span.filename select, h5 span.filename select, .h5 span.filename select, h6 span.filename select, .h6 span.filename select {
+  width: auto;
+  font-size: inherit;
+  font-weight: 700;
+}
+
 .row.field-preview {
   align-items: center;
   margin-bottom: 0.5rem;
