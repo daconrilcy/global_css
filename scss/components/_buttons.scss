@@ -16,6 +16,33 @@
         text-decoration: none;
         box-shadow: $default-card-shadow;
     }
+
+    &.btn-primary {
+        background: color(blue-primary, base);
+        color: white;
+        &:hover {
+            background: color(blue-primary, dark);
+            color: white;
+        }
+      }
+    
+      &.btn-secondary {
+        background: color(light-gray, light);
+        color: inherit;
+        &:hover {
+            background: color(light-gray, medium);
+            color: inherit;
+        }
+      }
+    
+      &.btn-tertiary {
+        background: color(default-green, light);
+        color: inherit;
+        &:hover {
+            background: color(default-green, medium);
+            color: inherit;
+        }
+      }
     
     &.btn-update {
         background: color(default-green, base);

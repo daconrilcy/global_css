@@ -7244,6 +7244,30 @@ form.dropzone {
   text-decoration: none;
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
 }
+.btn.btn-primary {
+  background: rgb(0, 119, 204);
+  color: white;
+}
+.btn.btn-primary:hover {
+  background: rgb(2, 80, 135);
+  color: white;
+}
+.btn.btn-secondary {
+  background: rgb(220, 226, 238);
+  color: inherit;
+}
+.btn.btn-secondary:hover {
+  background: rgb(134, 138, 145);
+  color: inherit;
+}
+.btn.btn-tertiary {
+  background: rgb(125, 255, 125);
+  color: inherit;
+}
+.btn.btn-tertiary:hover {
+  background: rgb(0, 180, 0);
+  color: inherit;
+}
 .btn.btn-update {
   background: rgb(0, 255, 0);
   color: white;
