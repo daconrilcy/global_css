@@ -15,6 +15,11 @@
 .row.field-preview{
     align-items: center;
     margin-bottom: 0.5rem;
+    div.changed{
+        input,select{
+            border-color: color(default-red, base);
+        }
+    }
 }
 
 .fixed-value.disabled{
