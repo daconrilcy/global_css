@@ -286,6 +286,7 @@
   color: white;
   font-weight: bold;
   text-align: center;
+  font-size: 1.25rem;
   border-left: 1px solid rgb(211, 218, 230);
   border-right: 1px solid rgb(211, 218, 230);
   z-index: 100;
@@ -365,17 +366,21 @@
   color: white;
   font-weight: bold;
   text-align: center;
+  font-size: 1.25rem;
 }
 
 h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 span.filename select, h3 span.filename select, .h3 span.filename select, h4 span.filename select, .h4 span.filename select, h5 span.filename select, .h5 span.filename select, h6 span.filename select, .h6 span.filename select {
   width: auto;
   font-size: inherit;
-  font-weight: 700;
+  font-weight: inherit;
 }
 
 .row.field-preview {
   align-items: center;
   margin-bottom: 0.5rem;
+}
+.row.field-preview div input, .row.field-preview div select {
+  width: 100%;
 }
 .row.field-preview div input.changed, .row.field-preview div select.changed {
   border-color: rgb(255, 0, 0);
