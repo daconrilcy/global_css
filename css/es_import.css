@@ -437,6 +437,8 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
 }
 
 .btn.btn-save {
+  width: 100%;
+  display: flex;
   background: rgb(0, 255, 0);
   color: white;
 }
@@ -445,6 +447,8 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   color: white;
 }
 .btn.btn-add-field {
+  width: 100%;
+  display: flex;
   background: rgb(254, 197, 20);
   color: inherit;
 }
