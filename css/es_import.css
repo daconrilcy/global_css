@@ -388,7 +388,7 @@
   cursor: pointer;
 }
 .field-picto.remove:hover {
-  color: rgb(127, 0, 0);
+  background: rgb(127, 0, 0);
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
 }
 

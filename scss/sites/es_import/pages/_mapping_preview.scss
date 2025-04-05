@@ -32,7 +32,7 @@
         padding: 0.5rem;
         cursor: pointer;
         &:hover{
-            color: color(default-red, dark);
+            background: color(default-red, dark);
             box-shadow: $default-card-shadow;
         }
     }
