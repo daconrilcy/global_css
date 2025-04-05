@@ -52,4 +52,8 @@
             box-shadow: $default-card-shadow;
         }
     }
+    &.hidden{
+        display: flex !important;
+        opacity: 0.2;
+    }
 }

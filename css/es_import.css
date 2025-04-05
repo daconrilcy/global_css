@@ -403,5 +403,9 @@
   background: rgb(127, 0, 0);
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
 }
+.field-picto.hidden {
+  display: flex !important;
+  opacity: 0.2;
+}
 
 /*# sourceMappingURL=es_import.css.map */
