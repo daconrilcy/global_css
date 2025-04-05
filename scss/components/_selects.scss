@@ -7,11 +7,12 @@ select{
     background: $bs-body-bg;
     border: 1px solid $bs-border-color;
     border-radius: $bs-border-radius;
-    margin-bottom: 1rem;
     width: 100%;
     color: inherit;
     padding: 0.5rem;
     font-size: 1rem;
+    font-family: $font-default;
+    margin:auto;
     cursor: pointer;
     &:hover{
         border-color: color(blue-primary, light);

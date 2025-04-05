@@ -64,26 +64,9 @@
     margin: 0;
     padding: 0.5rem 1rem;
 
-    input,
-    select {
-      border: 1px solid color(neutral-gray, light);
-      border-radius: $bs-border-radius;
-      padding: 0.25rem;
-      width: 100%;
-    }
-
     &.disabled {
       pointer-events: none;
       opacity: 0.25;
-    }
-
-    select,
-    select option {
-      cursor: pointer;
-    }
-
-    button {
-      padding: 0.25rem 0;
     }
   }
 }

@@ -11,3 +11,7 @@
     margin-bottom: 1rem;
     @include apply-style($header-preview-style);
 }
+
+.row.field-preview{
+    align-items: center;
+}
