@@ -370,6 +370,14 @@
   box-shadow: none;
 }
 
+.field-picto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+}
+
 .header-preview {
   border-radius: 0.5rem 0.5rem 0 0;
   padding: 1rem;
