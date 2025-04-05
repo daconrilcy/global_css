@@ -17,6 +17,15 @@
     margin-bottom: 0.5rem;
 }
 
+.fixed-value.disabled{
+    pointer-events: none;
+    opacity: 0.25;
+    input{
+        background: color(light-gray, light);
+        cursor: not-allowed;
+    }
+}
+
 .field-picto{
     display: flex;
     align-items: center;

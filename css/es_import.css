@@ -372,6 +372,15 @@
   margin-bottom: 0.5rem;
 }
 
+.fixed-value.disabled {
+  pointer-events: none;
+  opacity: 0.25;
+}
+.fixed-value.disabled input {
+  background: rgb(220, 226, 238);
+  cursor: not-allowed;
+}
+
 .field-picto {
   display: flex;
   align-items: center;
