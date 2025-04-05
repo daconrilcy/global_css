@@ -66,5 +66,17 @@ h1,.h1, h2,.h2, h3,.h3, h4,.h4, h5,.h5, h6,.h6{
     &.hidden{
         display: flex !important;
         opacity: 0.2;
+        cursor: not-allowed;
+    }
+}
+#btn-update-mapping{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    &.hidden{
+        cursor: not-allowed;
+        opacity: 0.2;
+        pointer-events: none;
+        background-color: color(light-gray, light);
     }
 }

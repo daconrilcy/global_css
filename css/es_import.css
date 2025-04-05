@@ -417,6 +417,19 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
 .field-picto.hidden {
   display: flex !important;
   opacity: 0.2;
+  cursor: not-allowed;
+}
+
+#btn-update-mapping {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#btn-update-mapping.hidden {
+  cursor: not-allowed;
+  opacity: 0.2;
+  pointer-events: none;
+  background-color: rgb(220, 226, 238);
 }
 
 /*# sourceMappingURL=es_import.css.map */
