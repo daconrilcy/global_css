@@ -9,7 +9,9 @@ select{
     border-radius: $bs-border-radius;
     margin-bottom: 1rem;
     width: 100%;
-    color: white;
+    color: inherit;
+    padding: 0.5rem;
+    font-size: 1rem;
     cursor: pointer;
     &:hover{
         border-color: color(blue-primary, light);

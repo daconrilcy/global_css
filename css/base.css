@@ -7292,7 +7292,9 @@ select {
   border-radius: 0.25rem;
   margin-bottom: 1rem;
   width: 100%;
-  color: white;
+  color: inherit;
+  padding: 0.5rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 select:hover {
