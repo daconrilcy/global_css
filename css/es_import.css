@@ -356,14 +356,6 @@
   box-shadow: none;
 }
 
-.field-picto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: transparent;
-}
-
 .header-preview {
   border-radius: 0.5rem 0.5rem 0 0;
   padding: 1rem;
@@ -377,6 +369,25 @@
 
 .row.field-preview {
   align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.field-picto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.field-picto.remove {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.field-picto.remove:hover {
+  color: rgb(127, 0, 0);
+  box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=es_import.css.map */
