@@ -28,6 +28,8 @@
         color: white;
         font-size: 1.25rem;
         font-weight: 700;
+        border-radius: 0.25rem;
+        padding: 0.5rem;
         cursor: pointer;
         &:hover{
             color: color(default-red, dark);
