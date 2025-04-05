@@ -454,7 +454,7 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
 }
 .btn.btn-add-field:hover {
   background: rgb(153, 119, 10);
-  color: inherit;
+  color: white;
 }
 
 /*# sourceMappingURL=es_import.css.map */
