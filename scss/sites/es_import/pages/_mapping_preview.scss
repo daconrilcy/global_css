@@ -1,0 +1,13 @@
+@use '../../../abstracts/colors' as *;
+@use '../../../abstracts/variables' as *;
+@use '../../../abstracts/functions' as *;
+@use '../variables/styles' as *;
+
+
+
+.header-preview {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    @include apply-style($header-preview-style);
+}

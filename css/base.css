@@ -7285,4 +7285,19 @@ input[type=text]::placeholder, input[type=email]::placeholder, input[type=passwo
   font-style: italic;
 }
 
+select {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+}
+select:hover {
+  border-color: rgb(82, 154, 204);
+  background: rgb(220, 226, 238);
+}
+
 /*# sourceMappingURL=base.css.map */

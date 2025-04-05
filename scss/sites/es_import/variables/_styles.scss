@@ -1,0 +1,18 @@
+@use '../../../abstracts/colors' as *;
+@use '../../../abstracts/variables' as *;
+@use '../../../abstracts/functions' as *;
+
+//fonction pour appeler les styles predefinis
+@mixin apply-style($style-map) {
+    @each $prop, $val in $style-map {
+        #{$prop}: #{$val};
+    }
+}
+
+$header-preview-style: (
+  background-color: color(blue-primary, medium),
+  box-shadow: $default-card-shadow,
+  color: white,
+  font-weight: bold,
+  text-align: center
+);

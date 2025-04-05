@@ -108,11 +108,11 @@
   border-radius: 0.5rem;
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
 }
-.preview-second-wrapper h2, .preview-second-wrapper .h2 {
+.preview-second-wrapper h2, .preview-second-wrapper .h2, .preview-second-wrapper h3, .preview-second-wrapper .h3, .preview-second-wrapper h4, .preview-second-wrapper .h4, .preview-second-wrapper h5, .preview-second-wrapper .h5 {
   color: rgb(134, 138, 145);
   margin: 0;
 }
-.preview-second-wrapper h2 span.filename, .preview-second-wrapper .h2 span.filename {
+.preview-second-wrapper h2 span.filename, .preview-second-wrapper .h2 span.filename, .preview-second-wrapper h3 span.filename, .preview-second-wrapper .h3 span.filename, .preview-second-wrapper h4 span.filename, .preview-second-wrapper .h4 span.filename, .preview-second-wrapper h5 span.filename, .preview-second-wrapper .h5 span.filename {
   font-weight: 700;
   color: rgb(0, 119, 204);
 }
@@ -295,13 +295,13 @@
   border-width: 1px;
 }
 .csv-col.header {
-  font-weight: bold;
   background-color: rgb(0, 102, 204);
-  border-left: 1px solid rgb(211, 218, 230);
-  border-right: 1px solid rgb(211, 218, 230);
-  text-align: center;
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
   color: white;
+  font-weight: bold;
+  text-align: center;
+  border-left: 1px solid rgb(211, 218, 230);
+  border-right: 1px solid rgb(211, 218, 230);
   z-index: 100;
 }
 .csv-col.header.interm {
@@ -368,6 +368,17 @@
   color: rgb(0, 119, 204);
   text-align: center;
   box-shadow: none;
+}
+
+.header-preview {
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgb(0, 102, 204);
+  box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
 
 /*# sourceMappingURL=es_import.css.map */

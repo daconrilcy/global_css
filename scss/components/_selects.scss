@@ -1,0 +1,18 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/functions' as *;
+@use '../abstracts/variables' as *;
+
+select{
+    display: inline-block;
+    background: $bs-body-bg;
+    border: 1px solid $bs-border-color;
+    border-radius: $bs-border-radius;
+    margin-bottom: 1rem;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    &:hover{
+        border-color: color(blue-primary, light);
+        background: color(light-gray, light);
+    }
+}
