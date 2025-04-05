@@ -70,10 +70,13 @@ h1,.h1, h2,.h2, h3,.h3, h4,.h4, h5,.h5, h6,.h6{
     }
 }
 #btn-update-mapping{
+    display: flex;
+    justify-content: center;
     width: 100%;
     font-size: 1.2rem;
     font-weight: 700;
     text-align: center;
+    border-radius: $bs-border-radius*2;
     &.hidden{
         cursor: not-allowed;
         opacity: 0.2;

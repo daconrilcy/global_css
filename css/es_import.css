@@ -421,10 +421,13 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
 }
 
 #btn-update-mapping {
+  display: flex;
+  justify-content: center;
   width: 100%;
   font-size: 1.2rem;
   font-weight: 700;
   text-align: center;
+  border-radius: 0.5rem;
 }
 #btn-update-mapping.hidden {
   cursor: not-allowed;
