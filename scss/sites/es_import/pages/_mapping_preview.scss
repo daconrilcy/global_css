@@ -15,9 +15,11 @@
 .row.field-preview{
     align-items: center;
     margin-bottom: 0.5rem;
-    div.changed{
+    div{
         input,select{
-            border-color: color(default-red, base);
+            &.changed{
+                border-color: color(default-red, base);
+            }
         }
     }
 }
