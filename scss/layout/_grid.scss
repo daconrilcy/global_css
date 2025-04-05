@@ -65,7 +65,7 @@ $base-width: calc(100% / 12);
 @each $bp, $bp-width in $breakpoints {
   @each $f in $fraction-list {
     $w: (calc($base-width / $f));
-
+  
     .col-01-#{$bp}-#{$f} {
       @media (min-width: $bp-width) {
         flex: 0 0 auto;

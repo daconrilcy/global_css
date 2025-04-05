@@ -1,6 +1,7 @@
 @use '../../img/img_variables' as *;
 
 .picto-modified {
+    display: inline-block;
     background-image: url(#{$picto_modified});
     background-size: contain;
     background-repeat: no-repeat;
