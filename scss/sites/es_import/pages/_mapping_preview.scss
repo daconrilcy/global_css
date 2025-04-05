@@ -16,3 +16,22 @@
     align-items: center;
     margin-bottom: 0.5rem;
 }
+
+.field-picto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+
+    &.remove{
+        background-color: color(default-red, base);
+        color: white;
+        font-size: 1.25rem;
+        font-weight: 700;
+        cursor: pointer;
+        &:hover{
+            color: color(default-red, dark);
+            box-shadow: $default-card-shadow;
+        }
+    }
+}
