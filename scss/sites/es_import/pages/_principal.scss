@@ -1,4 +1,44 @@
+@use '../../../abstracts/functions' as *;
+@use '../../../abstracts/variables' as *;
+
+
 #content{
     margin-top: 3rem;
     padding: 1rem 2rem;
+}
+
+.btn{
+    &.btn-save{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: color(default-green, base);
+        color: white;
+        &:hover {
+            background-color: color(default-green, dark);
+            color: white;
+        }
+    }
+    &.btn-delete{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: color(default-red, base);
+        color: white;
+        &:hover {
+            background-color: color(default-red, dark);
+            color: white;
+        }
+    }
+    &.btn-add-field{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: color(yellow-orange, base);
+        color: inherit;
+        &:hover {
+            background-color: color(yellow-orange, dark);
+            color: white;
+        }
+    }
 }
