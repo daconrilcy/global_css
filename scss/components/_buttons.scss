@@ -18,54 +18,54 @@
     }
 
     &.btn-primary {
-        background: color(blue-primary, base);
+      background-color: color(blue-primary, base);
         color: white;
         &:hover {
-            background: color(blue-primary, dark);
+          background-color: color(blue-primary, dark);
             color: white;
         }
       }
     
       &.btn-secondary {
-        background: color(light-gray, light);
+        background-color: color(light-gray, light);
         color: inherit;
         &:hover {
-            background: color(light-gray, medium);
+          background-color: color(light-gray, medium);
             color: inherit;
         }
       }
     
       &.btn-tertiary {
-        background: color(default-green, light);
+        background-color: color(default-green, light);
         color: inherit;
         &:hover {
-            background: color(default-green, medium);
+          background-color: color(default-green, medium);
             color: inherit;
         }
       }
     
     &.btn-update {
-        background: color(default-green, base);
+      background-color: color(default-green, base);
         color: white;
         &:hover {
-            background: color(default-green, light);
+          background-color: color(default-green, light);
         }
       }
     
       &.btn-delete {
-        background: color(default-red , base);
+        background-color: color(default-red , base);
         color: white;
         &:hover {
-            background: color(default-red, light);
+          background-color: color(default-red, light);
         }
       }
       &.btn-submit {
         display: inline-block;
         width: 100%;
-        background: color(blue-primary, base);
+        background-color: color(blue-primary, base);
         color: white;
         &:hover {
-            background: color(blue-primary, dark)
+          background-color: color(blue-primary, dark)
         }
       }
     

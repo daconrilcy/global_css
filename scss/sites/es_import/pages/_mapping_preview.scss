@@ -90,10 +90,10 @@ h1,.h1, h2,.h2, h3,.h3, h4,.h4, h5,.h5, h6,.h6{
         width: 100%;
         display: flex;
         justify-content: center;
-        background: color(default-green, base);
+        background-color: color(default-green, base);
         color: white;
         &:hover {
-            background: color(default-green, dark);
+            background-color: color(default-green, dark);
             color: white;
         }
     }
@@ -101,10 +101,10 @@ h1,.h1, h2,.h2, h3,.h3, h4,.h4, h5,.h5, h6,.h6{
         width: 100%;
         display: flex;
         justify-content: center;
-        background: color(yellow-orange, base);
+        background-color: color(yellow-orange, base);
         color: inherit;
         &:hover {
-            background: color(yellow-orange, dark);
+            background-color: color(yellow-orange, dark);
             color: white;
         }
     }
