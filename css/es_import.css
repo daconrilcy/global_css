@@ -208,9 +208,9 @@
 .btn.btn-create-mapping {
   width: 100%;
   display: flex;
+  justify-content: center;
   background: rgb(0, 119, 204);
   margin-bottom: 1rem;
-  width: auto;
   color: white;
 }
 .btn.btn-create-mapping:hover {
