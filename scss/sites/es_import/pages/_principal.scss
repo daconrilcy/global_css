@@ -41,4 +41,15 @@
             color: white;
         }
     }
+    &.btn-create-mapping{
+        width: 100%;
+        display: flex;
+        background: color(blue-primary, base);
+        margin-bottom: 1rem;
+        width: auto;
+        color: white;
+        &:hover{
+          background: color(blue-primary, dark);
+        }
+      }
 }

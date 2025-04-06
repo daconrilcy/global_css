@@ -125,16 +125,6 @@
   font-weight: 700;
   color: rgb(0, 119, 204);
 }
-.preview-second-wrapper .btn-create-mapping {
-  display: inline-block;
-  background: rgb(0, 119, 204);
-  margin-bottom: 1rem;
-  width: auto;
-  color: white;
-}
-.preview-second-wrapper .btn-create-mapping:hover {
-  background: rgb(2, 80, 135);
-}
 
 .preview-front {
   background-color: #fff;
@@ -214,6 +204,17 @@
 .btn.btn-add-field:hover {
   background-color: rgb(153, 119, 10);
   color: white;
+}
+.btn.btn-create-mapping {
+  width: 100%;
+  display: flex;
+  background: rgb(0, 119, 204);
+  margin-bottom: 1rem;
+  width: auto;
+  color: white;
+}
+.btn.btn-create-mapping:hover {
+  background: rgb(2, 80, 135);
 }
 
 .menu {

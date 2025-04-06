@@ -29,16 +29,6 @@
       color: color(blue-primary, base);
     }
   }
-  .btn-create-mapping{
-    display: inline-block;
-    background: color(blue-primary, base);
-    margin-bottom: 1rem;
-    width: auto;
-    color: white;
-    &:hover{
-      background: color(blue-primary, dark);
-    }
-  }
 }
 
 .preview-front {
