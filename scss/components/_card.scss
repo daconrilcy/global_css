@@ -27,9 +27,6 @@
     background-color: rgba($bs-body-color, 0.03);
     border-bottom: $bs-border-width solid $bs-border-color-translucent;
 
-    &:first-child {
-      border-radius: calc(#{$bs-border-radius} - #{$bs-border-width}) calc(#{$bs-border-radius} - #{$bs-border-width}) 0 0;
-    }
   }
 
   .card-body {

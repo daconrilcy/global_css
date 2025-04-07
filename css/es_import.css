@@ -20,19 +20,9 @@
   margin-bottom: 1rem;
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25);
 }
-.list-card .list-card-header {
-  padding: 1rem;
+.list-card .card-header.listfile {
   background-color: rgb(0, 102, 204);
   color: white;
-  border-radius: 0.25rem 0.25rem 0 0;
-  font-weight: bold;
-}
-.list-card .list-card-header h1, .list-card .list-card-header h2, .list-card .list-card-header h3, .list-card .list-card-header h4, .list-card .list-card-header h5 {
-  margin: 0;
-  color: inherit;
-}
-.list-card .list-card-header h5, .list-card .list-card-header .h5 {
-  font-weight: 700;
 }
 .list-card .list-card-body {
   padding: 1rem;
@@ -75,16 +65,6 @@
 .card-header.dropper {
   background-color: rgba(240, 78, 152, 0.6);
   color: white;
-  border-radius: 0.25rem 0.25rem 0 0;
-  font-weight: bold;
-  padding: 1rem;
-}
-.card-header.dropper h1, .card-header.dropper h2, .card-header.dropper h3, .card-header.dropper h4, .card-header.dropper h5 {
-  margin: 0;
-  color: inherit;
-}
-.card-header.dropper h5, .card-header.dropper .h5 {
-  font-weight: 700;
 }
 
 .dropzone.dz-clickable {
@@ -215,6 +195,19 @@
 }
 .btn.btn-create-mapping:hover {
   background: rgb(2, 80, 135);
+}
+
+.card-header {
+  border-radius: 0.25rem 0.25rem 0 0;
+  font-weight: bold;
+  padding: 1rem;
+}
+.card-header h1, .card-header h2, .card-header h3, .card-header h4, .card-header h5 {
+  margin: 0;
+  color: inherit;
+}
+.card-header h5, .card-header .h5 {
+  font-weight: 700;
 }
 
 .menu {
