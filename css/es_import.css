@@ -48,16 +48,16 @@
   background: rgb(2, 80, 135);
 }
 
-.card-header {
+.card .card-header.dropper, .card .card-header.listfile {
   border-radius: 0.25rem 0.25rem 0 0;
   font-weight: bold;
   padding: 1rem;
 }
-.card-header h1, .card-header h2, .card-header h3, .card-header h4, .card-header h5 {
+.card .card-header.dropper h1, .card .card-header.dropper h2, .card .card-header.dropper h3, .card .card-header.dropper h4, .card .card-header.dropper h5, .card .card-header.listfile h1, .card .card-header.listfile h2, .card .card-header.listfile h3, .card .card-header.listfile h4, .card .card-header.listfile h5 {
   margin: 0;
   color: inherit;
 }
-.card-header h5, .card-header .h5 {
+.card .card-header.dropper h5, .card .card-header.dropper .h5, .card .card-header.listfile h5, .card .card-header.listfile .h5 {
   font-weight: 700;
 }
 
