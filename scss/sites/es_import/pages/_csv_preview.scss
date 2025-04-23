@@ -106,16 +106,16 @@ $alternate-color: color(blue-light, very-light);
             text-align: center;
             padding-top: 0.25rem;
             padding-bottom: 0.25rem;
-            border-top: 1px dashed rgb(0 119 204 / 20%) !important;
+            border-top: $cells-border-dash;
             box-shadow: none !important;
             &.last-row, {
-                border-bottom: 1px dashed rgb(0 119 204 / 20%) !important;
+                border-bottom: $cells-border-dash;
             }
             &.middle-row-before{
-                border-bottom: 1px dashed rgb(0 119 204 / 20%) !important;
+                border-bottom: $cells-border-dash;
             }
             &.middle-row{
-                border-left: 1px dashed rgb(0 119 204 / 20%) !important;;
+                border-left: $cells-border-dash;
             }
         }
         &.middle-row-before {
