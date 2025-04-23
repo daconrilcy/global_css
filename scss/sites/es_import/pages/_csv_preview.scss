@@ -103,13 +103,11 @@ $alternate-color: color(blue-light, very-light);
             font-size: 1.25rem;
             color: color(blue-primary, base);
             text-align: center;
-            padding-top: 0.125rem;
-            padding-bottom: 0.125rem;
-            border-top: 1px dashed rgb(0 119 204 / 20%);
-            border-bottom: 1px dashed rgb(0 119 204 / 20%);
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+            border-top: 1px dashed rgb(0 119 204 / 20%) !important;
+            border-bottom: 1px dashed rgb(0 119 204 / 20%) !important;
             box-shadow: none !important;
-            padding-top: 0.125rem;
-            padding-bottom: 0.125rem;
         }
         &.middle-row-before {
             border-bottom: $cells-border;
