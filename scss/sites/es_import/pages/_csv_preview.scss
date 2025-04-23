@@ -64,6 +64,11 @@ $alternate-color: color(blue-light, very-light);
         border-left: 1px solid color(light-gray, base);
         border-right: 1px solid color(light-gray, base);
         background-color: white;
+
+        &.csv-index-col{
+            font-weight: bold;
+            text-align: center;
+        }
         
         &.pair{
             background-color: $alternate-color;
@@ -91,8 +96,10 @@ $alternate-color: color(blue-light, very-light);
         }
         &.middle-row-before {
             border-bottom: 1px solid color(light-gray, base);
+            box-shadow: $default-card-shadow;
             &.interm{
                 border-bottom: none;
+                box-shadow: none;
             }
         }
         &.middle-row-after{
