@@ -381,7 +381,7 @@
   border-top: 1px dashed rgba(0, 119, 204, 0.2) !important;
   box-shadow: none !important;
 }
-.csv-col.content.nocontent.last-row, .csv-col.content.nocontent .middle-row-before {
+.csv-col.content.nocontent.last-row, .csv-col.content.nocontent.middle-row-before {
   border-bottom: 1px dashed rgba(0, 119, 204, 0.2) !important;
 }
 .csv-col.content.middle-row-before {
