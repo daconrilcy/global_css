@@ -64,10 +64,10 @@ $alternate-color: color(blue-light, very-light);
             border: none;
         }
         &.first{
-            border-top-left-radius: $bs-border-radius;
+            border-top-left-radius: $border-radius-preview;;
         }
         &.last{
-            border-top-right-radius: $bs-border-radius;
+            border-top-right-radius: $border-radius-preview;;
         }
         &.last-col{
             border-right: $cells-border;
@@ -75,7 +75,7 @@ $alternate-color: color(blue-light, very-light);
         }
     }
     &.content{
-        border-left: $cells-border;
+        border-left: $border-radius-preview;
         background-color: white;
 
         &.csv-index-col{
