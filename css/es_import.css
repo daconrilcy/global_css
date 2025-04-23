@@ -50,6 +50,7 @@
 
 .card .card-header.dropper, .card .card-header.listfile {
   border-radius: 0.25rem 0.25rem 0 0;
+  border-width: 0;
   font-weight: bold;
   padding: 1rem;
 }
@@ -339,7 +340,7 @@
   background-color: white;
 }
 .csv-col.content.pair {
-  background-color: rgb(153, 238, 232);
+  background-color: rgb(233, 251, 250);
 }
 .csv-col.content.interm {
   background-color: transparent;
@@ -364,7 +365,7 @@
 }
 .csv-col.content.blurred-border.last {
   background-color: transparent;
-  background: linear-gradient(to bottom, rgb(153, 238, 232), rgba(215, 229, 241, 0));
+  background: linear-gradient(to bottom, rgb(233, 251, 250), rgba(215, 229, 241, 0));
 }
 .csv-col.content.blurred-border.last.interm {
   background: None;
@@ -377,7 +378,7 @@
 }
 .csv-col.content.blurred-border.first {
   background-color: transparent;
-  background: linear-gradient(to top, rgb(153, 238, 232), rgba(215, 229, 241, 0));
+  background: linear-gradient(to top, rgb(233, 251, 250), rgba(215, 229, 241, 0));
 }
 .csv-col.content.blurred-border.first.interm {
   background: None;
