@@ -75,7 +75,7 @@ $alternate-color: color(blue-light, very-light);
         }
     }
     &.content{
-        border-left: $border-radius-preview;
+        border-left: $cells-border;
         background-color: white;
 
         &.csv-index-col{
