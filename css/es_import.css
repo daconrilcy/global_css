@@ -345,6 +345,7 @@
 }
 .csv-col.header.last-col {
   border-right: 1px solid rgb(211, 218, 230);
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
 }
 .csv-col.content {
   border-left: 1px solid rgb(211, 218, 230);

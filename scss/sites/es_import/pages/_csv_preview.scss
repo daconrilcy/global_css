@@ -71,6 +71,7 @@ $alternate-color: color(blue-light, very-light);
         }
         &.last-col{
             border-right: $cells-border;
+            box-shadow: $cells-shadow;
         }
     }
     &.content{
