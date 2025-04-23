@@ -339,6 +339,10 @@
   border-right: 1px solid rgb(211, 218, 230);
   background-color: white;
 }
+.csv-col.content.csv-index-col {
+  font-weight: bold;
+  text-align: center;
+}
 .csv-col.content.pair {
   background-color: rgb(233, 251, 250);
 }
@@ -365,9 +369,11 @@
 }
 .csv-col.content.middle-row-before {
   border-bottom: 1px solid rgb(211, 218, 230);
+  box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25);
 }
 .csv-col.content.middle-row-before.interm {
   border-bottom: none;
+  box-shadow: none;
 }
 .csv-col.content.middle-row-after {
   border-top: 1px solid rgb(211, 218, 230);
