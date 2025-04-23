@@ -89,6 +89,9 @@ $alternate-color: color(blue-light, very-light);
             padding-bottom: 0.125rem;
             border: none;
         }
+        &.middle-row-before {
+            padding-bottom: 0.125rem;
+        }
         &.blurred-border{
             &.last{
                 background-color: transparent;

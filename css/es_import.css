@@ -363,6 +363,9 @@
   padding-bottom: 0.125rem;
   border: none;
 }
+.csv-col.content.middle-row-before {
+  padding-bottom: 0.125rem;
+}
 .csv-col.content.blurred-border.last {
   background-color: transparent;
   background: linear-gradient(to bottom, rgb(233, 251, 250), rgba(215, 229, 241, 0));
