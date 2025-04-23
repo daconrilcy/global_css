@@ -95,6 +95,12 @@ $alternate-color: color(blue-light, very-light);
                 border-bottom: none;
             }
         }
+        &.middle-row-after{
+            border-top: 1px solid color(light-gray, base);
+            &.interm{
+                border-top: none;
+            }
+        }
         &.blurred-border{
             &.last{
                 background-color: transparent;
