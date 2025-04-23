@@ -108,7 +108,7 @@ $alternate-color: color(blue-light, very-light);
             padding-bottom: 0.25rem;
             border-top: $cells-border-dash;
             box-shadow: none !important;
-            &.last-row, {
+            &.last-row {
                 border-bottom: $cells-border-dash;
             }
             &.middle-row-before{
@@ -116,6 +116,9 @@ $alternate-color: color(blue-light, very-light);
             }
             &.middle-row{
                 border-left: $cells-border-dash;
+            }
+            &.last-col{
+                border-right: $cells-border-dash;
             }
         }
         &.middle-row-before {
