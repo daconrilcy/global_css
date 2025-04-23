@@ -81,6 +81,7 @@ $alternate-color: color(blue-light, very-light);
         &.csv-index-col{
             font-weight: bold;
             text-align: center;
+            border-left: $cells-border;
         }
         
         &.pair{
