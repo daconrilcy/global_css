@@ -336,6 +336,9 @@
   width: 36px !important;
   border: none;
 }
+.csv-col.header.first {
+  border-top-left-radius: 0.25rem;
+}
 .csv-col.header.last {
   border-top-right-radius: 0.25rem;
 }

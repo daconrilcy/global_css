@@ -62,6 +62,9 @@ $alternate-color: color(blue-light, very-light);
             width: 36px !important;
             border: none;
         }
+        &.first{
+            border-top-left-radius: $bs-border-radius;
+        }
         &.last{
             border-top-right-radius: $bs-border-radius;
         }
