@@ -90,7 +90,10 @@ $alternate-color: color(blue-light, very-light);
             border: none;
         }
         &.middle-row-before {
-            padding-bottom: 0.125rem;
+            border-bottom: 1px solid color(light-gray, base);
+            &.interm{
+                border-bottom: none;
+            }
         }
         &.blurred-border{
             &.last{
