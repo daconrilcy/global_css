@@ -369,6 +369,12 @@
 .csv-col.content.middle-row-before.interm {
   border-bottom: none;
 }
+.csv-col.content.middle-row-after {
+  border-top: 1px solid rgb(211, 218, 230);
+}
+.csv-col.content.middle-row-after.interm {
+  border-top: none;
+}
 .csv-col.content.blurred-border.last {
   background-color: transparent;
   background: linear-gradient(to bottom, rgb(233, 251, 250), rgba(215, 229, 241, 0));
