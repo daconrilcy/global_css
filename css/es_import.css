@@ -311,6 +311,7 @@
   border-color: rgb(0, 119, 204);
   border-style: dashed;
   border-width: 1px;
+  padding: 2px;
 }
 .csv-col.header {
   background-color: rgb(0, 102, 204);
@@ -376,8 +377,11 @@
   text-align: center;
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
-  border: none !important;
+  border-top: 1px dashed rgba(0, 119, 204, 0.2);
+  border-bottom: 1px dashed rgba(0, 119, 204, 0.2);
   box-shadow: none !important;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
 }
 .csv-col.content.middle-row-before {
   border-bottom: 1px solid rgb(211, 218, 230);

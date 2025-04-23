@@ -43,6 +43,7 @@ $alternate-color: color(blue-light, very-light);
         border-color: color(blue-primary, base);
         border-style: dashed;
         border-width: 1px;
+        padding:2px;
     }
     &.header{
         @include apply-style($header-preview-style);
@@ -104,8 +105,11 @@ $alternate-color: color(blue-light, very-light);
             text-align: center;
             padding-top: 0.125rem;
             padding-bottom: 0.125rem;
-            border: none !important;
+            border-top: 1px dashed rgb(0 119 204 / 20%);
+            border-bottom: 1px dashed rgb(0 119 204 / 20%);
             box-shadow: none !important;
+            padding-top: 0.125rem;
+            padding-bottom: 0.125rem;
         }
         &.middle-row-before {
             border-bottom: $cells-border;
