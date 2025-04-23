@@ -384,9 +384,11 @@
 }
 .csv-col.content.last-row {
   border-bottom: 1px solid rgb(211, 218, 230);
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
 }
 .csv-col.content.last-col {
   border-right: 1px solid rgb(211, 218, 230);
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
 }
 .csv-col.content.center-col-before {
   border-right: 1px solid rgb(211, 218, 230);
@@ -397,6 +399,10 @@
 }
 .csv-col.content.middle-row-after.interm {
   border-top: none;
+}
+.csv-col.content.middle-row {
+  box-shadow: none !important;
+  border: none !important;
 }
 .csv-col.content.blurred-border.last {
   background-color: transparent;
