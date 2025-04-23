@@ -112,9 +112,11 @@ $alternate-color: color(blue-light, very-light);
         }
         &.last-row{
             border-bottom: $cells-border;
+            box-shadow: $cells-shadow;
         }
         &.last-col{
             border-right: $cells-border;
+            box-shadow: $cells-shadow;
         }
         &.center-col-before{
             border-right: $cells-border;
@@ -125,6 +127,10 @@ $alternate-color: color(blue-light, very-light);
             &.interm{
                 border-top: none;
             }
+        }
+        &.middle-row{
+            box-shadow: none !important;
+            border: none !important
         }
         &.blurred-border{
             &.last{
