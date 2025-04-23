@@ -364,7 +364,8 @@
   color: rgb(0, 119, 204);
   text-align: center;
   width: 36px !important;
-  box-shadow: none;
+  box-shadow: none !important;
+  border: none !important;
 }
 .csv-col.content.nocontent {
   background: None;
@@ -375,7 +376,8 @@
   text-align: center;
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
-  border: none;
+  border: none !important;
+  box-shadow: none !important;
 }
 .csv-col.content.middle-row-before {
   border-bottom: 1px solid rgb(211, 218, 230);

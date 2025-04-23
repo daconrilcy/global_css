@@ -92,7 +92,8 @@ $alternate-color: color(blue-light, very-light);
             color: color(blue-primary, base);
             text-align: center;
             width: 36px !important;
-            box-shadow: none;
+            box-shadow: none !important;
+            border: none !important;
         }
         &.nocontent{
             background: None;
@@ -103,7 +104,8 @@ $alternate-color: color(blue-light, very-light);
             text-align: center;
             padding-top: 0.125rem;
             padding-bottom: 0.125rem;
-            border: none;
+            border: none !important;
+            box-shadow: none !important;
         }
         &.middle-row-before {
             border-bottom: $cells-border;
