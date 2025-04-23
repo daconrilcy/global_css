@@ -11,7 +11,7 @@
     }
     .csv-content-data{
         background: None;
-        box-shadow: $default-card-shadow;
+        // box-shadow: $default-card-shadow;
         font-size: 0.9rem;
     }
     .csv-separator{
@@ -46,9 +46,12 @@ $alternate-color: color(blue-light, very-light);
     }
     &.header{
         @include apply-style($header-preview-style);
-        border-left: 1px solid color(light-gray, base);
-        border-right: 1px solid color(light-gray, base);
+        border-left: $cells-border;
         z-index: 100;
+        &.center-col-before{
+            box-shadow: $cells-shadow;
+            border-right: $cells-border;
+        }
         &.interm{
             background-color: transparent;
             border-bottom:None;
@@ -59,10 +62,15 @@ $alternate-color: color(blue-light, very-light);
             width: 36px !important;
             border: none;
         }
+        &.last{
+            border-top-right-radius: $bs-border-radius;
+        }
+        &.last-col{
+            border-right: $cells-border;
+        }
     }
     &.content{
-        border-left: 1px solid color(light-gray, base);
-        border-right: 1px solid color(light-gray, base);
+        border-left: $cells-border;
         background-color: white;
 
         &.csv-index-col{
@@ -95,15 +103,25 @@ $alternate-color: color(blue-light, very-light);
             border: none;
         }
         &.middle-row-before {
-            border-bottom: 1px solid color(light-gray, base);
-            box-shadow: $default-card-shadow;
+            border-bottom: $cells-border;
+            box-shadow: $cells-shadow;
             &.interm{
                 border-bottom: none;
                 box-shadow: none;
             }
         }
+        &.last-row{
+            border-bottom: $cells-border;
+        }
+        &.last-col{
+            border-right: $cells-border;
+        }
+        &.center-col-before{
+            border-right: $cells-border;
+            box-shadow: $cells-shadow;
+        }
         &.middle-row-after{
-            border-top: 1px solid color(light-gray, base);
+            border-top: $cells-border;
             &.interm{
                 border-top: none;
             }
