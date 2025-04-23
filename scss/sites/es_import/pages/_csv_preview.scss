@@ -108,7 +108,7 @@ $alternate-color: color(blue-light, very-light);
             padding-bottom: 0.25rem;
             border-top: 1px dashed rgb(0 119 204 / 20%) !important;
             box-shadow: none !important;
-            &.last-row, .middle-row-before{
+            &.last-row, &.middle-row-before{
                 border-bottom: 1px dashed rgb(0 119 204 / 20%) !important;
             }
         }
