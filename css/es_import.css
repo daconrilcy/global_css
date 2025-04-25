@@ -578,7 +578,7 @@ body {
 }
 
 .csv-table {
-  border-collapse: separate; /* si collapse pose souci avec sticky */
+  border-collapse: collapse; /* si collapse pose souci avec sticky */
   border-spacing: 0;
   margin: 0;
   padding: 0;
