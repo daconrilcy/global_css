@@ -13,7 +13,10 @@
   th, td {
       padding: 8px;
       text-align: left;
-      /* autres styles communs aux cellules (police, couleur texte) */
+      max-width: 150px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
   }
 
   thead th {
