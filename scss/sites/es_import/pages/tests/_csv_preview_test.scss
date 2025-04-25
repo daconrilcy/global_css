@@ -1,26 +1,97 @@
 .csv-table-viewport {
   width: 100vw;
-  max-width: 1200px; // largeur visible ~12 colonnes (ajuste selon la taille de tes colonnes)
+  max-width: 1200px;
   min-width: 0;
   overflow-x: auto;
   overflow-y: hidden;
   position: fixed;
-  top: 80px; // ou adapte selon ton header
+  top: 80px;
   left: 0;
   right: auto;
   margin-left: auto;
   margin-right: auto;
   z-index: 10;
   background: #f8f9fa;
-  height: 540px; // hauteur fixe du viewport
+  height: 540px;
   display: flex;
   align-items: flex-start;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   border-radius: 0.5rem;
+  position: relative;
 }
 
-// Optionnel : barre d'ombre pour indiquer qu'on peut scroller
+.csv-table-viewport button.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: auto;
+}
+.csv-table-viewport:hover button.scroll-btn {
+  opacity: 0.7;
+}
+.csv-table-viewport button#scrollLeft {
+  left: 0;
+}
+.csv-table-viewport button#scrollRight {
+  right: 0;
+}
+
+// Pagination bar fixée en bas
+#chunkBarFixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(250,250,255,0.98);
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.07);
+  z-index: 2000;
+  text-align: center;
+  padding: 8px 0 6px 0;
+  border-top: 1px solid #e5e7eb;
+}
+#chunkBar {
+  display: flex;
 .csv-table-viewport {
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: auto;
+}
+.csv-table-viewport:hover button.scroll-btn {
+  opacity: 0.7;
+}
+.csv-table-viewport button#scrollLeft {
+  left: 0;
+}
+.csv-table-viewport button#scrollRight {
+  right: 0;
+}
+
+// Pagination bar fixée en bas
+#chunkBarFixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(250,250,255,0.98);
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.07);
+  z-index: 2000;
+  text-align: center;
+  padding: 8px 0 6px 0;
+  border-top: 1px solid #e5e7eb;
+}
+#chunkBar {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+#chunkBar button {
+  min-width: 2.2rem;
+  margin: 0 0.1rem;
+}
+
   scrollbar-color: #bfc9d1 #f8f9fa;
   scrollbar-width: thin;
 }
