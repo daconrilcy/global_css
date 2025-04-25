@@ -67,12 +67,17 @@ body {
   
 }
 
-.csv-table th {
+.csv-table thead {
   position: sticky;
   top: 0;
   z-index: 10;
-  background-color: #f8fafc;
-  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+  background: #f8fafc;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2); // ✅ ombre propre
+}
+
+.csv-table th {
+  background: #f8fafc;
+  font-weight: bold;
   border-bottom: 2px solid #d1d5db;
 }
 

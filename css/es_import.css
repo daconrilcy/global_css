@@ -600,12 +600,17 @@ body {
   padding: 0;
 }
 
-.csv-table th {
+.csv-table thead {
   position: sticky;
   top: 0;
   z-index: 10;
-  background-color: #f8fafc;
+  background: #f8fafc;
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+}
+
+.csv-table th {
+  background: #f8fafc;
+  font-weight: bold;
   border-bottom: 2px solid #d1d5db;
 }
 
