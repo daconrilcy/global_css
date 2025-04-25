@@ -1,19 +1,40 @@
 .csv-table-viewport {
   width: 100vw;
-  max-width: 100vw;
+  max-width: 1200px; // largeur visible ~12 colonnes (ajuste selon la taille de tes colonnes)
   min-width: 0;
   overflow-x: auto;
   overflow-y: hidden;
   position: fixed;
   top: 80px; // ou adapte selon ton header
   left: 0;
-  right: 0;
+  right: auto;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 10;
   background: #f8f9fa;
   height: 540px; // hauteur fixe du viewport
   display: flex;
   align-items: flex-start;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-radius: 0.5rem;
 }
+
+// Optionnel : barre d'ombre pour indiquer qu'on peut scroller
+.csv-table-viewport {
+  scrollbar-color: #bfc9d1 #f8f9fa;
+  scrollbar-width: thin;
+}
+.csv-table-viewport::-webkit-scrollbar {
+  height: 10px;
+}
+.csv-table-viewport::-webkit-scrollbar-thumb {
+  background: #bfc9d1;
+  border-radius: 4px;
+}
+.csv-table-viewport::-webkit-scrollbar-track {
+  background: #f8f9fa;
+}
+
 
 .csv-table-wrapper {
   min-width: 600px;
