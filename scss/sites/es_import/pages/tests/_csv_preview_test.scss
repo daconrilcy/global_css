@@ -70,9 +70,20 @@ body {
 .csv-table th {
   position: sticky;
   top: 0;
-  z-index: 10;
-  background-color: #f8fafc;
+  z-index: 2;
+  background: #f8fafc;
+  font-weight: bold;
   border-bottom: 2px solid #d1d5db;
+}
+
+.csv-table thead::after {
+  content: "";
+  position: sticky;
+  top: 35px; /* hauteur approx. des th */
+  display: block;
+  height: 10px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.15), transparent);
+  z-index: 1;
 }
 
 
