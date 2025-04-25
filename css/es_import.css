@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #content {
   margin-top: 3rem;
   padding: 1rem 2rem;
@@ -531,234 +532,76 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   background-color: rgb(220, 226, 238);
 }
 
-.csv-table-viewport {
+/* Zone conteneur */
+.csv-container {
+  height: calc(100vh - 50px); /* hauteur totale moins la pagination */
+  overflow: auto; /* défilement horizontal et vertical si nécessaire */
+  position: relative; /* contexte pour positionner les boutons absolus */
+  /* Zone table */
+  /* Exemples de largeurs de colonnes (optionnel) */
+  /* Boutons de défilement */
+}
+.csv-container table {
   width: 100%;
-  min-width: 0;
-  overflow-x: auto;
-  overflow-y: hidden;
-  position: relative;
-  background: #f8f9fa;
-  height: 540px;
-  display: flex;
-  align-items: flex-start;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  border-radius: 0.5rem;
+  border-collapse: collapse;
 }
-
-.csv-table-wrapper > table {
-  min-width: max-content;
+.csv-container th, .csv-container td {
+  padding: 8px;
+  text-align: left;
+  /* autres styles communs aux cellules (police, couleur texte) */
 }
-
-.csv-table-viewport button.scroll-btn {
-  position: absolute;
+.csv-container thead th {
+  position: sticky;
   top: 0;
-  width: 25px;
-  height: 100%;
-  z-index: 100;
-  opacity: 0;
-  transition: opacity 0.3s, background 0.2s;
-  pointer-events: auto;
-  border: none;
-  background: transparent;
-  color: #444;
-  font-size: 1.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
+  z-index: 1;
+  background: #fff; /* fond pour couvrir le contenu défilant derrière */
 }
-
-.csv-table-viewport:hover button.scroll-btn,
-.csv-table-viewport .scroll-btn.active {
-  opacity: 0.7;
-}
-
-.csv-table-viewport button#scrollLeft {
-  left: 0;
-  border-radius: 0.5rem 0 0 0.5rem;
-}
-
-.csv-table-viewport button#scrollRight {
-  right: 0;
-  border-radius: 0 0.5rem 0.5rem 0;
-}
-
-.csv-table-viewport button.scroll-btn:hover {
-  background: rgba(120, 120, 140, 0.08);
-  opacity: 1;
-}
-
-.csv-table-viewport button.scroll-btn {
+.csv-container .scroll-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 100;
-  opacity: 0;
-  transition: opacity 0.3s;
-  pointer-events: auto;
-}
-
-.csv-table-viewport:hover button.scroll-btn {
-  opacity: 0.7;
-}
-
-.csv-table-viewport button#scrollLeft {
-  left: 0;
-}
-
-.csv-table-viewport button#scrollRight {
-  right: 0;
-}
-
-#chunkBarFixed {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(250, 250, 255, 0.98);
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.07);
-  z-index: 2000;
+  width: 30px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
   text-align: center;
-  padding: 8px 0 6px 0;
-  border-top: 1px solid #e5e7eb;
-}
-
-#chunkBar {
-  display: flex;
-  scrollbar-color: #bfc9d1 #f8f9fa;
-  scrollbar-width: thin;
-}
-#chunkBar .csv-table-viewport {
-  opacity: 0;
-  transition: opacity 0.3s;
-  pointer-events: auto;
-}
-#chunkBar .csv-table-viewport:hover button.scroll-btn {
-  opacity: 0.7;
-}
-#chunkBar .csv-table-viewport button#scrollLeft {
-  left: 0;
-}
-#chunkBar .csv-table-viewport button#scrollRight {
-  right: 0;
-}
-#chunkBar #chunkBarFixed {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(250, 250, 255, 0.98);
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.07);
-  z-index: 2000;
-  text-align: center;
-  padding: 8px 0 6px 0;
-  border-top: 1px solid #e5e7eb;
-}
-#chunkBar #chunkBar {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-}
-#chunkBar #chunkBar button {
-  min-width: 2.2rem;
-  margin: 0 0.1rem;
-}
-
-.csv-table-viewport::-webkit-scrollbar {
-  height: 10px;
-}
-
-.csv-table-viewport::-webkit-scrollbar-thumb {
-  background: #bfc9d1;
-  border-radius: 4px;
-}
-
-.csv-table-viewport::-webkit-scrollbar-track {
-  background: #f8f9fa;
-}
-
-.csv-table-wrapper {
-  min-width: 600px;
-  width: max-content;
-  background: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.csv-table {
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
-}
-.csv-table th, .csv-table td {
-  padding: 0.75rem 1rem;
-  font-size: 0.97rem;
-  border-bottom: 1px solid #e5e7eb;
-  border-right: 1px solid #f3f4f6;
-  background: #fff;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.csv-table th {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  background: #f8fafc;
-  font-weight: 500;
-  box-shadow: 0 2px 2px -2px #e5e7eb;
+  line-height: 30px;
+  border-radius: 3px;
   cursor: pointer;
-  user-select: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  z-index: 10;
 }
-.csv-table tr:last-child td {
-  border-bottom: none;
+.csv-container .scroll-button.left {
+  left: 5px; /* flèche gauche */
 }
-
-.csv-table-body-scroll {
-  display: block;
-  width: 100%;
-  max-height: 400px;
-  min-height: 200px;
-  overflow-y: auto;
-  overflow-x: auto;
-  width: 100%;
+.csv-container .scroll-button.right {
+  right: 5px; /* flèche droite */
 }
-
-.csv-table-body-scroll table {
-  width: 100%;
-  margin-bottom: 0;
+.csv-container:hover .scroll-button {
+  opacity: 0.8; /* visible au survol du conteneur */
+  pointer-events: auto;
 }
 
-.csv-pagination-bar {
+/* Zone pagination */
+.pagination-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  border-top: 1px solid #e0e0e0;
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.03);
-  background: #fff;
-}
-.csv-pagination-bar .pagination {
-  flex-wrap: wrap;
+  height: 50px;
+  line-height: 50px; /* centre verticalement le texte/les liens */
+  background: #eee;
+  text-align: center;
+  /* autres styles du bandeau (couleur de texte, bordure éventuelle) */
 }
 
-@media (max-width: 992px) {
-  .csv-table th, .csv-table td {
-    font-size: 0.92rem;
-    padding: 0.5rem 0.5rem;
-  }
-  .csv-table-body-scroll {
-    max-height: 32vh;
-  }
-}
-@media (max-width: 600px) {
-  .csv-table-body-scroll {
-    min-height: 120px;
-    max-height: 24vh;
-  }
-  .csv-table th, .csv-table td {
-    font-size: 0.85rem;
-    padding: 0.35rem 0.3rem;
-  }
+.pagination-bar a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #000;
+  /* autres styles pour les liens de pagination */
 }
 
 /*# sourceMappingURL=es_import.css.map */
