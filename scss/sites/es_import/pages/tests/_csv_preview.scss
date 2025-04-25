@@ -1,0 +1,69 @@
+// Style inspiré d'une table moderne avec entête sticky et scroll horizontal/vertical responsive
+.csv-table-responsive {
+  width: 100%;
+  height: 60vh;
+  min-height: 320px;
+  overflow-x: auto;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  position: relative;
+}
+.csv-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  th, td {
+    padding: 0.75rem 1rem;
+    font-size: 0.97rem;
+    border-bottom: 1px solid #e5e7eb;
+    border-right: 1px solid #f3f4f6;
+    background: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #f8fafc;
+    font-weight: 500;
+    box-shadow: 0 2px 2px -2px #e5e7eb;
+    cursor: pointer;
+    user-select: none;
+  }
+  tr:last-child td {
+    border-bottom: none;
+  }
+}
+
+// Pagination bar fixée en bas
+.csv-pagination-bar {
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.03);
+  background: #fff;
+  .pagination {
+    flex-wrap: wrap;
+  }
+}
+
+// Responsive
+@media (max-width: 992px) {
+  .csv-table th, .csv-table td {
+    font-size: 0.92rem;
+    padding: 0.5rem 0.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .csv-table-responsive {
+    min-height: 180px;
+    height: 40vh;
+  }
+  .csv-table th, .csv-table td {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.3rem;
+  }
+}
