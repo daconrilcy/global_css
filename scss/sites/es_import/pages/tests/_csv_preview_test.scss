@@ -55,7 +55,9 @@
 }
 
 .csv-table-body-scroll {
-  max-height: 48vh; // Ajuste selon le besoin
+  display: block;
+  width: 100%;
+  max-height: 400px; // ajuste la hauteur des valeurs visibles
   min-height: 200px;
   overflow-y: auto;
   overflow-x: auto;
