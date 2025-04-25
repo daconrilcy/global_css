@@ -531,4 +531,46 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   background-color: rgb(220, 226, 238);
 }
 
+.csv-table-responsive {
+  overflow-x: auto;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.csv-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.csv-table th, .csv-table td {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  white-space: nowrap;
+}
+.csv-table thead.sticky-top {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 2;
+}
+
+.csv-pagination-bar {
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.03);
+}
+.csv-pagination-bar .pagination {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .csv-table th, .csv-table td {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.5rem;
+  }
+  .csv-pagination-bar {
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+  }
+}
+
 /*# sourceMappingURL=es_import.css.map */
