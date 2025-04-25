@@ -1,78 +1,86 @@
-/* Zone conteneur */
 .csv-container {
-  height: calc(100vh - 50px);  /* hauteur totale moins la pagination */
-  overflow: auto;             /* défilement horizontal et vertical si nécessaire */
-  position: relative;         /* contexte pour positionner les boutons absolus */
-
-  /* Zone table */
-  table {
-      width: 100%;
-      border-collapse: collapse;
-  }
-
-  th, td {
-      padding: 8px;
-      text-align: left;
-      max-width: 150px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-  }
-
-  thead th {
-      position: sticky;
-      top: 0;
-      z-index: 1;
-      background: #fff;  /* fond pour couvrir le contenu défilant derrière */
-  }
-
-  /* Exemples de largeurs de colonnes (optionnel) */
-  // .col1, .col2, .col3 { min-width: 150px; }
-
-  /* Boutons de défilement */
-  .scroll-button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 30px;
-      height: 30px;
-      background: rgba(0, 0, 0, 0.5);
-      color: #fff;
-      text-align: center;
-      line-height: 30px;
-      border-radius: 3px;
-      cursor: pointer;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s;
-      z-index: 10;
-      
-      &.left  { left: 5px;  /* flèche gauche */ }
-      &.right { right: 5px; /* flèche droite */ }
-  }
-
-  &:hover .scroll-button {
-      opacity: 0.8;        /* visible au survol du conteneur */
-      pointer-events: auto;
-  }
+  position: relative;
+  overflow: auto;
+  background: #ffffff;
+  padding-bottom: 60px; /* pour que la pagination ne masque pas les dernières lignes */
 }
 
-/* Zone pagination */
-.pagination-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+.csv-table {
   width: 100%;
-  height: 50px;
-  line-height: 50px;   /* centre verticalement le texte/les liens */
-  background: #eee;
-  text-align: center;
-  /* autres styles du bandeau (couleur de texte, bordure éventuelle) */
+  border-collapse: collapse;
 }
 
-.pagination-bar a {
-  margin: 0 5px;
-  text-decoration: none;
-  color: #000;
-  /* autres styles pour les liens de pagination */
+.csv-table th,
+.csv-table td {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+}
+
+.csv-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #f8fafc;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+/* Lignes paires/impaires */
+.csv-table tbody tr:nth-child(even) {
+  background: #e6f0ff; /* bleu clair */
+}
+.csv-table tbody tr:nth-child(odd) {
+  background: #ffffff; /* blanc */
+}
+
+/* Pagination */
+.pagination-bar {
+  height: 50px;
+  background: #fafafa;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.07);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Scroll boutons */
+.scroll-button {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  color: #444;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.csv-container:hover .scroll-button {
+  pointer-events: auto;
+}
+
+.scroll-button.left {
+  left: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.scroll-button.right {
+  right: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
