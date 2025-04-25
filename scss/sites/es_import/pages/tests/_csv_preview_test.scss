@@ -1,12 +1,13 @@
 .csv-container {
   position: relative;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: auto;
   background: #ffffff;
-  padding-bottom: 60px; /* pour que la pagination ne masque pas les dernières lignes */
+  padding-bottom: 60px;
 }
 
 .csv-table {
-  width: 100%;
+  min-width: max-content;
   border-collapse: collapse;
 }
 
@@ -31,56 +32,8 @@
 
 /* Lignes paires/impaires */
 .csv-table tbody tr:nth-child(even) {
-  background: #e6f0ff; /* bleu clair */
+  background: #e6f0ff;
 }
 .csv-table tbody tr:nth-child(odd) {
-  background: #ffffff; /* blanc */
-}
-
-/* Pagination */
-.pagination-bar {
-  height: 50px;
-  background: #fafafa;
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.07);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  border-top: 1px solid #e5e7eb;
-}
-
-/* Scroll boutons */
-.scroll-button {
-  position: absolute;
-  top: 0;
-  width: 40px;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.05);
-  color: #444;
-  font-size: 1.5rem;
-  border: none;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-  pointer-events: none;
-}
-
-.csv-container:hover .scroll-button {
-  pointer-events: auto;
-}
-
-.scroll-button.left {
-  left: 0;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-}
-
-.scroll-button.right {
-  right: 0;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  background: #ffffff;
 }
