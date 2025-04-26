@@ -7112,6 +7112,12 @@ form.dropzone {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.glyphicon.glyphicon-left::before {
+  content: "u25C0";
+}
+.glyphicon.glyphicon-right::before {
+  content: "u25B6";
+}
 .glyphicon.glyphicon-refresh::before {
   content: "\e031";
 }

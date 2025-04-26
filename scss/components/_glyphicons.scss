@@ -17,6 +17,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  &.glyphicon-left::before{
+    content: "\u25C0"
+  }
+
+  &.glyphicon-right::before{
+    content: "\u25B6"
+  }
+
   &.glyphicon-refresh::before {
     content: "\e031";
   }

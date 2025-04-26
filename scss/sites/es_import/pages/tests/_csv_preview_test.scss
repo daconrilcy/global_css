@@ -1,4 +1,7 @@
 @use '../../../../abstracts/variables' as *;
+@use '../../../../abstracts/functions' as *;
+@use '../../../../abstracts/colors' as *;
+@use '../../variables/styles' as *;
 
 .page-title {
   margin: 1rem 0;
@@ -9,7 +12,7 @@
   display: flex;
   height: calc(100vh - 100px);
   gap: 10px;
-  padding: 0 10px;
+  padding: 0 1rem;
 }
 
 .file-list {
@@ -30,26 +33,25 @@
   flex-direction: column;
   min-width: 0;
   position: relative;
-  background: #fff;
-  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  background: $bs-body-bg;
 
   body.dark-mode & {
-    background: #1c1c1c;
+    background: $default-dark-mode-background;
   }
 }
 
 .csv-container {
   position: relative;
   flex: 1;
-  background: #f1f3f5;
+  background: $bs-body-bg;
   padding: 10px;
   overflow: hidden;
-  box-shadow: inset 7px 7px 8px rgba(0,0,0,0.20);
-  border-radius: calc($bs-border-radius * 2);
+  box-shadow: $cells-shadow-inset;
+  border-radius: $border-radius-preview;
 
   body.dark-mode & {
-    background: #2a2a2a;
-    box-shadow: inset 7px 7px 7px rgba(255,255,255,0.08);
+    background: $default-dark-mode-background;
+    box-shadow: $cells-shadow-inset;
   }
 }
 
@@ -73,7 +75,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    border: 1px solid #e5e7eb;
+    border: $cells-border;
     padding: 0.75rem 1rem;
     text-align: left;
   }
@@ -84,27 +86,25 @@
     z-index: 5;
     background: #f8fafc;
     font-weight: bold;
-    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
-    border-bottom: 2px solid #d1d5db;
+    box-shadow: $cells-shadow;
 
     body.dark-mode & {
       background: #2b2b2b;
-      border-bottom: 2px solid #444;
       color: #f0f0f0;
     }
    
   }
   thead th:first-child{
-    border-top-left-radius: calc($bs-border-radius * 2);
+    border-top-left-radius: $border-radius-preview;
   }
   thead th:last-child{
-    border-top-right-radius: calc($bs-border-radius * 2);
+    border-top-right-radius: $border-radius-preview;
   }
 
   tbody tr:nth-child(odd) {
-    background-color: #ffffff;
+    background-color: $bs-body-bg;
     body.dark-mode & {
-      background-color: #1f1f1f;
+      background-color:$default-dark-mode-background;
     }
   }
 
@@ -219,16 +219,14 @@
 .pagination-bar {
   height: 50px;
   background: #fafafa;
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.07);
+  box-shadow: $cells-shadow;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  border-top: 1px solid #e5e7eb;
 
   body.dark-mode & {
     background: #1c1c1c;
-    border-top: 1px solid #444;
   }
 }
 
@@ -285,8 +283,8 @@ body.dark-mode .pagination .page-item .page-link {
 }
 
 body.dark-mode .pagination .page-item.active .page-link {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: color(blue-primary, base);
+  border-color: color(blue-primary, base);
   color: #fff;
 }
 
