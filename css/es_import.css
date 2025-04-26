@@ -531,15 +531,6 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   background-color: rgb(220, 226, 238);
 }
 
-body {
-  background: #f8f9fa;
-  margin: 0;
-}
-body.dark-mode {
-  background: #121212;
-  color: #eee;
-}
-
 .page-title {
   margin: 1rem 0;
   text-align: center;
@@ -581,7 +572,6 @@ body.dark-mode .csv-zone {
   overflow: auto;
   min-width: 0;
   background: #fff;
-  padding-bottom: 70px;
   padding-top: 0;
 }
 body.dark-mode .csv-container {

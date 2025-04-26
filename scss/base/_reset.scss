@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/colors" as *;
 
 *,
 *::before,
@@ -22,6 +23,10 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  &.dark-mode {
+    background: $default-dark-mode-background;
+    color: #eee;
+  }
 }
 
 img, picture, video, canvas, svg {
