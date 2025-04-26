@@ -226,38 +226,60 @@ body {
   list-style: none;
   padding-left: 0;
   gap: 0.25rem;
+
+  .page-item {
+    display: flex;
+
+    .page-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 0.75rem;
+      margin: 0 2px;
+      background: #fff;
+      border: 1px solid #dee2e6;
+      border-radius: 0.25rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background: #e2e6ea;
+      }
+    }
+
+    &.active .page-link {
+      background-color: #007bff;
+      color: #fff;
+      border-color: #007bff;
+    }
+
+    &.disabled .page-link {
+      opacity: 0.5;
+      pointer-events: none;
+      background-color: #e9ecef;
+    }
+  }
 }
 
-.page-item {
-  display: flex;
-
-  &.disabled .page-link {
-    opacity: 0.5;
-    pointer-events: none;
-    background-color: #e9ecef;
-  }
-
-  &.active .page-link {
-    background-color: #007bff;
-    color: #fff;
-    border-color: #007bff;
-  }
-}
-
-.page-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem 0.75rem;
-  margin: 0 2px;
-  background: #fff;
-  border: 1px solid #dee2e6;
-  border-radius: 0.25rem;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: background-color 0.2s;
+/* Mode sombre */
+body.dark-mode .pagination .page-item .page-link {
+  background: #1e1e1e;
+  color: #eee;
+  border: 1px solid #444;
 
   &:hover {
-    background: #e2e6ea;
+    background: #333;
   }
+}
+
+body.dark-mode .pagination .page-item.active .page-link {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+}
+
+body.dark-mode .pagination .page-item.disabled .page-link {
+  background-color: #2a2a2a;
+  border-color: #555;
 }
