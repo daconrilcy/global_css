@@ -573,9 +573,11 @@ body.dark-mode .csv-zone {
   min-width: 0;
   background: #fff;
   padding-top: 0;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.15); /* << Incrustation */
 }
 body.dark-mode .csv-container {
   background: #1c1c1c;
+  box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.1); /* Plus doux en dark */
 }
 
 .csv-table {
