@@ -617,10 +617,10 @@ body.dark-mode .csv-table thead th {
   border-bottom: 2px solid #444;
   color: #f0f0f0;
 }
-.csv-table thead th :first-child {
+.csv-table thead th:first-child {
   border-top-left-radius: 0.5rem;
 }
-.csv-table thead th :last-child {
+.csv-table thead th:last-child {
   border-top-right-radius: 0.5rem;
 }
 .csv-table tbody tr:nth-child(odd) {
