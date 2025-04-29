@@ -19,7 +19,7 @@
       position: relative;
       flex: 1;
       background: $bs-body-bg;
-      padding: 1rem 0 0 1rem; //necessaire pour faire apparaitre l'inset shadow
+      padding: 0.75rem 0 0 0.75rem; //necessaire pour faire apparaitre l'inset shadow
       overflow: hidden;
       box-shadow: $default-cell-shadow-inset;
       border-radius: $border-radius-preview;

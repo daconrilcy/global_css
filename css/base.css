@@ -7474,6 +7474,8 @@ select:hover {
   padding: 0.75rem 1rem;
   border-bottom: none;
   border-top: none;
+  border-right: 1px solid rgb(211, 218, 230);
+  border-left: 1px solid rgb(211, 218, 230);
 }
 body.dark-mode .csv-table thead th {
   background: hsl(0, 0%, 15%);
