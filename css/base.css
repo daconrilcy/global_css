@@ -7262,7 +7262,7 @@ body.dark-mode .scroll-lateral-button {
   opacity: 1;
 }
 
-.csv-container:hover .scroll-button {
+.csv-container:hover scroll-lateral-button {
   pointer-events: auto;
 }
 
