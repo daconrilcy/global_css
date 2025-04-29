@@ -48,7 +48,6 @@
   overflow: hidden;
   box-shadow: $default-cell-shadow-inset;
   border-radius: $border-radius-preview;
-  margin-bottom: 1rem;
 
   body.dark-mode & {
     background: $dark-background-color;
@@ -100,28 +99,24 @@
     color: $dark-front-color;
   }
   &.left{
-    left: 0.5rem;
+    left: 0;
     border-radius: 8px 0 0 8px;
+    &:hover{
+      opacity: 1;
+    }
   }
   &.right{
-    right: 0.5rem;
+    right: 1rem;
     border-radius: 0 8px 8px 0;
+    &:hover{
+      opacity: 1;
+    }
   }
 }
 
 .csv-container:hover .scroll-button {
   pointer-events: auto;
 }
-
-// .scroll-button.left {
-//   left: 0;
-//   border-radius: 8px 0 0 8px;
-// }
-
-// .scroll-button.right {
-//   right: 0;
-//   border-radius: 0 8px 8px 0;
-// }
 
 /* --- Dark Mode Toggle --- */
 .dark-mode-toggle {
@@ -219,6 +214,7 @@
       font-size: 0.9rem;
       cursor: pointer;
       transition: background-color 0.2s;
+      box-shadow: $default-card-shadow;
 
       &:hover {
         background: #e2e6ea;

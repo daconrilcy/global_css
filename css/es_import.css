@@ -574,7 +574,6 @@ body.dark-mode .csv-zone {
   overflow: hidden;
   box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
-  margin-bottom: 1rem;
 }
 body.dark-mode .csv-container {
   background: #121212;
@@ -623,12 +622,18 @@ body.dark-mode .scroll-button {
   color: #f0f0f0;
 }
 .scroll-button.left {
-  left: 0.5rem;
+  left: 0;
   border-radius: 8px 0 0 8px;
 }
+.scroll-button.left:hover {
+  opacity: 1;
+}
 .scroll-button.right {
-  right: 0.5rem;
+  right: 1rem;
   border-radius: 0 8px 8px 0;
+}
+.scroll-button.right:hover {
+  opacity: 1;
 }
 
 .csv-container:hover .scroll-button {
@@ -723,6 +728,7 @@ body.dark-mode .pagination-bar {
   font-size: 0.9rem;
   cursor: pointer;
   transition: background-color 0.2s;
+  box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25);
 }
 .pagination .page-item .page-link:hover {
   background: #e2e6ea;
