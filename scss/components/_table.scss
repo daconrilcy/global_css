@@ -77,6 +77,10 @@
         background-color: $dark-background-color;
       }
     }
+    tr{
+        border-bottom: none;
+        border-top: none;
+    }
 
     tr:nth-child(even) {
       background-color: color(blue-light, very-light);
