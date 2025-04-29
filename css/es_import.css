@@ -570,32 +570,30 @@ body.dark-mode .csv-zone {
   position: relative;
   flex: 1;
   background: #fff;
-  padding: 1.5rem;
+  padding: 1rem 0 0 1rem;
   overflow: hidden;
   box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
+  /* --- Wrapper pour effet d'incrustation --- */
 }
 body.dark-mode .csv-container {
   background: #121212;
   box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25);
 }
-
-.csv-table {
-  border-top-right-radius: 0.5rem;
-  border-top-left-radius: 0.5rem;
-}
-.csv-table thead th:first-child {
-  border-top-left-radius: 0.5rem;
-}
-.csv-table thead th:last-child {
-  border-top-right-radius: 0.5rem;
-}
-
-/* --- Nouveau wrapper pour effet d'incrustation --- */
-.csv-table-wrapper {
+.csv-container .csv-table-wrapper {
   overflow: auto;
   height: 100%;
   width: 100%;
+}
+.csv-container .csv-table-wrapper .csv-table {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+.csv-container .csv-table-wrapper .csv-table thead th:first-child {
+  border-top-left-radius: 0.5rem;
+}
+.csv-container .csv-table-wrapper .csv-table thead th:last-child {
+  border-top-right-radius: 0.5rem;
 }
 
 /* --- Boutons scroll --- */
