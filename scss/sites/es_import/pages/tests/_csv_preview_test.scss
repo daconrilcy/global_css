@@ -17,13 +17,13 @@
 
 .file-list {
   flex: 0 0 250px;
-  background: #fff;
-  box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+  background: $bs-body-bg;
+  box-shadow: $default-card-shadow;
   overflow-y: auto;
 
   body.dark-mode & {
-    background: #1e1e1e;
-    color: #ccc;
+    background:$dark-background-color-secondary;
+    color: $dark-front-color;
   }
 }
 
@@ -36,7 +36,7 @@
   background: $bs-body-bg;
 
   body.dark-mode & {
-    background: $default-dark-mode-background;
+    background: $dark-background-color;
   }
 }
 
@@ -44,14 +44,23 @@
   position: relative;
   flex: 1;
   background: $bs-body-bg;
-  padding: 10px;
+  padding: 1.5rem;
   overflow: hidden;
-  box-shadow: $cells-shadow-inset;
+  box-shadow: $default-cell-shadow;
   border-radius: $border-radius-preview;
 
   body.dark-mode & {
-    background: $default-dark-mode-background;
-    box-shadow: $cells-shadow-inset;
+    background: $dark-background-color;
+    box-shadow: $default-cell-shadow-inset;
+  }
+}
+
+.csv-table {
+  thead th:first-child{
+    border-top-left-radius: $border-radius-preview;
+  }
+  thead th:last-child{
+    border-top-right-radius: $border-radius-preview;
   }
 }
 
@@ -64,66 +73,14 @@
 }
 
 
-.csv-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  font-size: 0.9rem;
-  
-  th, td {
-    max-width: 150px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    border: $cells-border;
-    padding: 0.75rem 1rem;
-    text-align: left;
-  }
-
-  thead th {
-    position: sticky;
-    top: 0;
-    z-index: 5;
-    background: #f8fafc;
-    font-weight: bold;
-    box-shadow: $cells-shadow;
-
-    body.dark-mode & {
-      background: #2b2b2b;
-      color: #f0f0f0;
-    }
-   
-  }
-  thead th:first-child{
-    border-top-left-radius: $border-radius-preview;
-  }
-  thead th:last-child{
-    border-top-right-radius: $border-radius-preview;
-  }
-
-  tbody tr:nth-child(odd) {
-    background-color: $bs-body-bg;
-    body.dark-mode & {
-      background-color:$default-dark-mode-background;
-    }
-  }
-
-  tbody tr:nth-child(even) {
-    background-color: #e6f0ff;
-    body.dark-mode & {
-      background-color: #2a2a2a;
-    }
-  }
-}
-
 /* --- Boutons scroll --- */
 .scroll-button {
   position: absolute;
   top: 0;
-  width: 40px;
+  width: 5rem;
   height: 100%;
-  background: rgba(0, 0, 0, 0.05);
-  color: #444;
+  background: rgba(0, 0, 0, 0.15);
+  color: color(neutral-gray, base);
   font-size: 1.5rem;
   border: none;
   cursor: pointer;
@@ -136,8 +93,16 @@
   pointer-events: none;
 
   body.dark-mode & {
-    background: rgba(255, 255, 255, 0.08);
-    color: #eee;
+    background: rgba(255, 255, 255, 0.15);
+    color: $dark-front-color;
+  }
+  &.left{
+    left: 0;
+    border-radius: 8px 0 0 8px;
+  }
+  &.right{
+    right: 0;
+    border-radius: 0 8px 8px 0;
   }
 }
 
@@ -145,15 +110,15 @@
   pointer-events: auto;
 }
 
-.scroll-button.left {
-  left: 0;
-  border-radius: 8px 0 0 8px;
-}
+// .scroll-button.left {
+//   left: 0;
+//   border-radius: 8px 0 0 8px;
+// }
 
-.scroll-button.right {
-  right: 0;
-  border-radius: 0 8px 8px 0;
-}
+// .scroll-button.right {
+//   right: 0;
+//   border-radius: 0 8px 8px 0;
+// }
 
 /* --- Dark Mode Toggle --- */
 .dark-mode-toggle {
@@ -219,14 +184,14 @@
 .pagination-bar {
   height: 50px;
   background: #fafafa;
-  box-shadow: $cells-shadow;
+  box-shadow: $default-cell-shadow;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
 
   body.dark-mode & {
-    background: #1c1c1c;
+    background: $dark-background-color-secondary;
   }
 }
 
@@ -245,7 +210,7 @@
       justify-content: center;
       padding: 0.5rem 0.75rem;
       margin: 0 2px;
-      background: #fff;
+      background: $bs-body-bg;
       border: 1px solid #dee2e6;
       border-radius: 0.25rem;
       font-size: 0.9rem;
@@ -258,9 +223,9 @@
     }
 
     &.active .page-link {
-      background-color: #007bff;
-      color: #fff;
-      border-color: #007bff;
+      background-color: color(blue-primary, base);
+      color: $bs-body-bg;
+      border-color: color(blue-primary, base);
     }
 
     &.disabled .page-link {
@@ -273,7 +238,7 @@
 
 /* --- Pagination en Dark Mode --- */
 body.dark-mode .pagination .page-item .page-link {
-  background: #1e1e1e;
+  background: $dark-background-color-secondary;
   color: #eee;
   border: 1px solid #444;
 
@@ -289,6 +254,6 @@ body.dark-mode .pagination .page-item.active .page-link {
 }
 
 body.dark-mode .pagination .page-item.disabled .page-link {
-  background-color: #2a2a2a;
+  background-color: $dark-background-color-secondary;
   border-color: #555;
 }

@@ -1,0 +1,54 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+
+.csv-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.9rem;
+    
+    th, td {
+      max-width: $cells-max-width;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      border: $cell-border;
+      padding: 0.75rem 1rem;
+      text-align: left;
+    }
+  
+    thead th {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      background: #f8fafc;
+      font-weight: bold;
+      box-shadow: $default-cell-shadow;
+  
+      body.dark-mode & {
+        background: $dark-background-color-tertiary;
+        color: $dark-front-color;
+      }
+     
+    }
+    thead th:first-child{
+      border-top-left-radius: $bs-border-radius;
+    }
+    thead th:last-child{
+      border-top-right-radius: $bs-border-radius;
+    }
+  
+    tbody tr:nth-child(odd) {
+      background-color: $bs-body-bg;
+      body.dark-mode & {
+        background-color: $dark-background-color;
+      }
+    }
+  
+    tbody tr:nth-child(even) {
+      background-color: $bs-body-bg;
+      body.dark-mode & {
+        background-color: $dark-background-color-secondary;
+      }
+    }
+  }

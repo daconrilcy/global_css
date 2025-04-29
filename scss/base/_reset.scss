@@ -24,7 +24,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   &.dark-mode {
-    background: $default-dark-mode-background;
+    background: $dark-background-color;
     color: #eee;
   }
 }

@@ -379,20 +379,20 @@
   text-align: center;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  border-top: 2px dotted rgba(204, 0, 0, 0.2) !important;
+  border-top: 2px dotted rgba(204, 0, 0, 0.2);
   box-shadow: none !important;
 }
 .csv-col.content.nocontent.last-row {
-  border-bottom: 2px dotted rgba(204, 0, 0, 0.2) !important;
+  border-bottom: 2px dotted rgba(204, 0, 0, 0.2);
 }
 .csv-col.content.nocontent.middle-row-before {
-  border-bottom: 2px dotted rgba(204, 0, 0, 0.2) !important;
+  border-bottom: 2px dotted rgba(204, 0, 0, 0.2);
 }
 .csv-col.content.nocontent.middle-row {
-  border-left: 2px dotted rgba(204, 0, 0, 0.2) !important;
+  border-left: 2px dotted rgba(204, 0, 0, 0.2);
 }
 .csv-col.content.nocontent.last-col {
-  border-right: 2px dotted rgba(204, 0, 0, 0.2) !important;
+  border-right: 2px dotted rgba(204, 0, 0, 0.2);
 }
 .csv-col.content.middle-row-before {
   border-bottom: 1px solid rgb(211, 218, 230);
@@ -546,12 +546,12 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
 .file-list {
   flex: 0 0 250px;
   background: #fff;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25);
   overflow-y: auto;
 }
 body.dark-mode .file-list {
-  background: #1e1e1e;
-  color: #ccc;
+  background: #2a2a2a;
+  color: #f0f0f0;
 }
 
 .csv-zone {
@@ -570,14 +570,21 @@ body.dark-mode .csv-zone {
   position: relative;
   flex: 1;
   background: #fff;
-  padding: 10px;
+  padding: 1.5rem;
   overflow: hidden;
-  box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
 }
 body.dark-mode .csv-container {
   background: #121212;
   box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25);
+}
+
+.csv-table thead th:first-child {
+  border-top-left-radius: 0.5rem;
+}
+.csv-table thead th:last-child {
+  border-top-right-radius: 0.5rem;
 }
 
 /* --- Nouveau wrapper pour effet d'incrustation --- */
@@ -587,60 +594,14 @@ body.dark-mode .csv-container {
   width: 100%;
 }
 
-.csv-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  font-size: 0.9rem;
-}
-.csv-table th, .csv-table td {
-  max-width: 150px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  border: 1px solid rgb(211, 218, 230);
-  padding: 0.75rem 1rem;
-  text-align: left;
-}
-.csv-table thead th {
-  position: sticky;
-  top: 0;
-  z-index: 5;
-  background: #f8fafc;
-  font-weight: bold;
-  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.25);
-}
-body.dark-mode .csv-table thead th {
-  background: #2b2b2b;
-  color: #f0f0f0;
-}
-.csv-table thead th:first-child {
-  border-top-left-radius: 0.5rem;
-}
-.csv-table thead th:last-child {
-  border-top-right-radius: 0.5rem;
-}
-.csv-table tbody tr:nth-child(odd) {
-  background-color: #fff;
-}
-body.dark-mode .csv-table tbody tr:nth-child(odd) {
-  background-color: #121212;
-}
-.csv-table tbody tr:nth-child(even) {
-  background-color: #e6f0ff;
-}
-body.dark-mode .csv-table tbody tr:nth-child(even) {
-  background-color: #2a2a2a;
-}
-
 /* --- Boutons scroll --- */
 .scroll-button {
   position: absolute;
   top: 0;
-  width: 40px;
+  width: 5rem;
   height: 100%;
-  background: rgba(0, 0, 0, 0.05);
-  color: #444;
+  background: rgba(0, 0, 0, 0.15);
+  color: rgb(76, 80, 94);
   font-size: 1.5rem;
   border: none;
   cursor: pointer;
@@ -653,22 +614,20 @@ body.dark-mode .csv-table tbody tr:nth-child(even) {
   pointer-events: none;
 }
 body.dark-mode .scroll-button {
-  background: rgba(255, 255, 255, 0.08);
-  color: #eee;
+  background: rgba(255, 255, 255, 0.15);
+  color: #f0f0f0;
 }
-
-.csv-container:hover .scroll-button {
-  pointer-events: auto;
-}
-
 .scroll-button.left {
   left: 0;
   border-radius: 8px 0 0 8px;
 }
-
 .scroll-button.right {
   right: 0;
   border-radius: 0 8px 8px 0;
+}
+
+.csv-container:hover .scroll-button {
+  pointer-events: auto;
 }
 
 /* --- Dark Mode Toggle --- */
@@ -735,7 +694,7 @@ body.dark-mode .scroll-button {
   gap: 0.5rem;
 }
 body.dark-mode .pagination-bar {
-  background: #1c1c1c;
+  background: #2a2a2a;
 }
 
 .pagination {
@@ -764,9 +723,9 @@ body.dark-mode .pagination-bar {
   background: #e2e6ea;
 }
 .pagination .page-item.active .page-link {
-  background-color: #007bff;
+  background-color: rgb(0, 119, 204);
   color: #fff;
-  border-color: #007bff;
+  border-color: rgb(0, 119, 204);
 }
 .pagination .page-item.disabled .page-link {
   opacity: 0.5;
@@ -776,7 +735,7 @@ body.dark-mode .pagination-bar {
 
 /* --- Pagination en Dark Mode --- */
 body.dark-mode .pagination .page-item .page-link {
-  background: #1e1e1e;
+  background: #2a2a2a;
   color: #eee;
   border: 1px solid #444;
 }

@@ -47,11 +47,11 @@ $alternate-color: color(blue-light, very-light);
     }
     &.header{
         @include apply-style($header-preview-style);
-        border-left: $cells-border;
+        border-left: $cell-border;
         z-index: 100;
         &.center-col-before{
-            box-shadow: $cells-shadow;
-            border-right: $cells-border;
+            box-shadow: $default-cell-shadow;
+            border-right: $cell-border;
         }
         &.interm{
             background-color: transparent;
@@ -70,18 +70,18 @@ $alternate-color: color(blue-light, very-light);
             border-top-right-radius: $border-radius-preview;;
         }
         &.last-col{
-            border-right: $cells-border;
-            box-shadow: $cells-shadow;
+            border-right: $cell-border;
+            box-shadow: $default-cell-shadow;
         }
     }
     &.content{
-        border-left: $cells-border;
+        border-left: $cell-border;
         background-color: white;
 
         &.csv-index-col{
             font-weight: bold;
             text-align: center;
-            border-left: $cells-border;
+            border-left: $cell-border;
         }
         
         &.pair{
@@ -107,43 +107,43 @@ $alternate-color: color(blue-light, very-light);
             text-align: center;
             padding-top: 0.25rem;
             padding-bottom: 0.25rem;
-            border-top: $cells-border-dash;
+            border-top: $cell-border-dash;
             box-shadow: none !important;
             &.last-row {
-                border-bottom: $cells-border-dash;
+                border-bottom: $cell-border-dash;
             }
             &.middle-row-before{
-                border-bottom: $cells-border-dash;
+                border-bottom: $cell-border-dash;
             }
             &.middle-row{
-                border-left: $cells-border-dash;
+                border-left: $cell-border-dash;
             }
             &.last-col{
-                border-right: $cells-border-dash;
+                border-right: $cell-border-dash;
             }
         }
         &.middle-row-before {
-            border-bottom: $cells-border;
-            box-shadow: $cells-shadow;
+            border-bottom: $cell-border;
+            box-shadow: $default-cell-shadow;
             &.interm{
                 border-bottom: none;
                 box-shadow: none;
             }
         }
         &.last-row{
-            border-bottom: $cells-border;
-            box-shadow: $cells-shadow;
+            border-bottom: $cell-border;
+            box-shadow: $default-cell-shadow;
         }
         &.last-col{
-            border-right: $cells-border;
-            box-shadow: $cells-shadow;
+            border-right: $cell-border;
+            box-shadow: $default-cell-shadow;
         }
         &.center-col-before{
-            border-right: $cells-border;
-            box-shadow: $cells-shadow;
+            border-right: $cell-border;
+            box-shadow: $default-cell-shadow;
         }
         &.middle-row-after{
-            border-top: $cells-border;
+            border-top: $cell-border;
             &.interm{
                 border-top: none;
             }

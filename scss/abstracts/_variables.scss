@@ -6,6 +6,7 @@ $taille-texte: 1rem;
 $bs-gutter-x: 1.5rem;
 $bs-border-width: 2px;
 $bs-border-radius: 0.25rem;
+$cells-max-width: 20rem;
 
 // === Ombres ===
 $navbar-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
@@ -13,6 +14,12 @@ $navbar-shadow-inset: inset 0 1rem 1rem rgba(0, 0, 0, 0.1);
 $default-card-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25);
 $default-card-shadow-inset: inset 3px 3px 8px rgba(0, 0, 0, 0.25);
 $default-input-shadow-inset: inset 3px 3px 5px rgba(0, 0, 0, 0.25);
+$default-cell-shadow: 7px 7px 8px rgba(0, 0, 0, 0.25);
+$default-cell-shadow-inset: inset 7px 7px 8px rgba(0, 0, 0, 0.25);
+
+//=== Borders ===
+$cell-border:  1px solid rgb(211, 218, 230);
+$cell-border-dash: 2px dotted rgba(204, 0, 0, 0.2);
 
 // === Breakpoints (optionnel) ===
 $breakpoint-xs: 0;        // Extra small devices (portrait phones)
