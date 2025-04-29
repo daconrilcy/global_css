@@ -1,0 +1,45 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/functions' as *;
+
+/* --- Boutons de scroll lateral --- */
+.scroll-lateral-button {
+    position: absolute;
+    top: 0;
+    width: 5rem;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    color: color(neutral-gray, base);
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    pointer-events: none;
+  
+    body.dark-mode & {
+      background: rgba(255, 255, 255, 0.15);
+      color: $dark-front-color;
+    }
+    &.left{
+      left: 0;
+      border-radius: 8px 0 0 8px;
+      &:hover{
+        opacity: 1;
+      }
+    }
+    &.right{
+      right: 1rem;
+      border-radius: 0 8px 8px 0;
+      &:hover{
+        opacity: 1;
+      }
+    }
+}
+  
+.csv-container:hover .scroll-button {
+pointer-events: auto;
+}

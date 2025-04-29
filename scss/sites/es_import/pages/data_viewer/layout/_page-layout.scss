@@ -1,0 +1,13 @@
+@use '../../../../../abstracts/variables' as *;
+
+.page-title {
+    margin: 1rem 0;
+    text-align: center;
+}
+  
+.page-layout {
+    display: flex;
+    height: calc(100vh - 100px);
+    padding: 0 1rem;
+    box-shadow: $default-card-shadow;
+}
