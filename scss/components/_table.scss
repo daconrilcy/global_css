@@ -46,6 +46,11 @@
   }
 
   tbody {
+    tr{
+        border-bottom: none;
+        border-top: none;
+    }
+
     td {
       font-size: 0.85rem;
       max-width: $cells-max-width;
@@ -76,10 +81,6 @@
       @at-root body.dark-mode & {
         background-color: $dark-background-color;
       }
-    }
-    tr{
-        border-bottom: none;
-        border-top: none;
     }
 
     tr:nth-child(even) {

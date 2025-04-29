@@ -7498,6 +7498,10 @@ body.dark-mode .csv-table thead th {
 .csv-table thead th:last-child {
   border-top-right-radius: 0.25rem;
 }
+.csv-table tbody tr {
+  border-bottom: none;
+  border-top: none;
+}
 .csv-table tbody td {
   font-size: 0.85rem;
   max-width: 10rem;
@@ -7529,10 +7533,6 @@ body.dark-mode .csv-table tbody tr:nth-child(odd) {
   background-color: hsl(0, 0%, 5%);
 }
 
-.csv-table tbody tr {
-  border-bottom: none;
-  border-top: none;
-}
 .csv-table tbody tr:nth-child(even) {
   background-color: rgb(233, 251, 250);
 }
