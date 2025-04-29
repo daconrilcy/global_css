@@ -22,7 +22,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 body.dark-mode {
-  background: #121212;
+  background: hsl(0, 0%, 5%);
   color: #eee;
 }
 
@@ -7360,7 +7360,7 @@ body.dark-mode .scroll-lateral-button {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 body.dark-mode .pagination .page-item .page-link {
-  background: #2a2a2a;
+  background: hsl(0, 0%, 10%);
   color: #eee;
   border: 1px solid #444;
 }
@@ -7383,7 +7383,7 @@ body.dark-mode .pagination .page-item.active .page-link {
   background-color: #e9ecef;
 }
 body.dark-mode .pagination .page-item.disabled .page-link {
-  background-color: #2a2a2a;
+  background-color: hsl(0, 0%, 10%);
   border-color: #555;
 }
 
@@ -7462,16 +7462,6 @@ select:hover {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
-  font-size: 0.9rem;
-}
-.csv-table th, .csv-table td {
-  max-width: 20rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  border: 1px solid rgb(211, 218, 230);
-  padding: 0.75rem 1rem;
-  text-align: left;
 }
 .csv-table thead th {
   position: sticky;
@@ -7480,10 +7470,27 @@ select:hover {
   background: #f8fafc;
   font-weight: bold;
   box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.25);
+  font-size: 0.95rem;
+  padding: 0.75rem 1rem;
+  border-bottom: none;
+  border-top: none;
 }
 body.dark-mode .csv-table thead th {
-  background: #2b2b2b;
+  background: hsl(0, 0%, 15%);
   color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .csv-table thead th {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+@media (max-width: 576px) {
+  .csv-table thead th {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.5rem;
+  }
 }
 .csv-table thead th:first-child {
   border-top-left-radius: 0.25rem;
@@ -7491,17 +7498,42 @@ body.dark-mode .csv-table thead th {
 .csv-table thead th:last-child {
   border-top-right-radius: 0.25rem;
 }
+.csv-table tbody td {
+  font-size: 0.85rem;
+  max-width: 10rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-bottom: none;
+  border-top: none;
+  border: 1px solid rgb(211, 218, 230);
+  text-align: left;
+  padding: 0.75rem 1rem;
+}
+@media (max-width: 768px) {
+  .csv-table tbody td {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+@media (max-width: 576px) {
+  .csv-table tbody td {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.5rem;
+  }
+}
 .csv-table tbody tr:nth-child(odd) {
   background-color: #fff;
 }
 body.dark-mode .csv-table tbody tr:nth-child(odd) {
-  background-color: #121212;
+  background-color: hsl(0, 0%, 5%);
 }
+
 .csv-table tbody tr:nth-child(even) {
   background-color: rgb(233, 251, 250);
 }
 body.dark-mode .csv-table tbody tr:nth-child(even) {
-  background-color: #2a2a2a;
+  background-color: hsl(0, 0%, 10%);
 }
 
 .toggle-button {

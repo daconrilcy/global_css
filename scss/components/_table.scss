@@ -3,53 +3,87 @@
 @use "../abstracts/variables" as *;
 
 .csv-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    font-size: 0.9rem;
-    
-    th, td {
-      max-width: $cells-max-width;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      border: $cell-border;
-      padding: 0.75rem 1rem;
-      text-align: left;
-    }
-  
-    thead th {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+
+  thead {
+    th {
       position: sticky;
       top: 0;
       z-index: 5;
       background: #f8fafc;
       font-weight: bold;
       box-shadow: $default-cell-shadow;
-  
-      body.dark-mode & {
+      font-size: 0.95rem; // header plus lisible
+      padding: 0.75rem 1rem;
+      border-bottom: none;
+      border-top: none;
+
+      @at-root body.dark-mode & {
         background: $dark-background-color-tertiary;
         color: $dark-front-color;
       }
-     
+
+      @media (max-width: $breakpoint-md) {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.75rem;
+      }
+
+      @media (max-width: $breakpoint-sm) {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.5rem;
+      }
+
+      &:first-child {
+        border-top-left-radius: $bs-border-radius;
+      }
+
+      &:last-child {
+        border-top-right-radius: $bs-border-radius;
+      }
     }
-    thead th:first-child{
-      border-top-left-radius: $bs-border-radius;
+  }
+
+  tbody {
+    td {
+      font-size: 0.85rem;
+      max-width: $cells-max-width;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      border-bottom: none;
+      border-top: none;
+      border: $cell-border;
+      text-align: left;
+      padding: 0.75rem 1rem;
+      
+
+      @media (max-width: $breakpoint-md) {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.75rem;
+      }
+
+      @media (max-width: $breakpoint-sm) {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.5rem;
+      }
     }
-    thead th:last-child{
-      border-top-right-radius: $bs-border-radius;
-    }
-  
-    tbody tr:nth-child(odd) {
+
+    tr:nth-child(odd) {
       background-color: $bs-body-bg;
-      body.dark-mode & {
+
+      @at-root body.dark-mode & {
         background-color: $dark-background-color;
       }
     }
-  
-    tbody tr:nth-child(even) {
+
+    tr:nth-child(even) {
       background-color: color(blue-light, very-light);
-      body.dark-mode & {
+
+      @at-root body.dark-mode & {
         background-color: $dark-background-color-secondary;
       }
     }
   }
+}

@@ -549,7 +549,7 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   overflow-y: auto;
 }
 body.dark-mode .file-list {
-  background: #2a2a2a;
+  background: hsl(0, 0%, 10%);
   color: #f0f0f0;
 }
 
@@ -563,7 +563,7 @@ body.dark-mode .file-list {
   padding: 1rem 0 1rem 1rem;
 }
 body.dark-mode .csv-zone {
-  background: #121212;
+  background: hsl(0, 0%, 5%);
 }
 
 .csv-zone .csv-container {
@@ -576,7 +576,7 @@ body.dark-mode .csv-zone {
   border-radius: 0.5rem;
 }
 body.dark-mode .csv-zone .csv-container {
-  background: #121212;
+  background: hsl(0, 0%, 5%);
 }
 
 .csv-zone .csv-container .csv-table-wrapper {

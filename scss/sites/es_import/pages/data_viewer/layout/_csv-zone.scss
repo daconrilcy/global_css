@@ -9,7 +9,7 @@
     min-width: 0;
     position: relative;
     background: $bs-body-bg;
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem 0 1rem 1rem; //necssaire pour la mise en forme equilibrée du layout
   
     @at-root body.dark-mode & {
       background: $dark-background-color;
@@ -19,7 +19,7 @@
       position: relative;
       flex: 1;
       background: $bs-body-bg;
-      padding: 1rem 0 0 1rem;
+      padding: 1rem 0 0 1rem; //necessaire pour faire apparaitre l'inset shadow
       overflow: hidden;
       box-shadow: $default-cell-shadow-inset;
       border-radius: $border-radius-preview;
