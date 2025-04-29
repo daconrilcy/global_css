@@ -18,11 +18,11 @@
   -moz-osx-font-smoothing: grayscale;
 
   &.glyphicon-left::before{
-    content: "\u25C0"
+    content: "\e079"
   }
 
   &.glyphicon-right::before{
-    content: "\u25B6"
+    content: "\e080"
   }
 
   &.glyphicon-refresh::before {
