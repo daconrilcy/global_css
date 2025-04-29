@@ -539,14 +539,13 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
 .page-layout {
   display: flex;
   height: calc(100vh - 100px);
-  gap: 10px;
   padding: 0 1rem;
+  box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25);
 }
 
 .file-list {
   flex: 0 0 250px;
   background: #fff;
-  box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25);
   overflow-y: auto;
 }
 body.dark-mode .file-list {
@@ -561,6 +560,7 @@ body.dark-mode .file-list {
   min-width: 0;
   position: relative;
   background: #fff;
+  padding: 1rem 0 1rem 1rem;
 }
 body.dark-mode .csv-zone {
   background: #121212;
@@ -572,14 +572,19 @@ body.dark-mode .csv-zone {
   background: #fff;
   padding: 1.5rem;
   overflow: hidden;
-  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 body.dark-mode .csv-container {
   background: #121212;
   box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25);
 }
 
+.csv-table {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
 .csv-table thead th:first-child {
   border-top-left-radius: 0.5rem;
 }
@@ -618,11 +623,11 @@ body.dark-mode .scroll-button {
   color: #f0f0f0;
 }
 .scroll-button.left {
-  left: 0;
+  left: 0.5rem;
   border-radius: 8px 0 0 8px;
 }
 .scroll-button.right {
-  right: 0;
+  right: 0.5rem;
   border-radius: 0 8px 8px 0;
 }
 

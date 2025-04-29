@@ -7391,7 +7391,7 @@ body.dark-mode .csv-table tbody tr:nth-child(odd) {
   background-color: #121212;
 }
 .csv-table tbody tr:nth-child(even) {
-  background-color: #fff;
+  background-color: rgb(233, 251, 250);
 }
 body.dark-mode .csv-table tbody tr:nth-child(even) {
   background-color: #2a2a2a;
