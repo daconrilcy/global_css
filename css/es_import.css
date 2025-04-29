@@ -580,6 +580,9 @@ body.dark-mode .csv-container {
   box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25);
 }
 
+.csv-table {
+  background-color: rgb(220, 226, 238);
+}
 .csv-table thead th:first-child {
   border-top-left-radius: 0.5rem;
 }

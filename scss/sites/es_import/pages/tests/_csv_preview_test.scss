@@ -56,6 +56,7 @@
 }
 
 .csv-table {
+  background-color: color(light-gray, light);
   thead th:first-child{
     border-top-left-radius: $border-radius-preview;
   }
