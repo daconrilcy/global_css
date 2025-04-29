@@ -6,4 +6,5 @@
 @use 'pages/_menu';
 @use 'pages/csv_preview';
 @use 'pages/mapping_preview';
-@use 'pages/tests/_csv_preview_test';
+// @use 'pages/tests/_csv_preview_test';
+@use 'pages/data_viewer/data_viewer';

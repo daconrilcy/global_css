@@ -531,4 +531,68 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   background-color: rgb(220, 226, 238);
 }
 
+.page-title {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.page-layout {
+  display: flex;
+  height: calc(100vh - 100px);
+  padding: 0 1rem;
+  box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.file-list {
+  flex: 0 0 250px;
+  background: #fff;
+  overflow-y: auto;
+}
+body.dark-mode .file-list {
+  background: #2a2a2a;
+  color: #f0f0f0;
+}
+
+.csv-zone {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  position: relative;
+  background: #fff;
+  padding: 1rem 0 1rem 1rem;
+}
+body.dark-mode .csv-zone {
+  background: #121212;
+}
+
+.csv-zone .csv-container {
+  position: relative;
+  flex: 1;
+  background: #fff;
+  padding: 1rem 0 0 1rem;
+  overflow: hidden;
+  box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+}
+body.dark-mode .csv-zone .csv-container {
+  background: #121212;
+}
+
+.csv-zone .csv-container .csv-table-wrapper {
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+}
+.csv-zone .csv-container .csv-table-wrapper .csv-table {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.csv-zone .csv-container .csv-table-wrapper .csv-table thead th:first-child {
+  border-top-left-radius: 0.5rem;
+}
+.csv-zone .csv-container .csv-table-wrapper .csv-table thead th:last-child {
+  border-top-right-radius: 0.5rem;
+}
+
 /*# sourceMappingURL=es_import.css.map */
