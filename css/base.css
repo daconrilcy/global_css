@@ -7499,8 +7499,8 @@ body.dark-mode .csv-table thead th {
   border-top-right-radius: 0.25rem;
 }
 .csv-table tbody tr {
-  border-bottom: none;
-  border-top: none;
+  border-bottom-style: none;
+  border-top-style: none;
 }
 .csv-table tbody td {
   font-size: 0.85rem;
@@ -7508,8 +7508,8 @@ body.dark-mode .csv-table thead th {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-bottom: none;
-  border-top: none;
+  border-bottom-style: none;
+  border-top-style: none;
   border: 1px solid rgb(211, 218, 230);
   text-align: left;
   padding: 0.75rem 1rem;
