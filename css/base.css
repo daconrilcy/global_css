@@ -7510,7 +7510,8 @@ body.dark-mode .csv-table thead th {
   white-space: nowrap;
   border-bottom-style: none;
   border-top-style: none;
-  border: 1px solid rgb(211, 218, 230);
+  border-right: 1px solid rgb(211, 218, 230);
+  border-left: 1px solid rgb(211, 218, 230);
   text-align: left;
   padding: 0.75rem 1rem;
 }
