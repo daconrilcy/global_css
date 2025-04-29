@@ -44,7 +44,7 @@
   position: relative;
   flex: 1;
   background: $bs-body-bg;
-  padding: 1.5rem;
+  padding: 1rem 0 0 1rem;
   overflow: hidden;
   box-shadow: $default-cell-shadow-inset;
   border-radius: $border-radius-preview;
@@ -53,27 +53,25 @@
     background: $dark-background-color;
     box-shadow: $default-cell-shadow-inset;
   }
-}
 
-.csv-table {
-  border-top-right-radius: $border-radius-preview;
-  border-top-left-radius: $border-radius-preview;
-  thead th:first-child{
-    border-top-left-radius: $border-radius-preview;
+  /* --- Wrapper pour effet d'incrustation --- */
+  .csv-table-wrapper {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+
+    .csv-table {
+      border-top-right-radius: $border-radius-preview;
+      border-top-left-radius: $border-radius-preview;
+      thead th:first-child{
+        border-top-left-radius: $border-radius-preview;
+      }
+      thead th:last-child{
+        border-top-right-radius: $border-radius-preview;
+      }
+    }
   }
-  thead th:last-child{
-    border-top-right-radius: $border-radius-preview;
-  }
 }
-
-
-/* --- Nouveau wrapper pour effet d'incrustation --- */
-.csv-table-wrapper {
-  overflow: auto;
-  height: 100%;
-  width: 100%;
-}
-
 
 /* --- Boutons scroll --- */
 .scroll-button {
