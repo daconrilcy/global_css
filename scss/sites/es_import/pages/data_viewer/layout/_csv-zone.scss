@@ -32,8 +32,8 @@
 
          // Chrome, Edge, Safari
         &::-webkit-scrollbar {
-            width: 0.5rem;
-            height: 0.5rem;
+            width: 1rem;
+            height: 1rem;
             background: $bs-body-bg;
             body.dark-mode & {
                 background: $dark-background-color-tertiary;
@@ -50,7 +50,7 @@
 
         &::-webkit-scrollbar-thumb {
             background: #888;
-            border-radius: 0.25rem;
+            border-radius: 0.5rem;
         
             body.dark-mode & {
               background: $dark-background-color-secondary;
