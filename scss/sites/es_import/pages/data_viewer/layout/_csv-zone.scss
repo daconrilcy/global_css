@@ -60,7 +60,7 @@
         }
 
         &::-webkit-scrollbar-thumb {
-            background: color(light-gray, light);
+            background: color(neutral-gray,base);
             border-radius: 0.5rem;
         
             body.dark-mode & {
