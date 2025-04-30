@@ -545,6 +545,11 @@ body.dark-mode .page-title {
   padding: 0 1rem;
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
+  background-color: #fff;
+}
+body.dark-mode .page-layout {
+  background: hsl(0, 0%, 10%);
+  color: #f0f0f0;
 }
 
 #datas-zone {
@@ -553,21 +558,16 @@ body.dark-mode .page-title {
   flex-direction: column;
   min-width: 0;
   height: 100%;
-  background-color: #fff;
-}
-body.dark-mode #datas-zone {
-  background: hsl(0, 0%, 10%);
-  color: #f0f0f0;
+  background-color: inherit;
+  color: inherit;
 }
 
 .file-list {
   flex: 0 0 250px;
   background: #fff;
   overflow-y: auto;
-}
-body.dark-mode .file-list {
-  background: hsl(0, 0%, 10%);
-  color: #f0f0f0;
+  background-color: inherit;
+  color: inherit;
 }
 
 .csv-zone {
@@ -612,6 +612,9 @@ body.dark-mode .csv-zone .csv-container {
 }
 .csv-zone .csv-container .csv-table-wrapper .csv-table thead th:last-child {
   border-top-right-radius: 0.5rem;
+}
+.csv-zone .pagination-bar {
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=es_import.css.map */

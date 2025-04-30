@@ -17,6 +17,13 @@
     padding: 0 1rem;
     box-shadow: $default-card-shadow;
     border-radius: $border-radius-preview;
+
+    background-color: $bs-body-bg;
+    
+    @at-root body.dark-mode & {
+        background: $dark-background-color-secondary;
+        color: $dark-front-color;
+    }
 }
 
 //par défaut, un div sans flex ne transmet pas les comportements de flex à ses enfants.
@@ -28,10 +35,6 @@
     flex-direction: column;
     min-width: 0;
     height: 100%; // ← essentiel pour transmettre la hauteur
-    background-color: $bs-body-bg;
-    
-    @at-root body.dark-mode & {
-        background: $dark-background-color-secondary;
-        color: $dark-front-color;
-    }
+    background-color: inherit;
+    color: inherit;
 }

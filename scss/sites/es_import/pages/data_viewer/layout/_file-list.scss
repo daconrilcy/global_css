@@ -4,9 +4,6 @@
     flex: 0 0 250px;
     background: $bs-body-bg;
     overflow-y: auto;
-
-    @at-root body.dark-mode & {
-        background: $dark-background-color-secondary;
-        color: $dark-front-color;
-    }
+    background-color: inherit;
+    color: inherit;
 }
