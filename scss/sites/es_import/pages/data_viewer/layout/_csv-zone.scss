@@ -49,6 +49,7 @@
             height: 1rem; // hauteur de la scrollbar
             background-color: $bs-body-bg; // ou clair selon le thème
             pointer-events: none;
+            border-bottom-left-radius: 0.5rem;
             z-index: 1;
             body.dark-mode & {
                 background-color: $dark-background-color-tertiary;
@@ -64,7 +65,7 @@
         }
 
         &::-webkit-scrollbar-thumb {
-            background: #888;
+            background: color(light-gray, light);
             border-radius: 0.5rem;
         
             body.dark-mode & {
