@@ -29,15 +29,19 @@
         height: 100%;
         width: 100%;
 
-        @at-root body.dark-mode & {
-            &::-webkit-scrollbar-track {
+        &::-webkit-scrollbar-track {
+            @at-root body.dark-mode & {
                 background: $dark-background-color-tertiary;
             }
-            
-            &::-webkit-scrollbar-thumb {
-            background: $dark-background-color-secondary;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            @at-root body.dark-mode & {
+                background: $dark-background-color-secondary;
+            }
 
-                &:hover {
+            &:hover {
+                @at-root body.dark-mode & {
                     background: $dark-background-color;
                 }
             }
