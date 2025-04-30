@@ -10,7 +10,8 @@
     position: relative;
     background: $bs-body-bg;
     padding: 1rem 0 1rem 1rem; //necssaire pour la mise en forme equilibrée du layout
-  
+    min-height: 0; // ← important pour que le container puisse scroll
+
     @at-root body.dark-mode & {
       background: $dark-background-color;
     }
@@ -23,6 +24,7 @@
       overflow: hidden;
       box-shadow: $default-cell-shadow-inset;
       border-radius: $border-radius-preview;
+      min-height: 0; // ← permet à .csv-table-wrapper d'avoir une hauteur limitée
   
       @at-root body.dark-mode & {
         background: $dark-background-color;

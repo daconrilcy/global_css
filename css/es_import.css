@@ -551,6 +551,7 @@ body.dark-mode .page-title {
   display: flex;
   flex-direction: column;
   min-width: 0;
+  height: 100%;
 }
 
 .file-list {
@@ -571,6 +572,7 @@ body.dark-mode .file-list {
   position: relative;
   background: #fff;
   padding: 1rem 0 1rem 1rem;
+  min-height: 0;
 }
 body.dark-mode .csv-zone {
   background: hsl(0, 0%, 5%);
@@ -584,6 +586,7 @@ body.dark-mode .csv-zone {
   overflow: hidden;
   box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
+  min-height: 0;
 }
 body.dark-mode .csv-zone .csv-container {
   background: hsl(0, 0%, 5%);
