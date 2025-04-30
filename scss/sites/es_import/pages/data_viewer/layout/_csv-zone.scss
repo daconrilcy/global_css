@@ -14,15 +14,34 @@
     min-height: 0; // ← important pour que le container puisse scroll
 
     .csv-container {
-      position: relative;
-      flex: 1;
-      padding: 0.75rem 0 0 0.75rem; //necessaire pour faire apparaitre l'inset shadow
-      overflow: hidden;
-      box-shadow: $default-cell-shadow-inset;
-      border-radius: $border-radius-preview;
-      min-height: 0; // ← permet à .csv-table-wrapper d'avoir une hauteur limitée
-      color: inherit;
-      background-color: inherit;
+        position: relative;
+        flex: 1;
+        padding: 0.75rem 0 0 0.75rem; //necessaire pour faire apparaitre l'inset shadow
+        overflow: hidden;
+        box-shadow: $default-cell-shadow-inset;
+        border-radius: $border-radius-preview;
+        min-height: 0; // ← permet à .csv-table-wrapper d'avoir une hauteur limitée
+        color: inherit;
+        background-color: inherit;
+
+        &::-webkit-scrollbar-track {
+            @at-root body.dark-mode & {
+                background: $dark-background-color-tertiary;
+            }
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            @at-root body.dark-mode & {
+                background: $dark-background-color-secondary;
+            }
+
+            &:hover {
+                @at-root body.dark-mode & {
+                    background: $dark-background-color;
+                }
+            }
+        }
+      
   
       .csv-table-wrapper {
         overflow: auto;

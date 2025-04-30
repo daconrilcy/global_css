@@ -597,6 +597,18 @@ body.dark-mode .page-layout {
   color: inherit;
   background-color: inherit;
 }
+body.dark-mode .csv-zone .csv-container::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 15%);
+}
+
+body.dark-mode .csv-zone .csv-container::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 10%);
+}
+
+body.dark-mode .csv-zone .csv-container::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 5%);
+}
+
 .csv-zone .csv-container .csv-table-wrapper {
   overflow: auto;
   height: 100%;
