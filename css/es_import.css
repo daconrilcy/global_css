@@ -576,28 +576,22 @@ body.dark-mode .page-layout {
   flex-direction: column;
   min-width: 0;
   position: relative;
-  background: #fff;
+  background: inherit;
+  color: inherit;
   padding: 1rem 0 1rem 1rem;
   min-height: 0;
 }
-body.dark-mode .csv-zone {
-  background: hsl(0, 0%, 5%);
-}
-
 .csv-zone .csv-container {
   position: relative;
   flex: 1;
-  background: #fff;
   padding: 0.75rem 0 0 0.75rem;
   overflow: hidden;
   box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
   min-height: 0;
+  color: inherit;
+  background-color: inherit;
 }
-body.dark-mode .csv-zone .csv-container {
-  background: hsl(0, 0%, 5%);
-}
-
 .csv-zone .csv-container .csv-table-wrapper {
   overflow: auto;
   height: 100%;

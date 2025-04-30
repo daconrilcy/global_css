@@ -8,27 +8,21 @@
     flex-direction: column;
     min-width: 0;
     position: relative;
-    background: $bs-body-bg;
+    background: inherit;
+    color: inherit;
     padding: 1rem 0 1rem 1rem; //necssaire pour la mise en forme equilibrée du layout
     min-height: 0; // ← important pour que le container puisse scroll
 
-    @at-root body.dark-mode & {
-      background: $dark-background-color;
-    }
-  
     .csv-container {
       position: relative;
       flex: 1;
-      background: $bs-body-bg;
       padding: 0.75rem 0 0 0.75rem; //necessaire pour faire apparaitre l'inset shadow
       overflow: hidden;
       box-shadow: $default-cell-shadow-inset;
       border-radius: $border-radius-preview;
       min-height: 0; // ← permet à .csv-table-wrapper d'avoir une hauteur limitée
-  
-      @at-root body.dark-mode & {
-        background: $dark-background-color;
-      }
+      color: inherit;
+      background-color: inherit;
   
       .csv-table-wrapper {
         overflow: auto;
