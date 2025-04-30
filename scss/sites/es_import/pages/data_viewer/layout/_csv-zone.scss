@@ -40,11 +40,26 @@
             }
         }
 
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 1rem; // largeur de la scrollbar
+            height: 1rem; // hauteur de la scrollbar
+            background-color: $bs-body-bg; // ou clair selon le thème
+            pointer-events: none;
+            z-index: 1;
+            body.dark-mode & {
+                background-color: $dark-background-color-tertiary;
+            }
+          }
+
         &::-webkit-scrollbar-track {
             background: $bs-body-bg;
 
             body.dark-mode & {
-            background: $dark-background-color-tertiary;
+                background: $dark-background-color-tertiary;
             }
         }
 

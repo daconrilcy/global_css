@@ -610,6 +610,20 @@ body.dark-mode .page-layout {
 body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar {
   background: hsl(0, 0%, 15%);
 }
+.csv-zone .csv-container .csv-table-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+  pointer-events: none;
+  z-index: 1;
+}
+body.dark-mode .csv-zone .csv-container .csv-table-wrapper::after {
+  background-color: hsl(0, 0%, 15%);
+}
 .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-track {
   background: #fff;
 }
