@@ -631,7 +631,7 @@ body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-tr
   border-radius: 0.5rem;
 }
 body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-thumb {
-  background: hsl(0, 0%, 10%);
+  background: rgb(115, 122, 143);
 }
 .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-thumb:hover {
   background: rgb(0, 119, 204);

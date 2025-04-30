@@ -64,7 +64,7 @@
             border-radius: 0.5rem;
         
             body.dark-mode & {
-              background: $dark-background-color-secondary;
+                background: color(neutral-gray,light);
             }
         
             &:hover {
