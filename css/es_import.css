@@ -531,10 +531,6 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   background-color: rgb(220, 226, 238);
 }
 
-#content {
-  margin-top: 3rem;
-}
-
 .page-title {
   margin: 1rem 0;
   text-align: center;
@@ -548,6 +544,7 @@ body.dark-mode .page-title {
   height: calc(100vh - 168px);
   padding: 0 1rem;
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
 }
 
 #datas-zone {

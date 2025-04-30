@@ -1,9 +1,6 @@
 @use '../../../../../abstracts/variables' as *;
 @use '../../../../../abstracts/colors' as *;
-
-#content{
-    margin-top: 3rem;
-}
+@use '../../../variables/styles' as *;
 
 .page-title {
     margin: 1rem 0;
@@ -19,6 +16,7 @@
     height: calc(100vh - 168px); // prise en compte des titles et du top margin du content
     padding: 0 1rem;
     box-shadow: $default-card-shadow;
+    border-radius: $border-radius-preview;
 }
 
 //par défaut, un div sans flex ne transmet pas les comportements de flex à ses enfants.
