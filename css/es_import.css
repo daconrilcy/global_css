@@ -597,41 +597,34 @@ body.dark-mode .page-layout {
   color: inherit;
   background-color: inherit;
 }
-.csv-zone .csv-container::-webkit-scrollbar-track {
-  background-color: red;
-}
-body.dark-mode .csv-zone .csv-container::-webkit-scrollbar-track {
-  background: hsl(0, 0%, 15%);
-}
-
-body.dark-mode .csv-zone .csv-container::-webkit-scrollbar-thumb {
-  background: hsl(0, 0%, 10%);
-}
-
-body.dark-mode .csv-zone .csv-container::-webkit-scrollbar-thumb:hover {
-  background: hsl(0, 0%, 5%);
-}
-
 .csv-zone .csv-container .csv-table-wrapper {
   overflow: auto;
   height: 100%;
   width: 100%;
 }
+.csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
 .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-track {
-  background-color: green;
+  background: #f1f1f1;
 }
 body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-track {
   background: hsl(0, 0%, 15%);
 }
-
+.csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
 body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-thumb {
   background: hsl(0, 0%, 10%);
 }
-
+.csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-thumb:hover {
   background: hsl(0, 0%, 5%);
 }
-
 .csv-zone .csv-container .csv-table-wrapper .csv-table {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
