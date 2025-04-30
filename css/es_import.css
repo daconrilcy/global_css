@@ -601,6 +601,8 @@ body.dark-mode .page-layout {
   overflow: auto;
   height: 100%;
   width: 100%;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar {
   width: 1rem;
