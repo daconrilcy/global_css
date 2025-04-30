@@ -619,7 +619,7 @@ body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar {
   height: 1rem;
   background-color: #fff;
   pointer-events: none;
-  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
   z-index: 1;
 }
 body.dark-mode .csv-zone .csv-container .csv-table-wrapper::after {
