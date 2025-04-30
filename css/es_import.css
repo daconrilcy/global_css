@@ -231,6 +231,11 @@
   border-radius: 0.5rem;
   transition: background-color 0.3s;
 }
+body.dark-mode .menu {
+  background-color: hsl(0, 0%, 10%);
+  color: #f0f0f0;
+}
+
 .menu .menu-item {
   background-color: transparent;
   border-radius: 0.25rem;
