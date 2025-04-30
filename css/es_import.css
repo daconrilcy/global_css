@@ -545,7 +545,7 @@ body.dark-mode .page-title {
 
 .page-layout {
   display: flex;
-  height: calc(100vh - 148px);
+  height: calc(100vh - 128px);
   padding: 0 1rem;
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25);
 }
