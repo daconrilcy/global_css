@@ -602,6 +602,16 @@ body.dark-mode .page-layout {
   height: 100%;
   width: 100%;
 }
+body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 15%);
+}
+body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 10%);
+}
+body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 5%);
+}
+
 .csv-zone .csv-container .csv-table-wrapper .csv-table {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;

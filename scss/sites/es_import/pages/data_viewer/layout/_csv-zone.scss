@@ -28,6 +28,20 @@
         overflow: auto;
         height: 100%;
         width: 100%;
+
+        @at-root body.dark-mode & {
+            &::-webkit-scrollbar-track {
+                background: $dark-background-color-tertiary;
+            }
+            
+            &::-webkit-scrollbar-thumb {
+            background: $dark-background-color-secondary;
+
+                &:hover {
+                    background: $dark-background-color;
+                }
+            }
+        }
   
         .csv-table {
           border-top-left-radius: $border-radius-preview;
