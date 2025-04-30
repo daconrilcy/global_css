@@ -546,6 +546,10 @@ body.dark-mode .page-title {
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25);
 }
 
+#data-zone {
+  display: flex;
+}
+
 .file-list {
   flex: 0 0 250px;
   background: #fff;
