@@ -7241,7 +7241,7 @@ input[type=text]::placeholder, input[type=email]::placeholder, input[type=passwo
   align-items: center;
   justify-content: center;
   z-index: 10;
-  pointer-events: none;
+  pointer-events: auto;
 }
 body.dark-mode .scroll-lateral-button {
   background: rgba(255, 255, 255, 0.15);
@@ -7261,10 +7261,6 @@ body.dark-mode .scroll-lateral-button {
 }
 .scroll-lateral-button.right:hover {
   opacity: 1;
-}
-
-.csv-container:hover .scroll-lateral-button {
-  pointer-events: auto;
 }
 
 .list-group {
