@@ -553,6 +553,11 @@ body.dark-mode .page-title {
   flex-direction: column;
   min-width: 0;
   height: 100%;
+  background-color: #fff;
+}
+body.dark-mode #datas-zone {
+  background: hsl(0, 0%, 10%);
+  color: #f0f0f0;
 }
 
 .file-list {

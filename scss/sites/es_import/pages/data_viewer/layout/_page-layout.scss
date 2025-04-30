@@ -28,4 +28,10 @@
     flex-direction: column;
     min-width: 0;
     height: 100%; // ← essentiel pour transmettre la hauteur
+    background-color: $bs-body-bg;
+    
+    @at-root body.dark-mode & {
+        background: $dark-background-color-secondary;
+        color: $dark-front-color;
+    }
 }
