@@ -535,6 +535,9 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   margin: 1rem 0;
   text-align: center;
 }
+body.dark-mode .page-title {
+  color: #f0f0f0;
+}
 
 .page-layout {
   display: flex;

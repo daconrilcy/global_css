@@ -1,8 +1,13 @@
 @use '../../../../../abstracts/variables' as *;
+@use '../../../../../abstracts/colors' as *;
 
 .page-title {
     margin: 1rem 0;
     text-align: center;
+
+    @at-root body.dark-mode & {
+        color: $dark-front-color;
+      }
 }
   
 .page-layout {
