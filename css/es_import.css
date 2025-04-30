@@ -605,6 +605,10 @@ body.dark-mode .page-layout {
 .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar {
   width: 0.5rem;
   height: 0.5rem;
+  background: #fff;
+}
+body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar {
+  background: hsl(0, 0%, 15%);
 }
 .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-track {
   background: #fff;
@@ -620,6 +624,10 @@ body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-th
   background: hsl(0, 0%, 10%);
 }
 .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 119, 204);
+  cursor: pointer;
+}
+body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-thumb:hover {
   background: rgb(0, 119, 204);
 }
 .csv-zone .csv-container .csv-table-wrapper .csv-table {
