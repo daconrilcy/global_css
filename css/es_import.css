@@ -531,6 +531,10 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   background-color: rgb(220, 226, 238);
 }
 
+#content {
+  margin-top: 3rem;
+}
+
 .page-title {
   margin: 1rem 0;
   text-align: center;
