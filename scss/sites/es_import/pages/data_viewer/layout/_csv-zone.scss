@@ -57,7 +57,7 @@
           }
 
         &::-webkit-scrollbar-track {
-            background: $bs-body-bg;
+            background: rgba(0,0,0,0.2);
 
             body.dark-mode & {
                 background: $dark-background-color-tertiary;
