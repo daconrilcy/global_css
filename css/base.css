@@ -6906,10 +6906,20 @@ p {
   z-index: 1000;
   color: #212529;
 }
+body.dark-mode .navbar {
+  background-color: hsl(0, 0%, 10%);
+  color: #f0f0f0;
+}
+
 .navbar a {
   text-decoration: none;
   color: #212529;
 }
+body.dark-mode .navbar a {
+  background-color: hsl(0, 0%, 10%);
+  color: #f0f0f0;
+}
+
 .navbar a:hover {
   color: rgb(0, 102, 204);
 }

@@ -19,13 +19,25 @@
   z-index: 1000;
   color: $bs-body-color;
 
+  @at-root body.dark-mode & {
+    background-color: $dark-background-color-secondary;
+    color: $dark-front-color;
+  }
+
+
   a {
     text-decoration: none;
     color: $bs-body-color;
+    @at-root body.dark-mode & {
+      background-color: $dark-background-color-secondary;
+      color: $dark-front-color;
+    }
 
     &:hover {
       color: color(blue-primary, medium);
     }
+    
+  
   }
 
   .logo {
