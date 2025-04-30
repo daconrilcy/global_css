@@ -547,7 +547,10 @@ body.dark-mode .page-title {
 }
 
 #datas-zone {
+  flex: 1;
   display: flex;
+  flex-direction: column;
+  min-width: 0;
 }
 
 .file-list {

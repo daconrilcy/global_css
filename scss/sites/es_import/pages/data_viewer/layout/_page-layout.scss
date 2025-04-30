@@ -17,6 +17,12 @@
     box-shadow: $default-card-shadow;
 }
 
-#datas-zone{
+//par défaut, un div sans flex ne transmet pas les comportements de flex à ses enfants.
+//Cela permet à #datas-zone de se comporter comme un conteneur flexible 
+// et de transmettre correctement l’espace à .csv-zone.
+#datas-zone {
+    flex: 1;
     display: flex;
+    flex-direction: column;
+    min-width: 0;
 }
