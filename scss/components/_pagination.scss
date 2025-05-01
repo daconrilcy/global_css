@@ -55,7 +55,7 @@
             border-color: color(blue-primary, base);
 
             @at-root body.dark-mode & {
-                color: #fff;
+                color: $dark-front-color;
                 background-color: color(blue-primary, base);
                 border-color: color(blue-primary, base);
             }
