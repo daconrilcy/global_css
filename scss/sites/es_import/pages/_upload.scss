@@ -1,31 +1,29 @@
 @use "../../../abstracts/colors" as *;
 @use "../../../abstracts/functions" as *;
 
-#filetype-switch-group{
-    .switch-filetype-btns{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1rem;
+.switch-filetype-btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 
-        .btn-group{
-            .btn {
-                &:first-child {
-                border-top-left-radius: 1rem !important;
-                border-bottom-left-radius: 1rem !important;
-                }
-            
-                &:last-child {
-                border-top-right-radius: 1rem !important;
-                border-bottom-right-radius: 1rem !important;
-                }
+    .btn-group{
+        .btn {
+            &:first-child {
+            border-top-left-radius: 1rem !important;
+            border-bottom-left-radius: 1rem !important;
             }
-            .btn-secondary{
-                background-color: transparent;
-                &.active{
-                    background-color: color(blue-primary, base) !important;
-                }
+        
+            &:last-child {
+            border-top-right-radius: 1rem !important;
+            border-bottom-right-radius: 1rem !important;
+            }
+        }
+        .btn-secondary{
+            background-color: transparent;
+            &.active{
+                background-color: color(blue-primary, base) !important;
             }
         }
     }
