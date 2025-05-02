@@ -116,6 +116,12 @@ form.dropzone{
             span{
                 color: color(blue-primary, base);
                 font-size: 1.7rem;
+                transition: font-size ease 0.25s, color ease 0.25s;
+                &:hover{
+                    color: color(blue-primary, dark);
+                    font-size: 2rem;
+                    transition: font-size ease 0.25s, color ease 0.25s;
+                }
             }
         }
 
