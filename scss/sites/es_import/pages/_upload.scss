@@ -11,6 +11,9 @@
         .card-title{
             color: inherit;
         }
+        @at-root body.dark-mode & {
+            background-color: rgba(0,0,0,0.2);
+        }
     }
 
     @at-root body.dark-mode & {
@@ -71,7 +74,7 @@
     }
 }
 form.dropzone{
-    border-width: 0;
+    border-width: 4px;
     border-style: dashed;
     border-color: rgba(color(blue-primary, base), 0);
     transition: border-color ease 0.5s;
@@ -98,6 +101,14 @@ form.dropzone{
 
         @at-root body.dark-mode & {
             color: $dark-front-color;
+        }
+
+        .dz-button.dz-main-message{
+            font-size: 1.5rem;
+            span{
+                color: color(blue-primary, base);
+                font-size: 1.7rem;
+            }
         }
 
         .dz-button.dz-type-file{
