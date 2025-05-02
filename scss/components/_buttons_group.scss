@@ -5,4 +5,18 @@ btn-group{
     display: inline-flex;
     vertical-align: middle;
     border-radius: $bs-border-radius;
+
+    .btn {
+        border-radius: 0; // pas d’arrondi par défaut
+    
+        &:first-child {
+          border-top-left-radius: $bs-border-radius;
+          border-bottom-left-radius: $bs-border-radius;
+        }
+    
+        &:last-child {
+          border-top-right-radius: $bs-border-radius;
+          border-bottom-right-radius: $bs-border-radius;
+        }
+      }
 }
