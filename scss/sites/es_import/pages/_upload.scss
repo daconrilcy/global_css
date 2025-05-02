@@ -156,9 +156,13 @@ form.dropzone{
     }
 
     .dz-preview{
+        .dz-image{
+            background: transparent;
+        }
+
         .dz-details{
             font-size: 0.9rem;
-            display: flex;
+            display: none;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -178,8 +182,8 @@ form.dropzone{
                     }
                 }
             }
-        
         }
+
         .dz-remove{
             text-decoration: none;
             width: 2rem;
@@ -190,5 +194,11 @@ form.dropzone{
                 cursor: pointer;
             }
         }
+    &:hover{
+        .dz-details{
+            display: flex;
+        }
+    }
+    
     }
 }

@@ -791,9 +791,12 @@ body.dark-mode .dropzone.dz-clickable .dz-message {
   background-color: rgba(0, 0, 0, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
+.dropzone.dz-clickable .dz-preview .dz-image {
+  background: transparent;
+}
 .dropzone.dz-clickable .dz-preview .dz-details {
   font-size: 0.9rem;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -818,6 +821,9 @@ body.dark-mode .dropzone.dz-clickable .dz-message {
 }
 .dropzone.dz-clickable .dz-preview .dz-remove span {
   cursor: pointer;
+}
+.dropzone.dz-clickable .dz-preview:hover .dz-details {
+  display: flex;
 }
 
 /*# sourceMappingURL=es_import.css.map */
