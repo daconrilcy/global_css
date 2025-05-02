@@ -126,19 +126,6 @@
   text-align: center;
 }
 
-.card-header.dropper {
-  background-color: rgba(240, 78, 152, 0.6);
-  color: white;
-}
-
-.dropzone.dz-clickable {
-  background: rgba(240, 78, 152, 0.3);
-}
-.dropzone.dz-clickable .dz-message {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
 .preview-wrapper {
   background-color: rgb(211, 218, 230);
   padding: 1rem;
@@ -652,6 +639,51 @@ body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-th
 }
 .csv-zone .pagination-bar {
   margin-top: 1rem;
+}
+
+#filetype-switch-group .switch-filetype-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+#filetype-switch-group .switch-filetype-btns .btn-group .btn:first-child {
+  border-top-left-radius: 1rem !important;
+  border-bottom-left-radius: 1rem !important;
+}
+#filetype-switch-group .switch-filetype-btns .btn-group .btn:last-child {
+  border-top-right-radius: 1rem !important;
+  border-bottom-right-radius: 1rem !important;
+}
+#filetype-switch-group .switch-filetype-btns .btn-group .btn-secondary {
+  background-color: transparent;
+}
+#filetype-switch-group .switch-filetype-btns .btn-group .btn-secondary.active {
+  background-color: rgb(0, 119, 204) !important;
+}
+
+.dropzone.dz-clickable {
+  background: rgba(240, 78, 152, 0.3);
+  height: calc(100vh - 250px);
+}
+.dropzone.dz-clickable .dz-message {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.dropzone.dz-clickable .icon-upload {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+}
+.dropzone.dz-clickable .icon-uploadat-root body.dark-mode .dropzone.dz-clickable .icon-upload {
+  background-color: rgba(12.75, 12.75, 12.75, 0.4);
 }
 
 /*# sourceMappingURL=es_import.css.map */

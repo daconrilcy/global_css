@@ -1,10 +1,11 @@
 @use 'pages/_principal';
 @use 'pages/import';
 @use 'pages/list_files';
-@use 'pages/dropper';
+// @use 'pages/dropper';
 @use 'pages/preview';
 @use 'pages/_menu';
 @use 'pages/csv_preview';
 @use 'pages/mapping_preview';
 // @use 'pages/tests/_csv_preview_test';
 @use 'pages/data_viewer/data_viewer';
+@use 'pages/upload';

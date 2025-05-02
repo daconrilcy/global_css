@@ -7001,7 +7001,6 @@ body.dark-mode .navbar a {
   position: relative;
   display: inline-flex;
   vertical-align: middle;
-  border-radius: 0.25rem;
 }
 .btn-group .btn {
   border-radius: 0;
@@ -7105,6 +7104,11 @@ body.dark-mode .navbar a {
   border-radius: 0.25rem;
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25);
 }
+body.dark-mode .card {
+  background-color: hsl(0, 0%, 10%);
+  color: #f0f0f0;
+}
+
 .card .card-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
@@ -7112,10 +7116,16 @@ body.dark-mode .navbar a {
   background-color: rgba(33, 37, 41, 0.03);
   border-bottom: 2px solid rgba(0, 0, 0, 0.125);
 }
+body.dark-mode .card .card-header {
+  background-color: rgba(25.5, 25.5, 25.5, 0.03);
+  color: #f0f0f0;
+}
+
 .card .card-body {
   flex: 1 1 auto;
   padding: 1rem;
   color: inherit;
+  background-color: inherit;
 }
 .card .card-title {
   margin-bottom: 0.5rem;
