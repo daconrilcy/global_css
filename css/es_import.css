@@ -799,6 +799,8 @@ body.dark-mode .dropzone.dz-clickable .dz-message {
   align-items: center;
 }
 .dropzone.dz-clickable .dz-preview .dz-details .dz-filename span {
+  background-color: transparent;
+  border: none;
   transition: font-size ease 0.25s;
 }
 .dropzone.dz-clickable .dz-preview .dz-details .dz-filename:hover span {

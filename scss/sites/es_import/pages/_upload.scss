@@ -165,6 +165,8 @@ form.dropzone{
 
             .dz-filename{
                 span{
+                    background-color: transparent;
+                    border: none;
                     transition: font-size ease 0.25s;
                 }
                 &:hover{
