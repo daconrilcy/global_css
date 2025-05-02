@@ -4,6 +4,14 @@
 .card-upload{
     text-align: center;
     color: $bs-body-color;
+
+    .card-header{
+        color: inherit;
+        .card-title{
+            color: inherit;
+        }
+    }
+
     @at-root body.dark-mode & {
         color: $dark-front-color;
     }

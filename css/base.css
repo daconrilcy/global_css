@@ -54,6 +54,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   line-height: 1.5;
   color: rgb(47, 49, 59);
 }
+body.dark-mode h1, body.dark-mode .h1, body.dark-mode h2, body.dark-mode .h2, body.dark-mode h3, body.dark-mode .h3, body.dark-mode h4, body.dark-mode .h4, body.dark-mode h5, body.dark-mode .h5, body.dark-mode h6, body.dark-mode .h6 {
+  color: #f0f0f0;
+}
 
 h1, .h1 {
   font-size: 2.5rem;

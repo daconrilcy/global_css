@@ -645,6 +645,12 @@ body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-th
   text-align: center;
   color: #212529;
 }
+.card-upload .card-header {
+  color: inherit;
+}
+.card-upload .card-header .card-title {
+  color: inherit;
+}
 body.dark-mode .card-upload {
   color: #f0f0f0;
 }
