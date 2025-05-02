@@ -7020,11 +7020,18 @@ body.dark-mode .navbar a {
   background-color: rgb(2, 80, 135);
   color: white;
 }
+.btn.btn-primary.active {
+  background-color: rgb(0, 102, 204);
+}
 .btn.btn-secondary {
   background-color: rgb(220, 226, 238);
   color: inherit;
 }
 .btn.btn-secondary:hover {
+  background-color: rgb(86, 89, 94);
+  color: inherit;
+}
+.btn.btn-secondary.active {
   background-color: rgb(134, 138, 145);
   color: inherit;
 }
@@ -7033,6 +7040,10 @@ body.dark-mode .navbar a {
   color: inherit;
 }
 .btn.btn-tertiary:hover {
+  background-color: rgb(0, 125, 0);
+  color: inherit;
+}
+.btn.btn-tertiary.active {
   background-color: rgb(0, 180, 0);
   color: inherit;
 }

@@ -24,14 +24,21 @@
           background-color: color(blue-primary, dark);
             color: white;
         }
+        &.active{
+          background-color: color(blue-primary, medium );
+        }
       }
     
       &.btn-secondary {
         background-color: color(light-gray, light);
         color: inherit;
         &:hover {
-          background-color: color(light-gray, medium);
+          background-color: color(light-gray, dark);
             color: inherit;
+        }
+        &.active {
+          background-color: color(light-gray, medium);
+          color: inherit;
         }
       }
     
@@ -39,6 +46,10 @@
         background-color: color(default-green, light);
         color: inherit;
         &:hover {
+          background-color: color(default-green, dark);
+            color: inherit;
+        }
+        &.active{
           background-color: color(default-green, medium);
             color: inherit;
         }
