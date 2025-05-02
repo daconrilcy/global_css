@@ -31,14 +31,14 @@
     
       &.btn-secondary {
         background-color: color(light-gray, light);
-        color: inherit;
+        color: $bs-body-color;
         &:hover {
           background-color: color(light-gray, dark);
-            color: inherit;
+            color: $bs-body-bg;
         }
         &.active {
           background-color: color(light-gray, medium);
-          color: inherit;
+          color: $bs-body-bg;
         }
       }
     

@@ -7025,15 +7025,15 @@ body.dark-mode .navbar a {
 }
 .btn.btn-secondary {
   background-color: rgb(220, 226, 238);
-  color: inherit;
+  color: #212529;
 }
 .btn.btn-secondary:hover {
   background-color: rgb(86, 89, 94);
-  color: inherit;
+  color: #fff;
 }
 .btn.btn-secondary.active {
   background-color: rgb(134, 138, 145);
-  color: inherit;
+  color: #fff;
 }
 .btn.btn-tertiary {
   background-color: rgb(125, 255, 125);
