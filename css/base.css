@@ -6997,6 +6997,24 @@ body.dark-mode .navbar a {
   padding-right: calc(1.5rem * 0.5);
 }
 
+btn-group {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+}
+btn-group .btn {
+  border-radius: 0;
+}
+btn-group .btn:first-child {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+btn-group .btn:last-child {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
 .btn {
   display: flex;
   padding: 0.5rem 0.5rem;
