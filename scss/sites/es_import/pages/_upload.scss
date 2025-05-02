@@ -50,10 +50,18 @@
         border-radius: 50%;
         background-color: rgba(0,0,0,0.4);
         backdrop-filter: blur(0.25rem);
+        color: $bs-body-bg;
+        transition: transform ease 1s, background-color ease 1s;
 
-        &at-root body.dark-mode &{
-            background-color: rgba($dark-background-color, 0.4);
-            //   border: 1px solid rgba(var(--border-rgb), 0.3);
+        &:hover{
+            transform: scale(1.2);
+            background-color: rgba(0,0,0,0.2);
+            border: 2px solid rgba(255,255,255,0.3);
         }
+
+        // &at-root body.dark-mode &{
+        //     background-color: rgba($dark-background-color, 0.4);
+        //     //   border: 1px solid rgba(var(--border-rgb), 0.3);
+        // }
     }
 }

@@ -684,9 +684,13 @@ body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-th
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(0.25rem);
+  color: #fff;
+  transition: transform ease 1s, background-color ease 1s;
 }
-.dropzone.dz-clickable .icon-uploadat-root body.dark-mode .dropzone.dz-clickable .icon-upload {
-  background-color: rgba(12.75, 12.75, 12.75, 0.4);
+.dropzone.dz-clickable .icon-upload:hover {
+  transform: scale(1.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 /*# sourceMappingURL=es_import.css.map */
