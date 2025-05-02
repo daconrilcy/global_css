@@ -77,7 +77,7 @@ form.dropzone{
     border-width: 4px;
     border-style: none;
     border-color: rgba(color(blue-primary, base), 0);
-    transition: border-color ease 0.5s;
+    transition: border-color ease 0.5s, border-style ease 0.5s;
 
     &:hover{
         border-width: 4px;
