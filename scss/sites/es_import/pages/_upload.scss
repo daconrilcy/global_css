@@ -3,6 +3,10 @@
 
 .card-upload{
     text-align: center;
+    color: $bs-body-color;
+    @at-root body.dark-mode & {
+        color: $dark-front-color;
+    }
 }
 
 .switch-filetype-btns{
@@ -13,10 +17,7 @@
     margin-bottom: 1rem;
     span{
         font-weight: bold;
-        color: $bs-body-color;
-        @at-root body.dark-mode & {
-            color: $dark-front-color;
-        }
+        color: inherit;
     }
     .btn-group{
         .btn {
@@ -62,12 +63,14 @@
         justify-content: center;
         align-items: center;
         color: $bs-body-color;
-
-        
+        border-width: 0;
+        transition: border-width ease 1s;
     }
+    
     &:hover{
         border: 4px dashed color(blue-primary, light)
     }
+
     .icon-upload {
         width: 5rem;
         height: 5rem;

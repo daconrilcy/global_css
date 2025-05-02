@@ -643,6 +643,10 @@ body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-th
 
 .card-upload {
   text-align: center;
+  color: #212529;
+}
+body.dark-mode .card-upload {
+  color: #f0f0f0;
 }
 
 .switch-filetype-btns {
@@ -654,12 +658,8 @@ body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-th
 }
 .switch-filetype-btns span {
   font-weight: bold;
-  color: #212529;
+  color: inherit;
 }
-body.dark-mode .switch-filetype-btns span {
-  color: #f0f0f0;
-}
-
 .switch-filetype-btns .btn-group .btn:first-child {
   border-top-left-radius: 1rem !important;
   border-bottom-left-radius: 1rem !important;
@@ -696,6 +696,8 @@ body.dark-mode .switch-filetype-btns .btn-group .btn-secondary {
   justify-content: center;
   align-items: center;
   color: #212529;
+  border-width: 0;
+  transition: border-width ease 1s;
 }
 .dropzone.dz-clickable:hover {
   border: 4px dashed rgb(82, 154, 204);
