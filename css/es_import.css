@@ -738,9 +738,13 @@ body.dark-mode .dropzone.dz-clickable .dz-message {
 
 .dropzone.dz-clickable .dz-message .dz-button.dz-main-message {
   white-space: nowrap;
-  display: inline-block;
+  display: flex;
   vertical-align: middle;
+  width: 100%;
   font-size: 1.5rem;
+  justify-content: center;
+  flex-direction: row;
+  align-items: baseline;
 }
 .dropzone.dz-clickable .dz-message .dz-button.dz-main-message span {
   color: rgb(0, 119, 204);
