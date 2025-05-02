@@ -229,7 +229,7 @@ body.dark-mode .menu .menu-item {
 }
 
 .menu .menu-item .toggle-button {
-  display: inherit;
+  position: inherit;
 }
 .menu .menu-item.no-hover:hover {
   background-color: transparent;
