@@ -105,6 +105,9 @@ form.dropzone{
         }
 
         .dz-button.dz-main-message{
+            white-space: nowrap;
+            display: inline-block;
+            vertical-align: middle;
             font-size: 1.5rem;
             span{
                 color: color(blue-primary, base);
