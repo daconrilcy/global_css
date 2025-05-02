@@ -19,3 +19,7 @@ $header-preview-style: (
 );
 
 $border-radius-preview: calc($bs-border-radius *2);
+
+.dropzone{
+  font: inherit;
+}

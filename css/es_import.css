@@ -271,6 +271,10 @@ body.dark-mode .menu .menu-item {
   }
 }
 
+.dropzone {
+  font: inherit;
+}
+
 .csv-content {
   padding: 1rem;
   background-color: #fff;
@@ -786,6 +790,32 @@ body.dark-mode .dropzone.dz-clickable .dz-message {
   transform: scale(1.2);
   background-color: rgba(0, 0, 0, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.3);
+}
+.dropzone.dz-clickable .dz-preview .dz-details {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dropzone.dz-clickable .dz-preview .dz-details .dz-filename span {
+  transition: font-size ease 0.25s;
+}
+.dropzone.dz-clickable .dz-preview .dz-details .dz-filename:hover span {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  transition: font-size ease 0.25s;
+}
+.dropzone.dz-clickable .dz-preview .dz-remove {
+  text-decoration: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin: auto;
+}
+.dropzone.dz-clickable .dz-preview .dz-remove span {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=es_import.css.map */
