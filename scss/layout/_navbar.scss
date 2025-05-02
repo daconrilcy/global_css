@@ -29,7 +29,6 @@
     text-decoration: none;
     color: $bs-body-color;
     @at-root body.dark-mode & {
-      background-color: $dark-background-color-secondary;
       color: $dark-front-color;
     }
 

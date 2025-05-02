@@ -130,6 +130,10 @@ form.dropzone{
             color: $bs-body-bg;
             background-color: rgba(0,0,0,0.3);
         }
+
+        &.hidden{
+            display: none;
+        }
     }
     
     

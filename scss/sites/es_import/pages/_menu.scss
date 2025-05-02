@@ -24,20 +24,30 @@
     border-radius: 0.5rem;
     transition: background-color 0.3s;
   }
-  @at-root body.dark-mode & {
-    background-color: $dark-background-color-secondary;
-    color: $dark-front-color;
-  }
 
   .menu-item {
     background-color: transparent;
     border-radius: $bs-border-radius;
     padding: 0.5rem;
 
-    &:hover {
-      background-color: color(light-gray, medium-light);
-      a {
-        color: white;
+    @at-root body.dark-mode & {
+      background-color: $dark-background-color-secondary;
+      color: $dark-front-color;
+    }
+
+    .toggle-button{
+      display: inherit;
+    }
+
+    &.no-hover {  
+      &:hover { background-color: transparent; }
+    }
+    &:not(.no-hover) {
+      &:hover {
+        background-color: color(light-gray, medium-light);
+        a {
+          color: $bs-body-color;
+        }
       }
     }
 

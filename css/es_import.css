@@ -218,21 +218,27 @@
   border-radius: 0.5rem;
   transition: background-color 0.3s;
 }
-body.dark-mode .menu {
-  background-color: hsl(0, 0%, 10%);
-  color: #f0f0f0;
-}
-
 .menu .menu-item {
   background-color: transparent;
   border-radius: 0.25rem;
   padding: 0.5rem;
 }
-.menu .menu-item:hover {
+body.dark-mode .menu .menu-item {
+  background-color: hsl(0, 0%, 10%);
+  color: #f0f0f0;
+}
+
+.menu .menu-item .toggle-button {
+  display: inherit;
+}
+.menu .menu-item.no-hover:hover {
+  background-color: transparent;
+}
+.menu .menu-item:not(.no-hover):hover {
   background-color: rgb(173, 179, 189);
 }
-.menu .menu-item:hover a {
-  color: white;
+.menu .menu-item:not(.no-hover):hover a {
+  color: #212529;
 }
 .menu .menu-item.active {
   background-color: rgb(220, 226, 238);
@@ -760,6 +766,9 @@ body.dark-mode .dropzone.dz-clickable .dz-message {
   font-size: 1rem;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
+}
+.dropzone.dz-clickable .dz-message.hidden {
+  display: none;
 }
 .dropzone.dz-clickable .icon-upload {
   width: 5rem;
