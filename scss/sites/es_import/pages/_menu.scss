@@ -102,19 +102,22 @@
 
   .menu {
     .menu-item {
+      .toggle-button{
+        position: inherit;
+      }
+
       a {
         font-family: 'Montserrat', Arial, sans-serif;
         font-size: 1rem;
         letter-spacing: 0.5px;
         padding: 0.75rem 1.25rem;
         transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-
-        &:hover,
-        &:focus {
-          background: #f9d923;
-          color: #222;
-          box-shadow: 0 2px 8px rgba(249, 217, 35, 0.15);
-        }
+          &:hover,
+          &:focus {
+            background: #f9d923;
+            color: #222;
+            box-shadow: 0 2px 8px rgba(249, 217, 35, 0.15);
+          }
       }
 
       &.active > a {
