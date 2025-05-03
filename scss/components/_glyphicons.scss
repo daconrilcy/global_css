@@ -31,7 +31,19 @@
 
   &.glyphicon-remove::before {
     content: "\e014";
-  } 
+  }
+
+  &.glyphicon-modify::before{
+    content: "\e065";
+  }
+
+  &.glyphicon-modify-revert::before{
+    content: "\e066";
+  }
+
+  &.glyphicon-modify-accept::before{
+    content: "\e067";
+  }
 
   &.gly-spin {
     animation: spin 2s infinite linear;
