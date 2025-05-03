@@ -15,6 +15,7 @@ html, body {
   overflow-x: hidden;
 }
 
+
 body {
   font-family: $font-default;
   font-size: $taille-texte;
@@ -23,11 +24,11 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  @at-root html.dark-mode {
-    background: $dark-background-color;
-    color: $dark-front-color;
-  }
+}
+
+html.dark-mode body {
+  background: $dark-background-color;
+  color: $dark-front-color;
 }
 
 img, picture, video, canvas, svg {
