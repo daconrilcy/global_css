@@ -565,19 +565,23 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: baseline;
   align-content: center;
+}
+.page-title .page-title-left {
+  flex: 0 0 250px;
 }
 .page-title h2 {
   flex: 0 0 auto;
-  width: 40%;
-  text-align: left;
+  width: calc(40% - 125px);
+  text-align: end;
 }
 .page-title input {
   flex: 0 0 auto;
-  width: 40%;
+  width: calc(40% - 125px);
   color: rgb(0, 119, 204);
   font-weight: 700;
+  font-size: 2rem;
   border: 1px solid rgba(211, 218, 230, 0);
   transition: 0.5s;
 }
@@ -615,6 +619,9 @@ html.dark-mode .page-title {
 }
 
 @media (max-width: 768px) {
+  .page-title .page-title-left {
+    flex: 0 0 0;
+  }
   .page-title h2 {
     width: 100%;
   }

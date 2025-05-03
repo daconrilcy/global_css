@@ -9,18 +9,22 @@
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
     align-content: center;
+    .page-title-left{
+        flex: 0 0 250px;
+    }
     h2{
         flex: 0 0 auto;
-        width: 40%;
-        text-align: left;
+        width: calc(40% - 125px);
+        text-align: end;
     }
     input {
         flex: 0 0 auto;
-        width: 40%;
+        width: calc(40% - 125px);
         color: color(blue-primary, base);
         font-weight: 700;
+        font-size: 2rem;
         border: 1px solid rgba(color(light-gray, base), 0);
         transition: 0.5s;
 
@@ -64,6 +68,9 @@
 
 @include respond-max(md){
     .page-title {
+        .page-title-left{
+            flex: 0 0 0;
+        }
         h2{
             width: 100%;
         }
