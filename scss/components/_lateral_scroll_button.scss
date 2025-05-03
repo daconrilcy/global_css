@@ -20,7 +20,7 @@
     z-index: 10;
     pointer-events: auto;
     
-    @at-root body.dark-mode & {
+    @at-root html.dark-mode & {
         background: rgba(255, 255, 255, 0.15);
         color: $dark-front-color;
     }

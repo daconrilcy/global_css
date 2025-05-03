@@ -11,12 +11,12 @@
         .card-title{
             color: inherit;
         }
-        @at-root body.dark-mode & {
+        @at-root html.dark-mode & {
             background-color: rgba(0,0,0,0.2);
         }
     }
 
-    @at-root body.dark-mode & {
+    @at-root html.dark-mode & {
         color: $dark-front-color;
     }
 }
@@ -30,7 +30,7 @@
     span{
         font-weight: bold;
         color: color(blue-primary, base);
-        @at-root body.dark-mode & {
+        @at-root html.dark-mode & {
             color:color(blue-primary, light);
         }
     }
@@ -61,7 +61,7 @@
                 background-color: color(blue-primary, base) !important;
                 box-shadow: inset 1px 1px 2px rgba(235, 235, 255, 0.5), inset -1px -1px 2px rgba(0, 0, 85, 0.5);
             }
-            @at-root body.dark-mode & {
+            @at-root html.dark-mode & {
                 background-color: rgba(0,0,0,0.1);
                 color: $dark-front-color;
                 &:hover{
@@ -98,7 +98,7 @@ form.dropzone{
         align-items: center;
         color: $bs-body-color;
 
-        @at-root body.dark-mode & {
+        @at-root html.dark-mode & {
             color: $dark-front-color;
         }
 

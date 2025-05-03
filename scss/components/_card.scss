@@ -21,7 +21,7 @@
   border-radius: $bs-border-radius;
   box-shadow: $default-card-shadow;
 
-  @at-root body.dark-mode & {
+  @at-root html.dark-mode & {
     background-color: $dark-background-color-secondary;
     color: $dark-front-color;
   }
@@ -33,7 +33,7 @@
     background-color: rgba($bs-body-color, 0.03);
     border-bottom: $bs-border-width solid $bs-border-color-translucent;
     
-    @at-root body.dark-mode & {
+    @at-root html.dark-mode & {
       background-color: rgba($dark-background-color-secondary, 0.03);
       color: $dark-front-color;
     }

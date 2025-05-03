@@ -46,7 +46,7 @@
             background-color: rgba(0,0,0,0.1);; // ou clair selon le thème
             pointer-events: none;
             z-index: 1;
-            body.dark-mode & {
+            @at-root html.dark-mode & {
                 background-color: $dark-background-color-tertiary;
             }
           }
@@ -54,7 +54,7 @@
         &::-webkit-scrollbar-track {
             background: rgba(0,0,0,0.1);
 
-            body.dark-mode & {
+            @at-root html.dark-mode & {
                 background: $dark-background-color-tertiary;
             }
         }
@@ -63,14 +63,14 @@
             background: color(neutral-gray,light);
             border-radius: 0.5rem;
         
-            body.dark-mode & {
+            @at-root html.dark-mode & {
                 background: color(neutral-gray,light);
             }
         
             &:hover {
               background: color(blue-primary, base);
               cursor: pointer;
-              body.dark-mode & {
+              @at-root html.dark-mode & {
                 background: color(blue-primary, base);
               }  
             }

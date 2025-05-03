@@ -542,7 +542,7 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   margin: 1rem 0;
   text-align: center;
 }
-body.dark-mode .page-title {
+html.dark-mode .page-title {
   color: #f0f0f0;
 }
 
@@ -554,7 +554,7 @@ body.dark-mode .page-title {
   border-radius: 0.5rem;
   background-color: #fff;
 }
-body.dark-mode .page-layout {
+html.dark-mode .page-layout {
   background: hsl(0, 0%, 10%);
   color: #f0f0f0;
 }
@@ -619,29 +619,33 @@ body.dark-mode .page-layout {
   pointer-events: none;
   z-index: 1;
 }
-body.dark-mode .csv-zone .csv-container .csv-table-wrapper::after {
+html.dark-mode .csv-zone .csv-container .csv-table-wrapper::after {
   background-color: hsl(0, 0%, 15%);
 }
+
 .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.1);
 }
-body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-track {
+html.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-track {
   background: hsl(0, 0%, 15%);
 }
+
 .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-thumb {
   background: rgb(115, 122, 143);
   border-radius: 0.5rem;
 }
-body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-thumb {
+html.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-thumb {
   background: rgb(115, 122, 143);
 }
+
 .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-thumb:hover {
   background: rgb(0, 119, 204);
   cursor: pointer;
 }
-body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-thumb:hover {
+html.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-thumb:hover {
   background: rgb(0, 119, 204);
 }
+
 .csv-zone .csv-container .csv-table-wrapper .csv-table {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -666,11 +670,11 @@ body.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-th
 .card-upload .card-header .card-title {
   color: inherit;
 }
-body.dark-mode .card-upload .card-header {
+html.dark-mode .card-upload .card-header {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-body.dark-mode .card-upload {
+html.dark-mode .card-upload {
   color: #f0f0f0;
 }
 
@@ -685,7 +689,7 @@ body.dark-mode .card-upload {
   font-weight: bold;
   color: rgb(0, 119, 204);
 }
-body.dark-mode .switch-filetype-btns span {
+html.dark-mode .switch-filetype-btns span {
   color: rgb(82, 154, 204);
 }
 
@@ -711,11 +715,11 @@ body.dark-mode .switch-filetype-btns span {
   background-color: rgb(0, 119, 204) !important;
   box-shadow: inset 1px 1px 2px rgba(235, 235, 255, 0.5), inset -1px -1px 2px rgba(0, 0, 85, 0.5);
 }
-body.dark-mode .switch-filetype-btns .btn-group .btn-secondary {
+html.dark-mode .switch-filetype-btns .btn-group .btn-secondary {
   background-color: rgba(0, 0, 0, 0.1);
   color: #f0f0f0;
 }
-body.dark-mode .switch-filetype-btns .btn-group .btn-secondary:hover {
+html.dark-mode .switch-filetype-btns .btn-group .btn-secondary:hover {
   background-color: rgb(82, 154, 204);
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25);
 }
@@ -745,7 +749,7 @@ form.dropzone:hover {
   align-items: center;
   color: #212529;
 }
-body.dark-mode .dropzone.dz-clickable .dz-message {
+html.dark-mode .dropzone.dz-clickable .dz-message {
   color: #f0f0f0;
 }
 

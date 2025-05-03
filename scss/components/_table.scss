@@ -22,7 +22,7 @@
       border-right: $cell-border;
       border-left: $cell-border;
 
-      @at-root body.dark-mode & {
+      @at-root html.dark-mode & {
         background: $dark-background-color-tertiary;
         color: $dark-front-color;
       }
@@ -81,7 +81,7 @@
     tr:nth-child(odd) {
       background-color: $bs-body-bg;
 
-      @at-root body.dark-mode & {
+      @at-root html.dark-mode & {
         background-color: $dark-background-color;
       }
     }
@@ -89,7 +89,7 @@
     tr:nth-child(even) {
       background-color: color(blue-light, very-light);
 
-      @at-root body.dark-mode & {
+      @at-root html.dark-mode & {
         background-color: $dark-background-color-secondary;
       }
     }

@@ -38,7 +38,7 @@
                 box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
             }
 
-            @at-root body.dark-mode & {
+            @at-root html.dark-mode & {
                 background: $dark-background-color-secondary;
                 color: #eee;
                 border: 1px solid #444;
@@ -54,7 +54,7 @@
             color: $bs-body-bg;
             border-color: color(blue-primary, base);
 
-            @at-root body.dark-mode & {
+            @at-root html.dark-mode & {
                 color: $dark-front-color;
                 background-color: color(blue-primary, base);
                 border-color: color(blue-primary, base);
@@ -66,7 +66,7 @@
             pointer-events: none;
             background-color: #e9ecef;
 
-            @at-root body.dark-mode & {
+            @at-root html.dark-mode & {
                 background-color: $dark-background-color-secondary;
                 border-color: #555;
             }

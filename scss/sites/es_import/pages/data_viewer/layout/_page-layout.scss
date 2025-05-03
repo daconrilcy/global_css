@@ -6,7 +6,7 @@
     margin: 1rem 0;
     text-align: center;
 
-    @at-root body.dark-mode & {
+    @at-root html.dark-mode & {
         color: $dark-front-color;
       }
 }
@@ -20,7 +20,7 @@
 
     background-color: $bs-body-bg;
     
-    @at-root body.dark-mode & {
+    @at-root html.dark-mode & {
         background: $dark-background-color-secondary;
         color: $dark-front-color;
     }
