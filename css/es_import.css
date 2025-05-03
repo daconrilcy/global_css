@@ -589,6 +589,12 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   border: 1px solid #d3dae6;
   transition: 0.5s;
 }
+html.dark-mode .page-title input:hover {
+  background-color: hsl(0, 0%, 10%);
+  border: 1px solid rgba(211, 218, 230, 0.2);
+  transition: 0.5s;
+}
+
 .page-title .modify-buttons {
   flex: 0 0 auto;
   width: 20%;
@@ -598,6 +604,7 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
 .page-title .glyphicon {
   opacity: 0;
   transition: 0.25s;
+  cursor: pointer;
 }
 .page-title .glyphicon.visible {
   opacity: 1;

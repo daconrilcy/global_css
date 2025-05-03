@@ -33,6 +33,13 @@
             border: 1px solid rgba(color(light-gray, base), 1);
             transition: 0.5s;
         }
+        @at-root html.dark-mode & {
+            &:hover{
+                background-color: $dark-background-color-secondary;
+                border: 1px solid rgba(color(light-gray, base), 0.2);
+                transition: 0.5s;
+            }
+        }
     }
     .modify-buttons{
         flex: 0 0 auto;
@@ -43,6 +50,7 @@
     .glyphicon{
         opacity: 0;
         transition: 0.25s;
+        cursor: pointer;
         &.visible{
             opacity: 1;
             transition: 0.25s;
