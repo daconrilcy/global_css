@@ -1,9 +1,16 @@
+@use '../../../abstracts/colors' as *;
+
 .errorpage-container{
     background: #ffeaa7;
     font-family: 'Comic Sans MS', cursive, sans-serif;
     text-align: center;
     color: #2d3436;
     padding: 4rem 1rem;
+
+    @at-root html.dark-mode & {
+      background-color: $dark-background-color-tertiary;
+    }
+
 
     h1 {
         font-size: 8rem;
