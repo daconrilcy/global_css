@@ -93,19 +93,14 @@
       .switch{
         .slider{
           background-color: $bs-body-bg;
-          transition: background-color ease 0.25s;
-
           @at-root html.dark-mode & {
             background-color: $dark-background-color;
-            transition: background-color ease 0.25s;
           }
         }
         .slider::before{
           background-color: color(blue-primary, base);
-          transition: background-color ease 0.25s;
           @at-root html.dark-mode & {
             background-color: #f9d923;
-            transition: background-color ease 0.25s;
           }
         }
       }
