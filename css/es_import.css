@@ -272,6 +272,12 @@ html.dark-mode .navbar .menu-toggle {
   html.dark-mode .navbar .toggle-button .switch .slider {
     background-color: #f9d923;
   }
+  .navbar .toggle-button .label-text {
+    color: #fff;
+  }
+  html.dark-mode .navbar .toggle-button .label-text {
+    color: #f9d923;
+  }
   .navbar .menu {
     background: linear-gradient(180deg, #222 0%, #2c3e50 100%);
     border-top: 1px solid #f9d923;

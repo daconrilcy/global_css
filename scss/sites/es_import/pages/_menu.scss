@@ -93,10 +93,16 @@
       .switch{
         .slider{
           background-color: color(blue-primary, base);
-          
+
           @at-root html.dark-mode & {
             background-color: #f9d923;
           }
+        }
+      }
+      .label-text{
+        color: $bs-body-bg;
+        @at-root html.dark-mode & {
+          color: #f9d923;
         }
       }
     }
