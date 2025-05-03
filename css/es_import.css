@@ -210,6 +210,9 @@
 .navbar .logo img {
   filter: drop-shadow(0 0 2px #f9d923);
 }
+.navbar .menu .menu-item .toggle-button {
+  position: static;
+}
 .navbar .menu .menu-item a {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;

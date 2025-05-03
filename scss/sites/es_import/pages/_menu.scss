@@ -19,6 +19,9 @@
 
   .menu {
     .menu-item {
+      .toggle-button{
+        position:static;
+      }
       a {
         font-family: $font-default;
         font-size: 1rem;
