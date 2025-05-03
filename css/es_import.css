@@ -266,10 +266,10 @@ html.dark-mode .navbar .menu-toggle {
     top: 0.75rem;
     color: #fff;
   }
-  .navbar .toggle-button .switch .slider {
+  .navbar .toggle-button .switch .slider::before {
     background-color: rgb(0, 119, 204);
   }
-  html.dark-mode .navbar .toggle-button .switch .slider {
+  html.dark-mode .navbar .toggle-button .switch .slider::before {
     background-color: #f9d923;
   }
   .navbar .toggle-button .label-text {
