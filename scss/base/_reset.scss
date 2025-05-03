@@ -23,7 +23,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  &.dark-mode {
+  @at-root html.dark-mode {
     background: $dark-background-color;
     color: #eee;
   }
