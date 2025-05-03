@@ -843,7 +843,8 @@ html.dark-mode .dropzone.dz-clickable .dz-message {
   padding: 4rem 1rem;
 }
 html.dark-mode .errorpage-container {
-  background-color: hsl(0, 0%, 15%);
+  background-color: hsl(0, 0%, 5%);
+  color: #f0f0f0;
 }
 
 .errorpage-container h1 {

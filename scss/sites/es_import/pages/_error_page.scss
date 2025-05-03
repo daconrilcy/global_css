@@ -8,7 +8,8 @@
     padding: 4rem 1rem;
 
     @at-root html.dark-mode & {
-      background-color: $dark-background-color-tertiary;
+      background-color: $dark-background-color;
+      color: $dark-front-color;
     }
 
 
