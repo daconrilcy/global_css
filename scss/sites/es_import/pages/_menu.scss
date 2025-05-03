@@ -20,12 +20,25 @@
     }
   }
 
+  .toggle-button {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    z-index: 1300;
+  
+    .label-text {
+      margin-left: 0.5rem;
+      color: #f9d923;
+      font-size: 0.9rem;
+    }
+  
+    .switch {
+      scale: 0.9;
+    }
+  }
+
   .menu {
     .menu-item {
-      .toggle-button{
-        position:fixed;
-        color: #fff;
-      }
       a {
         font-family: $font-default;
         font-size: 1rem;
@@ -68,6 +81,11 @@
 // Responsive adaptation spécifique
 @include respond-max(lg) {
   .navbar {
+    .toggle-button {
+      position: absolute;
+      right: 1rem;
+      top: 0.75rem;
+    }
     .menu {
       background: linear-gradient(180deg, #222 0%, #2c3e50 100%);
       border-top: 1px solid #f9d923;
