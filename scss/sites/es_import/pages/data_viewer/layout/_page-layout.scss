@@ -54,7 +54,7 @@
     }
 }
 
-@include respond-to(md){
+@include respond-max(md){
     .page-title {
         h2{
             width: 100%;
