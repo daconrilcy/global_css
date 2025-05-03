@@ -266,6 +266,9 @@ html.dark-mode .navbar .menu-toggle {
     top: 0.75rem;
     color: #fff;
   }
+  html.dark-mode .navbar .toggle-button .switch .slider {
+    background-color: hsl(0, 0%, 5%);
+  }
   .navbar .toggle-button .switch .slider::before {
     background-color: rgb(0, 119, 204);
   }

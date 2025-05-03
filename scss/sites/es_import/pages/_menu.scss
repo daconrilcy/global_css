@@ -91,6 +91,11 @@
       top: 0.75rem;
       color: $bs-body-bg;
       .switch{
+        .slider{
+          @at-root html.dark-mode & {
+            background-color: $dark-background-color;
+          }
+        }
         .slider::before{
           background-color: color(blue-primary, base);
 
