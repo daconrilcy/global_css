@@ -31,16 +31,13 @@
     }
     // Icône burger → croix (CSS pur)
     &.open::before {
-      content: '\\2715'; // Unicode croix
+      content: '✕'; // Unicode croix
       position: absolute;
       left: 0;
       top: 0;
       font-size: 2.2rem;
       color: #f44336;
       transition: color 0.2s;
-    }
-    &.open::after {
-      content: '';
     }
   }
 
@@ -119,7 +116,8 @@
       flex-direction: column;
       position: absolute;
       top: 100%;
-      right: 1.5rem;
+      left: auto !important;
+      right: 1.5rem !important;      
       min-width: 180px;
       width: auto;
       background: #222;

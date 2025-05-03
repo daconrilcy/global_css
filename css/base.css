@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -6917,16 +6918,13 @@ p {
   position: relative;
 }
 .navbar .menu-toggle.open::before {
-  content: "\\2715";
+  content: "✕";
   position: absolute;
   left: 0;
   top: 0;
   font-size: 2.2rem;
   color: #f44336;
   transition: color 0.2s;
-}
-.navbar .menu-toggle.open::after {
-  content: "";
 }
 .navbar .logo {
   display: flex;
@@ -6994,7 +6992,8 @@ p {
     flex-direction: column;
     position: absolute;
     top: 100%;
-    right: 1.5rem;
+    left: auto !important;
+    right: 1.5rem !important;
     min-width: 180px;
     width: auto;
     background: #222;
