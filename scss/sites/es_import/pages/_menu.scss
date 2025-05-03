@@ -64,7 +64,7 @@
   }
 
   .menu-toggle {
-    color: #f9d923;
+    color: $bs-body-bg;
     font-size: 2.2rem;
     transition: color 0.2s;
 
@@ -74,6 +74,10 @@
     }
     &.open {
       color: #f44336;
+    }
+
+    @at-root html.dark-mode & {
+      color: #f9d923;
     }
   }
 }
@@ -85,6 +89,16 @@
       position: absolute;
       right: 1rem;
       top: 0.75rem;
+      color: $bs-body-bg;
+      .switch{
+        .slider{
+          background-color: color(blue-primary, base);
+          
+          @at-root html.dark-mode & {
+            background-color: #f9d923;
+          }
+        }
+      }
     }
     .menu {
       background: linear-gradient(180deg, #222 0%, #2c3e50 100%);
