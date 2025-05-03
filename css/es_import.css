@@ -199,9 +199,10 @@
 }
 
 .navbar {
-  background: linear-gradient(90deg, #222 0%, #2c3e50 100%);
-  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  background: #fff;
+  box-shadow: 8px 8px 8px rgba(44, 62, 80, 0.3);
   position: fixed;
+  width: 100%;
 }
 .navbar .logo {
   font-size: 1.2rem;
@@ -213,6 +214,7 @@
 }
 .navbar .menu .menu-item .toggle-button {
   position: static;
+  color: #fff;
 }
 .navbar .menu .menu-item a {
   font-family: "Montserrat", Arial, sans-serif;
