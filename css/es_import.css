@@ -200,7 +200,8 @@
 
 .navbar {
   background: linear-gradient(90deg, #222 0%, #2c3e50 100%);
-  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  box-shadow: 0px 8px 8px rgba(44, 62, 80, 0.3);
+  position: fixed;
 }
 .navbar .logo {
   font-size: 1.2rem;
@@ -211,7 +212,8 @@
   filter: drop-shadow(0 0 2px #f9d923);
 }
 .navbar .menu .menu-item .toggle-button {
-  position: static;
+  position: absolute;
+  color: #fff;
 }
 .navbar .menu .menu-item a {
   font-family: "Roboto", sans-serif;
