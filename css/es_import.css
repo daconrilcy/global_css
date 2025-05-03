@@ -198,79 +198,59 @@
   display: none;
 }
 
-.menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+.navbar {
+  background: linear-gradient(90deg, #222 0%, #2c3e50 100%);
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+.navbar .logo {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #f9d923;
+}
+.navbar .logo img {
+  filter: drop-shadow(0 0 2px #f9d923);
+}
+.navbar .menu .menu-item a {
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 1rem;
-  z-index: 1000;
+  letter-spacing: 0.5px;
+  padding: 0.75rem 1.25rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
-.menu li {
-  display: flex;
-  align-items: center;
+.navbar .menu .menu-item a:hover, .navbar .menu .menu-item a:focus {
+  background: #f9d923;
+  color: #222;
+  box-shadow: 0 2px 8px rgba(249, 217, 35, 0.15);
 }
-.menu a {
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  transition: background-color 0.3s;
-}
-.menu .menu-item {
-  background-color: transparent;
-  border-radius: 0.25rem;
-  padding: 0.5rem;
-}
-body.dark-mode .menu .menu-item {
-  background-color: hsl(0, 0%, 10%);
-  color: #f0f0f0;
-}
-
-.menu .menu-item .toggle-button {
-  position: inherit;
-}
-.menu .menu-item.no-hover:hover {
-  background-color: transparent;
-}
-.menu .menu-item:not(.no-hover):hover {
-  background-color: rgb(173, 179, 189);
-}
-.menu .menu-item:not(.no-hover):hover a {
-  color: #212529;
-}
-.menu .menu-item.active {
-  background-color: rgb(220, 226, 238);
+.navbar .menu .menu-item.active > a {
+  background: #fff;
+  color: #222;
   font-weight: bold;
-  color: white;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
 }
-.menu .menu-item.active:hover {
-  background-color: rgb(173, 179, 189);
+.navbar .menu-toggle {
+  color: #f9d923;
+  font-size: 2.2rem;
+  transition: color 0.2s;
 }
-.menu .menu-item.active:hover a {
-  color: white;
-}
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-  }
-  .menu.active {
-    display: block;
-    position: absolute;
-    top: 3.5rem;
-    right: 1rem;
-    background-color: #fff;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    border-radius: 0.25rem;
-  }
-  .menu.active li {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
+.navbar .menu-toggle:hover, .navbar .menu-toggle:focus {
+  color: #fff;
 }
 
+@media (max-width: 992px) {
+  .navbar .menu {
+    background: linear-gradient(180deg, #222 0%, #2c3e50 100%);
+    border-top: 1px solid #f9d923;
+    box-shadow: 0 8px 24px rgba(44, 62, 80, 0.12);
+  }
+  .navbar .menu .menu-item a {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+  .navbar .menu-toggle {
+    color: #f9d923;
+  }
+}
 .dropzone {
   font: inherit;
 }

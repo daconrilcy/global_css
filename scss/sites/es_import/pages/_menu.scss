@@ -3,85 +3,158 @@
 @use '../../../abstracts/mixins' as *;
 @use '../../../abstracts/colors' as *;
 
-.menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  font-size: 1rem;
-  z-index: 1000;
+// .menu {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: flex-end;
+//   font-size: 1rem;
+//   z-index: 1000;
 
-  li {
-    display: flex;
-    align-items: center;
+//   li {
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   a {
+//     text-decoration: none;
+//     padding: 0.5rem 1rem;
+//     border-radius: 0.5rem;
+//     transition: background-color 0.3s;
+//   }
+
+//   .menu-item {
+//     background-color: transparent;
+//     border-radius: $bs-border-radius;
+//     padding: 0.5rem;
+
+//     @at-root body.dark-mode & {
+//       background-color: $dark-background-color-secondary;
+//       color: $dark-front-color;
+//     }
+
+//     .toggle-button{
+//       position: inherit;
+//     }
+
+//     &.no-hover {  
+//       &:hover { background-color: transparent; }
+//     }
+//     &:not(.no-hover) {
+//       &:hover {
+//         background-color: color(light-gray, medium-light);
+//         a {
+//           color: $bs-body-color;
+//         }
+//       }
+//     }
+
+//     &.active {
+//       background-color: color(light-gray, light);
+//       font-weight: bold;
+//       color: white;
+
+//       &:hover {
+//         background-color: color(light-gray, medium-light);
+//         a {
+//           color: white;
+//         }
+//       }
+//     }
+//   }
+
+//   @include respond-max(md) {
+//     display: none;
+
+//     &.active {
+//       display: block;
+//       position: absolute;
+//       top: 3.5rem;
+//       right: 1rem;
+//       background-color: $bs-body-bg;
+//       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+//       padding: 1rem;
+//       border-radius: $bs-border-radius;
+
+//       li {
+//         display: block;
+//         margin-bottom: 0.5rem;
+//       }
+//     }
+//   }
+// }
+
+.navbar {
+  background: linear-gradient(90deg, #222 0%, #2c3e50 100%);
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+
+  .logo {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: #f9d923;
+
+    img {
+      filter: drop-shadow(0 0 2px #f9d923);
+    }
   }
 
-  a {
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    transition: background-color 0.3s;
+  .menu {
+    .menu-item {
+      a {
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        padding: 0.75rem 1.25rem;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+
+        &:hover,
+        &:focus {
+          background: #f9d923;
+          color: #222;
+          box-shadow: 0 2px 8px rgba(249, 217, 35, 0.15);
+        }
+      }
+
+      &.active > a {
+        background: #fff;
+        color: #222;
+        font-weight: bold;
+        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+      }
+    }
   }
 
-  .menu-item {
-    background-color: transparent;
-    border-radius: $bs-border-radius;
-    padding: 0.5rem;
+  .menu-toggle {
+    color: #f9d923;
+    font-size: 2.2rem;
+    transition: color 0.2s;
 
-    @at-root body.dark-mode & {
-      background-color: $dark-background-color-secondary;
-      color: $dark-front-color;
+    &:hover,
+    &:focus {
+      color: #fff;
     }
+  }
+}
 
-    .toggle-button{
-      position: inherit;
-    }
+// Responsive adaptation spécifique
+@include respond-max(lg) {
+  .navbar {
+    .menu {
+      background: linear-gradient(180deg, #222 0%, #2c3e50 100%);
+      border-top: 1px solid #f9d923;
+      box-shadow: 0 8px 24px rgba(44, 62, 80, 0.12);
 
-    &.no-hover {  
-      &:hover { background-color: transparent; }
-    }
-    &:not(.no-hover) {
-      &:hover {
-        background-color: color(light-gray, medium-light);
+      .menu-item {
         a {
-          color: $bs-body-color;
+          padding: 1rem 2rem;
+          font-size: 1.1rem;
         }
       }
     }
-
-    &.active {
-      background-color: color(light-gray, light);
-      font-weight: bold;
-      color: white;
-
-      &:hover {
-        background-color: color(light-gray, medium-light);
-        a {
-          color: white;
-        }
-      }
-    }
-  }
-
-  @include respond-max(md) {
-    display: none;
-
-    &.active {
-      display: block;
-      position: absolute;
-      top: 3.5rem;
-      right: 1rem;
-      background-color: $bs-body-bg;
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-      padding: 1rem;
-      border-radius: $bs-border-radius;
-
-      li {
-        display: block;
-        margin-bottom: 0.5rem;
-      }
+    .menu-toggle {
+      color: #f9d923;
     }
   }
 }
