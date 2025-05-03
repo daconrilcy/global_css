@@ -67,5 +67,8 @@
     .menu-toggle {
       display: block;
     }
+    .menu.open {
+      display: flex;
+    }
   }
 }
