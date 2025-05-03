@@ -12,6 +12,7 @@
     font-size: 1.2rem;
     letter-spacing: 1px;
     color: #f9d923;
+    width: 100%;
 
     img {
       filter: drop-shadow(0 0 2px #f9d923);
@@ -21,7 +22,7 @@
   .menu {
     .menu-item {
       .toggle-button{
-        position:absolute;
+        position:fixed;
         color: #fff;
       }
       a {

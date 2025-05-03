@@ -207,12 +207,13 @@
   font-size: 1.2rem;
   letter-spacing: 1px;
   color: #f9d923;
+  width: 100%;
 }
 .navbar .logo img {
   filter: drop-shadow(0 0 2px #f9d923);
 }
 .navbar .menu .menu-item .toggle-button {
-  position: absolute;
+  position: fixed;
   color: #fff;
 }
 .navbar .menu .menu-item a {
