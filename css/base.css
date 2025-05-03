@@ -6993,7 +6993,6 @@ p {
     position: absolute;
     top: 100%;
     left: auto !important;
-    right: 1.5rem !important;
     min-width: 180px;
     width: auto;
     background: #222;
