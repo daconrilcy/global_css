@@ -756,6 +756,7 @@ html.dark-mode .dropzone.dz-clickable .dz-message {
 .dropzone.dz-clickable .dz-message .dz-button.dz-main-message {
   white-space: nowrap;
   display: flex;
+  flex-wrap: wrap;
   vertical-align: middle;
   width: 100%;
   font-size: 1.5rem;
@@ -766,12 +767,11 @@ html.dark-mode .dropzone.dz-clickable .dz-message {
 .dropzone.dz-clickable .dz-message .dz-button.dz-main-message span {
   color: rgb(0, 119, 204);
   font-size: 1.7rem;
-  transition: font-size ease 0.25s, color ease 0.25s;
+  transition: color ease 0.25s;
 }
 .dropzone.dz-clickable .dz-message .dz-button.dz-main-message span:hover {
-  color: rgb(2, 80, 135);
-  font-size: 2rem;
-  transition: font-size ease 0.25s, color ease 0.25s;
+  color: rgb(82, 154, 204);
+  transition: color ease 0.25s;
 }
 .dropzone.dz-clickable .dz-message .dz-button.dz-type-file {
   width: 100%;
@@ -835,6 +835,22 @@ html.dark-mode .dropzone.dz-clickable .dz-message {
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .dropzone.dz-clickable .dz-message .dz-button.dz-main-message {
+    font-size: 1.2rem;
+  }
+  .dropzone.dz-clickable .dz-message .dz-button.dz-main-message span {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 576px) {
+  .dropzone.dz-clickable .dz-message .dz-button.dz-main-message {
+    font-size: 1rem;
+  }
+  .dropzone.dz-clickable .dz-message .dz-button.dz-main-message span {
+    font-size: 1rem;
+  }
+}
 .errorpage-container {
   background: #ffeaa7;
   font-family: "Comic Sans MS", cursive, sans-serif;

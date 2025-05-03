@@ -1,6 +1,7 @@
 @use "../../../abstracts/colors" as *;
 @use "../../../abstracts/functions" as *;
 @use "../../../abstracts/variables" as *;
+@use "../../../abstracts/mixins" as *;
 
 .card-upload{
     text-align: center;
@@ -105,6 +106,7 @@ form.dropzone{
         .dz-button.dz-main-message{
             white-space: nowrap;
             display: flex;
+            flex-wrap: wrap;
             vertical-align: middle;
             width: 100%;
             font-size: 1.5rem;
@@ -114,13 +116,13 @@ form.dropzone{
             span{
                 color: color(blue-primary, base);
                 font-size: 1.7rem;
-                transition: font-size ease 0.25s, color ease 0.25s;
+                transition: color ease 0.25s;
                 &:hover{
-                    color: color(blue-primary, dark);
-                    font-size: 2rem;
-                    transition: font-size ease 0.25s, color ease 0.25s;
+                    color: color(blue-primary, light);
+                    transition: color ease 0.25s;
                 }
             }
+            
         }
 
         .dz-button.dz-type-file{
@@ -200,5 +202,30 @@ form.dropzone{
         }
     }
     
+    }
+}
+@include respond-max(md){
+    .dropzone.dz-clickable{
+        .dz-message{
+            .dz-button.dz-main-message{
+                font-size: 1.2rem;
+                span{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+@include respond-max(sm){
+    .dropzone.dz-clickable{
+        .dz-message{
+            .dz-button.dz-main-message{
+                font-size: 1rem;
+                span{
+                    font-size: 1rem;
+                }
+            }
+        }
     }
 }
