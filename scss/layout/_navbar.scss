@@ -3,121 +3,58 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/mixins' as *;
 
-// .navbar {
-//   width: 100vw;
-//   max-width: 100%;
-//   box-sizing: border-box;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   background-color: $bs-body-bg;
-//   padding: 0;
-//   box-shadow: $navbar-shadow;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   z-index: 1000;
-//   color: $bs-body-color;
-
-//   @at-root body.dark-mode & {
-//     background-color: $dark-background-color-secondary;
-//     color: $dark-front-color;
-//   }
-
-
-//   a {
-//     text-decoration: none;
-//     color: $bs-body-color;
-//     @at-root body.dark-mode & {
-//       color: $dark-front-color;
-//     }
-
-//     &:hover {
-//       color: color(blue-primary, medium);
-//     }
-    
-  
-//   }
-
-//   .logo {
-//     font-size: 1.5rem;
-//     font-weight: 700;
-//     color: $bs-body-color;
-//     text-decoration: none;
-//     padding: 0.5rem;
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     .img-logo {
-//       display: inline-block !important;
-//       vertical-align: text-top !important;
-//     }
-//   }
-
-//   .menu-toggle {
-//     display: none;
-//     font-size: 1.75rem;
-//     cursor: pointer;
-//     background: none;
-//     border: none;
-//     color: inherit;
-//   }
-
-//   @include respond-max(md) {
-//     .menu-toggle {
-//       display: block;
-//     }
-//     .menu.open {
-//       display: flex;
-//     }
-//   }
-// }
-
 // _navbar.scss
 
 .navbar {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   min-height: 56px;
-  background: $bs-body-bg;
+  background: #222;
   padding: 0 1.5rem;
   z-index: 1200;
 
-  @at-root body.dark-mode & {
-      background-color: $dark-background-color-secondary;
-      color: $dark-front-color;
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.2s, transform 0.3s;
+    margin-right: 1rem;
+
+    &.open {
+      color: #f44336;
+      // Animation burger → croix
+      position: relative;
+    }
+    // Icône burger → croix (CSS pur)
+    &.open::before {
+      content: '\\2715'; // Unicode croix
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 2.2rem;
+      color: #f44336;
+      transition: color 0.2s;
+    }
+    &.open::after {
+      content: '';
+    }
   }
 
   .logo {
     display: flex;
     align-items: center;
     font-weight: bold;
-    color: inherit;
+    color: #fff;
     text-decoration: none;
 
     img {
       margin-right: 0.5rem;
       height: 24px;
       width: 24px;
-    }
-  }
-
-  .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: inherit;
-    cursor: pointer;
-    transition: color 0.2s;
-    z-index: 1300;
-
-    &:hover,
-    &:focus {
-      color: #f9d923;
-      outline: none;
     }
   }
 
@@ -152,6 +89,11 @@
         background: #f9d923;
         color: #222;
       }
+
+      &.no-hover {
+        pointer-events: none;
+        opacity: 0.7;
+      }
     }
   }
 }
@@ -159,17 +101,32 @@
 // Responsive
 @include respond-max(lg) {
   .navbar {
+    flex-direction: row;
+    .menu-toggle {
+      display: block;
+      order: 0;
+      margin-right: 0.5rem;
+      z-index: 1300;
+      position: static;
+      background: none;
+    }
+    .logo {
+      order: 1;
+      flex: 1 1 auto;
+    }
     .menu {
       display: none;
       flex-direction: column;
       position: absolute;
       top: 100%;
-      left: 0;
-      width: 100vw;
+      right: 1.5rem;
+      min-width: 180px;
+      width: auto;
       background: #222;
       box-shadow: 0 2px 8px rgba(0,0,0,0.15);
       padding: 0.5rem 0;
       z-index: 1250;
+      align-items: flex-end;
 
       &.open {
         display: flex;
@@ -177,21 +134,18 @@
 
       .menu-item {
         margin: 0.25rem 0;
-        text-align: left;
+        text-align: right;
+        width: 100%;
+        a {
+          width: 100%;
+          display: block;
+        }
       }
-    }
-
-    .menu-toggle {
-      display: block;
-      position: absolute;
-      right: 1.5rem;
-      top: 50%;
-      transform: translateY(-50%);
     }
   }
 }
 
-@include respond-to(lg) {
+@include respond-to(lg){
   .navbar {
     .menu {
       display: flex !important;
@@ -200,6 +154,7 @@
       background: none;
       box-shadow: none;
       padding: 0;
+      align-items: center;
     }
     .menu-toggle {
       display: none;
