@@ -41,6 +41,9 @@
             .btn.btn-visualize{
                 flex: 1 0 auto;
                 margin-left: 0.5rem;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+
                 &:hover{
                     background-color: color(blue-primary, base);
                     color: $bs-body-bg;
@@ -51,6 +54,9 @@
                 height: 2.5rem !important;
                 align-items: center;
                 justify-content: center;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+
                 box-shadow: inset 1px 1px 1px rgba(255,255,255,0.3), inset -1px -1px 1px rgba(0, 0, 0, 0.2);
                 span{
                     font-size: 0.8rem;

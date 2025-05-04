@@ -729,6 +729,8 @@ html.dark-mode .page-layout {
 .file-list ul li .btn.btn-visualize {
   flex: 1 0 auto;
   margin-left: 0.5rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .file-list ul li .btn.btn-visualize:hover {
   background-color: rgb(0, 119, 204);
@@ -739,6 +741,8 @@ html.dark-mode .page-layout {
   height: 2.5rem !important;
   align-items: center;
   justify-content: center;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
   box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.3), inset -1px -1px 1px rgba(0, 0, 0, 0.2);
 }
 .file-list ul li .btn.btn-delete span {
