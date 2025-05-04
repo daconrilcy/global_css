@@ -30,7 +30,7 @@
           height: 100%;
           width: 100%;
           position: relative;
-          scrollbar-color: #8b8b8b #262626;
+          scrollbar-color: #8b8b8b rgb(0 0 0 / 10%);
           
           @at-root html.dark-mode & {
             scrollbar-color: #f0f0f0 rgb(0 0 0 / 10%);
