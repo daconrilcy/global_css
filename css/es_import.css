@@ -573,7 +573,7 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
 }
 .page-title h2 {
   flex: 0 0 auto;
-  width: calc(40% - 125px);
+  width: calc(50% - 125px);
   text-align: end;
 }
 .page-title input {
@@ -615,14 +615,14 @@ html.dark-mode .page-title input.modify {
 
 .page-title .modify-buttons {
   flex: 0 0 auto;
-  width: 20%;
+  width: 10%;
   align-items: center;
   align-content: center;
 }
 .page-title .glyphicon {
   opacity: 0;
   transition: 0.25s;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 .page-title .glyphicon.visible {
