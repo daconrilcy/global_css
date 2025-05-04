@@ -625,17 +625,17 @@ html.dark-mode .page-title input.modify {
   font-size: 2rem;
   cursor: pointer;
 }
-.page-title .glyphicon.glyphicon-modify {
+.page-title .glyphicon.visible {
+  opacity: 1;
+  transition: 0.25s;
+}
+.page-title .glyphicon.visible.glyphicon-modify {
   opacity: 0.8;
   transition: 0.25s;
 }
-.page-title .glyphicon.glyphicon-modify:hover {
+.page-title .glyphicon.visible.glyphicon-modify:hover {
   opacity: 1;
   color: rgb(0, 255, 0);
-  transition: 0.25s;
-}
-.page-title .glyphicon.visible {
-  opacity: 1;
   transition: 0.25s;
 }
 html.dark-mode .page-title {
