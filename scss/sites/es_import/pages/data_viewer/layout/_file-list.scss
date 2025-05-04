@@ -20,6 +20,11 @@
         box-shadow: $default-cell-shadow-inset;
         margin-bottom: 1rem;
         overflow: auto;
+        scrollbar-color: #8b8b8b rgb(0 0 0 / 10%);
+          
+        @at-root html.dark-mode & {
+          scrollbar-color: #f0f0f0 rgb(0 0 0 / 10%);
+        }
 
         li{
             display: flex;
