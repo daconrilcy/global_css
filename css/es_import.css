@@ -633,7 +633,7 @@ html.dark-mode .page-title input.modify {
   transition: 0.25s;
 }
 .page-title .glyphicon.visible.glyphicon-modify, .page-title .glyphicon.visible.glyphicon-modify-accept {
-  opacity: 0.8;
+  opacity: 0.5;
   transition: 0.25s;
   font-size: 1.5rem;
 }
@@ -646,7 +646,7 @@ html.dark-mode .page-title input.modify {
   padding-right: 0.5rem;
 }
 .page-title .glyphicon.visible.glyphicon-modify-revert {
-  opacity: 0.8;
+  opacity: 0.5;
   transition: 0.25s;
 }
 .page-title .glyphicon.visible.glyphicon-modify-revert:hover {

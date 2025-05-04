@@ -78,7 +78,7 @@
             opacity: 1;
             transition: 0.25s;
             &.glyphicon-modify,&.glyphicon-modify-accept{
-                opacity: 0.8;
+                opacity: 0.5;
                 transition: 0.25s;
                 font-size: 1.5rem;
                 &:hover{
@@ -91,7 +91,7 @@
                 padding-right: 0.5rem;
             }
             &.glyphicon-modify-revert{
-                opacity: 0.8;
+                opacity: 0.5;
                 transition: 0.25s;
                 &:hover{
                     opacity: 1;
