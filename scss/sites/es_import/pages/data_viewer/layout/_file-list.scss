@@ -38,6 +38,10 @@
                 }
             }
 
+            .btn{
+                box-shadow: inset 1px 1px 1px rgba(255,255,255,0.3), inset -1px -1px 1px rgba(0, 0, 0, 0.2);
+            }
+
             .btn.btn-visualize{
                 flex: 1 0 auto;
                 margin-left: 0.5rem;
@@ -57,7 +61,6 @@
                 border-top-left-radius: 0;
                 border-bottom-left-radius: 0;
 
-                box-shadow: inset 1px 1px 1px rgba(255,255,255,0.3), inset -1px -1px 1px rgba(0, 0, 0, 0.2);
                 span{
                     font-size: 0.8rem;
                     color: white;
