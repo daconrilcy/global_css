@@ -702,6 +702,7 @@ html.dark-mode .page-layout {
   color: inherit;
   padding-top: 1rem;
   display: flex;
+  overflow: hidden;
 }
 .file-list ul {
   flex: 1 0 auto;
@@ -709,6 +710,7 @@ html.dark-mode .page-layout {
   border-radius: 0.5rem;
   box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25);
   margin-bottom: 1rem;
+  overflow: auto;
 }
 .file-list ul li {
   display: flex;
