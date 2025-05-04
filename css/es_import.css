@@ -697,6 +697,9 @@ html.dark-mode .chunk-loading-spinner-overlay {
   text-align: center;
   z-index: 200;
 }
+html.dark-mode .chunk-loading-spinner-text {
+  color: #f0f0f0;
+}
 
 .card-upload {
   text-align: center;
