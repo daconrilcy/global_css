@@ -68,7 +68,17 @@
     .glyphicon{
         opacity: 0;
         transition: 0.25s;
+        font-size: 2rem;
         cursor: pointer;
+        &.glyphicon-modify{
+            opacity: 0.8;
+            transition: 0.25s;
+            &:hover{
+                opacity: 1;
+                color: color(default-green, base);
+                transition: 0.25s;
+            }
+        }
         &.visible{
             opacity: 1;
             transition: 0.25s;
