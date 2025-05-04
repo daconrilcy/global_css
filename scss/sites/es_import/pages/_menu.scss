@@ -25,13 +25,28 @@
     display: flex;
     align-items: center;
     z-index: 1300;
-  
-    .label-text {
-      margin-left: 0.5rem;
-      color: #f9d923;
-      font-size: 0.9rem;
+    color: $bs-body-bg;
+    .switch{
+      .slider{
+        background-color: $bs-body-bg;
+        @at-root html.dark-mode & {
+          background-color: $dark-background-color;
+        }
+      }
+      .slider::before{
+        background-color: color(blue-primary, base);
+        @at-root html.dark-mode & {
+          background-color: #f9d923;
+        }
+      }
     }
-  
+    .label-text{
+      margin-left: 0.5rem;
+      color: $bs-body-bg;
+      @at-root html.dark-mode & {
+        color: #f9d923;
+      }
+    }
     .switch {
       scale: 0.9;
     }
@@ -89,27 +104,10 @@
       position: absolute;
       right: 1rem;
       top: 0.75rem;
-      color: $bs-body-bg;
-      .switch{
-        .slider{
-          background-color: $bs-body-bg;
-          @at-root html.dark-mode & {
-            background-color: $dark-background-color;
-          }
-        }
-        .slider::before{
-          background-color: color(blue-primary, base);
-          @at-root html.dark-mode & {
-            background-color: #f9d923;
-          }
-        }
+      .label-text {
+        font-size: 0.9rem;
       }
-      .label-text{
-        color: $bs-body-bg;
-        @at-root html.dark-mode & {
-          color: #f9d923;
-        }
-      }
+      
     }
     .menu {
       background: linear-gradient(180deg, #222 0%, #2c3e50 100%);
