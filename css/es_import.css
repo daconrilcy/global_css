@@ -625,6 +625,9 @@ html.dark-mode .page-title input.modify {
   font-size: 1.5rem;
   cursor: pointer;
 }
+.page-title .glyphicon.glyphicon-modify {
+  font-size: 0;
+}
 .page-title .glyphicon.visible {
   opacity: 1;
   transition: 0.25s;
@@ -632,6 +635,7 @@ html.dark-mode .page-title input.modify {
 .page-title .glyphicon.visible.glyphicon-modify, .page-title .glyphicon.visible.glyphicon-modify-accept {
   opacity: 0.8;
   transition: 0.25s;
+  font-size: 1.5rem;
 }
 .page-title .glyphicon.visible.glyphicon-modify:hover, .page-title .glyphicon.visible.glyphicon-modify-accept:hover {
   opacity: 1;
