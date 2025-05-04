@@ -7492,9 +7492,16 @@ html.dark-mode .scroll-lateral-button {
   transition: background-color 0.2s;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
+.pagination .page-item .page-link .glyphicon {
+  font-size: 0.6rem;
+  color: inherit;
+}
 .pagination .page-item .page-link:hover {
   background: #e2e6ea;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.pagination .page-item .page-link:hover .glyphicon {
+  color: rgb(82, 154, 204);
 }
 html.dark-mode .pagination .page-item .page-link {
   background: hsl(0, 0%, 10%);
@@ -7503,6 +7510,9 @@ html.dark-mode .pagination .page-item .page-link {
 }
 html.dark-mode .pagination .page-item .page-link:hover {
   background: #333;
+}
+html.dark-mode .pagination .page-item .page-link:hover .glyphicon {
+  color: rgb(82, 154, 204);
 }
 
 .pagination .page-item.active .page-link {
