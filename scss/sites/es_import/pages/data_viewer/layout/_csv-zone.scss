@@ -96,7 +96,7 @@
   align-items: center;
   justify-content: center;
   pointer-events: none;
-  z-index: 2000;
+  z-index: 100;
 
   @at-root html.dark-mode & {
     background: rgba(125,125,125,0.5);
@@ -117,6 +117,7 @@
   border-radius: 50%;
   animation: chunk-spin 1s linear infinite;
   margin-bottom: 1rem;
+  z-index: 200;
 }
 
 @keyframes chunk-spin {
@@ -129,6 +130,7 @@
   color: #333;
   font-size: 1.2rem;
   text-align: center;
+  z-index: 200;
 }
 
   

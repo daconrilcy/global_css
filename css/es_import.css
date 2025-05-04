@@ -656,7 +656,7 @@ html.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-th
   align-items: center;
   justify-content: center;
   pointer-events: none;
-  z-index: 2000;
+  z-index: 100;
 }
 html.dark-mode .chunk-loading-spinner-overlay {
   background: rgba(125, 125, 125, 0.5);
@@ -676,6 +676,7 @@ html.dark-mode .chunk-loading-spinner-overlay {
   border-radius: 50%;
   animation: chunk-spin 1s linear infinite;
   margin-bottom: 1rem;
+  z-index: 200;
 }
 
 @keyframes chunk-spin {
@@ -691,6 +692,7 @@ html.dark-mode .chunk-loading-spinner-overlay {
   color: #333;
   font-size: 1.2rem;
   text-align: center;
+  z-index: 200;
 }
 
 .card-upload {
