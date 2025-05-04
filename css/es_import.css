@@ -705,21 +705,33 @@ html.dark-mode .page-layout {
 }
 .file-list ul {
   flex: 1 0 auto;
-  padding: 0.5rem;
+  padding: 0.75rem;
   border-radius: 0.5rem;
+  box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1rem;
 }
 .file-list ul li {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(211, 218, 230);
 }
 .file-list ul li a {
-  display: flex;
-  width: 80%;
+  flex: 1 0 auto;
 }
 .file-list ul li button {
-  width: 2rem;
+  width: 1.2rem;
+  height: 1.2rem;
   border-radius: 50%;
+  align-items: center;
+  justify-content: center;
   box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.3), inset -1px -1px 1px rgba(0, 0, 0, 0.2);
+}
+.file-list ul li button span {
+  font-size: 0.8rem;
+  color: white;
 }
 
 .csv-zone {
