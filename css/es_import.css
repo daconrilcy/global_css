@@ -640,6 +640,9 @@ html.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-th
 .csv-zone .csv-container .csv-table-wrapper .csv-table thead th:last-child {
   border-top-right-radius: 0.5rem;
 }
+.csv-zone .csv-container .csv-table-wrapper .csv-table tbody.blur {
+  filter: blur(4px);
+}
 .csv-zone .pagination-bar {
   margin-top: 1rem;
 }
@@ -651,7 +654,6 @@ html.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-th
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.5);
-  filter: blur(4px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -666,6 +668,7 @@ html.dark-mode .chunk-loading-spinner-overlay {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 200;
 }
 
 .chunk-loading-spinner {

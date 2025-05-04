@@ -76,6 +76,10 @@
               th:first-child { border-top-left-radius: $border-radius-preview; }
               th:last-child { border-top-right-radius: $border-radius-preview; }
             }
+
+            tbody.blur{
+              filter:blur(4px);
+            }
           } 
         }
     }
@@ -91,7 +95,6 @@
   width: 100%;
   height: 100%;
   background: rgba(255,255,255,0.5);
-  filter:blur(4px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,6 +110,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 200;
 }
 
 .chunk-loading-spinner {
