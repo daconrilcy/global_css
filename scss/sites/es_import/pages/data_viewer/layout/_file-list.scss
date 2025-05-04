@@ -42,15 +42,17 @@
                 }
             }
             .btn.btn-delete{
-                width: 1.2rem !important;
-                height: 1.2rem !important;
-                border-radius: 50%;
+                width: 2.5rem !important;
+                height: 2.5rem !important;
                 align-items: center;
                 justify-content: center;
                 box-shadow: inset 1px 1px 1px rgba(255,255,255,0.3), inset -1px -1px 1px rgba(0, 0, 0, 0.2);
                 span{
                     font-size: 0.8rem;
                     color: white;
+                }
+                &:hover{
+                    box-shadow: $default-card-shadow;
                 }
             }
         }
