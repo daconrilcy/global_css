@@ -722,6 +722,9 @@ html.dark-mode .page-layout {
 .file-list ul li:first-child .btn.btn-visualize {
   border-top-left-radius: 0.5rem;
 }
+.file-list ul li:first-child .btn.btn-delete {
+  border-top-right-radius: 0.5rem;
+}
 .file-list ul li .btn.btn-visualize {
   flex: 1 0 auto;
   margin-left: 0.5rem;
