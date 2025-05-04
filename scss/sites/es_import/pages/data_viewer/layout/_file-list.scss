@@ -26,10 +26,15 @@
             padding: 0.5rem;
             margin-bottom: 0.5rem;
             border-bottom: $cell-border;
+            transition: 0.25s;
 
             &:hover{
                 background-color: color(blue-primary, base);
                 color: $bs-body-bg;
+                &:first-child{
+                    border-top-left-radius: $border-radius-preview;
+                    border-top-right-radius: $border-radius-preview;
+                }
             }
 
             a{
