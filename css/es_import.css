@@ -785,6 +785,7 @@ html.dark-mode .page-layout {
   height: 100%;
   width: 100%;
   position: relative;
+  scrollbar-color: rgba(0, 0, 0, 0.1);
 }
 .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar {
   width: 1rem;

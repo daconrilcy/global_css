@@ -30,6 +30,7 @@
           height: 100%;
           width: 100%;
           position: relative;
+          scrollbar-color:rgba(0,0,0,0.1);
 
           // Chrome, Edge, Safari
           &::-webkit-scrollbar {
@@ -44,7 +45,7 @@
               right: 0;
               width: 1rem; // largeur de la scrollbar
               height: 1rem; // hauteur de la scrollbar
-              background-color: rgba(0,0,0,0.1);; // ou clair selon le thème
+              background-color: rgba(0,0,0,0.1); // ou clair selon le thème
               pointer-events: none;
               z-index: 1;
               
