@@ -95,26 +95,45 @@
     }
 }
 .chunk-loading-spinner-overlay {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: rgba(255,255,255,0.5);
   display: flex;
   align-items: center;
   justify-content: center;
   pointer-events: none;
-  z-index: 1000;
+  z-index: 2000;
+}
+
+.chunk-loading-spinner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .chunk-loading-spinner {
   width: 2.5rem;
   height: 2.5rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  border: 0.4rem solid #e0e0e0;
+  border-top: 0.4rem solid #3498db;
+  border-radius: 50%;
+  animation: chunk-spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes chunk-spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+.chunk-loading-spinner-text {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
   
