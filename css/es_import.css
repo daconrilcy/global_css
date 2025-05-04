@@ -785,27 +785,16 @@ html.dark-mode .page-layout {
   height: 100%;
   width: 100%;
   position: relative;
-  scrollbar-color: #f0f0f0 #262626;
+  scrollbar-color: #8b8b8b #262626;
 }
+html.dark-mode .csv-zone .csv-container .csv-table-wrapper {
+  scrollbar-color: #f0f0f0 rgba(0, 0, 0, 0.1);
+}
+
 .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar {
   width: 1rem;
   height: 1rem;
 }
-.csv-zone .csv-container .csv-table-wrapper::after {
-  content: "";
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 1rem;
-  height: 1rem;
-  background-color: rgba(0, 0, 0, 0.1);
-  pointer-events: none;
-  z-index: 1;
-}
-html.dark-mode .csv-zone .csv-container .csv-table-wrapper::after {
-  background-color: hsl(0, 0%, 15%);
-}
-
 .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.1);
 }
