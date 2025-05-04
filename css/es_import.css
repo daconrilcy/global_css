@@ -695,7 +695,7 @@ html.dark-mode .page-layout {
 }
 
 .file-list {
-  flex: 0 0 250px;
+  flex: 0 0 300px;
   background: #fff;
   overflow-y: auto;
   background-color: inherit;
@@ -727,6 +727,7 @@ html.dark-mode .page-layout {
   border-top-right-radius: 0.5rem;
 }
 .file-list ul li .btn {
+  font-size: 0.9rem;
   box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.3), inset -1px -1px 1px rgba(0, 0, 0, 0.2);
 }
 .file-list ul li .btn.btn-visualize {
