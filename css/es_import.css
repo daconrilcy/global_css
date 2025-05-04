@@ -727,10 +727,10 @@ html.dark-mode .page-layout {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
-.file-list ul li a {
+.file-list ul li .btn.btn-visualize {
   flex: 1 0 auto;
 }
-.file-list ul li button {
+.file-list ul li .btn.btn-delete {
   width: 1.2rem !important;
   height: 1.2rem !important;
   border-radius: 50%;
@@ -738,7 +738,7 @@ html.dark-mode .page-layout {
   justify-content: center;
   box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.3), inset -1px -1px 1px rgba(0, 0, 0, 0.2);
 }
-.file-list ul li button span {
+.file-list ul li .btn.btn-delete span {
   font-size: 0.8rem;
   color: white;
 }
