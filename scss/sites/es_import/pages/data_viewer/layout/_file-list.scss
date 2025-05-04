@@ -27,18 +27,19 @@
             margin-bottom: 0.5rem;
             border-bottom: $cell-border;
             transition: 0.25s;
-
-            &:hover{
-                background-color: color(blue-primary, base);
-                color: $bs-body-bg;
-                &:first-child{
+            &:first-child{
+                .btn.btn-visualize{
                     border-top-left-radius: $border-radius-preview;
-                    border-top-right-radius: $border-radius-preview;
                 }
             }
 
             .btn.btn-visualize{
                 flex: 1 0 auto;
+                margin-left: 0.5rem;
+                &:hover{
+                    background-color: color(blue-primary, base);
+                    color: $bs-body-bg;
+                }
             }
             .btn.btn-delete{
                 width: 1.2rem !important;
