@@ -87,7 +87,7 @@
 }
 .file-list-all ul li {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   padding: 0rem 0 0.5rem 0;
   gap: 0.25rem;
