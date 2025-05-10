@@ -32,12 +32,8 @@
             overflow: hidden;
 
             &:first-child{
-                .btn.btn-visualize{
-                    border-top-left-radius: $border-radius-preview;
-                }
-                .btn.btn-delete{
-                    border-top-right-radius: $border-radius-preview;
-                }
+                border-top-left-radius: $border-radius-preview;
+                border-top-right-radius: $border-radius-preview
             }
 
             &:hover{
@@ -46,7 +42,7 @@
             }
 
             a{
-                text-decoration: none;
+                width: 100%;
             }
 
            

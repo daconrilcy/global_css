@@ -96,10 +96,8 @@
   border-bottom: 1px solid rgb(211, 218, 230);
   overflow: hidden;
 }
-.file-list-all ul li:first-child .btn.btn-visualize {
+.file-list-all ul li:first-child {
   border-top-left-radius: 0.5rem;
-}
-.file-list-all ul li:first-child .btn.btn-delete {
   border-top-right-radius: 0.5rem;
 }
 .file-list-all ul li:hover {
@@ -107,7 +105,7 @@
   color: white;
 }
 .file-list-all ul li a {
-  text-decoration: none;
+  width: 100%;
 }
 
 .preview-wrapper {
