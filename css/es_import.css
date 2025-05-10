@@ -69,12 +69,14 @@
 .file-list-all {
   flex: 0 0 300px;
   background: #fff;
-  overflow-y: auto;
   background-color: inherit;
   color: inherit;
   padding-top: 1rem;
   display: flex;
   overflow: hidden;
+}
+.file-list-all h2 {
+  text-align: center;
 }
 .file-list-all ul {
   flex: 1 0 auto;
@@ -90,6 +92,17 @@
   padding: 0rem 0 0.5rem 0;
   gap: 0.25rem;
   transition: 0.25s;
+  border-bottom: 1px solid rgb(211, 218, 230);
+}
+.file-list-all ul li:first-child .btn.btn-visualize {
+  border-top-left-radius: 0.5rem;
+}
+.file-list-all ul li:first-child .btn.btn-delete {
+  border-top-right-radius: 0.5rem;
+}
+.file-list-all ul li:hover {
+  background-color: rgb(0, 119, 204);
+  color: white;
 }
 .file-list-all ul li a {
   text-decoration: none;

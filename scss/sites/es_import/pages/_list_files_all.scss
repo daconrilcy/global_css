@@ -1,16 +1,19 @@
 @use '../../../abstracts/colors' as *;
+@use '../../../abstracts/functions' as *;
 @use '../../../abstracts/variables' as *;
 @use '../variables/styles' as *;
 
 .file-list-all{
     flex: 0 0 300px;
     background: $bs-body-bg;
-    overflow-y: auto;
     background-color: inherit;
     color: inherit;
     padding-top: 1rem;
     display: flex;
     overflow: hidden;
+    h2{
+        text-align: center;
+    }
     ul{
         flex: 1 0 auto;
         padding: 0.75rem;
@@ -24,9 +27,29 @@
             padding: 0.0rem 0 0.5rem 0;
             gap: 0.25rem;
             transition: 0.25s;
+            border-bottom: 1px solid color(light-gray, base);
+
+            &:first-child{
+                .btn.btn-visualize{
+                    border-top-left-radius: $border-radius-preview;
+                }
+                .btn.btn-delete{
+                    border-top-right-radius: $border-radius-preview;
+                }
+            }
+
+            &:hover{
+                background-color: color(blue-primary, base);
+                color: white;
+            }
+
             a{
                 text-decoration: none;
             }
+
+           
+            
         }
+
     }
 }
