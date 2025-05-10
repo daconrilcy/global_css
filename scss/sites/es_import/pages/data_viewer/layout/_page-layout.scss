@@ -124,7 +124,7 @@
   
 .page-layout {
     display: flex;
-    height: calc(100vh - 168px); // prise en compte des titles et du top margin du content
+    height: calc(100vh - 178px); // prise en compte des titles et du top margin du content
     padding: 0 1rem;
     box-shadow: $default-card-shadow;
     border-radius: $border-radius-preview;
