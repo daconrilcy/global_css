@@ -25,13 +25,14 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            padding: 0 0.25rem 0.5rem 0.25rem;
+            padding: 0.25rem;
             gap: 0.25rem;
             transition: 0.25s;
             border-bottom: 1px solid color(light-gray, base);
             overflow: hidden;
 
             &:first-child{
+                padding-top: 0.5rem;
                 border-top-left-radius: $border-radius-preview;
                 border-top-right-radius: $border-radius-preview
             }
