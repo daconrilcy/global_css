@@ -106,7 +106,7 @@
 }
 .file-list-all ul li a {
   width: 100%;
-  padding: 0 0.25rem 0.25rem 0;
+  padding: 0 0.25rem 0 0.25rem;
 }
 
 .preview-wrapper {
