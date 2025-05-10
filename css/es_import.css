@@ -528,9 +528,7 @@ html.dark-mode .file-list ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0.5rem 0 0.5rem 0;
-  margin-bottom: 0.5rem;
-  border-bottom: 1px solid rgb(211, 218, 230);
+  padding: 0rem 0 0.5rem 0;
   gap: 0.25rem;
   transition: 0.25s;
 }
@@ -546,7 +544,6 @@ html.dark-mode .file-list ul {
 }
 .file-list ul li .btn.btn-visualize {
   flex: 1 0 auto;
-  margin-left: 0.5rem;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -555,8 +552,8 @@ html.dark-mode .file-list ul {
   color: #fff;
 }
 .file-list ul li .btn.btn-delete {
-  width: 2.5rem !important;
-  height: 2.5rem !important;
+  width: 2.35rem !important;
+  height: 2.35rem !important;
   align-items: center;
   justify-content: center;
   border-top-left-radius: 0;
