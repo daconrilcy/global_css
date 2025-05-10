@@ -68,6 +68,7 @@
 
 .file-list-all {
   flex: 0 0 300px;
+  flex-direction: column;
   background: #fff;
   background-color: inherit;
   color: inherit;
@@ -87,12 +88,13 @@
 }
 .file-list-all ul li {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   padding: 0rem 0 0.5rem 0;
   gap: 0.25rem;
   transition: 0.25s;
   border-bottom: 1px solid rgb(211, 218, 230);
+  overflow: hidden;
 }
 .file-list-all ul li:first-child .btn.btn-visualize {
   border-top-left-radius: 0.5rem;
