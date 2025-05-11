@@ -1,5 +1,6 @@
 @use '../../../../../abstracts/colors' as *;
 @use '../../../../../abstracts/functions' as *;
+@use '../../../variables/styles' as *;
 
 .preview-json{
     padding: 1rem;
@@ -7,12 +8,24 @@
         box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25);
         padding: 0.5rem;
         border-radius: 0.5rem;
+        background-color: rgba(0, 0, 0, 0.2);
 
         .wrapper-headers{
-            background-color: color(light-gray, light);
             .under-title{
-                margin-top: 0.5rem;
+                margin-top: 0;
                 margin-bottom: 0.5rem;
+                div{
+                    &:first-child{
+                        border-top-left-radius: $border-radius-preview;
+
+                    }
+                    &:last-child{
+                        border-top-right-radius: $border-radius-preview;
+                        select{
+                            border-top-right-radius: $border-radius-preview;
+                        }
+                    }
+                }
                 .label{
                     align-content: center;
                     p{
@@ -32,6 +45,7 @@
             }
         }
         .wrapper-fields{
+            background-color: $bs-body-bg;
             overflow-y: scroll;
             height: calc(100vh - 360px);
             font-size: 0.8rem;

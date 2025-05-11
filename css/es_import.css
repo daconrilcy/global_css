@@ -700,13 +700,20 @@ html.dark-mode .chunk-loading-spinner-text {
   box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25);
   padding: 0.5rem;
   border-radius: 0.5rem;
-}
-.preview-json .wrapper .wrapper-headers {
-  background-color: rgb(220, 226, 238);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .preview-json .wrapper .wrapper-headers .under-title {
-  margin-top: 0.5rem;
+  margin-top: 0;
   margin-bottom: 0.5rem;
+}
+.preview-json .wrapper .wrapper-headers .under-title div:first-child {
+  border-top-left-radius: 0.5rem;
+}
+.preview-json .wrapper .wrapper-headers .under-title div:last-child {
+  border-top-right-radius: 0.5rem;
+}
+.preview-json .wrapper .wrapper-headers .under-title div:last-child select {
+  border-top-right-radius: 0.5rem;
 }
 .preview-json .wrapper .wrapper-headers .under-title .label {
   align-content: center;
@@ -725,6 +732,7 @@ html.dark-mode .chunk-loading-spinner-text {
   margin-bottom: 0.5rem;
 }
 .preview-json .wrapper .wrapper-fields {
+  background-color: #fff;
   overflow-y: scroll;
   height: calc(100vh - 360px);
   font-size: 0.8rem;
