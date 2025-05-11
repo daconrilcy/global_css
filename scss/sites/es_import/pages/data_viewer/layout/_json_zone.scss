@@ -1,0 +1,29 @@
+.preview-json{
+    padding: 1rem;
+    .wrapper{
+        box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25);
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+
+        .wrapper-headers{
+            .headers{
+
+                box-shadow: inset -1px -1px 3px rgba(0, 0, 0, 0.2), inset 1px 1px 3px rgba(255, 255, 255, 0.2), -2px 4px 4px rgba(0, 0, 0, 0.2);
+            }
+        }
+        .wrapper-fields{
+            overflow-y: scroll;
+            height: calc(100vh - 360px);
+            font-size: 0.8rem;
+            
+            .row{
+                div{
+                    input, select{
+                        font-size: inherit;
+                    }
+                }
+            }
+
+        }
+    }
+}
