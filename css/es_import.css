@@ -721,6 +721,11 @@ html.dark-mode .chunk-loading-spinner-text {
   background-color: rgba(0, 0, 0, 0.1);
   color: #f0f0f0;
 }
+html.dark-mode .preview-json .wrapper .wrapper-headers .under-title div:last-child select {
+  background-color: hsl(0, 0%, 15%);
+  color: #f0f0f0;
+}
+
 .preview-json .wrapper .wrapper-headers .under-title .label {
   align-content: center;
 }
@@ -765,6 +770,16 @@ html.dark-mode .preview-json .wrapper .wrapper-fields {
 }
 .preview-json .wrapper .wrapper-fields .row div input, .preview-json .wrapper .wrapper-fields .row div select {
   font-size: inherit;
+  transition: 0.5s;
+}
+.preview-json .wrapper .wrapper-fields .row div input:hover, .preview-json .wrapper .wrapper-fields .row div select:hover {
+  box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #f0f0f0;
+}
+html.dark-mode .preview-json .wrapper .wrapper-fields .row div input, html.dark-mode .preview-json .wrapper .wrapper-fields .row div select {
+  background-color: hsl(0, 0%, 15%);
+  color: #f0f0f0;
 }
 
 .card-upload {

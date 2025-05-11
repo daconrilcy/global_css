@@ -30,6 +30,11 @@
                                 background-color: rgba(0,0,0,0.1);
                                 color: $dark-front-color;
                             }
+
+                            @at-root html.dark-mode & {
+                                background-color: $dark-background-color-tertiary;
+                                color: $dark-front-color;
+                            }
                         }
                     }
                 }
@@ -79,6 +84,17 @@
                     align-content: center;
                     input, select{
                         font-size: inherit;
+                        transition: 0.5s;
+                        &:hover{
+                            box-shadow: $default-cell-shadow-inset;
+                            background-color: rgba(0,0,0,0.1);
+                            color: $dark-front-color;
+                        }
+
+                        @at-root html.dark-mode & {
+                            background-color: $dark-background-color-tertiary;
+                            color: $dark-front-color;
+                        }
                     }
                 }
             }
