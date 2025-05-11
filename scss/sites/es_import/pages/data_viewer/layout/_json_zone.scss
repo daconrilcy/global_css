@@ -47,6 +47,13 @@
                 background-color: $bs-body-bg;
                 box-shadow: inset -1px -1px 3px rgba(0, 0, 0, 0.2), inset 1px 1px 3px rgba(255, 255, 255, 0.2), -2px 4px 4px rgba(0, 0, 0, 0.2);
                 margin-bottom: 0.5rem;
+                text-align: center;
+                align-items: center;
+                p{
+                    margin-bottom: 0;
+                    padding:0.25rem;
+                    font-size: 0.9rem;
+                }
             }
         }
         .wrapper-fields{
