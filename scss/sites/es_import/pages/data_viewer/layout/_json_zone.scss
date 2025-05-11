@@ -9,7 +9,7 @@
         border-radius: 0.5rem;
 
         .wrapper-headers{
-            background-color: color(light-gray, base);
+            background-color: color(light-gray, light);
             .under-title{
                 margin-top: 1.5rem;
                 margin-bottom: 0.5rem;
@@ -26,6 +26,7 @@
                 }
             }
             .headers{
+                background-color: $bs-body-bg;
                 box-shadow: inset -1px -1px 3px rgba(0, 0, 0, 0.2), inset 1px 1px 3px rgba(255, 255, 255, 0.2), -2px 4px 4px rgba(0, 0, 0, 0.2);
                 margin-bottom: 0.5rem;
             }
