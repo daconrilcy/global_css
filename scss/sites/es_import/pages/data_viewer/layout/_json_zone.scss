@@ -24,9 +24,10 @@
                         border-top-right-radius: $border-radius-preview;
                         select{
                             border-top-right-radius: $border-radius-preview;
+                            transition: 0.5s;
                             &:hover{
                                 box-shadow: $default-cell-shadow-inset;
-                                background-color: rgba(0,0,0,0.2);
+                                background-color: rgba(0,0,0,0.1);
                             }
                         }
                     }
