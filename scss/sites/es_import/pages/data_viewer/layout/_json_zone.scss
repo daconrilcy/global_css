@@ -28,6 +28,7 @@
                             &:hover{
                                 box-shadow: $default-cell-shadow-inset;
                                 background-color: rgba(0,0,0,0.1);
+                                color: $dark-front-color;
                             }
                         }
                     }
@@ -55,6 +56,11 @@
                     padding:0.25rem;
                     font-size: 0.9rem;
                 }
+
+                @at-root html.dark-mode & {
+                    background-color: $dark-background-color-secondary;
+                    color: $dark-front-color;
+                }
             }
         }
         .wrapper-fields{
@@ -62,6 +68,11 @@
             overflow-y: scroll;
             height: calc(100vh - 360px);
             font-size: 0.8rem;
+            
+            @at-root html.dark-mode & {
+                background-color: $dark-background-color-secondary;
+                color: $dark-front-color;
+            }
             
             .row{
                 div{
