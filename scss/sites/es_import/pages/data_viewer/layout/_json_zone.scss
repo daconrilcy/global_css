@@ -27,7 +27,7 @@
                             transition: 0.5s;
                             &:hover{
                                 box-shadow: $default-cell-shadow-inset;
-                                background-color: rgba(0,0,0,0.1);
+                                background-color: rgb(128, 128, 128);
                                 color: $dark-front-color;
                             }
 
@@ -87,7 +87,7 @@
                         transition: 0.5s;
                         &:hover{
                             box-shadow: $default-cell-shadow-inset;
-                            background-color: rgba(0,0,0,0.1);
+                            background-color: rgb(128, 128, 128);
                             color: $dark-front-color;
                         }
 
