@@ -29,6 +29,11 @@
                                 box-shadow: $default-cell-shadow-inset;
                                 background-color: rgb(128, 128, 128);
                                 color: $dark-front-color;
+
+                                @at-root html.dark-mode & {
+                                    background-color: $dark-background-color;
+                                    color: $dark-front-color;
+                                }
                             }
 
                             @at-root html.dark-mode & {
@@ -89,6 +94,10 @@
                             box-shadow: $default-cell-shadow-inset;
                             background-color: rgb(128, 128, 128);
                             color: $dark-front-color;
+                            @at-root html.dark-mode & {
+                                background-color: $dark-background-color;
+                                color: $dark-front-color;
+                            }
                         }
 
                         @at-root html.dark-mode & {

@@ -721,6 +721,11 @@ html.dark-mode .chunk-loading-spinner-text {
   background-color: rgb(128, 128, 128);
   color: #f0f0f0;
 }
+html.dark-mode .preview-json .wrapper .wrapper-headers .under-title div:last-child select:hover {
+  background-color: hsl(0, 0%, 5%);
+  color: #f0f0f0;
+}
+
 html.dark-mode .preview-json .wrapper .wrapper-headers .under-title div:last-child select {
   background-color: hsl(0, 0%, 15%);
   color: #f0f0f0;
@@ -777,6 +782,11 @@ html.dark-mode .preview-json .wrapper .wrapper-fields {
   background-color: rgb(128, 128, 128);
   color: #f0f0f0;
 }
+html.dark-mode .preview-json .wrapper .wrapper-fields .row div input:hover, html.dark-mode .preview-json .wrapper .wrapper-fields .row div select:hover {
+  background-color: hsl(0, 0%, 5%);
+  color: #f0f0f0;
+}
+
 html.dark-mode .preview-json .wrapper .wrapper-fields .row div input, html.dark-mode .preview-json .wrapper .wrapper-fields .row div select {
   background-color: hsl(0, 0%, 15%);
   color: #f0f0f0;
