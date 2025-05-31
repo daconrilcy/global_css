@@ -7316,6 +7316,9 @@ form.dropzone {
 .glyphicon.glyphicon-refresh::before {
   content: "\e031";
 }
+.glyphicon.glyphicon-volume-b::before {
+  content: "\e038";
+}
 .glyphicon.glyphicon-remove::before {
   content: "\e014";
 }

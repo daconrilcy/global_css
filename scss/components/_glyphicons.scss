@@ -29,6 +29,10 @@
     content: "\e031";
   }
 
+  &.glyphicon-volume-b::before {
+    content: "\e038";
+  }
+
   &.glyphicon-remove::before {
     content: "\e014";
   }
