@@ -632,6 +632,9 @@ html.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-th
 .csv-zone .csv-container .csv-table-wrapper .csv-table thead th .btn {
   padding: 0.75rem 1rem;
 }
+.csv-zone .csv-container .csv-table-wrapper .csv-table thead th .btn:hover {
+  border: 2px solid rgb(115, 122, 143);
+}
 .csv-zone .csv-container .csv-table-wrapper .csv-table thead th:first-child {
   border-top-left-radius: 0.5rem;
 }
