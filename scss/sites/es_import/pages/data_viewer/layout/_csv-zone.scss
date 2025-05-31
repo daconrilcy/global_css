@@ -76,12 +76,12 @@
               th{
                 padding: 0;
                 .btn{
+                  border: 2px solid transparent;
                   padding: 0.75rem 1rem;
                   &:hover{
-                    border: 2px solid color(neutral-gray,light);
+                    border: 2px solid color(light-gray,light);
                   }
                 }
-
               }
               th:first-child { border-top-left-radius: $border-radius-preview; }
               th:last-child { border-top-right-radius: $border-radius-preview; }
