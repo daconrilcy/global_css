@@ -631,6 +631,7 @@ html.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-th
 }
 .csv-zone .csv-container .csv-table-wrapper .csv-table thead th:hover {
   z-index: 10;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.1);
 }
 .csv-zone .csv-container .csv-table-wrapper .csv-table thead th .btn {
   position: relative;
@@ -639,7 +640,7 @@ html.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-th
 }
 .csv-zone .csv-container .csv-table-wrapper .csv-table thead th .btn:hover {
   border: 2px solid rgb(220, 226, 238);
-  box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.1), -6px 6px 6px 0px rgba(0, 0, 0, 0.1);
 }
 .csv-zone .csv-container .csv-table-wrapper .csv-table thead th:first-child {
   border-top-left-radius: 0.5rem;
