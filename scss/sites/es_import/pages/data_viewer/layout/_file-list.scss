@@ -57,6 +57,10 @@
                     background-color: color(blue-primary, base);
                     color: $bs-body-bg;
                 }
+                &.active{
+                    background-color: color(blue-primary, base);
+                    color: $bs-body-bg;
+                }
             }
             .btn.btn-delete{
                 width: 2.35rem !important;

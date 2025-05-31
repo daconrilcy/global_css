@@ -546,6 +546,10 @@ html.dark-mode .file-list ul {
   background-color: rgb(0, 119, 204);
   color: #fff;
 }
+.file-list ul li .btn.btn-visualize.active {
+  background-color: rgb(0, 119, 204);
+  color: #fff;
+}
 .file-list ul li .btn.btn-delete {
   width: 2.35rem !important;
   height: 2.35rem !important;
