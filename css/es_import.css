@@ -830,7 +830,7 @@ html.dark-mode .preview-json .wrapper .wrapper-fields .row div input, html.dark-
   display: flex;
 }
 .card-header-option .card-header {
-  padding: 1rem 0.125rem 1rem 0.125rem;
+  padding: 0.25rem 1rem 0.25rem 1rem;
 }
 .card-header-option .card-title {
   font-size: 1.25rem;
