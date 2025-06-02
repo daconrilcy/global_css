@@ -7220,6 +7220,14 @@ html.dark-mode .card .card-title {
   color: var(--bs-card-title-color-dark);
 }
 
+.card .card-subtitle {
+  margin-bottom: 0.5rem;
+  color: var(--bs-card-subtitle-color);
+}
+html.dark-mode .card .card-subtitle {
+  color: var(---bs-card-subtitle-color-dark);
+}
+
 .custom-checkbox {
   display: flex;
   align-items: center;

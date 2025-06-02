@@ -57,4 +57,11 @@
       color: var(--bs-card-title-color-dark);
      }
   }
+  .card-subtitle{
+    margin-bottom: 0.5rem;
+     color: var(--bs-card-subtitle-color);
+     @at-root html.dark-mode & {
+      color: var(---bs-card-subtitle-color-dark);
+     }
+  }
 }
