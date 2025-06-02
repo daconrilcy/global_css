@@ -5,9 +5,9 @@
 .card {
   // Variables internes Bootstrap-like
   --bs-card-title-color: hsl(214, 35%, 37%);
+  --bs-card-title-color-dark:hsl(214, 35%, 67%);
   --bs-card-subtitle-color: hsl(216, 24%, 37%);
-  --bs-card-title-color-dark:hsl(214, 35%, 77%);
-  --bs-card-subtitle-color: hsl(216, 24%, 57%);
+  --bs-card-subtitle-color-dark: hsl(216, 24%, 57%);
 
   position: relative;
   display: flex;
