@@ -5,9 +5,9 @@
 .card {
   // Variables internes Bootstrap-like
   --bs-card-title-color: hsl(214, 35%, 37%);
-  --bs-card-subtitle-color: hsl(216, 14%, 44%);
+  --bs-card-subtitle-color: hsl(216, 24%, 37%);
   --bs-card-title-color-dark:hsl(214, 35%, 77%);
-  --bs-card-subtitle-color: hsl(216, 14%, 67%);
+  --bs-card-subtitle-color: hsl(216, 24%, 57%);
 
   position: relative;
   display: flex;
@@ -32,7 +32,7 @@
     padding: 0.5rem 1rem;
     margin-bottom: 0;
     color: inherit;
-    background-color: rgba($bs-body-color, 0.03);
+    background-color: rgb(255 255 255 / 10%);
     border-bottom: $bs-border-width solid $bs-border-color-translucent;
     
     @at-root html.dark-mode & {

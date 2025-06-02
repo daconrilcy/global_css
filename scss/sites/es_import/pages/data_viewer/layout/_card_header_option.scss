@@ -1,4 +1,6 @@
 @use '../../../variables/styles' as *;
+@use '../../../../../abstracts/variables' as *;
+@use '../../../../../abstracts/colors' as *;
 
 .card-header-option{
     display: none;
@@ -23,6 +25,21 @@
             position: static;
             padding-top: 0.25rem;
             padding-bottom: 0.25rem;
+        }
+    }
+    .card-footer{
+        border-top: $bs-border-width solid $bs-border-color-translucent;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0;
+        margin-left: calc(-0.5 * 1.5rem);
+        margin-right: calc(-0.5 * 1.5rem);
+        align-content: center;
+        justify-content: space-evenly;
+        button{
+            width: auto;
         }
     }
 }

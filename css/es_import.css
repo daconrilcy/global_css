@@ -844,6 +844,21 @@ html.dark-mode .preview-json .wrapper .wrapper-fields .row div input, html.dark-
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
+.card-header-option .card-footer {
+  border-top: 2px solid rgba(0, 0, 0, 0.125);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.card-header-option .card-footer button {
+  width: auto;
+}
 
 .card-upload {
   text-align: center;
