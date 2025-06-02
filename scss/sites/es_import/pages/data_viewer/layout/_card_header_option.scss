@@ -9,10 +9,11 @@
     &.visible{
         display: flex;
     }
+    .card-title{
+        font-size: 1.25rem;
+    }
     .card-body{
-        .card-title{
-            font-size: 1.25rem;
-        }
+
         .card-subtitle{
             font-size: 1.1rem;
         }
