@@ -9,4 +9,8 @@
     &.visible{
         display: flex;
     }
+    .card-body{
+        border-bottom-right-radius: $border-radius-preview;
+        border-bottom-left-radius: $border-radius-preview;
+    }
 }
