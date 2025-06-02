@@ -88,6 +88,12 @@
                     border: 2px solid color(light-gray,light);
                     box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.1), -6px 6px 6px 0px rgba(0, 0, 0, 0.1);
                   }
+                  &.active{
+                    background-color: color(blue-primary, light);
+                    border: 2px solid color(blue-primary, base);
+                    color: $bs-body-bg;
+                    box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.1), -6px 6px 6px 0px rgba(0, 0, 0, 0.1);
+                  }
                 }
               }
               th:first-child { border-top-left-radius: $border-radius-preview; }

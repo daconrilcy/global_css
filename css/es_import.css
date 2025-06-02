@@ -647,6 +647,12 @@ html.dark-mode .csv-zone .csv-container .csv-table-wrapper::-webkit-scrollbar-th
   border: 2px solid rgb(220, 226, 238);
   box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.1), -6px 6px 6px 0px rgba(0, 0, 0, 0.1);
 }
+.csv-zone .csv-container .csv-table-wrapper .csv-table thead th .btn.active {
+  background-color: rgb(82, 154, 204);
+  border: 2px solid rgb(0, 119, 204);
+  color: #fff;
+  box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.1), -6px 6px 6px 0px rgba(0, 0, 0, 0.1);
+}
 .csv-zone .csv-container .csv-table-wrapper .csv-table thead th:first-child {
   border-top-left-radius: 0.5rem;
 }
