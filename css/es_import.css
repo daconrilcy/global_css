@@ -829,8 +829,12 @@ html.dark-mode .preview-json .wrapper .wrapper-fields .row div input, html.dark-
 .card-header-option.visible {
   display: flex;
 }
+.card-header-option .card-header {
+  padding: 1rem 0.25rem 1rem 0.25rem;
+}
 .card-header-option .card-title {
   font-size: 1.25rem;
+  margin-bottom: 0;
 }
 .card-header-option .card-body {
   border-bottom-right-radius: 0.5rem;
@@ -850,9 +854,7 @@ html.dark-mode .preview-json .wrapper .wrapper-fields .row div input, html.dark-
   padding-bottom: 0.5rem;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0;
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
+  margin: 0;
   align-content: center;
   justify-content: space-evenly;
 }
