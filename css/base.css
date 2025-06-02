@@ -7172,8 +7172,10 @@ p {
 }
 
 .card {
-  --bs-card-title-color: #3E5B80;
-  --bs-card-subtitle-color: #606D80;
+  --bs-card-title-color: hsl(214, 35%, 37%);
+  --bs-card-subtitle-color: hsl(216, 14%, 44%);
+  --bs-card-title-color-dark:hsl(214, 35%, 77%);
+  --bs-card-subtitle-color: hsl(216, 14%, 67%);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -7213,6 +7215,9 @@ html.dark-mode .card .card-header {
 .card .card-title {
   margin-bottom: 0.5rem;
   color: var(--bs-card-title-color);
+}
+html.dark-mode .card .card-title {
+  color: var(--bs-card-title-color-dark);
 }
 
 .custom-checkbox {

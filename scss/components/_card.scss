@@ -4,8 +4,10 @@
 
 .card {
   // Variables internes Bootstrap-like
-  --bs-card-title-color: #3E5B80;
-  --bs-card-subtitle-color: #606D80;
+  --bs-card-title-color: hsl(214, 35%, 37%);
+  --bs-card-subtitle-color: hsl(216, 14%, 44%);
+  --bs-card-title-color-dark:hsl(214, 35%, 77%);
+  --bs-card-subtitle-color: hsl(216, 14%, 67%);
 
   position: relative;
   display: flex;
@@ -51,5 +53,8 @@
   .card-title {
     margin-bottom: 0.5rem;
     color: var(--bs-card-title-color);
+     @at-root html.dark-mode & {
+      color: var(--bs-card-title-color-dark);
+     }
   }
 }
