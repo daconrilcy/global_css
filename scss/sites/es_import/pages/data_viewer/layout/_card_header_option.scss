@@ -10,6 +10,12 @@
         display: flex;
     }
     .card-body{
+        .card-title{
+            font-size: 1.25rem;
+        }
+        .card-subtitle{
+            font-size: 1.1rem;
+        }
         border-bottom-right-radius: $border-radius-preview;
         border-bottom-left-radius: $border-radius-preview;
         .toggle-button{

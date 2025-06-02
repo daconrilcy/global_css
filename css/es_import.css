@@ -833,6 +833,12 @@ html.dark-mode .preview-json .wrapper .wrapper-fields .row div input, html.dark-
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
+.card-header-option .card-body .card-title {
+  font-size: 1.25rem;
+}
+.card-header-option .card-body .card-subtitle {
+  font-size: 1.1rem;
+}
 .card-header-option .card-body .toggle-button {
   position: static;
   padding-top: 0.25rem;
