@@ -7225,7 +7225,7 @@ html.dark-mode .card .card-title {
   color: var(--bs-card-subtitle-color);
 }
 html.dark-mode .card .card-subtitle {
-  color: var(---bs-card-subtitle-color-dark);
+  color: var(--bs-card-subtitle-color-dark);
 }
 
 .custom-checkbox {
