@@ -815,10 +815,10 @@ html.dark-mode .preview-json .wrapper .wrapper-fields .row div input, html.dark-
 
 .card-header-option {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 3.5rem;
   z-index: 20;
-  border: 0.5rem;
+  border-radius: 0.5rem;
 }
 .card-header-option.visible {
   display: flex;

@@ -2,10 +2,10 @@
 
 .card-header-option{
     display: none;
-    position: absolute;
+    position: fixed;
     top: 3.5rem;
     z-index: 20;
-    border: $border-radius-preview;
+    border-radius: $border-radius-preview;
     &.visible{
         display: flex;
     }
