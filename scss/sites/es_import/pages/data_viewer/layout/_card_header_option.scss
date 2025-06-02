@@ -12,5 +12,10 @@
     .card-body{
         border-bottom-right-radius: $border-radius-preview;
         border-bottom-left-radius: $border-radius-preview;
+        .toggle-button{
+            position: static;
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+        }
     }
 }
