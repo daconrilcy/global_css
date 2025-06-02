@@ -1,0 +1,12 @@
+@use '../../../variables/styles' as *;
+
+.card-header-option{
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+    z-index: 20;
+    border: $border-radius-preview;
+    &.visible{
+        display: flex;
+    }
+}
