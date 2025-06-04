@@ -3,6 +3,8 @@
 
 // Le mixin SCSS
 @mixin flash-bg($color, $name: flash-bg) {
+  animation: #{$name} 1s linear 1;
+
   @keyframes #{$name} {
     0%   { background-color: initial; }
     16%  { background-color: #{$color}; }
@@ -12,9 +14,6 @@
     83%  { background-color: #{$color}; }
     100% { background-color: initial; }
   }
-
-  // Appliquer l'animation directement à la classe où le mixin est appelé
-  animation: #{$name} 1s linear 1;
 }
 
 .flash-red{
