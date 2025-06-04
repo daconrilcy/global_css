@@ -13,9 +13,8 @@
     100% { background-color: initial; }
   }
 
-  &.flash-bg {
-    animation: #{$name} 1s linear 1;
-  }
+  // Appliquer l'animation directement à la classe où le mixin est appelé
+  animation: #{$name} 1s linear 1;
 }
 
 .flash-red{

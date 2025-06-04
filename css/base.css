@@ -1,3 +1,6 @@
+.flash-red {
+  animation: flash-red 1s linear 1;
+}
 @keyframes flash-red {
   0% {
     background-color: initial;
@@ -21,10 +24,10 @@
     background-color: initial;
   }
 }
-.flash-red.flash-bg {
-  animation: flash-red 1s linear 1;
-}
 
+.flash-green {
+  animation: flash-green 1s linear 1;
+}
 @keyframes flash-green {
   0% {
     background-color: initial;
@@ -47,9 +50,6 @@
   100% {
     background-color: initial;
   }
-}
-.flash-green.flash-bg {
-  animation: flash-green 1s linear 1;
 }
 
 *,
