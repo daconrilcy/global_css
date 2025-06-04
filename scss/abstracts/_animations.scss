@@ -3,7 +3,9 @@
 
 // Le mixin SCSS
 @mixin flash-bg($color, $name: flash-bg) {
-  animation: #{$name} 1s linear 1;
+  & {
+    animation: #{$name} 1s linear 1;
+  }
 
   @keyframes #{$name} {
     0%   { background-color: initial; }
