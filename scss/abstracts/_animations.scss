@@ -1,0 +1,26 @@
+@use "./functions" as *;
+@use "./colors" as *;
+
+// Le mixin SCSS
+@mixin flash-bg($color, $name: flash-bg) {
+  @keyframes #{$name} {
+    0%   { background-color: initial; }
+    16%  { background-color: #{$color}; }
+    33%  { background-color: initial; }
+    50%  { background-color: #{$color}; }
+    66%  { background-color: initial; }
+    83%  { background-color: #{$color}; }
+    100% { background-color: initial; }
+  }
+
+  &.flash-bg {
+    animation: #{$name} 1s linear 1;
+  }
+}
+
+.flash-red{
+    @include flash-bg(color(default-red, base), flash-red );
+}
+.flash-green{
+    @include flash-bg(color(default-green, base), flash-green );
+}
