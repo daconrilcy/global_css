@@ -1076,12 +1076,12 @@ html.dark-mode .errorpage-container {
 .wrapper-fields .row div .glyphicon {
   opacity: 0.5;
   transition: 0.25s;
-  font-size: 1.5rem;
-  cursor: pointer;
+  font-size: 1.2rem;
 }
 .wrapper-fields .row div .glyphicon:hover {
   opacity: 1;
   transition: 0.25s;
+  cursor: pointer;
 }
 .wrapper-fields .row div .glyphicon .glyphicon-modify:hover {
   color: rgb(0, 255, 0);
