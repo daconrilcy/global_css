@@ -52,6 +52,11 @@
   }
 }
 
+.center {
+  text-align: center;
+  align-items: center;
+}
+
 *,
 *::before,
 *::after {
