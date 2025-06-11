@@ -1077,19 +1077,19 @@ html.dark-mode .errorpage-container {
   opacity: 0.5;
   transition: 0.25s;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 .wrapper-fields .row div .glyphicon:hover {
   opacity: 1;
   transition: 0.25s;
-  cursor: pointer;
 }
-.wrapper-fields .row div .glyphicon:hover .glyphicon-modify {
+.wrapper-fields .row div .glyphicon .glyphicon-modify:hover {
   color: rgb(0, 255, 0);
 }
-.wrapper-fields .row div .glyphicon:hover .glyphicon-plus {
+.wrapper-fields .row div .glyphicon .glyphicon-plus:hover {
   color: rgb(0, 119, 204);
 }
-.wrapper-fields .row div .glyphicon:hover .glyphicon-remove {
+.wrapper-fields .row div .glyphicon .glyphicon-remove:hover {
   color: rgb(255, 0, 0);
 }
 

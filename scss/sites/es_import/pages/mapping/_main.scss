@@ -14,17 +14,23 @@
                 &:hover{
                     opacity: 1;
                     transition: 0.25s;
-                    cursor: pointer;
+                }
+                cursor: pointer;
                     .glyphicon-modify{
+                        &:hover{
                         color: color(default-green, base);
+                        }
                     }
                     .glyphicon-plus{
+                        &:hover{
                          color: color(blue-primary, base);
+                        }
                     }
                     .glyphicon-remove{
+                        &:hover{
                         color: color(default-red, base);
+                        }
                     }
-                }
             }
         }
     }
