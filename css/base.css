@@ -7229,6 +7229,14 @@ p {
 .btn.btn-submit:hover {
   background-color: rgb(2, 80, 135);
 }
+.btn.btn-modify {
+  background-color: rgb(0, 119, 204);
+  width: 100%;
+  color: #fff;
+}
+.btn.btn-modify:hover {
+  background-color: rgb(2, 80, 135);
+}
 
 .card {
   --bs-card-title-color: hsl(214, 35%, 37%);

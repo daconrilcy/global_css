@@ -79,6 +79,14 @@
           background-color: color(blue-primary, dark)
         }
       }
+      &.btn-modify{
+        background-color: color(blue-primary, base);
+        width: 100%;
+        color: $bs-body-bg;
+        &:hover {
+          background-color: color(blue-primary, dark)
+        }
+      }
     
 
 }
