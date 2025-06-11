@@ -726,7 +726,7 @@ html.dark-mode .preview-json .wrapper .wrapper-fields {
 }
 
 .preview-json .wrapper .wrapper-fields .row {
-  margin-right: -1.75rem;
+  padding-right: -1.75rem;
 }
 .preview-json .wrapper .wrapper-fields .row div {
   align-content: center;
