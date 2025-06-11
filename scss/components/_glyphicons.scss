@@ -48,6 +48,9 @@
   &.glyphicon-modify-accept::before{
     content: "\e067";
   }
+  &.glyphicon-plus::before{
+    content: "\e081";
+  }
 
   &.gly-spin {
     animation: spin 2s infinite linear;
