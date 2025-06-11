@@ -719,6 +719,7 @@ html.dark-mode .preview-json .wrapper .wrapper-headers .headers {
   overflow-y: scroll;
   height: calc(100vh - 360px);
   font-size: 0.8rem;
+  padding-left: 0.25rem;
 }
 html.dark-mode .preview-json .wrapper .wrapper-fields {
   background-color: hsl(0, 0%, 10%);
@@ -1079,6 +1080,7 @@ html.dark-mode .errorpage-container {
   opacity: 1;
   color: rgb(0, 255, 0);
   transition: 0.25s;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=es_import.css.map */
