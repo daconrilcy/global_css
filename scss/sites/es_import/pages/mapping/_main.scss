@@ -17,17 +17,17 @@
                      cursor: pointer;
                 }
                
-                    .glyphicon-modify{
+                    &.glyphicon-modify{
                         &:hover{
                         color: color(default-green, base);
                         }
                     }
-                    .glyphicon-plus{
+                    &.glyphicon-plus{
                         &:hover{
                          color: color(blue-primary, base);
                         }
                     }
-                    .glyphicon-remove{
+                    &.glyphicon-remove{
                         &:hover{
                         color: color(default-red, base);
                         }

@@ -1083,13 +1083,13 @@ html.dark-mode .errorpage-container {
   transition: 0.25s;
   cursor: pointer;
 }
-.wrapper-fields .row div .glyphicon .glyphicon-modify:hover {
+.wrapper-fields .row div .glyphicon.glyphicon-modify:hover {
   color: rgb(0, 255, 0);
 }
-.wrapper-fields .row div .glyphicon .glyphicon-plus:hover {
+.wrapper-fields .row div .glyphicon.glyphicon-plus:hover {
   color: rgb(0, 119, 204);
 }
-.wrapper-fields .row div .glyphicon .glyphicon-remove:hover {
+.wrapper-fields .row div .glyphicon.glyphicon-remove:hover {
   color: rgb(255, 0, 0);
 }
 
