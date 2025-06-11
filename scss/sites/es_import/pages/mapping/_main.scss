@@ -7,18 +7,25 @@
         div{
             text-align: center;
             align-items: center;
-            .glyphicon-modify{
+            .glyphicon{
                 opacity: 0.5;
                 transition: 0.25s;
                 font-size: 1.5rem;
                 &:hover{
                     opacity: 1;
-                    color: color(default-green, base);
                     transition: 0.25s;
                     cursor: pointer;
+                    .glyphicon-modify{
+                        color: color(default-green, base);
+                    }
+                    .glyphicon-plus{
+                         color: color(blue-primary, base);
+                    }
+                    .glyphicon-remove{
+                        color: color(default-red, base);
+                    }
                 }
             }
-            
         }
     }
 }

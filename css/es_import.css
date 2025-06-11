@@ -1073,16 +1073,24 @@ html.dark-mode .errorpage-container {
   text-align: center;
   align-items: center;
 }
-.wrapper-fields .row div .glyphicon-modify {
+.wrapper-fields .row div .glyphicon {
   opacity: 0.5;
   transition: 0.25s;
   font-size: 1.5rem;
 }
-.wrapper-fields .row div .glyphicon-modify:hover {
+.wrapper-fields .row div .glyphicon:hover {
   opacity: 1;
-  color: rgb(0, 255, 0);
   transition: 0.25s;
   cursor: pointer;
+}
+.wrapper-fields .row div .glyphicon:hover .glyphicon-modify {
+  color: rgb(0, 255, 0);
+}
+.wrapper-fields .row div .glyphicon:hover .glyphicon-plus {
+  color: rgb(0, 119, 204);
+}
+.wrapper-fields .row div .glyphicon:hover .glyphicon-remove {
+  color: rgb(255, 0, 0);
 }
 
 /*# sourceMappingURL=es_import.css.map */
