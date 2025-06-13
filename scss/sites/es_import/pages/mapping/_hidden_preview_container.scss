@@ -11,6 +11,7 @@
     background-color: $bs-body-bg;
     padding: 0.5rem;
     box-shadow: $default-cell-shadow;
+    flex-direction: column;
 
      @at-root html.dark-mode & {
                 background-color: $dark-background-color-secondary;
@@ -25,7 +26,7 @@
     .row.field{
 
     }
-    
+
     &.visible{
         display: flex;
         position: absolute;
