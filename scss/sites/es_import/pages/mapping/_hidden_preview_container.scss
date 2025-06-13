@@ -1,0 +1,33 @@
+@use "../../../../abstracts/functions" as *;
+@use "../../../../abstracts/colors" as *;
+@use "../../../../abstracts/variables" as *;
+@use "../../variables/styles" as *;
+
+
+.mapping-preview-hidden-container-modif{
+    display: none;
+    border: color(light-gray, light);
+    border-radius: $border-radius-preview;
+    background-color: $bs-body-bg;
+    padding: 0.5rem;
+    box-shadow: $default-cell-shadow;
+
+     @at-root html.dark-mode & {
+                background-color: $dark-background-color-secondary;
+                color: $dark-front-color;
+            }
+
+    .row.header{
+        font-weight: 700;
+        text-align: center;
+
+    }
+    .row.field{
+
+    }
+    
+    &.visible{
+        display: flex;
+        position: absolute;
+    }
+}

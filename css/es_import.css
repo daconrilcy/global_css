@@ -1092,5 +1092,9 @@ html.dark-mode .errorpage-container {
 .wrapper-fields .row div .glyphicon.glyphicon-remove:hover {
   color: rgb(255, 0, 0);
 }
+.wrapper-fields .row:hover {
+  background-color: rgb(0, 119, 204);
+  color: white;
+}
 
 /*# sourceMappingURL=es_import.css.map */

@@ -34,5 +34,9 @@
                     }
             }
         }
+        &:hover{
+            background-color:  color(blue-primary, base);
+            color: white;
+        }
     }
 }
