@@ -1,0 +1,37 @@
+@use '../../../../abstracts/colors' as *;
+@use '../../../../abstracts/functions' as *;
+
+.field-preview, .wrapper-fields {
+    .row{
+        div{
+            text-align: center;
+            align-items: center;
+            .glyphicon{
+                opacity: 0.5;
+                transition: 0.25s;
+                font-size: 1.2rem;
+                &:hover{
+                    opacity: 1;
+                    transition: 0.25s;
+                        cursor: pointer;
+                }
+                
+                    &.glyphicon-modify{
+                        &:hover{
+                        color: color(default-green, base);
+                        }
+                    }
+                    &.glyphicon-plus{
+                        &:hover{
+                            color: color(blue-primary, base);
+                        }
+                    }
+                    &.glyphicon-remove{
+                        &:hover{
+                        color: color(default-red, base);
+                        }
+                    }
+            }
+        }
+    }
+}

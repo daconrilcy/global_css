@@ -1073,25 +1073,6 @@ html.dark-mode .errorpage-container {
   text-align: center;
   align-items: center;
 }
-.wrapper-fields .row div .glyphicon {
-  opacity: 0.5;
-  transition: 0.25s;
-  font-size: 1.2rem;
-}
-.wrapper-fields .row div .glyphicon:hover {
-  opacity: 1;
-  transition: 0.25s;
-  cursor: pointer;
-}
-.wrapper-fields .row div .glyphicon.glyphicon-modify:hover {
-  color: rgb(0, 255, 0);
-}
-.wrapper-fields .row div .glyphicon.glyphicon-plus:hover {
-  color: rgb(0, 119, 204);
-}
-.wrapper-fields .row div .glyphicon.glyphicon-remove:hover {
-  color: rgb(255, 0, 0);
-}
 .wrapper-fields .row:hover {
   background-color: rgb(0, 119, 204);
   color: white;
@@ -1124,6 +1105,30 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
 .mapping-preview-hidden-container-modif .field-preview.visible {
   display: flex;
   position: absolute;
+}
+
+.field-preview .row div, .wrapper-fields .row div {
+  text-align: center;
+  align-items: center;
+}
+.field-preview .row div .glyphicon, .wrapper-fields .row div .glyphicon {
+  opacity: 0.5;
+  transition: 0.25s;
+  font-size: 1.2rem;
+}
+.field-preview .row div .glyphicon:hover, .wrapper-fields .row div .glyphicon:hover {
+  opacity: 1;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.field-preview .row div .glyphicon.glyphicon-modify:hover, .wrapper-fields .row div .glyphicon.glyphicon-modify:hover {
+  color: rgb(0, 255, 0);
+}
+.field-preview .row div .glyphicon.glyphicon-plus:hover, .wrapper-fields .row div .glyphicon.glyphicon-plus:hover {
+  color: rgb(0, 119, 204);
+}
+.field-preview .row div .glyphicon.glyphicon-remove:hover, .wrapper-fields .row div .glyphicon.glyphicon-remove:hover {
+  color: rgb(255, 0, 0);
 }
 
 /*# sourceMappingURL=es_import.css.map */
