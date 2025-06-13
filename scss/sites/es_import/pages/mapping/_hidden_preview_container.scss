@@ -5,30 +5,33 @@
 
 
 .mapping-preview-hidden-container-modif{
-    display: none;
-    border: color(light-gray, light);
-    border-radius: $border-radius-preview;
-    background-color: $bs-body-bg;
-    padding: 0.5rem;
-    box-shadow: $default-cell-shadow;
-    flex-direction: column;
+   
+    .field-preview{
+        display: none;
+        border: color(light-gray, light);
+        border-radius: $border-radius-preview;
+        background-color: $bs-body-bg;
+        padding: 0.5rem;
+        box-shadow: $default-cell-shadow;
+        flex-direction: column;
 
-     @at-root html.dark-mode & {
-                background-color: $dark-background-color-secondary;
-                color: $dark-front-color;
-            }
+        @at-root html.dark-mode & {
+                    background-color: $dark-background-color-secondary;
+                    color: $dark-front-color;
+                }
 
-    .row.header{
-        font-weight: 700;
-        text-align: center;
+        .row.header{
+            font-weight: 700;
+            text-align: center;
 
-    }
-    .row.field{
+        }
+        .row.field{
 
-    }
+        }
 
-    &.visible{
-        display: flex;
-        position: absolute;
+        &.visible{
+            display: flex;
+            position: absolute;
+        }
     }
 }
