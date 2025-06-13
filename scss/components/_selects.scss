@@ -4,7 +4,7 @@
 
 select{
     display: inline-block;
-    background: $bs-body-bg;
+    background: inherit;
     border: 1px solid $bs-border-color;
     border-radius: $bs-border-radius;
     width: 100%;
@@ -17,5 +17,6 @@ select{
     &:hover{
         border-color: color(blue-primary, light);
         background: color(light-gray, light);
+        color: color(blue-primary, base);
     }
 }

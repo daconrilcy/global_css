@@ -9,8 +9,9 @@
             align-items: center;
         }
         &:hover{
-            background-color:  color(blue-primary, base);
+            background-color:  color(blue-primary, light);
             color: white;
+            cursor: zoom-in;
         }
     }
 }
