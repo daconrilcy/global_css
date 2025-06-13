@@ -1097,4 +1097,27 @@ html.dark-mode .errorpage-container {
   color: white;
 }
 
+.mapping-preview-hidden-container-modif .field-preview {
+  display: none;
+  border: rgb(220, 226, 238);
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 0.5rem;
+  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
+}
+html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
+  background-color: hsl(0, 0%, 10%);
+  color: #f0f0f0;
+}
+
+.mapping-preview-hidden-container-modif .field-preview .row.header {
+  font-weight: 700;
+  text-align: center;
+}
+.mapping-preview-hidden-container-modif .field-preview.visible {
+  display: flex;
+  position: absolute;
+}
+
 /*# sourceMappingURL=es_import.css.map */
