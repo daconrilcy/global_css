@@ -1099,7 +1099,7 @@ html.dark-mode .errorpage-container {
 
 .mapping-preview-hidden-container-modif .field-preview {
   display: none;
-  border: rgb(220, 226, 238);
+  border: rgb(220, 226, 238) 1px solid;
   border-radius: 0.5rem;
   background-color: #fff;
   padding: 0.5rem;
@@ -1111,8 +1111,14 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
   color: #f0f0f0;
 }
 
+.mapping-preview-hidden-container-modif .field-preview .row {
+  align-items: center;
+}
 .mapping-preview-hidden-container-modif .field-preview .row.header {
   font-weight: 700;
+  text-align: center;
+}
+.mapping-preview-hidden-container-modif .field-preview .row.field .actions {
   text-align: center;
 }
 .mapping-preview-hidden-container-modif .field-preview.visible {

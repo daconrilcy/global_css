@@ -8,7 +8,7 @@
    
     .field-preview{
         display: none;
-        border: color(light-gray, light);
+        border: color(light-gray, light) 1px solid;
         border-radius: $border-radius-preview;
         background-color: $bs-body-bg;
         padding: 0.5rem;
@@ -19,6 +19,10 @@
                     background-color: $dark-background-color-secondary;
                     color: $dark-front-color;
                 }
+        
+        .row{
+            align-items: center;
+        }
 
         .row.header{
             font-weight: 700;
@@ -26,6 +30,9 @@
 
         }
         .row.field{
+            .actions{
+                text-align: center;
+            }
 
         }
 
