@@ -19,7 +19,7 @@
         flex-direction: column;
         z-index: 1000;
         pointer-events: none;
-        transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+        transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
 
         @at-root html.dark-mode & {
                     background-color: $dark-background-color-secondary;
@@ -45,11 +45,12 @@
         &.visible{
             opacity: 1;
             visibility: visible;
+            pointer-events: auto;
             
         }
 
         &.modificaton{
-            pointer-events: auto;
+            
         }
     }
 }
