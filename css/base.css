@@ -7444,6 +7444,7 @@ input[type=text]:hover, input[type=email]:hover, input[type=password]:hover, inp
   border-color: rgb(82, 154, 204);
   background: rgb(220, 226, 238);
   box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.25);
+  color: rgb(2, 80, 135);
   cursor: text;
 }
 input[type=text]::placeholder, input[type=email]::placeholder, input[type=password]::placeholder, input[type=number]::placeholder, input[type=tel]::placeholder, input[type=url]::placeholder, textarea::placeholder {
@@ -7691,7 +7692,7 @@ select {
 select:hover {
   border-color: rgb(82, 154, 204);
   background: rgb(220, 226, 238);
-  color: rgb(0, 119, 204);
+  color: rgb(2, 80, 135);
 }
 
 .csv-table {

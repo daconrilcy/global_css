@@ -20,6 +20,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
         border-color: color(blue-primary, light);
         background: color(light-gray, light);
         box-shadow: $default-input-shadow-inset;
+        color: color(blue-primary, dark);
         cursor: text;
     }
 
