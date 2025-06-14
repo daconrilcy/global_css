@@ -1128,9 +1128,9 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
   border-color: #dee2e6;
 }
 .mapping-preview-hidden-container-modif .field-preview.blocked, .mapping-preview-hidden-container-modif .field-preview.visible.blocked {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .field-preview .row div, .wrapper-fields .row div {
