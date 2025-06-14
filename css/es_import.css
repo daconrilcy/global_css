@@ -1118,6 +1118,11 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
   visibility: visible;
   pointer-events: auto;
 }
+.mapping-preview-hidden-container-modif .field-preview.modify {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
 .mapping-preview-hidden-container-modif .field-preview.modify .row.field div select, .mapping-preview-hidden-container-modif .field-preview.modify .row.field div input {
   pointer-events: auto;
   border-color: #dee2e6;

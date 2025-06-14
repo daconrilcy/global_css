@@ -54,6 +54,9 @@
             pointer-events: auto; 
         }
         &.modify{
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto; 
             .row.field{
                 div{
                     select, input{
