@@ -46,6 +46,9 @@
                 &.glyphicon-modify-revert{
                     display: none;
                 }
+                 &.glyphicon-remove{
+                    visibility: visible;
+                 }
             }
         }
     }
@@ -67,7 +70,7 @@
                     display: none;
                 }
                 &.glyphicon-remove{
-                    display: none;
+                    visibility: hidden;
                 }
             }
         }

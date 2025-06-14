@@ -1149,6 +1149,9 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
 .field-preview .row div .glyphicon.glyphicon-modify-revert {
   display: none;
 }
+.field-preview .row div .glyphicon.glyphicon-remove {
+  visibility: visible;
+}
 
 .field-preview.modify .row div .glyphicon.glyphicon-modify {
   display: none;
@@ -1163,7 +1166,7 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
   display: none;
 }
 .field-preview.modify .row div .glyphicon.glyphicon-remove {
-  display: none;
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=es_import.css.map */
