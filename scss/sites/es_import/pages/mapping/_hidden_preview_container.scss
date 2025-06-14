@@ -53,5 +53,15 @@
             visibility: visible;
             pointer-events: auto; 
         }
+        &.modify{
+            .row.field{
+                div{
+                    select, input{
+                        pointer-events: auto;
+                        border-color: $bs-border-color;
+                    }
+                }
+            }
+        }
     }
 }
