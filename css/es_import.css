@@ -1118,24 +1118,24 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
   visibility: visible;
   pointer-events: auto;
 }
-.mapping-preview-hidden-container-modif .field-preview.modificaton .field-preview .row.field div select, .mapping-preview-hidden-container-modif .field-preview.modificaton .field-preview .row.field div input {
+.mapping-preview-hidden-container-modif .field-preview.modify .field-preview .row.field div select, .mapping-preview-hidden-container-modif .field-preview.modify .field-preview .row.field div input {
   pointer-events: auto;
   border-color: #dee2e6;
 }
-.mapping-preview-hidden-container-modif .field-preview.modificaton .field-preview .row.field div .glyphicon.glyphicon-modify {
-  display: none;
+.mapping-preview-hidden-container-modif .field-preview.modify .field-preview .row.field div.actions .glyphicon.glyphicon-modify {
+  display: none !important;
 }
-.mapping-preview-hidden-container-modif .field-preview.modificaton .field-preview .row.field div .glyphicon.glyphicon-plus {
-  display: none;
+.mapping-preview-hidden-container-modif .field-preview.modify .field-preview .row.field div.actions .glyphicon.glyphicon-plus {
+  display: none !important;
 }
-.mapping-preview-hidden-container-modif .field-preview.modificaton .field-preview .row.field div .glyphicon.glyphicon-remove {
-  display: none;
+.mapping-preview-hidden-container-modif .field-preview.modify .field-preview .row.field div.actions .glyphicon.glyphicon-remove {
+  display: none !important;
 }
-.mapping-preview-hidden-container-modif .field-preview.modificaton .field-preview .row.field div .glyphicon.glyphicon-modify-accept {
-  display: block;
+.mapping-preview-hidden-container-modif .field-preview.modify .field-preview .row.field div.actions .glyphicon.glyphicon-modify-accept {
+  display: block !important;
 }
-.mapping-preview-hidden-container-modif .field-preview.modificaton .field-preview .row.field div .glyphicon glyphicon-modify-revert {
-  display: block;
+.mapping-preview-hidden-container-modif .field-preview.modify .field-preview .row.field div.actions .glyphicon glyphicon-modify-revert {
+  display: block !important;
 }
 
 .field-preview .row div, .wrapper-fields .row div {

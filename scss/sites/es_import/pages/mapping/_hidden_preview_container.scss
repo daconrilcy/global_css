@@ -55,7 +55,7 @@
             
         }
 
-        &.modificaton{
+        &.modify{
              .field-preview{
                 .row.field{
                     div{
@@ -63,20 +63,22 @@
                             pointer-events: auto;
                             border-color:  $bs-border-color;
                         }
-                        .glyphicon.glyphicon-modify{
-                            display: none;
-                        }
-                        .glyphicon.glyphicon-plus{
-                            display: none;
-                        }
-                        .glyphicon.glyphicon-remove{
-                            display: none;
-                        }
-                        .glyphicon.glyphicon-modify-accept{
-                            display: block;
-                        }
-                        .glyphicon glyphicon-modify-revert{
-                            display: block;
+                        &.actions{
+                            .glyphicon.glyphicon-modify{
+                                display: none !important;
+                            }
+                            .glyphicon.glyphicon-plus{
+                                display: none !important;
+                            }
+                            .glyphicon.glyphicon-remove{
+                                display: none !important;
+                            }
+                            .glyphicon.glyphicon-modify-accept{
+                                display: block !important;
+                            }
+                            .glyphicon glyphicon-modify-revert{
+                                display: block !important;
+                            }
                         }
                     }
                 }
