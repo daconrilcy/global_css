@@ -1109,6 +1109,10 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
 .mapping-preview-hidden-container-modif .field-preview .row.field .actions {
   text-align: center;
 }
+.mapping-preview-hidden-container-modif .field-preview .row.field div select, .mapping-preview-hidden-container-modif .field-preview .row.field div input {
+  pointer-events: none;
+  border-color: transparent;
+}
 .mapping-preview-hidden-container-modif .field-preview.visible {
   opacity: 1;
   visibility: visible;

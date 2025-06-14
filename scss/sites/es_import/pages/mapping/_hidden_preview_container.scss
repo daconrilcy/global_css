@@ -39,6 +39,12 @@
             .actions{
                 text-align: center;
             }
+            div{
+                select, input{
+                    pointer-events: none;
+                    border-color: transparent;
+                }
+            }
 
         }
 
