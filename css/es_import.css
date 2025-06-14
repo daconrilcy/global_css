@@ -1122,6 +1122,21 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
   pointer-events: auto;
   border-color: #dee2e6;
 }
+.mapping-preview-hidden-container-modif .field-preview.modificaton .field-preview .row.field div .glyphicon.glyphicon-modify {
+  display: none;
+}
+.mapping-preview-hidden-container-modif .field-preview.modificaton .field-preview .row.field div .glyphicon.glyphicon-plus {
+  display: none;
+}
+.mapping-preview-hidden-container-modif .field-preview.modificaton .field-preview .row.field div .glyphicon.glyphicon-remove {
+  display: none;
+}
+.mapping-preview-hidden-container-modif .field-preview.modificaton .field-preview .row.field div .glyphicon.glyphicon-modify-accept {
+  display: block;
+}
+.mapping-preview-hidden-container-modif .field-preview.modificaton .field-preview .row.field div .glyphicon glyphicon-modify-revert {
+  display: block;
+}
 
 .field-preview .row div, .wrapper-fields .row div {
   text-align: center;
