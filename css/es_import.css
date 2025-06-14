@@ -1080,13 +1080,19 @@ html.dark-mode .errorpage-container {
 }
 
 .mapping-preview-hidden-container-modif .field-preview {
-  display: none;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
   border: rgb(220, 226, 238) 1px solid;
   border-radius: 0.5rem;
   background-color: #fff;
   padding: 0.5rem;
   box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.25);
   flex-direction: column;
+  z-index: 1000;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
 }
 html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
   background-color: hsl(0, 0%, 10%);
@@ -1104,8 +1110,9 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
   text-align: center;
 }
 .mapping-preview-hidden-container-modif .field-preview.visible {
-  display: flex;
-  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .field-preview .row div, .wrapper-fields .row div {

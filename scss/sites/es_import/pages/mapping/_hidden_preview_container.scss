@@ -7,13 +7,19 @@
 .mapping-preview-hidden-container-modif{
    
     .field-preview{
-        display: none;
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
         border: color(light-gray, light) 1px solid;
         border-radius: $border-radius-preview;
         background-color: $bs-body-bg;
         padding: 0.5rem;
         box-shadow: $default-cell-shadow;
         flex-direction: column;
+        z-index: 1000;
+        pointer-events: none;
+        transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
 
         @at-root html.dark-mode & {
                     background-color: $dark-background-color-secondary;
@@ -37,8 +43,9 @@
         }
 
         &.visible{
-            display: flex;
-            position: absolute;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
         }
     }
 }
