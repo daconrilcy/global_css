@@ -16,21 +16,59 @@
                         cursor: pointer;
                 }
                 
-                    &.glyphicon-modify{
-                        &:hover{
-                        color: color(default-green, base);
-                        }
+                &.glyphicon-modify{
+                    &:hover{
+                    color: color(default-green, base);
                     }
-                    &.glyphicon-plus{
-                        &:hover{
-                            color: color(blue-primary, base);
-                        }
+                }
+                &.glyphicon-plus{
+                    &:hover{
+                        color: color(blue-primary, base);
                     }
-                    &.glyphicon-remove{
-                        &:hover{
-                        color: color(default-red, base);
-                        }
+                }
+                &.glyphicon-remove{
+                    &:hover{
+                    color: color(default-red, base);
                     }
+                }
+            }
+        }
+    }
+}
+
+.field-preview{
+    .row{
+        div{
+            .glyphicon{
+                &.glyphicon-modify-accept{
+                    display: none;
+                }
+                &.glyphicon-modify-revert{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.field-preview.modify{
+    .row{
+        div{
+            .glyphicon{
+                &.glyphicon-modify{
+                    display: none;
+                }
+                 &.glyphicon-modify-accept{
+                    display: inline-block;
+                }
+                &.glyphicon-modify-revert{
+                    display: inline-block;
+                }
+                &.glyphicon-plus{
+                    display: none;
+                }
+                &.glyphicon-remove{
+                    display: none;
+                }
             }
         }
     }
