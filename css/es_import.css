@@ -1079,6 +1079,10 @@ html.dark-mode .errorpage-container {
   cursor: zoom-in;
 }
 
+.mapping-preview-hidden-container-modif {
+  display: none;
+  height: 0;
+}
 .mapping-preview-hidden-container-modif .field-preview {
   display: flex;
   opacity: 0;
