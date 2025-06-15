@@ -1109,6 +1109,10 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
 .mapping-preview-hidden-container-modif .field-preview .row.header {
   font-weight: 700;
   text-align: center;
+  font-size: 1.1rem;
+}
+.mapping-preview-hidden-container-modif .field-preview .row.field {
+  font-size: 1rem;
 }
 .mapping-preview-hidden-container-modif .field-preview .row.field .actions {
   text-align: center;
