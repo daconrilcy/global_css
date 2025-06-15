@@ -1085,6 +1085,9 @@ html.dark-mode .errorpage-container {
 .mapping-preview-hidden-container-modif .field-preview {
   top: 0;
   display: flex;
+  min-width: 65%;
+  width: max-content;
+  max-width: 90vw;
   opacity: 0;
   visibility: hidden;
   position: absolute;

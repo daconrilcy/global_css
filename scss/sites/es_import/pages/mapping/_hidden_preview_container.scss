@@ -9,6 +9,9 @@
     .field-preview{
         top: 0;
         display: flex;
+        min-width: 65%; // Largeur minimale raisonnable pour les contenus
+        width: max-content; // La largeur s'adapte au contenu mais ne descend pas en dessous du min
+        max-width: 90vw; // Évite de dépasser l'écran
         opacity: 0;
         visibility: hidden;
         position: absolute;

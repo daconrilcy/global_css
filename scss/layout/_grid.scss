@@ -4,7 +4,7 @@
 // Row
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-top: 0;
   margin-left: calc(-0.5 * #{$bs-gutter-x});
   margin-right: calc(-0.5 * #{$bs-gutter-x});
@@ -26,7 +26,8 @@ $breakpoints: (
   @for $i from 1 through 12 {
     .col-#{$bp}-#{$i} {
       @media (min-width: $bp-width) {
-        flex: 0 0 auto;
+        flex: 1 1 0;
+        min-width: 0; // Pour éviter le débordement de texte
         width: #{calc($base-width * $i)};
         padding-left: calc(#{$bs-gutter-x} * 0.5);
         padding-right: calc(#{$bs-gutter-x} * 0.5);
