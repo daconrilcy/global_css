@@ -1080,9 +1080,7 @@ html.dark-mode .errorpage-container {
 }
 
 .mapping-preview-hidden-container-modif {
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 0px;
 }
 .mapping-preview-hidden-container-modif .field-preview {
   display: flex;
