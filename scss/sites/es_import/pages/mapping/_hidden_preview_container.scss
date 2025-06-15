@@ -39,15 +39,14 @@
         }
         .row.field{
             font-size: 0.8rem;
-            input, select {
-                padding: 0.25rem;
-                font-size: 0.8rem;
-            }
             .actions{
                 text-align: center;
             }
             div{
+                font-size: inherit;
                 select, input{
+                    padding: 0.25rem;
+                    font-size: 0.8rem;
                     pointer-events: none;
                     border-color: transparent;
                 }
