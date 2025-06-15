@@ -1080,8 +1080,9 @@ html.dark-mode .errorpage-container {
 }
 
 .mapping-preview-hidden-container-modif {
-  display: none;
-  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .mapping-preview-hidden-container-modif .field-preview {
   display: flex;
@@ -1118,7 +1119,6 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
   border-color: transparent;
 }
 .mapping-preview-hidden-container-modif .field-preview.visible {
-  display: flex;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
