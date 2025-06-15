@@ -76,7 +76,7 @@
         .wrapper-fields{
             background-color: $bs-body-bg;
             overflow-y: scroll;
-            height: calc(100vh - 360px);
+            height: calc(100vh - 380px);
             font-size: 0.8rem;
             
             @at-root html.dark-mode & {

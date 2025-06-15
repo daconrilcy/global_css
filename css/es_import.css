@@ -717,7 +717,7 @@ html.dark-mode .preview-json .wrapper .wrapper-headers .headers {
 .preview-json .wrapper .wrapper-fields {
   background-color: #fff;
   overflow-y: scroll;
-  height: calc(100vh - 360px);
+  height: calc(100vh - 380px);
   font-size: 0.8rem;
 }
 html.dark-mode .preview-json .wrapper .wrapper-fields {
