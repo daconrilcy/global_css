@@ -1107,12 +1107,16 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
   align-items: center;
 }
 .mapping-preview-hidden-container-modif .field-preview .row.header {
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .mapping-preview-hidden-container-modif .field-preview .row.field {
-  font-size: 1rem;
+  font-size: 0.8rem;
+}
+.mapping-preview-hidden-container-modif .field-preview .row.field input, .mapping-preview-hidden-container-modif .field-preview .row.field select {
+  padding: 0.25rem;
+  font-size: 0.8rem;
 }
 .mapping-preview-hidden-container-modif .field-preview .row.field .actions {
   text-align: center;
