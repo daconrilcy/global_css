@@ -1118,6 +1118,7 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
   border-color: transparent;
 }
 .mapping-preview-hidden-container-modif .field-preview.visible {
+  display: flex;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
