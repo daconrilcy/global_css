@@ -1083,6 +1083,7 @@ html.dark-mode .errorpage-container {
   height: 0px;
 }
 .mapping-preview-hidden-container-modif .field-preview {
+  top: 0;
   display: flex;
   opacity: 0;
   visibility: hidden;
