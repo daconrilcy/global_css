@@ -16,6 +16,10 @@
                 align-items: center;
                 margin-top: 0;
                 margin-bottom: 0.5rem;
+                .col-btn{
+                    padding-left: 0.25rem;
+                    padding-right: 0.25rem;
+                }
                 div{
                     &:first-child{
                         border-top-left-radius: $border-radius-preview;
