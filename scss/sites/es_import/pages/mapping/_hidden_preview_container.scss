@@ -72,6 +72,14 @@
                         pointer-events: auto;
                         border-color: $bs-border-color;
                     }
+                    div{
+                        .toogle-button{
+                            position: inherit;
+                            .switch{
+                                margin: auto;
+                            }
+                        }
+                    }
                 }
             }
         }
