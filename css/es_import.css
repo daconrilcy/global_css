@@ -297,8 +297,13 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   align-content: center;
+}
+@media (min-width: 768px) {
+  .page-title {
+    align-items: baseline;
+  }
 }
 .page-title .page-title-left {
   flex: 0 0 0;
@@ -312,9 +317,14 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   }
 }
 .page-title h2 {
-  flex: 0 0 auto;
-  width: calc(50% - 125px);
-  text-align: end;
+  flex: 0 0 50%;
+}
+@media (min-width: 768px) {
+  .page-title h2 {
+    flex: 0 0 auto;
+    width: calc(50% - 125px);
+    text-align: end;
+  }
 }
 .page-title input {
   flex: 0 0 auto;

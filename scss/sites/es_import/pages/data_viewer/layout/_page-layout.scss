@@ -9,8 +9,11 @@
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
     align-content: center;
+    @media (min-width: $breakpoint-md) {
+        align-items: baseline;
+    }
     .page-title-left{
         flex: 0 0 0;
         width: 0;
@@ -21,9 +24,12 @@
         }
     }
     h2{
-        flex: 0 0 auto;
-        width: calc(50% - 125px);
-        text-align: end;
+        flex: 0 0 50%;
+        @media (min-width: $breakpoint-md) {
+            flex: 0 0 auto;
+            width: calc(50% - 125px);
+            text-align: end;
+        }
     }
     input {
         flex: 0 0 auto;
