@@ -612,6 +612,7 @@ html.dark-mode .chunk-loading-spinner-text {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .preview-json .wrapper .wrapper-headers .under-title {
+  align-items: center;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -746,6 +747,152 @@ html.dark-mode .preview-json .wrapper .wrapper-fields .row div input, html.dark-
 }
 .card-header-option .card-footer button {
   width: auto;
+}
+
+.wrapper-fields .row div {
+  text-align: center;
+  align-items: center;
+}
+.wrapper-fields .row:hover {
+  background-color: rgb(82, 154, 204);
+  color: white;
+  cursor: auto;
+}
+.wrapper-fields .row .fieldhover:hover {
+  cursor: zoom-in;
+}
+.wrapper-fields .row .actions:hover {
+  cursor: pointer;
+}
+
+.mapping-preview-hidden-container-modif {
+  height: 0px;
+}
+.mapping-preview-hidden-container-modif .field-preview {
+  top: 0;
+  display: flex;
+  min-width: 65%;
+  width: max-content;
+  max-width: 90vw;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  border: rgb(220, 226, 238) 1px solid;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 0.5rem;
+  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
+  z-index: 1000;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
+  background-color: hsl(0, 0%, 10%);
+  color: #f0f0f0;
+}
+
+.mapping-preview-hidden-container-modif .field-preview .row {
+  align-items: center;
+}
+.mapping-preview-hidden-container-modif .field-preview .row.header {
+  font-weight: 500;
+  text-align: center;
+  font-size: 1rem;
+}
+.mapping-preview-hidden-container-modif .field-preview .row.field {
+  font-size: 0.8rem;
+}
+.mapping-preview-hidden-container-modif .field-preview .row.field .actions {
+  text-align: center;
+}
+.mapping-preview-hidden-container-modif .field-preview .row.field div {
+  font-size: inherit;
+}
+.mapping-preview-hidden-container-modif .field-preview .row.field div select, .mapping-preview-hidden-container-modif .field-preview .row.field div input {
+  padding: 0.25rem;
+  font-size: 0.8rem;
+  pointer-events: none;
+  border-color: transparent;
+}
+.mapping-preview-hidden-container-modif .field-preview .row.field div .toggle-button {
+  pointer-events: none;
+  position: inherit;
+}
+.mapping-preview-hidden-container-modif .field-preview .row.field div .toggle-button .switch {
+  margin: auto;
+}
+.mapping-preview-hidden-container-modif .field-preview.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.mapping-preview-hidden-container-modif .field-preview.modify {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.mapping-preview-hidden-container-modif .field-preview.modify .row.field div select, .mapping-preview-hidden-container-modif .field-preview.modify .row.field div input {
+  pointer-events: auto;
+  border-color: #dee2e6;
+}
+.mapping-preview-hidden-container-modif .field-preview.modify .row.field div .toggle-button {
+  pointer-events: auto;
+}
+.mapping-preview-hidden-container-modif .field-preview.blocked, .mapping-preview-hidden-container-modif .field-preview.visible.blocked {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.field-preview .row div, .wrapper-fields .row div {
+  text-align: center;
+  align-items: center;
+}
+.field-preview .row div .glyphicon, .wrapper-fields .row div .glyphicon {
+  opacity: 0.5;
+  transition: 0.25s;
+  font-size: 1.2rem;
+}
+.field-preview .row div .glyphicon:hover, .wrapper-fields .row div .glyphicon:hover {
+  opacity: 1;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.field-preview .row div .glyphicon.glyphicon-modify:hover, .wrapper-fields .row div .glyphicon.glyphicon-modify:hover {
+  color: rgb(0, 255, 0);
+}
+.field-preview .row div .glyphicon.glyphicon-plus:hover, .wrapper-fields .row div .glyphicon.glyphicon-plus:hover {
+  color: rgb(0, 119, 204);
+}
+.field-preview .row div .glyphicon.glyphicon-remove:hover, .wrapper-fields .row div .glyphicon.glyphicon-remove:hover {
+  color: rgb(255, 0, 0);
+}
+
+.field-preview .row div .glyphicon.glyphicon-modify-accept {
+  display: none;
+}
+.field-preview .row div .glyphicon.glyphicon-modify-revert {
+  display: none;
+}
+.field-preview .row div .glyphicon.glyphicon-remove {
+  visibility: visible;
+}
+
+.field-preview.modify .row div .glyphicon.glyphicon-modify {
+  display: none;
+}
+.field-preview.modify .row div .glyphicon.glyphicon-modify-accept {
+  display: inline-block;
+}
+.field-preview.modify .row div .glyphicon.glyphicon-modify-revert {
+  display: inline-block;
+}
+.field-preview.modify .row div .glyphicon.glyphicon-plus {
+  display: none;
+}
+.field-preview.modify .row div .glyphicon.glyphicon-remove {
+  visibility: hidden;
 }
 
 .card-upload {
@@ -1022,152 +1169,6 @@ html.dark-mode .errorpage-container {
 .errorpage-container .snail {
   font-size: 5rem;
   margin-top: 2rem;
-}
-
-.wrapper-fields .row div {
-  text-align: center;
-  align-items: center;
-}
-.wrapper-fields .row:hover {
-  background-color: rgb(82, 154, 204);
-  color: white;
-  cursor: auto;
-}
-.wrapper-fields .row .fieldhover:hover {
-  cursor: zoom-in;
-}
-.wrapper-fields .row .actions:hover {
-  cursor: pointer;
-}
-
-.mapping-preview-hidden-container-modif {
-  height: 0px;
-}
-.mapping-preview-hidden-container-modif .field-preview {
-  top: 0;
-  display: flex;
-  min-width: 65%;
-  width: max-content;
-  max-width: 90vw;
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  border: rgb(220, 226, 238) 1px solid;
-  border-radius: 0.5rem;
-  background-color: #fff;
-  padding: 0.5rem;
-  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.25);
-  flex-direction: column;
-  z-index: 1000;
-  pointer-events: none;
-  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
-}
-html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
-  background-color: hsl(0, 0%, 10%);
-  color: #f0f0f0;
-}
-
-.mapping-preview-hidden-container-modif .field-preview .row {
-  align-items: center;
-}
-.mapping-preview-hidden-container-modif .field-preview .row.header {
-  font-weight: 500;
-  text-align: center;
-  font-size: 1rem;
-}
-.mapping-preview-hidden-container-modif .field-preview .row.field {
-  font-size: 0.8rem;
-}
-.mapping-preview-hidden-container-modif .field-preview .row.field .actions {
-  text-align: center;
-}
-.mapping-preview-hidden-container-modif .field-preview .row.field div {
-  font-size: inherit;
-}
-.mapping-preview-hidden-container-modif .field-preview .row.field div select, .mapping-preview-hidden-container-modif .field-preview .row.field div input {
-  padding: 0.25rem;
-  font-size: 0.8rem;
-  pointer-events: none;
-  border-color: transparent;
-}
-.mapping-preview-hidden-container-modif .field-preview .row.field div .toggle-button {
-  pointer-events: none;
-  position: inherit;
-}
-.mapping-preview-hidden-container-modif .field-preview .row.field div .toggle-button .switch {
-  margin: auto;
-}
-.mapping-preview-hidden-container-modif .field-preview.visible {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-.mapping-preview-hidden-container-modif .field-preview.modify {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-.mapping-preview-hidden-container-modif .field-preview.modify .row.field div select, .mapping-preview-hidden-container-modif .field-preview.modify .row.field div input {
-  pointer-events: auto;
-  border-color: #dee2e6;
-}
-.mapping-preview-hidden-container-modif .field-preview.modify .row.field div .toggle-button {
-  pointer-events: auto;
-}
-.mapping-preview-hidden-container-modif .field-preview.blocked, .mapping-preview-hidden-container-modif .field-preview.visible.blocked {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.field-preview .row div, .wrapper-fields .row div {
-  text-align: center;
-  align-items: center;
-}
-.field-preview .row div .glyphicon, .wrapper-fields .row div .glyphicon {
-  opacity: 0.5;
-  transition: 0.25s;
-  font-size: 1.2rem;
-}
-.field-preview .row div .glyphicon:hover, .wrapper-fields .row div .glyphicon:hover {
-  opacity: 1;
-  transition: 0.25s;
-  cursor: pointer;
-}
-.field-preview .row div .glyphicon.glyphicon-modify:hover, .wrapper-fields .row div .glyphicon.glyphicon-modify:hover {
-  color: rgb(0, 255, 0);
-}
-.field-preview .row div .glyphicon.glyphicon-plus:hover, .wrapper-fields .row div .glyphicon.glyphicon-plus:hover {
-  color: rgb(0, 119, 204);
-}
-.field-preview .row div .glyphicon.glyphicon-remove:hover, .wrapper-fields .row div .glyphicon.glyphicon-remove:hover {
-  color: rgb(255, 0, 0);
-}
-
-.field-preview .row div .glyphicon.glyphicon-modify-accept {
-  display: none;
-}
-.field-preview .row div .glyphicon.glyphicon-modify-revert {
-  display: none;
-}
-.field-preview .row div .glyphicon.glyphicon-remove {
-  visibility: visible;
-}
-
-.field-preview.modify .row div .glyphicon.glyphicon-modify {
-  display: none;
-}
-.field-preview.modify .row div .glyphicon.glyphicon-modify-accept {
-  display: inline-block;
-}
-.field-preview.modify .row div .glyphicon.glyphicon-modify-revert {
-  display: inline-block;
-}
-.field-preview.modify .row div .glyphicon.glyphicon-plus {
-  display: none;
-}
-.field-preview.modify .row div .glyphicon.glyphicon-remove {
-  visibility: hidden;
 }
 
 /*# sourceMappingURL=es_import.css.map */
