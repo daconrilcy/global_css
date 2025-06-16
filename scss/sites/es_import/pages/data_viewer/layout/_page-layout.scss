@@ -144,7 +144,7 @@
     box-shadow: $default-card-shadow;
     border-radius: $border-radius-preview;
     background-color: $bs-body-bg;
-    flex-direction: row;
+    flex-direction: column;
 
     @media (min-width: $breakpoint-md) {
            flex-direction: row;
