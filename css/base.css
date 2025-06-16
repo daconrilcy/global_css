@@ -7474,6 +7474,9 @@ form.dropzone {
 .glyphicon.glyphicon-remove::before {
   content: "\e014";
 }
+.glyphicon.glyphicon-drop::before {
+  content: "\e064";
+}
 .glyphicon.glyphicon-modify::before {
   content: "\e065";
 }

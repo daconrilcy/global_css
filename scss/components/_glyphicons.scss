@@ -37,6 +37,10 @@
     content: "\e014";
   }
 
+  &.glyphicon-drop::before{
+    content: "\e064";
+  }
+
   &.glyphicon-modify::before{
     content: "\e065";
   }
