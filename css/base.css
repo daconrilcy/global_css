@@ -7489,6 +7489,9 @@ form.dropzone {
 .glyphicon.glyphicon-plus::before {
   content: "\e081";
 }
+.glyphicon.glyphicon-download::before {
+  content: "\e166";
+}
 .glyphicon.gly-spin {
   animation: spin 2s infinite linear;
 }

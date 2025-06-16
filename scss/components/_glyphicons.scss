@@ -55,6 +55,9 @@
   &.glyphicon-plus::before{
     content: "\e081";
   }
+   &.glyphicon-download::before{
+    content: "\e166";
+  }
 
   &.gly-spin {
     animation: spin 2s infinite linear;
