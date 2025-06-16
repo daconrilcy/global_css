@@ -18,9 +18,7 @@
         flex: 0 0 0;
         width: 0;
         @media (min-width: $breakpoint-md) {
-           flex: 0 0 auto;
-           width: 30%;
-           min-width: 210px;
+           flex: 0 0 250px;
         }
     }
     h2{
