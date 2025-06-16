@@ -54,6 +54,7 @@
                     border-color: transparent;
                 }
                  .toggle-button{
+                    pointer-events: none;
                     position: inherit;
                     .switch{
                         margin: auto;
@@ -78,7 +79,11 @@
                         pointer-events: auto;
                         border-color: $bs-border-color;
                     }
+                    .toggle-button{
+                        pointer-events: auto;
+                    }
                 }
+               
             }
         }
         &.blocked, &.visible.blocked{
