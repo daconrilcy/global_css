@@ -1076,6 +1076,8 @@ html.dark-mode .errorpage-container {
 .wrapper-fields .row:hover {
   background-color: rgb(82, 154, 204);
   color: white;
+}
+.wrapper-fields .row .fieldhover:hover {
   cursor: zoom-in;
 }
 

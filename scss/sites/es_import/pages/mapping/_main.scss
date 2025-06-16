@@ -11,7 +11,11 @@
         &:hover{
             background-color:  color(blue-primary, light);
             color: white;
-            cursor: zoom-in;
+        }
+        .fieldhover{
+            &:hover{
+                cursor: zoom-in;
+            }
         }
     }
 }
