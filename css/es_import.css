@@ -310,7 +310,7 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   flex: 0 0 0;
   width: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .page-title .page-title-left {
     flex: 0 0 300px;
   }
@@ -318,7 +318,7 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
 .page-title h2 {
   flex: 0 0 50%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .page-title h2 {
     flex: 0 0 auto;
     width: calc(50% - 150px);
@@ -339,7 +339,7 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   user-select: none;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .page-title input {
     text-align: left;
   }

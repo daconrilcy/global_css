@@ -18,13 +18,13 @@
     .page-title-left{
         flex: 0 0 0;
         width: 0;
-        @media (min-width: $breakpoint-md) {
+        @media (min-width: $breakpoint-lg) {
            flex: 0 0 300px;
         }
     }
     h2{
         flex: 0 0 50%;
-        @media (min-width: $breakpoint-md) {
+        @media (min-width: $breakpoint-lg) {
             flex: 0 0 auto;
             width: calc(50% - 150px);
             text-align: end;
@@ -43,7 +43,7 @@
         pointer-events: none;
         user-select: none;
         text-align: center;
-        @media (min-width: $breakpoint-md) {
+        @media (min-width: $breakpoint-lg) {
             text-align: left;
         }
 
