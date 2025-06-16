@@ -621,7 +621,7 @@ html.dark-mode .chunk-loading-spinner-text {
   padding-right: 0.25rem;
 }
 .preview-json .wrapper .wrapper-headers .under-title .col-btn .btn {
-  padding: 0.125rem 0.25rem;
+  padding: 0.25rem 0.125rem;
   width: 100%;
   text-align: center;
   font-weight: 500;
