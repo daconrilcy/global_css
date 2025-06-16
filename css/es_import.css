@@ -1129,6 +1129,12 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
   pointer-events: none;
   border-color: transparent;
 }
+.mapping-preview-hidden-container-modif .field-preview .row.field div .toggle-button {
+  position: inherit;
+}
+.mapping-preview-hidden-container-modif .field-preview .row.field div .toggle-button .switch {
+  margin: auto;
+}
 .mapping-preview-hidden-container-modif .field-preview.visible {
   opacity: 1;
   visibility: visible;
@@ -1142,12 +1148,6 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
 .mapping-preview-hidden-container-modif .field-preview.modify .row.field div select, .mapping-preview-hidden-container-modif .field-preview.modify .row.field div input {
   pointer-events: auto;
   border-color: #dee2e6;
-}
-.mapping-preview-hidden-container-modif .field-preview.modify .row.field div .toggle-button {
-  position: inherit;
-}
-.mapping-preview-hidden-container-modif .field-preview.modify .row.field div .toggle-button .switch {
-  margin: auto;
 }
 .mapping-preview-hidden-container-modif .field-preview.blocked, .mapping-preview-hidden-container-modif .field-preview.visible.blocked {
   opacity: 0;
