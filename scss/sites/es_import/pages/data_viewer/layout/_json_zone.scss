@@ -76,16 +76,17 @@
         .wrapper-fields{
             background-color: $bs-body-bg;
             overflow-y: scroll;
+            overflow-x: hidden;
             height: calc(100vh - 320px);
             font-size: 0.8rem;
-            
+                
             @at-root html.dark-mode & {
                 background-color: $dark-background-color-secondary;
                 color: $dark-front-color;
             }
             
             .row{
-                margin-right: -1,75rem;
+                margin-right: -1.75rem;
                 div{
                     align-content: center;
                     input, select{
