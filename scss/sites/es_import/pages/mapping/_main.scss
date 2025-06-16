@@ -11,10 +11,16 @@
         &:hover{
             background-color:  color(blue-primary, light);
             color: white;
+            cursor: auto;
         }
         .fieldhover{
             &:hover{
                 cursor: zoom-in;
+            }
+        }
+        .actions{
+            &:hover{
+                cursor: pointer;
             }
         }
     }

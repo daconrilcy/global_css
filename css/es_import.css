@@ -1076,9 +1076,13 @@ html.dark-mode .errorpage-container {
 .wrapper-fields .row:hover {
   background-color: rgb(82, 154, 204);
   color: white;
+  cursor: auto;
 }
 .wrapper-fields .row .fieldhover:hover {
   cursor: zoom-in;
+}
+.wrapper-fields .row .actions:hover {
+  cursor: pointer;
 }
 
 .mapping-preview-hidden-container-modif {
