@@ -19,14 +19,14 @@
         flex: 0 0 0;
         width: 0;
         @media (min-width: $breakpoint-md) {
-           flex: 0 0 250px;
+           flex: 0 0 300px;
         }
     }
     h2{
         flex: 0 0 50%;
         @media (min-width: $breakpoint-md) {
             flex: 0 0 auto;
-            width: calc(50% - 125px);
+            width: calc(50% - 150px);
             text-align: end;
         }
     }
@@ -42,6 +42,10 @@
         cursor: not-allowed;
         pointer-events: none;
         user-select: none;
+        text-align: center;
+        @media (min-width: $breakpoint-md) {
+            text-align: left;
+        }
 
         &:hover {
             background-color: transparent;
@@ -139,8 +143,12 @@
     padding: 0 1rem;
     box-shadow: $default-card-shadow;
     border-radius: $border-radius-preview;
-
     background-color: $bs-body-bg;
+    flex-direction: row;
+
+    @media (min-width: $breakpoint-md) {
+           flex-direction: row;
+    }
     
     @at-root html.dark-mode & {
         background: $dark-background-color-secondary;

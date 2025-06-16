@@ -312,7 +312,7 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
 }
 @media (min-width: 768px) {
   .page-title .page-title-left {
-    flex: 0 0 250px;
+    flex: 0 0 300px;
   }
 }
 .page-title h2 {
@@ -321,7 +321,7 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
 @media (min-width: 768px) {
   .page-title h2 {
     flex: 0 0 auto;
-    width: calc(50% - 125px);
+    width: calc(50% - 150px);
     text-align: end;
   }
 }
@@ -337,6 +337,12 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   cursor: not-allowed;
   pointer-events: none;
   user-select: none;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .page-title input {
+    text-align: left;
+  }
 }
 .page-title input:hover {
   background-color: transparent;
@@ -425,6 +431,12 @@ html.dark-mode .page-title {
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
   background-color: #fff;
+  flex-direction: row;
+}
+@media (min-width: 768px) {
+  .page-layout {
+    flex-direction: row;
+  }
 }
 html.dark-mode .page-layout {
   background: hsl(0, 0%, 10%);
@@ -442,7 +454,7 @@ html.dark-mode .page-layout {
 }
 
 .file-list {
-  flex: 0 0 300px;
+  flex: 0 0 auto;
   background: #fff;
   overflow-y: auto;
   background-color: inherit;
@@ -450,6 +462,11 @@ html.dark-mode .page-layout {
   padding-top: 1rem;
   display: flex;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  .file-list {
+    flex: 0 0 300px;
+  }
 }
 .file-list ul {
   flex: 1 0 auto;

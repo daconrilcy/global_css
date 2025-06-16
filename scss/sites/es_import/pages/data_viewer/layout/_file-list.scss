@@ -4,7 +4,7 @@
 @use '../../../variables/styles' as *;
 
 .file-list {
-    flex: 0 0 300px;
+    flex: 0 0 auto;
     background: $bs-body-bg;
     overflow-y: auto;
     background-color: inherit;
@@ -12,6 +12,10 @@
     padding-top: 1rem;
     display: flex;
     overflow: hidden;
+
+    @media (min-width: $breakpoint-md) {
+           flex: 0 0 300px;
+    }
 
     ul{
         flex: 1 0 auto;
