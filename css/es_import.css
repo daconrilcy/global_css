@@ -299,6 +299,7 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .page-title {

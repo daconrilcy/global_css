@@ -11,6 +11,7 @@
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
+    justify-content: center;
     @media (min-width: $breakpoint-md) {
         align-items: baseline;
     }
