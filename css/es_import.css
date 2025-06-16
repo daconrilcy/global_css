@@ -1143,10 +1143,10 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
   pointer-events: auto;
   border-color: #dee2e6;
 }
-.mapping-preview-hidden-container-modif .field-preview.modify .row.field div div .toogle-button {
+.mapping-preview-hidden-container-modif .field-preview.modify .row.field div .toogle-button {
   position: inherit;
 }
-.mapping-preview-hidden-container-modif .field-preview.modify .row.field div div .toogle-button .switch {
+.mapping-preview-hidden-container-modif .field-preview.modify .row.field div .toogle-button .switch {
   margin: auto;
 }
 .mapping-preview-hidden-container-modif .field-preview.blocked, .mapping-preview-hidden-container-modif .field-preview.visible.blocked {
