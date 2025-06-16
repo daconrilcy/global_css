@@ -619,13 +619,13 @@ html.dark-mode .chunk-loading-spinner-text {
 .preview-json .wrapper .wrapper-headers .under-title .col-btn {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
-  font-size: 0.9rem;
 }
 .preview-json .wrapper .wrapper-headers .under-title .col-btn .btn {
-  padding: 0.25rem;
+  padding: 0.125rem 0.25rem;
   width: 100%;
   text-align: center;
   font-weight: 500;
+  font-size: 0.8rem;
 }
 .preview-json .wrapper .wrapper-headers .under-title .col-btn .btn span {
   margin: auto;
