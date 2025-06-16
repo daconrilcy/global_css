@@ -12,7 +12,13 @@
     align-items: baseline;
     align-content: center;
     .page-title-left{
-        flex: 0 0 250px;
+        flex: 0 0 0;
+        width: 0;
+        @media (min-width: $breakpoint-md) {
+           flex: 0 0 auto;
+           width: 30%;
+           min-width: 210px;
+        }
     }
     h2{
         flex: 0 0 auto;

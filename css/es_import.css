@@ -301,7 +301,15 @@ h1 span.filename select, .h1 span.filename select, h2 span.filename select, .h2 
   align-content: center;
 }
 .page-title .page-title-left {
-  flex: 0 0 250px;
+  flex: 0 0 0;
+  width: 0;
+}
+@media (min-width: 768px) {
+  .page-title .page-title-left {
+    flex: 0 0 auto;
+    width: 30%;
+    min-width: 210px;
+  }
 }
 .page-title h2 {
   flex: 0 0 auto;
