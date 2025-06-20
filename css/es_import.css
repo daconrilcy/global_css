@@ -980,6 +980,9 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
   font-weight: 500;
   cursor: pointer;
 }
+.dropdown-card-mapping-menu .dropdown-content .form-group.switches-row input {
+  cursor: pointer;
+}
 .dropdown-card-mapping-menu .dropdown-content .columns-list {
   background: #f6f8fa;
   border-radius: 7px;
