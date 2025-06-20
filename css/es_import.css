@@ -978,6 +978,7 @@ html.dark-mode .mapping-preview-hidden-container-modif .field-preview {
   gap: 0.6em;
   font-size: 0.98rem;
   font-weight: 500;
+  cursor: pointer;
 }
 .dropdown-card-mapping-menu .dropdown-content .columns-list {
   background: #f6f8fa;
