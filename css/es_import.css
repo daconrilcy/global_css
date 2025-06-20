@@ -988,11 +988,16 @@ html.dark-mode .dropdown-card-mapping-menu {
   cursor: pointer;
 }
 .dropdown-card-mapping-menu .dropdown-content .columns-list {
-  background: #f6f8fa;
+  background: rgba(4, 2, 0, 0.2);
   border-radius: 7px;
   padding: 0.7rem 0.7rem 0.4rem 0.7rem;
   margin-bottom: 0.25rem;
 }
+html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
+  background-color: rgba(246, 248, 250, 0.2);
+  color: #f0f0f0;
+}
+
 .dropdown-card-mapping-menu .dropdown-content .columns-list h3 {
   font-size: 1.02rem;
   font-weight: bold;

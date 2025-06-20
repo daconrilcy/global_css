@@ -82,10 +82,14 @@
             }
         }
         .columns-list {
-            background: #f6f8fa;
+            background: rgba(4, 2, 0, 0.2);
             border-radius: 7px;
             padding: 0.7rem 0.7rem 0.4rem 0.7rem;
             margin-bottom: 0.25rem;
+            @at-root html.dark-mode & {
+                background-color: rgba(246, 248, 250, 0.2);
+                color: $dark-front-color;
+            }
             h3 {
                 font-size: 1.02rem;
                 font-weight: bold;

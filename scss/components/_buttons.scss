@@ -51,7 +51,7 @@
         }
         &.active{
           background-color: color(default-green, medium);
-            color: inherit;
+            color: $dark-background-color;
         }
       }
     
