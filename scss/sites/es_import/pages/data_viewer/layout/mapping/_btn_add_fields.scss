@@ -1,16 +1,21 @@
 @use "../../../../../../abstracts/variables" as *;
+@use "../../../../../../abstracts/colors" as *;
 
 .dropdown-card-mapping-menu {
-  min-width: 320px;
-  max-width: 380px;
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 6px 24px 0 rgba(0,0,0,0.15);
-  padding: 1.5rem 1.2rem 1rem 1.2rem;
-  position: absolute;
-  z-index: 10000;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  animation: popin .18s cubic-bezier(.43,1.2,.56,1) 1;
+    min-width: 320px;
+    max-width: 380px;
+    background: $bs-body-bg;
+    border-radius: 18px;
+    box-shadow: 0 6px 24px 0 rgba(0,0,0,0.15);
+    padding: 1.5rem 1.2rem 1rem 1.2rem;
+    position: absolute;
+    z-index: 10000;
+    animation: popin .18s cubic-bezier(.43,1.2,.56,1) 1;
+
+    @at-root html.dark-mode & {
+        background-color: $dark-background-color-secondary;
+        color: $dark-front-color;
+    }
 
     &.hidden {
         display: none;
