@@ -51,7 +51,11 @@
         }
         &.active{
           background-color: color(default-green, medium);
-            color: $dark-background-color;
+            color: inherit;
+        }
+        @at-root html.dark-mode & {
+          background-color: $dark-background-color-secondary;
+          color: $dark-front-color;
         }
       }
     

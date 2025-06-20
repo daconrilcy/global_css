@@ -942,6 +942,10 @@ html.dark-mode .dropdown-card-mapping-menu {
   border-bottom: 1px solid #e8eaf1;
   margin-bottom: 1rem;
 }
+html.dark-mode .dropdown-card-mapping-menu .dropdown-title {
+  color: hsl(211, 46%, 69%);
+}
+
 .dropdown-card-mapping-menu .dropdown-content {
   font-size: 0.98rem;
   margin-bottom: 0.5rem;
@@ -955,8 +959,12 @@ html.dark-mode .dropdown-card-mapping-menu {
 .dropdown-card-mapping-menu .dropdown-content .form-group label {
   font-size: 1rem;
   font-weight: 500;
-  color: #2a3950;
+  color: hsl(216, 31%, 24%);
 }
+html.dark-mode .dropdown-card-mapping-menu .dropdown-content .form-group label {
+  color: hsl(216, 31%, 64%);
+}
+
 .dropdown-card-mapping-menu .dropdown-content .form-group .form-select,
 .dropdown-card-mapping-menu .dropdown-content .form-group .form-control {
   border: 1px solid #b0b9c8;
@@ -988,13 +996,13 @@ html.dark-mode .dropdown-card-mapping-menu {
   cursor: pointer;
 }
 .dropdown-card-mapping-menu .dropdown-content .columns-list {
-  background: rgba(4, 2, 0, 0.2);
+  background: rgba(4, 2, 0, 0.1);
   border-radius: 7px;
   padding: 0.7rem 0.7rem 0.4rem 0.7rem;
   margin-bottom: 0.25rem;
 }
 html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
-  background-color: rgba(246, 248, 250, 0.2);
+  background-color: rgba(246, 248, 250, 0.1);
   color: #f0f0f0;
 }
 
