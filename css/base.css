@@ -7444,6 +7444,9 @@ form.dropzone {
 .glyphicon.glyphicon-plus::before {
   content: "\e081";
 }
+.glyphicon.glyphicon-floppy-disk::before {
+  content: "\e172";
+}
 .glyphicon.glyphicon-download::before {
   content: "\e166";
 }

@@ -55,7 +55,10 @@
   &.glyphicon-plus::before{
     content: "\e081";
   }
-   &.glyphicon-download::before{
+  &.glyphicon-floppy-disk::before{
+    content: "\e172";
+  }
+  &.glyphicon-download::before{
     content: "\e166";
   }
 
