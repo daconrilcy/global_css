@@ -7198,7 +7198,7 @@ p {
 }
 .btn.btn-primary {
   background-color: rgb(0, 119, 204);
-  color: #212529;
+  color: #fff;
 }
 .btn.btn-primary:hover {
   background-color: rgb(0, 98.175, 168.3);
@@ -7208,14 +7208,13 @@ p {
 }
 .btn.btn-secondary {
   background-color: rgb(115, 92, 221);
-  color: #212529;
+  color: #fff;
 }
 .btn.btn-secondary:hover {
   background-color: rgb(89.6294416244, 62.4614213198, 214.8385786802);
 }
 .btn.btn-secondary.active {
   background-color: rgb(78.7563451777, 49.8020304569, 212.1979695431);
-  color: #fff;
 }
 .btn .btn-light {
   background: #f1f5f9;
@@ -7227,7 +7226,7 @@ p {
 }
 .btn.btn-tertiary {
   background-color: rgb(0, 255, 0);
-  color: inherit;
+  color: #fff;
 }
 .btn.btn-tertiary:hover {
   background-color: rgb(0, 219.3, 0);

@@ -22,9 +22,9 @@
     }
 
     &.btn-primary {
-      $color-primary: color(blue-primary, base);
-      background-color: $color-primary;
-        color: $bs-body-color;
+        $color-primary: color(blue-primary, base);
+        background-color: $color-primary;
+        color: $bs-body-bg;
         &:hover {
           background-color: color.adjust($color-primary, $lightness: -7%);
         }
@@ -36,13 +36,12 @@
       &.btn-secondary {
         $color-secondary: color(soft-purple, base);
         background-color: $color-secondary;
-        color: $bs-body-color;
+        color: $bs-body-bg;
         &:hover {
           background-color: color.adjust($color-secondary, $lightness: -7%);
         }
         &.active {
           background-color: color.adjust($color-secondary, $lightness: -10%);
-          color: $bs-body-bg;
         }
       }
       .btn-light {
@@ -54,7 +53,7 @@
       &.btn-tertiary {
         $color-tertiary: color(default-green, base);
         background-color: $color-tertiary;
-        color: inherit;
+        color: $bs-body-bg;
         &:hover {
           background-color: color.adjust($color-tertiary, $lightness: -7%);
             color: inherit;
