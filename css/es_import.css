@@ -1490,7 +1490,7 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
     margin-top: 10rem;
     border-radius: 0.7rem;
     max-height: 80vh;
-    min-height: 512px;
+    min-height: 2000px;
   }
   .analyzer-card-actions {
     position: relative;
