@@ -1299,6 +1299,12 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   border-color: rgb(0, 119, 204);
   background: #fff;
 }
+.analyzer-card-builder .tokenizer-params .tokenizer-param-group {
+  display: flex;
+  gap: 1.1rem;
+  align-items: flex-end;
+  transition: opacity 0.13s;
+}
 .analyzer-card-builder .draggable {
   cursor: grab;
   user-select: none;

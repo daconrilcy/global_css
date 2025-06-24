@@ -278,6 +278,16 @@ $background-overlay: rgba(31, 41, 55, 0.37);
             &:focus { border-color: $primary; background: $white; }
         }
     }
+
+    .tokenizer-params {
+        .tokenizer-param-group {
+            display: flex;
+            gap: 1.1rem;
+            align-items: flex-end;
+            // On peut ajouter une transition si tu veux du smooth
+            transition: opacity 0.13s;
+        }
+    }
     .draggable {
         cursor: grab;
         user-select: none;
