@@ -151,6 +151,22 @@ $background-overlay: rgba(31, 41, 55, 0.37);
       gap: .78rem;
     }
   }
+    .tokenizer-category-title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: .4rem;
+        color: #556;
+    }
+
+    .tokenizer-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+    }
+    .tokenizer-radio input[type="radio"] {
+        margin-right: 0.3em;
+    }
+
   .tokenizer-params,
   .filter-params,
   .char-filter-params {
@@ -330,8 +346,9 @@ $background-overlay: rgba(31, 41, 55, 0.37);
     color: $danger;
     font-size: .97em;
     font-weight: 500;
-    margin-bottom: .24rem;
+    margin-bottom: .25rem;
     display: flex;
+    margin-top: 0.2rem;
     align-items: center;
     gap: 0.45em;
     .icon-error {

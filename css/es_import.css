@@ -1177,6 +1177,20 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 .analyzer-card-builder section .flex {
   gap: 0.78rem;
 }
+.analyzer-card-builder .tokenizer-category-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #556;
+}
+.analyzer-card-builder .tokenizer-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+.analyzer-card-builder .tokenizer-radio input[type=radio] {
+  margin-right: 0.3em;
+}
 .analyzer-card-builder .tokenizer-params,
 .analyzer-card-builder .filter-params,
 .analyzer-card-builder .char-filter-params {
@@ -1371,8 +1385,9 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   color: rgb(255, 0, 0);
   font-size: 0.97em;
   font-weight: 500;
-  margin-bottom: 0.24rem;
+  margin-bottom: 0.25rem;
   display: flex;
+  margin-top: 0.2rem;
   align-items: center;
   gap: 0.45em;
 }
