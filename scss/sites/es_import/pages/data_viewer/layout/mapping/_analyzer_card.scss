@@ -1,29 +1,30 @@
 @use "sass:color";
-// Variables principales
-$primary: #2b70f7;
+
+$primary: #2563eb;
+$primary-light: #93c5fd;
 $secondary: #6366f1;
-$danger: #e53935;
+$danger: #ef4444;
 $gray-100: #f8f9fa;
 $gray-200: #f1f3f6;
+$gray-300: #e5e7eb;
 $gray-400: #cbd5e1;
+$gray-600: #64748b;
 $gray-700: #374151;
 $gray-900: #181a20;
 $white: #fff;
-$border-radius: 1rem;
-$shadow: 0 8px 32px rgba(30, 30, 30, 0.18);
+$border-radius: 1.1rem;
+$shadow: 0 8px 32px rgba(30, 30, 30, 0.17);
 
-// Overlay
 .analyzer-card-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(24, 26, 32, 0.55);
+  background: rgba(24, 26, 32, 0.5);
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-// Card principale
 .analyzer-card {
   width: 900px;
   max-width: 98vw;
@@ -37,236 +38,328 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.18);
   animation: fadeIn .35s cubic-bezier(.23,1.04,.73,.91);
 }
 
-// Header
 .analyzer-card-header {
   background: $gray-100;
-  border-bottom: 1px solid $gray-400;
+  border-bottom: 1.5px solid $gray-300;
   min-height: 56px;
+  padding: 0.7rem 1.2rem 0.7rem 1.5rem;
 
   .analyzer-card-icon {
     font-size: 1.3rem;
+    margin-right: 0.5rem;
+    color: $primary;
+    vertical-align: middle;
   }
   .analyzer-card-title {
     color: $primary;
-  }
-  .analyzer-card-close {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1.7rem;
-    line-height: 1;
-    transition: color .15s;
-    &:hover {
-      color: $danger;
-    }
+    font-weight: bold;
+    font-size: 1.18rem;
+    letter-spacing: .02em;
   }
   .analyzer-card-name {
     min-width: 160px;
-    background: $white;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    background: $gray-100;
+    border: 1.5px solid $gray-300;
+    border-radius: 0.65rem;
+    font-size: 1em;
+    padding: 0.38rem 0.7rem;
+    outline: none;
+    transition: border .17s;
+    &:focus { border-color: $primary-light; }
+  }
+  .analyzer-card-close {
+    margin-left: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.65rem;
+    color: $gray-400;
+    padding: 0 0.4rem;
+    transition: color .18s, background .15s;
+    border-radius: 0.5rem;
+    &:hover, &:focus {
+      color: $danger;
+      background: $gray-200;
+    }
   }
 }
 
-// Main layout
 .analyzer-card-content {
   display: flex;
   flex: 1 1 0;
   min-height: 400px;
 }
 
-// Builder colonne gauche
 .analyzer-card-builder {
   background: $white;
   flex: 0 0 55%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.45rem;
 
   section {
-    margin-bottom: .2rem;
+    margin-bottom: .15rem;
 
     label {
       font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-    .flex {
-      gap: .75rem;
+      margin-bottom: 0.45rem;
+      font-size: 1.08em;
+      display: block;
     }
   }
-  .tokenizer-params,
-  .filter-params,
-  .char-filter-params {
-    margin-top: .25rem;
-    gap: .5rem;
+
+  .tokenizer-params, .filter-params, .char-filter-params {
+    margin-top: .19rem;
+    gap: .4rem;
     input {
-      min-width: 70px;
-      font-size: .96em;
+      min-width: 80px;
+      font-size: 1.01em;
       padding: .18rem .6rem;
+      border-radius: .6rem;
+      border: 1.4px solid $gray-300;
+      background: $gray-100;
+      &:focus { border-color: $primary-light; }
     }
   }
-  .draggable {
-    cursor: grab;
-    &:active { cursor: grabbing; }
-    .drag-handle {
-      font-size: 1.15em;
-      color: $gray-400;
+
+  .tokenizer-options label {
+    margin-right: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    input[type="radio"] {
+      accent-color: $primary;
+      margin-right: .35rem;
     }
+    &:hover { color: $primary; }
   }
-  .filter-desc,
-  .char-desc {
-    margin-left: 0.7rem;
-    color: $gray-400;
-    font-size: .95em;
+  .tokenizer-desc {
+    color: $gray-600;
+    font-size: .98em;
     font-style: italic;
+    margin-left: .7rem;
+  }
+
+  .token-filters-list, .char-filters-list {
+    .draggable {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .13rem 0;
+      border-radius: .6rem;
+      transition: background .13s;
+      .drag-handle {
+        font-size: 1.1em;
+        color: $gray-400;
+        cursor: grab;
+        user-select: none;
+        margin-right: .1rem;
+        &:hover, &:focus { color: $primary; }
+      }
+    }
+    input[type="checkbox"] {
+      accent-color: $primary;
+      margin-right: .18rem;
+      transition: box-shadow .12s;
+      &:focus {
+        box-shadow: 0 0 0 2px $primary-light;
+      }
+    }
+    .filter-desc, .char-desc {
+      color: $primary-light;
+      font-size: .95em;
+      font-style: italic;
+      margin-left: .2rem;
+      opacity: 1;
+      transition: opacity .12s;
+    }
+    label:not(.font-semibold) {
+      font-weight: 400;
+    }
+    .draggable:not(:has(input:checked)) .filter-desc,
+    .draggable:not(:has(input:checked)) .char-desc {
+      opacity: 0.5;
+    }
   }
 }
 
-// Presets section
 .preset-select {
-  min-width: 150px;
-  font-size: .97em;
+  min-width: 145px;
+  font-size: .96em;
+  border-radius: .5rem;
+  border: 1.3px solid $gray-300;
+  padding: 0.17rem .8rem;
 }
 .preset-save, .preset-delete {
-  padding: .2rem .9rem;
+  padding: .18rem .75rem;
   font-weight: 500;
   border-radius: .5rem;
   border: none;
-  transition: background .13s;
+  font-size: .95em;
+  margin-left: .5rem;
+  transition: background .13s, color .13s;
   cursor: pointer;
 }
 .preset-save {
   background: $secondary;
   color: $white;
-  &:hover { background: color.adjust($secondary, $lightness: -8%); }
+  &:hover, &:focus { background: color.adjust($secondary, $lightness: -8%); }
 }
 .preset-delete {
   background: $danger;
   color: $white;
-  &:hover { background: color.adjust($danger, $lightness: -8%); }
+  &:hover, &:focus { background: color.adjust($danger, $lightness: -8%); }
 }
 
-// Actions
 .analyzer-card-actions {
   margin-top: auto;
-  gap: .9rem;
-
+  gap: .8rem;
   .btn {
     border: none;
-    border-radius: .55rem;
-    padding: .5rem 1.2rem;
+    border-radius: .53rem;
+    padding: .46rem 1.18rem;
     font-size: 1em;
     font-weight: 600;
     cursor: pointer;
     transition: background .13s, color .13s, box-shadow .13s;
-    box-shadow: 0 1px 3px rgba(30,40,80,.09);
+    box-shadow: 0 1px 3px rgba(30,40,80,.08);
   }
   .btn-primary {
     background: $primary;
     color: $white;
-    &:hover { background: color.adjust($primary, $lightness: -7%); }
+    &:hover, &:focus { background: color.adjust($primary, $lightness: -7%); }
   }
   .btn-secondary {
     background: $secondary;
     color: $white;
-    &:hover { background: color.adjust($secondary, $lightness: -7%); }
+    &:hover, &:focus { background: color.adjust($secondary, $lightness: -7%); }
   }
   .btn-light {
     background: $gray-200;
     color: $gray-700;
-    &:hover { background: $gray-400; color: $gray-900;}
+    &:hover, &:focus { background: $gray-300; color: $primary;}
   }
 }
 
-// Preview colonne droite
 .analyzer-card-preview {
   flex: 0 0 45%;
   background: $gray-100;
-  border-left: 1px solid $gray-400;
+  border-left: 1.5px solid $gray-300;
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
+  gap: 1.3rem;
 
   section {
-    margin-bottom: .2rem;
+    margin-bottom: .15rem;
     label { font-weight: 600; }
+  }
+  .json-errors {
+    color: $danger;
+    font-size: .97em;
+    font-weight: 500;
+    margin-bottom: .15rem;
+    margin-left: .2rem;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    .error-icon { font-size: 1.1em; }
+  }
+  .json-preview-container {
+    position: relative;
+    .btn-copy-json {
+      position: absolute;
+      top: 0.7rem;
+      right: 1.1rem;
+      background: $gray-300;
+      color: $gray-900;
+      padding: .14rem .77rem;
+      border-radius: .42rem;
+      border: none;
+      font-size: .91em;
+      cursor: pointer;
+      &:hover, &:focus { background: $primary-light; color: $primary; }
+    }
   }
   .json-preview {
     background: $gray-900;
     color: #b9e2be;
     border-radius: .7rem;
     padding: .9rem .8rem;
-    min-height: 100px;
-    max-height: 180px;
+    min-height: 120px;
+    max-height: 195px;
     overflow: auto;
-    font-size: .96em;
+    font-size: .99em;
     font-family: "Fira Mono", "Consolas", "monospace";
     margin-bottom: .2rem;
+    border: 2px solid $gray-700;
+    box-shadow: 0 2px 8px rgba(30, 30, 60, 0.04);
   }
-  .json-errors {
-    color: $danger;
-    font-size: .97em;
-    font-weight: 500;
-    margin-bottom: .2rem;
-  }
-  .btn-copy-json {
-    background: $gray-400;
-    color: $gray-900;
-    padding: .2rem .8rem;
-    border-radius: .4rem;
-    border: none;
-    font-size: .93em;
-    cursor: pointer;
-    &:hover { background: $gray-700; color: $white; }
+  .test-input-row {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
   }
   .test-input {
     width: 100%;
     font-size: 1em;
-    padding: .3rem .6rem;
+    padding: .34rem .7rem;
+    border-radius: .6rem;
+    border: 1.4px solid $gray-300;
+    background: $gray-100;
+    transition: border .13s;
+    &:focus { border-color: $primary-light; }
   }
   .btn-test-analyzer {
     background: $primary;
     color: $white;
     border-radius: .5rem;
-    padding: .28rem 1rem;
-    font-size: .95em;
+    padding: .26rem 1.07rem;
+    font-size: .97em;
     border: none;
     font-weight: 500;
     cursor: pointer;
-    &:hover { background: color.adjust($primary, $lightness: -9%);}
+    transition: background .12s;
+    &:hover, &:focus { background: color.adjust($primary, $lightness: -9%);}
   }
   .test-result {
-    min-height: 40px;
+    min-height: 44px;
     background: $gray-100;
-    border: 1px solid $gray-400;
-    border-radius: .4rem;
-    padding: .5rem .8rem;
+    border: 1.3px solid $primary-light;
+    border-radius: .43rem;
+    padding: .6rem .9rem .45rem .9rem;
     color: $gray-700;
-    font-size: .98em;
+    font-size: 1.01em;
     font-family: "Fira Mono", "Consolas", "monospace";
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3rem;
+    .token-chip {
+      background: $primary-light;
+      color: $primary;
+      border-radius: .36rem;
+      padding: .09rem .55rem .11rem .55rem;
+      font-size: .97em;
+      font-weight: 500;
+      margin-right: .15rem;
+      margin-bottom: .15rem;
+      box-shadow: 0 1px 2px rgba(60,80,140,0.08);
+    }
   }
 }
 
 // Responsive
 @media (max-width: 1050px) {
-  .analyzer-card { width: 98vw; min-width: 0;}
+  .analyzer-card { width: 99vw; min-width: 0;}
 }
 @media (max-width: 700px) {
-  .analyzer-card-content {
-    flex-direction: column;
-  }
-  .analyzer-card-builder,
-  .analyzer-card-preview {
-    flex: 1 1 0;
-    width: 100%;
-    border: none !important;
-  }
-  .analyzer-card {
-    border-radius: 0.7rem;
-    min-height: 320px;
-  }
+  .analyzer-card-content { flex-direction: column; }
+  .analyzer-card-builder, .analyzer-card-preview { flex: 1 1 0; width: 100%; border: none !important; }
+  .analyzer-card { border-radius: 0.7rem; min-height: 330px; }
 }
 
 // Animations
 @keyframes fadeIn {
-  0% { opacity: 0; transform: scale(.93);}
+  0% { opacity: 0; transform: scale(.95);}
   100% { opacity: 1; transform: scale(1);}
 }
