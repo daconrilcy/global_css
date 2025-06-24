@@ -1047,12 +1047,12 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   }
 }
 :root {
-  --header-height: 80px ;
+  --header-height: 55px ;
 }
 
 .analyzer-card-overlay {
   position: fixed;
-  top: var(--header-height, 60px);
+  top: var(--header-height, 55px);
   left: 0;
   right: 0;
   bottom: 0;
