@@ -92,7 +92,7 @@ $background-overlay: rgba(31, 41, 55, 0.37);
     min-width: 170px;
     background: $white;
     border: $border-style-default;
-    border-radius: 0.55rem;
+    border-radius: $border-radius;
     font-size: 1.09em;
     padding: 0.35rem 0.7rem;
     margin-left: 0.75rem;
