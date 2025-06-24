@@ -450,10 +450,10 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
     padding-top: 0; // Pour éviter le double padding
   }
   .analyzer-card {
-    margin-top: 10rem;
     border-radius: 0.7rem;
+    min-height: 320px; // meme les mobiles depuis 5 ans ont des resolutions superieures à 1440 px et les ecrans depuis au moins 15 ans font au moins 1024x768
     max-height: 80vh; // Ajuster pour les mobiles
-    min-height: 2000px; // meme les mobiles depuis 5 ans ont des resolutions superieures à 1440 px et les ecrans depuis au moins 15 ans font au moins 1024x768
+   
   }
   .analyzer-card-actions {
     position: relative; // Sur mobile, les actions ne sont plus sticky
