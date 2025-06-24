@@ -56,9 +56,16 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
   min-height: 54px;
   padding: 0.9rem 1.2rem 0.8rem 1.2rem; // Assure le padding
   flex-shrink: 0; // Empêche le header de rétrécir
-  display: flex; // S'assurer que c'est un flex container
-  align-items: center; // ✅ Aligner les éléments du header verticalement
-  justify-content: space-between; // ✅ Espacer les groupes d'éléments
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .analyzer-card-header-left,
+  .analyzer-card-header-right {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; // Espace entre les éléments dans chaque groupe
+  }
 
   .analyzer-card-icon {
     font-size: 1.25rem;
@@ -416,9 +423,9 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
 // Responsive
 @media (max-width: 1050px) {
   .analyzer-card {
-    width: 98vw; // Revenir à une largeur adaptative
+    width: 1140px; // Revenir à une largeur adaptative
     min-width: 0;
-    // margin: 1rem; // Garder une marge si l'overlay n'a pas de padding
+    max-width: 95vw;
   }
 }
 @media (max-width: 700px) {
@@ -444,7 +451,7 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
   }
   .analyzer-card {
     border-radius: 0.7rem;
-    min-height: 320px;
+    min-height: 768px; // meme les mobiles depuis 5 ans ont des resolutions superieures à 1440 px et les ecrans depuis au moins 15 ans font au moins 1024x768
     max-height: 95vh; // Ajuster pour les mobiles
   }
   .analyzer-card-actions {
