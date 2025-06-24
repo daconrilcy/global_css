@@ -159,17 +159,17 @@ $background-overlay: rgba(31, 41, 55, 0.37);
     }
     .tokenizer-category {
         border: 1px solid #f0f1f4;
-        background-color: hsl(210, 25%, 90%);
+        background-color: hsl(210, 25%, 97%);
         border-radius: 12px;
         padding: 1rem 1.3rem 0.5rem 1.3rem;
         box-shadow: 0 2px 8px 0 rgba(35,55,90,0.04);
-        transition: background-color box-shadow 0.2s;
+        transition: background-color 0.2s, box-shadow 0.2s;
 
         &:hover,
         &:focus-within {
             box-shadow: 0 4px 16px 0 rgba(25,40,70,0.08);
             border-color: #c9e0ff;
-            background-color: hsl(210, 25%, 80%);
+            background-color: hsl(210, 25%, 93%);
         }
     }
     .tokenizer-category-title,
