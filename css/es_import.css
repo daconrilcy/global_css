@@ -1264,14 +1264,11 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   padding: 1rem 1.5rem;
   border-top: 1px solid #e5e7eb;
   flex-shrink: 0;
-  position: sticky;
-  bottom: 0;
   background: #fff;
   z-index: 1;
   display: flex;
   gap: 0.78rem;
   justify-content: flex-start;
-  width: 100%;
 }
 .analyzer-card-actions .btn {
   border: none;

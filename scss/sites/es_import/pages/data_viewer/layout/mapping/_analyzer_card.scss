@@ -103,7 +103,7 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
   flex: 1 1 0; // ✅ Prend tout l'espace disponible
   min-height: 0; // ✅ Permet le shrinking
   overflow: hidden; // ✅ Force les enfants à gérer leur scroll
-  position: relative; // Nécessaire pour que les actions sticky soient positionnées par rapport à lui
+  position: relative; 
 }
 
 // Builder colonne gauche - Version corrigée
@@ -229,20 +229,16 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
   &:hover { background: color.adjust($danger, $lightness: -8%); }
 }
 
-// Actions - Version corrigée
+// Actions Footer
 .analyzer-card-actions {
-  // margin-top: 1rem; // Supprimé, le padding-top et le sticky positionnent
-  padding: 1rem 1.5rem; // ✅ Padding pour les boutons
+  padding: 1rem 1.5rem; 
   border-top: 1px solid $gray-200; // ✅ Séparateur visuel
   flex-shrink: 0; // ✅ Ne rétrécit jamais
-  position: sticky; // ✅ Reste visible en scrollant
-  bottom: 0; // ✅ Collé en bas
-  background: $white; // ✅ Cache le contenu derrière
+  background: $white; 
   z-index: 1;
-  display: flex; // ✅ S'assurer que c'est un flex container
+  display: flex;
   gap: .78rem;
-  justify-content: flex-start; // ✅ Aligner les boutons à gauche (ou center/flex-end selon préférence)
-  width: 100%; // Prend toute la largeur disponible de son parent flex
+  justify-content: flex-start; // ✅ Aligner les boutons à gauche
 
   .btn {
     border: none;
