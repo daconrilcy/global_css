@@ -1,39 +1,25 @@
 @use "sass:color";
-:root{
-    --header-height: 55px
-}
+@use "../../../../../../abstracts/colors" as *;
+@use "../../../../../../abstracts/functions" as *;
+@use "../../../../variables/styles" as *;
+
 // Variables
-$primary: #2563eb;
-$secondary: #6366f1;
-$danger: #e53935;
-$info: #38bdf8;
-$gray-50: #f9fafb;
-$gray-100: #f1f5f9;
-$gray-200: #e5e7eb;
-$gray-400: #cbd5e1;
-$gray-500: #7b8a9d;
-$gray-600: #475569;
-$gray-700: #334155;
-$gray-800: #293649;
-$gray-900: #1e293b;
-$white: #fff;
-$border-radius: 1.15rem;
+$border-radius: $border-radius-preview;
 $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
 $heigh-overlay: calc(var(--header-height, 55px) - 5px);
+$background-overlay: rgba(31, 41, 55, 0.37);
 
 // Overlay avec scroll si nécessaire
 .analyzer-card-overlay {
   position: fixed;
   // FIX: Ajustement pour un header fixe.
   // On utilise une variable CSS --header-height pour la hauteur du menu.
-  // Si la variable n'est pas définie, on utilise 60px par défaut.
+  // Si la variable n'est pas définie, on utilise 55px par défaut.
   top: $heigh-overlay;
   left: 0;
   right: 0;
   bottom: 0;
-  // inset: 0; // Remplacé par les propriétés ci-dessus
-
-  background: rgba(31, 41, 55, 0.37);
+  background: $background-overlay;
   z-index: 1000;
   overflow-y: auto;
   display: flex;
@@ -65,7 +51,7 @@ $heigh-overlay: calc(var(--header-height, 55px) - 5px);
 // Header
 .analyzer-card-header {
   background: $gray-50;
-  border-bottom: 1px solid $gray-200;
+  border-bottom: $border-style-default;
   min-height: 54px;
   padding: 0.9rem 1.2rem 0.8rem 1.2rem; // Assure le padding
   flex-shrink: 0; // Empêche le header de rétrécir
@@ -100,16 +86,12 @@ $heigh-overlay: calc(var(--header-height, 55px) - 5px);
     margin-left: 0.6rem;
     padding: 0 0.2rem;
     color: $gray-600;
-    // position: absolute; // Retiré, flexbox gère mieux l'alignement
-    // right: 1.2rem; // Retiré
-    // top: 50%; // Retiré
-    // transform: translateY(-50%); // Retiré
     &:hover { color: $danger; }
   }
   .analyzer-card-name {
     min-width: 170px;
     background: $white;
-    border: 1px solid $gray-200;
+    border: $border-style-default;
     border-radius: 0.55rem;
     font-size: 1.09em;
     padding: 0.35rem 0.7rem;
@@ -129,7 +111,7 @@ $heigh-overlay: calc(var(--header-height, 55px) - 5px);
 // Builder colonne gauche - Version corrigée
 .analyzer-card-builder {
   background: $white;
-  flex: 1 1 55%; // ✅ Peut grandir et rétrécir
+  flex: 1 1 50%; // ✅ Peut grandir et rétrécir
   display: flex;
   flex-direction: column;
   overflow-y: auto; // ✅ Scroll vertical
@@ -179,7 +161,7 @@ $heigh-overlay: calc(var(--header-height, 55px) - 5px);
       font-size: 1em;
       padding: .18rem .5rem;
       border-radius: 0.48rem;
-      border: 1px solid $gray-200;
+      border: $border-style-default;
       background: $gray-50;
       margin-bottom: 0.22rem;
       &:focus { border-color: $primary; background: $white; }
@@ -224,7 +206,7 @@ $heigh-overlay: calc(var(--header-height, 55px) - 5px);
 .preset-select {
   min-width: 143px;
   font-size: .97em;
-  border: 1px solid $gray-200;
+  border: $border-style-default;
   border-radius: 0.46rem;
   padding: 0.21rem 0.61rem;
 }
@@ -252,47 +234,20 @@ $heigh-overlay: calc(var(--header-height, 55px) - 5px);
 // Actions Footer
 .analyzer-card-actions {
   padding: 1rem 1.5rem; 
-  border-top: 1px solid $gray-200; // ✅ Séparateur visuel
+  border-top: $border-style-default; // ✅ Séparateur visuel
   flex-shrink: 0; // ✅ Ne rétrécit jamais
   background: $white; 
   z-index: 1;
   display: flex;
   gap: .78rem;
   justify-content: flex-start; // ✅ Aligner les boutons à gauche
-
-  .btn {
-    border: none;
-    border-radius: .55rem;
-    padding: .5rem 1.17rem;
-    font-size: 1em;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background .12s, color .12s, box-shadow .13s;
-    box-shadow: 0 1px 3px rgba(30,40,80,.09);
-    letter-spacing: 0.01em;
   }
-  .btn-primary {
-    background: $primary;
-    color: $white;
-    &:hover { background: color.adjust($primary, $lightness: -7%); }
-  }
-  .btn-secondary {
-    background: $secondary;
-    color: $white;
-    &:hover { background: color.adjust($secondary, $lightness: -7%); }
-  }
-  .btn-light {
-    background: $gray-100;
-    color: $gray-700;
-    &:hover { background: $gray-200; color: $gray-900;}
-  }
-}
 
 // Preview colonne droite - Version corrigée
 .analyzer-card-preview {
   flex: 1 1 45%; // ✅ Flexible
   background: $gray-50;
-  border-left: 1px solid $gray-200;
+  border-left: $border-style-default;
   display: flex;
   flex-direction: column;
   overflow-y: auto; // ✅ Scroll vertical
@@ -337,7 +292,7 @@ $heigh-overlay: calc(var(--header-height, 55px) - 5px);
     line-height: 1.4; // ✅ Améliore la lisibilité
     word-break: break-all; // ✅ Évite les débordements horizontaux
     white-space: pre-wrap; // ✅ Préserve les retours à la ligne
-    border: 1px solid $gray-700;
+    border: $border-style-default;
     margin-bottom: 0; // Assure que le padding n'est pas coupé
 
     // ✅ Scroll custom dans le JSON
@@ -389,7 +344,7 @@ $heigh-overlay: calc(var(--header-height, 55px) - 5px);
     font-size: 1em;
     padding: .3rem .6rem;
     border-radius: .5rem;
-    border: 1px solid $gray-200;
+    border: $border-style-default;
     background: $gray-50;
     &:focus { border-color: $primary; background: $white; }
   }

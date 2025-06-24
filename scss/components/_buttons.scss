@@ -1,16 +1,20 @@
+@use "sass:color";
 @use "../abstracts/colors" as *;
 @use "../abstracts/variables" as *;
 @use "../abstracts/functions" as *;
 
 .btn{
     display: flex;
-    padding: 0.5rem 0.5rem;
+    padding: .5rem 1.17rem;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
     text-decoration: none;
-    border-radius: $bs-border-radius;
-    transition: background-color, box-shadow 0.3s ease, color 0.3s ease;
+    border-radius: .55rem;
+    transition: background .12s, color .12s, box-shadow .13s;
+    box-shadow: 0 1px 3px rgba(30,40,80,.09);
+    letter-spacing: 0.01em;
+    border: none;
     cursor: pointer;
     &:hover {
         text-decoration: none;
@@ -18,46 +22,49 @@
     }
 
     &.btn-primary {
-      background-color: color(blue-primary, base);
-        color: white;
+      $color-primary: color(blue-primary, base);
+      background-color: $color-primary;
+        color: $bs-body-color;
         &:hover {
-          background-color: color(blue-primary, dark);
-            color: white;
+          background-color: color.adjust($color-primary, $lightness: -7%);
         }
         &.active{
-          background-color: color(blue-primary, medium );
+          background-color: color.adjust($color-primary, $lightness: -10%);
         }
       }
     
       &.btn-secondary {
-        background-color: color(light-gray, light);
+        $color-secondary: color(soft-purple, base);
+        background-color: $color-secondary;
         color: $bs-body-color;
         &:hover {
-          background-color: color(light-gray, dark);
-            color: $bs-body-bg;
+          background-color: color.adjust($color-secondary, $lightness: -7%);
         }
         &.active {
-          background-color: color(light-gray, medium);
+          background-color: color.adjust($color-secondary, $lightness: -10%);
           color: $bs-body-bg;
         }
       }
-    
+      .btn-light {
+          background: $gray-100;
+          color: $gray-700;
+          &:hover { background: $gray-200; color: $gray-900;}
+      }
+
       &.btn-tertiary {
-        background-color: color(default-green, light);
+        $color-tertiary: color(default-green, base);
+        background-color: $color-tertiary;
         color: inherit;
         &:hover {
-          background-color: color(default-green, dark);
+          background-color: color.adjust($color-tertiary, $lightness: -7%);
             color: inherit;
         }
         &.active{
-          background-color: color(default-green, medium);
+          background-color: color.adjust($color-tertiary, $lightness: -10%);
             color: inherit;
         }
-        @at-root html.dark-mode & {
-          background-color: $dark-background-color-secondary;
-          color: $dark-front-color;
-        }
       }
+      
     
     &.btn-update {
       background-color: color(default-green, base);

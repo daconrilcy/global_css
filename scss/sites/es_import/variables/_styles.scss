@@ -2,6 +2,10 @@
 @use '../../../abstracts/variables' as *;
 @use '../../../abstracts/functions' as *;
 
+:root{
+    --header-height: 55px
+}
+
 //fonction pour appeler les styles predefinis
 @mixin apply-style($style-map) {
     @each $prop, $val in $style-map {
@@ -19,7 +23,13 @@ $header-preview-style: (
 );
 
 $border-radius-preview: calc($bs-border-radius *2);
+$border-style-default: 1px solid $gray-200;
 
 .dropzone{
   font: inherit;
 }
+
+$primary: color(blue-primary, base);
+$secondary: color(soft-purple, base);
+$danger: color(default-red, base);;
+$info: color(blue-light, base);
