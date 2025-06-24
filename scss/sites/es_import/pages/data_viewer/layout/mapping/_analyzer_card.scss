@@ -9,38 +9,54 @@ $gray-50: #f9fafb;
 $gray-100: #f1f5f9;
 $gray-200: #e5e7eb;
 $gray-400: #cbd5e1;
+$gray-500: #7b8a9d;
 $gray-600: #475569;
 $gray-700: #334155;
+$gray-800: #293649;
 $gray-900: #1e293b;
 $white: #fff;
 $border-radius: 1.15rem;
 $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
 
-// Overlay
+// Overlay avec scroll si nécessaire
 .analyzer-card-overlay {
   position: fixed;
   inset: 0;
   background: rgba(31, 41, 55, 0.37);
   z-index: 1000;
+  overflow-y: auto; // ✅ Scroll si card trop haute
   display: flex;
-  align-items: center;
+  align-items: flex-start; // ✅ Alignment en haut
   justify-content: center;
+  padding: 2rem 1rem; // ✅ Padding pour respirer
 }
 
-// Card principale
+// Card principale - Version corrigée
 .analyzer-card {
-  width: 900px;
-  max-width: 98vw;
-  min-height: 480px;
+  width: 920px; // ✅ Légèrement plus large
+  max-width: 95vw; // ✅ Plus d'espace sur les bords
+  max-height: 90vh; // ✅ S'adapte à la hauteur écran
+  min-height: 650px; // ✅ Plus réaliste
   background: $white;
   border-radius: $border-radius;
   box-shadow: $shadow;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: hidden; // ✅ Cache le débordement global de la carte
   animation: fadeIn .30s cubic-bezier(.23,1.04,.73,.91);
   border: 1.5px solid $gray-200;
+
+  // ✅ Position centrée améliorée
+  position: relative; // Changé de absolute pour permettre un meilleur centrage dans le flux de l'overlay flexbox
+  // top: 50%; // Supprimé, géré par align-items: center sur l'overlay si la carte est plus petite
+  // left: 50%; // Supprimé, géré par justify-content: center sur l'overlay
+  // transform: translate(-50%, -50%); // Supprimé pour un centrage flex plus naturel
+
+  // Correction : Ajouter un margin-top si align-items: flex-start est utilisé
+  // S'assurer que la carte est centrée si elle est plus petite que la fenêtre
+  margin: auto; // Va centrer la carte à l'intérieur du flex container de l'overlay
 }
+
 
 // Header
 .analyzer-card-header {
@@ -48,6 +64,7 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
   border-bottom: 1px solid $gray-200;
   min-height: 54px;
   padding: 0.9rem 1.2rem 0.8rem 1.2rem !important;
+  flex-shrink: 0; // Empêche le header de rétrécir
 
   .analyzer-card-icon {
     font-size: 1.25rem;
@@ -82,20 +99,40 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
   }
 }
 
-// Main layout
+// Main layout - Version corrigée
 .analyzer-card-content {
   display: flex;
-  flex: 1 1 0;
-  min-height: 400px;
+  flex: 1 1 0; // ✅ Prend tout l'espace disponible
+  min-height: 0; // ✅ Permet le shrinking
+  overflow: hidden; // ✅ Force les enfants à gérer leur scroll
 }
 
-// Builder colonne gauche
+// Builder colonne gauche - Version corrigée
 .analyzer-card-builder {
   background: $white;
-  flex: 0 0 55%;
+  flex: 1 1 55%; // ✅ Peut grandir et rétrécir
   display: flex;
   flex-direction: column;
+  overflow-y: auto; // ✅ Scroll vertical
+  overflow-x: hidden; // ✅ Pas de scroll horizontal
+  padding: 1.5rem; // ✅ Augmenté le padding pour plus d'espace
   gap: 1.35rem;
+
+  // ✅ Scroll custom plus joli
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: $gray-100;
+    border-radius: 3px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $gray-400;
+    border-radius: 3px;
+    &:hover {
+      background: $gray-600;
+    }
+  }
 
   section {
     margin-bottom: .28rem;
@@ -191,10 +228,18 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
   &:hover { background: color.adjust($danger, $lightness: -8%); }
 }
 
-// Actions
+// Actions - Version corrigée
 .analyzer-card-actions {
-  margin-top: auto;
+  margin-top: 1rem; // ✅ Espace fixe au lieu d'auto
+  padding-top: 1rem;
+  border-top: 1px solid $gray-200; // ✅ Séparateur visuel
+  flex-shrink: 0; // ✅ Ne rétrécit jamais
+  position: sticky; // ✅ Reste visible en scrollant
+  bottom: 0;
+  background: $white; // ✅ Cache le contenu derrière
+  z-index: 1;
   gap: .78rem;
+
   .btn {
     border: none;
     border-radius: .55rem;
@@ -223,14 +268,33 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
   }
 }
 
-// Preview colonne droite
+// Preview colonne droite - Version corrigée
 .analyzer-card-preview {
-  flex: 0 0 45%;
+  flex: 1 1 45%; // ✅ Flexible
   background: $gray-50;
   border-left: 1px solid $gray-200;
   display: flex;
   flex-direction: column;
+  overflow-y: auto; // ✅ Scroll vertical
+  overflow-x: hidden; // ✅ Pas de scroll horizontal
+  padding: 1.5rem; // ✅ Augmenté le padding
   gap: 1.29rem;
+
+  // ✅ Même style de scroll
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgba($gray-200, 0.5);
+    border-radius: 3px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $gray-400;
+    border-radius: 3px;
+    &:hover {
+      background: $gray-600;
+    }
+  }
 
   section {
     margin-bottom: .18rem;
@@ -244,14 +308,34 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
     background: $gray-900;
     color: #b9e2be;
     border-radius: .75rem;
-    padding: .9rem .9rem .9rem .8rem;
+    padding: .9rem;
     min-height: 120px;
-    max-height: 200px;
-    overflow: auto;
-    font-size: 1em;
-    font-family: "Fira Mono", "Consolas", "monospace";
-    margin-bottom: 0;
+    max-height: 300px; // ✅ Hauteur max définie
+    overflow: auto; // ✅ Scroll dans la preview
+    font-size: 0.9rem; // ✅ Police plus petite
+    font-family: "Fira Code", "Fira Mono", "Consolas", monospace; // ✅ Ajouté Fira Code
+    line-height: 1.4; // ✅ Améliore la lisibilité
+    word-break: break-all; // ✅ Évite les débordements horizontaux
+    white-space: pre-wrap; // ✅ Préserve les retours à la ligne
     border: 1px solid $gray-700;
+    margin-bottom: 0; // Assure que le padding n'est pas coupé
+
+    // ✅ Scroll custom dans le JSON
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    &::-webkit-scrollbar-track {
+      background: $gray-800;
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $gray-600;
+      border-radius: 4px;
+      &:hover {
+        background: $gray-500;
+      }
+    }
   }
   .btn-copy-json {
     position: absolute;
@@ -303,15 +387,19 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
     &:hover { background: color.adjust($primary, $lightness: -9%);}
   }
   .test-result {
-    min-height: 40px;
+    min-height: 60px; // ✅ Hauteur minimale plus généreuse
+    max-height: 200px; // ✅ Limite la hauteur
     background: $gray-100;
     border: 1px solid $gray-200;
     border-radius: .43rem;
     padding: .45rem .9rem;
     color: $gray-700;
-    font-size: 1em;
-    font-family: "Fira Mono", "Consolas", "monospace";
+    font-size: 0.9rem; // ✅ Police plus petite
+    font-family: "Fira Code", "Fira Mono", "Consolas", monospace; // ✅ Ajouté Fira Code
     margin-top: 0.3rem;
+    overflow-y: auto; // ✅ Scroll si nécessaire
+    line-height: 1.5; // ✅ Améliore l'espacement
+
     .token-chip {
       display: inline-block;
       background: $secondary;
@@ -319,14 +407,19 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
       border-radius: 0.55rem;
       padding: 0.12em 0.6em;
       margin: 0 0.16em 0.18em 0;
-      font-size: .98em;
+      font-size: .9rem; // ✅ Police plus petite
+      white-space: nowrap; // ✅ Évite la coupure des tokens
     }
   }
 }
 
 // Responsive
 @media (max-width: 1050px) {
-  .analyzer-card { width: 98vw; min-width: 0;}
+  .analyzer-card {
+    width: 98vw;
+    min-width: 0;
+    margin: 1rem; // Ajouter un peu de marge sur les côtés pour les petits écrans
+  }
 }
 @media (max-width: 700px) {
   .analyzer-card-content {
@@ -334,13 +427,38 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
   }
   .analyzer-card-builder,
   .analyzer-card-preview {
-    flex: 1 1 0;
+    flex: 1 1 0; // Fixer le flex-basis à 0 pour un comportement plus dynamique
     width: 100%;
-    border: none !important;
+    border-left: none !important; // Supprimer la bordure verticale sur mobile
+    padding-left: 1.5rem; // Assurer un padding cohérent
+    padding-right: 1.5rem; // Assurer un padding cohérent
+  }
+  .analyzer-card-builder {
+    padding-bottom: 0; // Empêcher un double padding si les actions ont leur propre padding-top
+  }
+  .analyzer-card-preview {
+    padding-top: 0; // Empêcher un double padding
   }
   .analyzer-card {
     border-radius: 0.7rem;
     min-height: 320px;
+    max-height: 95vh; // Ajuster pour les mobiles
+  }
+  .analyzer-card-actions {
+    position: relative; // Sur mobile, peut être mieux de ne pas être sticky
+    bottom: auto;
+    background: $white;
+    // Supprimer le margin-top pour éviter un double espacement avec le padding du builder
+    margin-top: 0;
+    border-top: 1px solid $gray-200; // Maintenir le séparateur
+    padding-top: 1rem; // Garder le padding intérieur
+    padding-bottom: 1rem; // Ajouter un padding en bas aussi
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .analyzer-card-overlay {
+    padding: 1rem 0; // Moins de padding sur mobile
+    align-items: center; // Centrer sur mobile
   }
 }
 
