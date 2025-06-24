@@ -17,37 +17,50 @@ $gray-900: #1e293b;
 $white: #fff;
 $border-radius: 1.15rem;
 $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
+:root{
+    --header-height: 80px
+}
 
 // Overlay avec scroll si nécessaire
 .analyzer-card-overlay {
   position: fixed;
-  inset: 0;
+  // FIX: Ajustement pour un header fixe.
+  // On utilise une variable CSS --header-height pour la hauteur du menu.
+  // Si la variable n'est pas définie, on utilise 60px par défaut.
+  top: var(--header-height, 60px);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // inset: 0; // Remplacé par les propriétés ci-dessus
+
   background: rgba(31, 41, 55, 0.37);
   z-index: 1000;
-  overflow-y: auto; // ✅ Scroll si card trop haute
+  overflow-y: auto;
   display: flex;
-  align-items: center; // ✅ Centrer la card verticalement dans l'overlay
+  align-items: center;
   justify-content: center;
-  padding: 2rem 1rem; // ✅ Padding pour respirer
+  padding: 2rem 1rem; // Le padding est pris en compte dans le calc() ci-dessous
 }
+
 
 // Card principale - Version corrigée
 .analyzer-card {
-  width: 1000px; // ✅ Augmenter la largeur pour plus d'espace
-  max-width: 95vw; // ✅ Plus d'espace sur les bords
-  max-height: 90vh; // ✅ S'adapte à la hauteur écran
-  min-height: 650px; // ✅ Plus réaliste
+  width: 1140px;
+  max-width: 95vw;
+  // FIX: La hauteur maximale est calculée pour tenir sous le header et dans l'overlay
+  // 4rem = 2rem de padding en haut + 2rem en bas dans l'overlay
+  max-height: calc(100vh - var(--header-height, 60px) - 4rem);
+  min-height: 650px; // min-height reste valide pour le desktop
   background: $white;
   border-radius: $border-radius;
   box-shadow: $shadow;
   display: flex;
   flex-direction: column;
-  overflow: hidden; // ✅ Cache le débordement global de la carte
+  overflow: hidden;
   animation: fadeIn .30s cubic-bezier(.23,1.04,.73,.91);
   border: 1.5px solid $gray-200;
-  position: relative; // Nécessaire pour les éléments positionnés à l'intérieur
+  position: relative;
 }
-
 
 // Header
 .analyzer-card-header {
@@ -452,7 +465,7 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
   .analyzer-card {
     border-radius: 0.7rem;
     min-height: 320px; // meme les mobiles depuis 5 ans ont des resolutions superieures à 1440 px et les ecrans depuis au moins 15 ans font au moins 1024x768
-    max-height: 80vh; // Ajuster pour les mobiles
+    height: 80vh; // Ajuster pour les mobiles
    
   }
   .analyzer-card-actions {
