@@ -1,5 +1,7 @@
 @use "sass:color";
-
+:root{
+    --header-height: 55px
+}
 // Variables
 $primary: #2563eb;
 $secondary: #6366f1;
@@ -17,9 +19,7 @@ $gray-900: #1e293b;
 $white: #fff;
 $border-radius: 1.15rem;
 $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
-:root{
-    --header-height: 55px
-}
+$heigh-overlay: calc(var(--header-height, 55px) - 5px);
 
 // Overlay avec scroll si nécessaire
 .analyzer-card-overlay {
@@ -27,7 +27,7 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
   // FIX: Ajustement pour un header fixe.
   // On utilise une variable CSS --header-height pour la hauteur du menu.
   // Si la variable n'est pas définie, on utilise 60px par défaut.
-  top: var(--header-height, 55px);
+  top: $heigh-overlay;
   left: 0;
   right: 0;
   bottom: 0;

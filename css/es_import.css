@@ -1052,7 +1052,7 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 
 .analyzer-card-overlay {
   position: fixed;
-  top: var(--header-height, 55px);
+  top: calc(var(--header-height, 55px) - 5px);
   left: 0;
   right: 0;
   bottom: 0;
