@@ -1053,13 +1053,13 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   z-index: 1000;
   overflow-y: auto;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   padding: 2rem 1rem;
 }
 
 .analyzer-card {
-  width: 920px;
+  width: 1000px;
   max-width: 95vw;
   max-height: 90vh;
   min-height: 650px;
@@ -1072,15 +1072,17 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   animation: fadeIn 0.3s cubic-bezier(0.23, 1.04, 0.73, 0.91);
   border: 1.5px solid #e5e7eb;
   position: relative;
-  margin: auto;
 }
 
 .analyzer-card-header {
   background: #f9fafb;
   border-bottom: 1px solid #e5e7eb;
   min-height: 54px;
-  padding: 0.9rem 1.2rem 0.8rem 1.2rem !important;
+  padding: 0.9rem 1.2rem 0.8rem 1.2rem;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .analyzer-card-header .analyzer-card-icon {
   font-size: 1.25rem;
@@ -1121,6 +1123,7 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   flex: 1 1 0;
   min-height: 0;
   overflow: hidden;
+  position: relative;
 }
 
 .analyzer-card-builder {
@@ -1132,6 +1135,7 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   overflow-x: hidden;
   padding: 1.5rem;
   gap: 1.35rem;
+  padding-bottom: 0;
 }
 .analyzer-card-builder::-webkit-scrollbar {
   width: 6px;
@@ -1257,15 +1261,17 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 }
 
 .analyzer-card-actions {
-  margin-top: 1rem;
-  padding-top: 1rem;
+  padding: 1rem 1.5rem;
   border-top: 1px solid #e5e7eb;
   flex-shrink: 0;
   position: sticky;
   bottom: 0;
   background: #fff;
   z-index: 1;
+  display: flex;
   gap: 0.78rem;
+  justify-content: flex-start;
+  width: 100%;
 }
 .analyzer-card-actions .btn {
   border: none;
@@ -1453,20 +1459,22 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   .analyzer-card {
     width: 98vw;
     min-width: 0;
-    margin: 1rem;
   }
 }
 @media (max-width: 700px) {
   .analyzer-card-content {
     flex-direction: column;
+    overflow-y: auto;
+    min-height: 0;
   }
   .analyzer-card-builder,
   .analyzer-card-preview {
-    flex: 1 1 0;
+    flex: 1 1 auto;
     width: 100%;
     border-left: none !important;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
   }
   .analyzer-card-builder {
     padding-bottom: 0;
@@ -1489,6 +1497,7 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
     padding-bottom: 1rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    justify-content: center;
   }
   .analyzer-card-overlay {
     padding: 1rem 0;

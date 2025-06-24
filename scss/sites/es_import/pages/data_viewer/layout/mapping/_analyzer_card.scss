@@ -26,14 +26,14 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
   z-index: 1000;
   overflow-y: auto; // ✅ Scroll si card trop haute
   display: flex;
-  align-items: flex-start; // ✅ Alignment en haut
+  align-items: center; // ✅ Centrer la card verticalement dans l'overlay
   justify-content: center;
   padding: 2rem 1rem; // ✅ Padding pour respirer
 }
 
 // Card principale - Version corrigée
 .analyzer-card {
-  width: 920px; // ✅ Légèrement plus large
+  width: 1000px; // ✅ Augmenter la largeur pour plus d'espace
   max-width: 95vw; // ✅ Plus d'espace sur les bords
   max-height: 90vh; // ✅ S'adapte à la hauteur écran
   min-height: 650px; // ✅ Plus réaliste
@@ -45,16 +45,7 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
   overflow: hidden; // ✅ Cache le débordement global de la carte
   animation: fadeIn .30s cubic-bezier(.23,1.04,.73,.91);
   border: 1.5px solid $gray-200;
-
-  // ✅ Position centrée améliorée
-  position: relative; // Changé de absolute pour permettre un meilleur centrage dans le flux de l'overlay flexbox
-  // top: 50%; // Supprimé, géré par align-items: center sur l'overlay si la carte est plus petite
-  // left: 50%; // Supprimé, géré par justify-content: center sur l'overlay
-  // transform: translate(-50%, -50%); // Supprimé pour un centrage flex plus naturel
-
-  // Correction : Ajouter un margin-top si align-items: flex-start est utilisé
-  // S'assurer que la carte est centrée si elle est plus petite que la fenêtre
-  margin: auto; // Va centrer la carte à l'intérieur du flex container de l'overlay
+  position: relative; // Nécessaire pour les éléments positionnés à l'intérieur
 }
 
 
@@ -63,8 +54,11 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
   background: $gray-50;
   border-bottom: 1px solid $gray-200;
   min-height: 54px;
-  padding: 0.9rem 1.2rem 0.8rem 1.2rem !important;
+  padding: 0.9rem 1.2rem 0.8rem 1.2rem; // Assure le padding
   flex-shrink: 0; // Empêche le header de rétrécir
+  display: flex; // S'assurer que c'est un flex container
+  align-items: center; // ✅ Aligner les éléments du header verticalement
+  justify-content: space-between; // ✅ Espacer les groupes d'éléments
 
   .analyzer-card-icon {
     font-size: 1.25rem;
@@ -86,6 +80,10 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
     margin-left: 0.6rem;
     padding: 0 0.2rem;
     color: $gray-600;
+    // position: absolute; // Retiré, flexbox gère mieux l'alignement
+    // right: 1.2rem; // Retiré
+    // top: 50%; // Retiré
+    // transform: translateY(-50%); // Retiré
     &:hover { color: $danger; }
   }
   .analyzer-card-name {
@@ -105,6 +103,7 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
   flex: 1 1 0; // ✅ Prend tout l'espace disponible
   min-height: 0; // ✅ Permet le shrinking
   overflow: hidden; // ✅ Force les enfants à gérer leur scroll
+  position: relative; // Nécessaire pour que les actions sticky soient positionnées par rapport à lui
 }
 
 // Builder colonne gauche - Version corrigée
@@ -117,6 +116,8 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
   overflow-x: hidden; // ✅ Pas de scroll horizontal
   padding: 1.5rem; // ✅ Augmenté le padding pour plus d'espace
   gap: 1.35rem;
+  padding-bottom: 0; // Pour que la zone des boutons ne soit pas cachée par le padding du builder
+  // margin-bottom: 70px; // Ajout d'une marge pour laisser de la place aux boutons fixes, ajustez si la hauteur des boutons change
 
   // ✅ Scroll custom plus joli
   &::-webkit-scrollbar {
@@ -230,15 +231,18 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
 
 // Actions - Version corrigée
 .analyzer-card-actions {
-  margin-top: 1rem; // ✅ Espace fixe au lieu d'auto
-  padding-top: 1rem;
+  // margin-top: 1rem; // Supprimé, le padding-top et le sticky positionnent
+  padding: 1rem 1.5rem; // ✅ Padding pour les boutons
   border-top: 1px solid $gray-200; // ✅ Séparateur visuel
   flex-shrink: 0; // ✅ Ne rétrécit jamais
   position: sticky; // ✅ Reste visible en scrollant
-  bottom: 0;
+  bottom: 0; // ✅ Collé en bas
   background: $white; // ✅ Cache le contenu derrière
   z-index: 1;
+  display: flex; // ✅ S'assurer que c'est un flex container
   gap: .78rem;
+  justify-content: flex-start; // ✅ Aligner les boutons à gauche (ou center/flex-end selon préférence)
+  width: 100%; // Prend toute la largeur disponible de son parent flex
 
   .btn {
     border: none;
@@ -416,28 +420,31 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
 // Responsive
 @media (max-width: 1050px) {
   .analyzer-card {
-    width: 98vw;
+    width: 98vw; // Revenir à une largeur adaptative
     min-width: 0;
-    margin: 1rem; // Ajouter un peu de marge sur les côtés pour les petits écrans
+    // margin: 1rem; // Garder une marge si l'overlay n'a pas de padding
   }
 }
 @media (max-width: 700px) {
   .analyzer-card-content {
     flex-direction: column;
+    overflow-y: auto; // Permet le scroll sur le contenu complet en mobile si nécessaire
+    min-height: 0;
   }
   .analyzer-card-builder,
   .analyzer-card-preview {
-    flex: 1 1 0; // Fixer le flex-basis à 0 pour un comportement plus dynamique
+    flex: 1 1 auto; // Flex basis auto pour mieux s'adapter
     width: 100%;
     border-left: none !important; // Supprimer la bordure verticale sur mobile
     padding-left: 1.5rem; // Assurer un padding cohérent
     padding-right: 1.5rem; // Assurer un padding cohérent
+    padding-bottom: 1.5rem; // Assurer un padding en bas aussi
   }
   .analyzer-card-builder {
-    padding-bottom: 0; // Empêcher un double padding si les actions ont leur propre padding-top
+    padding-bottom: 0; // Pour éviter le double padding avec les actions
   }
   .analyzer-card-preview {
-    padding-top: 0; // Empêcher un double padding
+    padding-top: 0; // Pour éviter le double padding
   }
   .analyzer-card {
     border-radius: 0.7rem;
@@ -445,7 +452,7 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
     max-height: 95vh; // Ajuster pour les mobiles
   }
   .analyzer-card-actions {
-    position: relative; // Sur mobile, peut être mieux de ne pas être sticky
+    position: relative; // Sur mobile, les actions ne sont plus sticky
     bottom: auto;
     background: $white;
     // Supprimer le margin-top pour éviter un double espacement avec le padding du builder
@@ -455,6 +462,7 @@ $shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
     padding-bottom: 1rem; // Ajouter un padding en bas aussi
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    justify-content: center; // Centrer les boutons sur mobile
   }
   .analyzer-card-overlay {
     padding: 1rem 0; // Moins de padding sur mobile
