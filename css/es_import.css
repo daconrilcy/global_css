@@ -1487,7 +1487,7 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
     padding-top: 0;
   }
   .analyzer-card {
-    margin-top: 5rem;
+    margin-top: 10rem;
     border-radius: 0.7rem;
     max-height: 80vh;
     min-height: 512px;
