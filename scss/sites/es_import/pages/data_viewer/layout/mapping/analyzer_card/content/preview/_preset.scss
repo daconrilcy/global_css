@@ -1,15 +1,16 @@
 @use "sass:color";
 @use './../../variables' as *;
+@use './../../../../../../../../../abstracts/colors' as *;
 
 // === Presets section ===
 .preset-section{
     .preset-select {
-        padding: 0.21rem 0.61rem;
-        min-width: 143px; 
-        font-size: .97em; 
-        border: $border-style-default;
-        border-radius: 0.46rem;
-        background-color: white;
+        min-width: 143px;
+        font-size: 1em; 
+        padding: .17rem .5rem;
+        border-radius: 0.48rem; border: $border-style-default;
+        background: $gray-50;
+        &:focus { border-color: $primary; background: $white; }
     }
     .preset-actions{
         padding: 1rem 1.5rem;

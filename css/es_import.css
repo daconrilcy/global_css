@@ -1530,12 +1530,16 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 }
 
 .preset-section .preset-select {
-  padding: 0.21rem 0.61rem;
   min-width: 143px;
-  font-size: 0.97em;
+  font-size: 1em;
+  padding: 0.17rem 0.5rem;
+  border-radius: 0.48rem;
   border: 1px solid #e5e7eb;
-  border-radius: 0.46rem;
-  background-color: white;
+  background: #f9fafb;
+}
+.preset-section .preset-select:focus {
+  border-color: rgb(0, 119, 204);
+  background: #fff;
 }
 .preset-section .preset-actions {
   padding: 1rem 1.5rem;
