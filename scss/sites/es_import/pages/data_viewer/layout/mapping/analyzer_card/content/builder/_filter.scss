@@ -10,7 +10,7 @@ section{
         gap: 0.25rem; }
 
     .draggable {
-        display: flex; align-items: center; gap: 0.55rem;
+        display: flex; align-items: baseline; gap: 0.55rem;
         cursor: grab; user-select: none; transition: background 0.12s;
         &:active { cursor: grabbing; }
         .drag-handle { 

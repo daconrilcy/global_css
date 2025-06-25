@@ -1235,6 +1235,7 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   transition: background 0.12s;
   position: relative;
   cursor: pointer;
+  margin-bottom: 0.125rem;
 }
 .tokenizer-section .tokenizer-radio:hover, .tokenizer-section .tokenizer-radio:focus-within {
   background: #eef5ff;
@@ -1324,7 +1325,7 @@ section .token-filters-list {
 }
 section .draggable {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 0.55rem;
   cursor: grab;
   user-select: none;

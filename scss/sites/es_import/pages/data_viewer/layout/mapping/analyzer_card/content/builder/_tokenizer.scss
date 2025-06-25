@@ -52,8 +52,11 @@
     .tokenizer-radio {
         display: flex; align-items: center; gap: 0.30rem;
         padding: 0.18rem 0.38rem 0.18rem 0.15rem;
-        border-radius: 6px; background: transparent;
-        transition: background 0.12s; position: relative; cursor: pointer;
+        border-radius: 6px; 
+        background: transparent;
+        transition: background 0.12s; 
+        position: relative; cursor: pointer;
+        margin-bottom: 0.125rem;
         &:hover, &:focus-within { background: #eef5ff; }
         input[type="radio"]:checked + b {
             color: $primary;
