@@ -1414,6 +1414,19 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   border-color: #c9e0ff;
   background: hsl(210, 25%, 93%);
 }
+.analyzer-card-preview section label, .analyzer-card-preview section legend, .analyzer-card-preview fieldset label, .analyzer-card-preview fieldset legend {
+  font-size: 1.07rem;
+  font-weight: 600;
+  color: #4257a3;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.45rem;
+  padding: 0 0.2rem;
+  line-height: 1.4;
+  border-left: 3px solid #97bfff;
+  border-radius: 2px;
+  background: #f6f8ff;
+  display: inline-block;
+}
 .analyzer-card-preview .json-preview-wrap {
   position: relative;
   margin-bottom: 0.5rem;
@@ -1516,19 +1529,6 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   white-space: nowrap;
 }
 
-.preset-section label {
-  font-size: 1.07rem;
-  font-weight: 600;
-  color: #4257a3;
-  letter-spacing: 0.01em;
-  margin-bottom: 0.45rem;
-  padding: 0 0.2rem;
-  line-height: 1.4;
-  border-left: 3px solid #97bfff;
-  border-radius: 2px;
-  background: #f6f8ff;
-  display: inline-block;
-}
 .preset-section .preset-select {
   padding: 0.21rem 0.61rem;
   min-width: 143px;
@@ -1536,39 +1536,19 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   border: 1px solid #e5e7eb;
   border-radius: 0.46rem;
 }
-.preset-section .preset-save, .preset-section .preset-delete {
-  padding: 0.21rem 0.91rem;
-  margin-left: 0.09rem;
-  font-weight: 500;
-  border-radius: 0.5rem;
-  border: none;
-  font-size: 0.97em;
-  transition: background 0.13s;
-  cursor: pointer;
-}
 .preset-section .preset-actions {
   padding: 1rem 1.5rem;
-  border-top: 1px solid #e5e7eb;
   flex-shrink: 0;
-  background: white;
+  border-top: 1px solid #f0f1f4;
+  background-color: transparent;
   z-index: 1;
   display: flex;
   gap: 0.78rem;
-  justify-content: flex-start;
+  justify-content: center;
+  transition: background-color 0.2s;
 }
-.preset-section .preset-actions .preset-save {
-  background: rgb(115, 92, 221);
-  color: white;
-}
-.preset-section .preset-actions .preset-save:hover {
-  background: rgb(86.0050761421, 58.2416243655, 213.9583756345);
-}
-.preset-section .preset-actions .preset-delete {
-  background: rgb(255, 0, 0);
-  color: white;
-}
-.preset-section .preset-actions .preset-delete:hover {
-  background: rgb(214.2, 0, 0);
+.preset-section .preset-actions:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .analyzer-card-actions {
