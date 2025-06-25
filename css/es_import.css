@@ -1221,7 +1221,7 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 .tokenizer-section .tokenizer-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.1rem 1.8rem;
+  gap: 0.25rem 0.25rem;
   margin-top: 0.1rem;
   align-items: center;
 }
