@@ -1,0 +1,47 @@
+@use './../../../../../../../../../abstracts/colors' as *;
+@use './../../variables' as *;
+
+// === Token Filter Section ===
+.token-filters-section {
+    .token-filters-list { gap: 0.28rem; }
+
+    .draggable {
+        display: flex; align-items: center; gap: 0.55rem;
+        cursor: grab; user-select: none; transition: background 0.12s;
+        &:active { cursor: grabbing; }
+        .drag-handle { 
+            font-size: 1.12em; 
+            color: $gray-400; 
+            margin-right: 0.19rem; 
+            &:hover { color: $gray-700; } }
+        input[type="checkbox"] { margin-right: 0.1rem; }
+        .font-semibold { font-weight: 600; }
+        .filter-desc {
+            margin-left: 0.4rem; 
+            color: $info; 
+            font-size: .97em; 
+            font-style: italic; 
+            opacity: 0.90; 
+            transition: opacity .15s;
+        }
+        .filter-params {
+            display: inline-flex; gap: 0.4rem; margin-left: 0.4rem;
+            input {
+                min-width: 90px; 
+                font-size: 0.98em; 
+                padding: .16rem .44rem;
+                border: $border-style-default; 
+                border-radius: 0.48rem; 
+                background: $gray-50;
+                &:focus { 
+                    border-color: $primary; 
+                    background: white; }
+            }
+        }
+        &.disabled .filter-desc,
+        &.disabled label { 
+            opacity: 0.45; 
+            cursor: not-allowed; 
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@use './../../../../../../../abstracts/colors' as *;
+
+// === Responsive ===
+@media (max-width: 1050px) {
+    .analyzer-card { 
+        width: 1140px; 
+        min-width: 0; 
+        max-width: 95vw; 
+    }
+}
+@media (max-width: 800px) {
+    .tokenizer-list { flex-direction: column; gap: 0.65rem 0; }
+    .tokenizer-groups { gap: 1.1rem; }
+    .tokenizer-category { padding: 0.8rem 0.6rem 0.5rem 0.8rem; }
+    .tokenizer-category-title { font-size: 0.98rem; margin-bottom: 0.32rem; }
+}
+@media (max-width: 700px) {
+    .analyzer-card-content { flex-direction: column; overflow-y: auto; min-height: 0; }
+    .analyzer-card-builder, .analyzer-card-preview {
+        flex: 1 1 auto; width: 100%; border-left: none !important;
+        padding-left: 1.5rem; padding-right: 1.5rem; padding-bottom: 1.5rem;
+    }
+    .analyzer-card-builder { padding-bottom: 0; }
+    .analyzer-card-preview { padding-top: 0; }
+    .analyzer-card { border-radius: 0.7rem; min-height: 320px; height: 80vh; }
+    .analyzer-card-actions {
+        position: relative; bottom: auto; background: white; margin-top: 0;
+        border-top: 1px solid $gray-200; padding-top: 1rem; padding-bottom: 1rem;
+        padding-left: 1.5rem; padding-right: 1.5rem; justify-content: center;
+    }
+  .analyzer-card-overlay { padding: 1rem 0; align-items: center; }
+}

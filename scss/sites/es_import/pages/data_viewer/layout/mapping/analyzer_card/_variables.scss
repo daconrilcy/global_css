@@ -1,0 +1,16 @@
+@use "sass:color";
+@use "../../../../../../../abstracts/colors" as *;
+@use "../../../../../../../abstracts/functions" as *;
+@use "../../../../../variables/styles" as *;
+
+// === Variables locales === //
+$border-radius: $border-radius-preview;
+$shadow: 0 8px 32px rgba(30, 30, 30, 0.12);
+$height-overlay: calc(var(--header-height, 55px) - 5px);
+$background-overlay: rgba(31, 41, 55, 0.37);
+$border-style-default: 1px solid $gray-200;
+$primary: color(blue-primary, base);
+$secondary: color(soft-purple, base);
+$danger: color(default-red, base);;
+$info: color(blue-light, base);
+$white: #fff;

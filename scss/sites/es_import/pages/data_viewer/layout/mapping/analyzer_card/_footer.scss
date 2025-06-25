@@ -1,0 +1,11 @@
+@use './variables' as *;
+
+// === Footer d'actions ===
+.analyzer-card-actions {
+    padding: 1rem 1.5rem;
+    border-top: $border-style-default;
+    flex-shrink: 0; 
+    background: white; 
+    z-index: 1;
+    display: flex; gap: .78rem; justify-content: flex-start;
+}

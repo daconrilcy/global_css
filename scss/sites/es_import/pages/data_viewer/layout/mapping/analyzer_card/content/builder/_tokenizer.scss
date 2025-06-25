@@ -1,0 +1,80 @@
+@use './../../variables' as *;
+@use './../../../../../../../../../abstracts/colors' as *;
+
+// === Tokenizer Section ===
+.tokenizer-section {
+    .json-errors {
+        color: $danger; 
+        font-size: .97em; 
+        font-weight: 500;
+        display: flex; 
+        align-items: center; 
+        gap: 0.45em; 
+        margin-bottom: .4rem;
+        .icon-error { font-size: 1.2em; }
+    }
+
+    .tokenizer-groups {
+        display: flex; 
+        flex-direction: column; 
+        gap: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .tokenizer-category {
+        border: 1px solid #f0f1f4; 
+        background: hsl(210, 25%, 97%);
+        border-radius: 12px; 
+        padding: 1rem 1.3rem 0.5rem 1.3rem;
+        box-shadow: 0 2px 8px 0 rgba(35,55,90,0.04);
+        transition: background-color 0.2s, box-shadow 0.2s;
+        &:hover, &:focus-within {
+            box-shadow: 0 4px 16px 0 rgba(25,40,70,0.08);
+            border-color: #c9e0ff;
+            background: hsl(210, 25%, 93%);
+        }
+        legend.tokenizer-category-title {
+            font-size: 1.07rem; font-weight: 600; color: #4257a3; letter-spacing: 0.01em;
+            margin-bottom: 0.45rem; padding: 0 0.2rem; line-height: 1.4;
+            border-left: 3px solid #97bfff; border-radius: 2px; background: #f6f8ff;
+            display: inline-block;
+        }
+    }
+
+    .tokenizer-list {
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 1.1rem 1.8rem; 
+        margin-top: 0.1rem; 
+        align-items: center;
+    }
+
+    .tokenizer-radio {
+        display: flex; align-items: center; gap: 0.30rem;
+        padding: 0.18rem 0.38rem 0.18rem 0.15rem;
+        border-radius: 6px; background: transparent;
+        transition: background 0.12s; position: relative; cursor: pointer;
+        &:hover, &:focus-within { background: #eef5ff; }
+        input[type="radio"]:checked + b {
+            color: $primary;
+            text-decoration: underline wavy #b6d3ff 2px;
+        }
+        b { font-weight: 600; color: #19306a; font-size: 1rem; }
+    }
+
+    .tokenizer-params {
+        display: flex; gap: 2rem; margin-top: .6rem; flex-wrap: wrap;
+        .tokenizer-param-group {
+            display: flex; gap: 1.1rem; align-items: flex-end; transition: opacity 0.13s;
+            &[style*="display:none"] { display: none !important; }
+            .flex { gap: 0.36rem; }
+            .flex-col { display: flex; flex-direction: column; }
+            input {
+                min-width: 85px; font-size: 1em; padding: .17rem .5rem;
+                border-radius: 0.48rem; border: $border-style-default; background: $gray-50;
+                &:focus { border-color: $primary; background: $white; }
+            }
+            label.sr-only { display: none; }
+        }
+    }
+}

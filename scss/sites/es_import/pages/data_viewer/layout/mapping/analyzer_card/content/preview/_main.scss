@@ -1,0 +1,87 @@
+@use "sass:color";
+@use './../../../../../../../../../abstracts/colors' as *;
+@use './../../variables' as *;
+
+// === Preview colonne droite ===
+.analyzer-card-preview {
+    flex: 1 1 45%; 
+    background: $gray-50;
+    border-left: $border-style-default;
+    display: flex; flex-direction: column; overflow-y: auto; overflow-x: hidden;
+    padding: 1.5rem; gap: 1.29rem;
+
+    // Scrollbar
+    &::-webkit-scrollbar { width: 6px; }
+    &::-webkit-scrollbar-track { background: rgba($gray-200, 0.5); border-radius: 3px; }
+    &::-webkit-scrollbar-thumb { background: $gray-400; border-radius: 3px; 
+        &:hover { background: $gray-600; } 
+    }
+
+    .json-preview-wrap { 
+        position: relative; 
+        margin-bottom: 0.5rem; 
+    }
+    .json-preview {
+        background: $gray-900; 
+        color: #b9e2be; 
+        border-radius: .75rem; 
+        padding: .9rem;
+        min-height: 120px; max-height: 300px; overflow: auto;
+        font-size: 0.9rem; font-family: "Fira Code", "Fira Mono", "Consolas", monospace;
+        line-height: 1.4; word-break: break-all; white-space: pre-wrap;
+        border: $border-style-default;
+        &::-webkit-scrollbar { width: 8px; height: 8px; }
+        &::-webkit-scrollbar-track { background: $gray-800; border-radius: 4px; }
+        &::-webkit-scrollbar-thumb { background: $gray-600; border-radius: 4px; 
+            &:hover { background: $gray-500; } 
+        }
+    }
+    .btn-copy-json {
+        position: absolute; top: 1rem; right: 1.1rem; 
+        background: $gray-400; color: $gray-900;
+        padding: .19rem .77rem; 
+        border-radius: .4rem; border: none; 
+        font-size: .91em; 
+        cursor: pointer;
+        &:hover { background: $gray-700; color: white; }
+        box-shadow: 0 2px 6px rgba(40,40,40,.06);
+    }
+    .test-input {
+        width: 100%; 
+        font-size: 1em; 
+        padding: .3rem .6rem;
+        border-radius: .5rem; border: $border-style-default; 
+        background: $gray-50;
+        &:focus { border-color: $primary; background: white; }
+    }
+    .btn-test-analyzer {
+        background: $primary; color: white; 
+        padding: .28rem 1.01rem; 
+        margin-left: .58rem;
+        font-size: .98em;
+        border-radius: .5rem; 
+        border: none; font-weight: 500; 
+        cursor: pointer; 
+        &:hover { background: color.adjust($primary, $lightness: -9%);}
+    }
+  .test-result {
+    min-height: 60px; max-height: 200px; 
+    background: $gray-100;
+    color: $gray-700; 
+    border: 1px solid $gray-200; border-radius: .43rem; 
+    padding: .45rem .9rem;
+    margin-top: 0.3rem; 
+    font-size: 0.9rem; font-family: "Fira Code", "Fira Mono", "Consolas", monospace;
+    overflow-y: auto; line-height: 1.5;
+        .token-chip {
+        display: inline-block; 
+        background: $secondary; 
+        color: white;
+        padding: 0.12em 0.6em; 
+        margin: 0 0.16em 0.18em 0; 
+        border-radius: 0.55rem; 
+        font-size: .9rem;
+        white-space: nowrap;
+        }
+    }
+}

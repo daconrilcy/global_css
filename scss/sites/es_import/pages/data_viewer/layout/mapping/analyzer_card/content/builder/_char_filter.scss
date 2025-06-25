@@ -1,0 +1,24 @@
+@use './../../variables' as *;
+@use './../../../../../../../../../abstracts/colors' as *;
+
+// === Char Filter Section ===
+.char-filters-list { 
+    gap: 0.2rem; 
+}
+.char-filter-params {
+    display: flex; 
+    gap: 0.54rem; 
+    margin-left: 2.5rem; margin-top: 0.2rem;
+    input {
+        min-width: 120px; 
+        font-size: 1em; 
+        padding: .18rem .5rem;
+        border-radius: 0.48rem; border: 
+        $border-style-default; 
+        background: $gray-50;
+        &:focus { 
+            border-color: $primary; 
+            background: white; 
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@use "./variables" as *;
+// Overlay de la card
+.analyzer-card-overlay {
+  position: fixed;
+  top: $height-overlay;
+  left: 0; right: 0; bottom: 0;
+  background: $background-overlay;
+  z-index: 1000;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}

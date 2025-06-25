@@ -1,0 +1,23 @@
+@use './../../variables' as *;
+@use './../../../../../../../../../abstracts/colors' as *;
+// === Colonne builder (gauche) ===
+.analyzer-card-builder {
+    background: white;
+    flex: 1 1 50%;
+    display: flex; 
+    flex-direction: column;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    padding: 1.5rem; 
+    gap: 1.7rem; 
+    padding-bottom: 0;
+
+  // Scroll custom
+  &::-webkit-scrollbar { width: 6px; }
+  &::-webkit-scrollbar-track { background: $gray-100; border-radius: 3px; }
+  &::-webkit-scrollbar-thumb { background: $gray-400; border-radius: 3px; &:hover { background: $gray-600; } }
+
+  section { margin-bottom: 0.5rem; }
+
+  label { font-weight: 600; color: $gray-700; letter-spacing: 0.01em; margin-bottom: 0.45rem; }
+}
