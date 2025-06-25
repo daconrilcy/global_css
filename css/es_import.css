@@ -1546,18 +1546,28 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   transition: background 0.13s;
   cursor: pointer;
 }
-.preset-section .preset-save {
+.preset-section .preset-actions {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e5e7eb;
+  flex-shrink: 0;
+  background: white;
+  z-index: 1;
+  display: flex;
+  gap: 0.78rem;
+  justify-content: flex-start;
+}
+.preset-section .preset-actions .preset-save {
   background: rgb(115, 92, 221);
   color: white;
 }
-.preset-section .preset-save:hover {
+.preset-section .preset-actions .preset-save:hover {
   background: rgb(86.0050761421, 58.2416243655, 213.9583756345);
 }
-.preset-section .preset-delete {
+.preset-section .preset-actions .preset-delete {
   background: rgb(255, 0, 0);
   color: white;
 }
-.preset-section .preset-delete:hover {
+.preset-section .preset-actions .preset-delete:hover {
   background: rgb(214.2, 0, 0);
 }
 

@@ -66,18 +66,20 @@
       
     
     &.btn-update {
-      background-color: color(default-green, base);
+        $bkg-color: color(default-green , base);
+        background-color: $bkg-color;
         color: white;
         &:hover {
-          background-color: color(default-green, light);
+          background-color: color.adjust($bkg-color, $lightness: -8%);
         }
       }
     
       &.btn-delete {
-        background-color: color(default-red , base);
+        $bkg-color: color(default-red , base);
+        background-color: $bkg-color;
         color: white;
         &:hover {
-          background-color: color(default-red, light);
+          background-color: color.adjust($bkg-color, $lightness: -8%);
         }
       }
       &.btn-submit {

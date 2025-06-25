@@ -7241,14 +7241,14 @@ p {
   color: white;
 }
 .btn.btn-update:hover {
-  background-color: rgb(125, 255, 125);
+  background-color: rgb(0, 214.2, 0);
 }
 .btn.btn-delete {
   background-color: rgb(255, 0, 0);
   color: white;
 }
 .btn.btn-delete:hover {
-  background-color: rgb(255, 71, 71);
+  background-color: rgb(214.2, 0, 0);
 }
 .btn.btn-submit {
   display: inline-block;

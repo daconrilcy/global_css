@@ -36,14 +36,26 @@
         cursor: pointer; 
 
     }
-    .preset-save { 
-        background: $secondary; 
-        color: white; 
-        &:hover { background: color.adjust($secondary, $lightness: -8%); } 
+    .preset-actions{
+        padding: 1rem 1.5rem;
+        border-top: 1px solid #e5e7eb;
+        flex-shrink: 0;
+        background: white;
+        z-index: 1;
+        display: flex;
+        gap: 0.78rem;
+        justify-content: flex-start;
+
+        .preset-save { 
+            background: $secondary; 
+            color: white; 
+            &:hover { background: color.adjust($secondary, $lightness: -8%); } 
+        }
+        .preset-delete { 
+            background: $danger; 
+            color: white; 
+            &:hover { background: color.adjust($danger, $lightness: -8%); } 
+        }
     }
-    .preset-delete { 
-        background: $danger; 
-        color: white; 
-        &:hover { background: color.adjust($danger, $lightness: -8%); } 
-    }
+    
 }
