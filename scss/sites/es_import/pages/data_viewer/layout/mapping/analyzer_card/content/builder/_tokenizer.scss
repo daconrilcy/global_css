@@ -63,18 +63,30 @@
     }
 
     .tokenizer-params {
-        display: flex; gap: 2rem; margin-top: .6rem; flex-wrap: wrap;
+        display: flex; 
+        gap: 2rem; 
+        margin-top: .6rem; 
+        flex-wrap: wrap;
         .tokenizer-param-group {
-            display: flex; gap: 1.1rem; align-items: flex-end; transition: opacity 0.13s;
+            display: flex; 
+            gap: 1.1rem; 
+            align-items: flex-end; 
+            transition: opacity 0.13s;
             &[style*="display:none"] { display: none !important; }
-            .flex { gap: 0.36rem; }
-            .flex-col { display: flex; flex-direction: column; }
-            input {
-                min-width: 85px; font-size: 1em; padding: .17rem .5rem;
-                border-radius: 0.48rem; border: $border-style-default; background: $gray-50;
+            div{
+                display: flex;
+                gap: 0.5rem;
+                flex-direction: column;
+                input {
+                    background: $gray-50;
+                    min-width: 85px; 
+                    font-size: 1em; 
+                    padding: .17rem .5rem;
+                    border-radius: 0.48rem; border: $border-style-default;
                 &:focus { border-color: $primary; background: $white; }
+                label { display: none; }
+                }
             }
-            label.sr-only { display: none; }
         }
     }
 }

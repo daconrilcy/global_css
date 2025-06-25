@@ -2,32 +2,57 @@
 @use './../../variables' as *;
 
 // === Presets section ===
-.preset-select {
-    padding: 0.21rem 0.61rem;
-    min-width: 143px; 
-    font-size: .97em; 
-    border: $border-style-default;
-    border-radius: 0.46rem; 
-}
-.preset-save, .preset-delete {
-    padding: .21rem .91rem;
-    margin-left: 0.09rem;
-    font-weight: 500; 
-    border-radius: .5rem; 
-    border: none;
-    font-size: 0.97em; 
-    transition: background .13s; 
-    cursor: pointer; 
+.preset-section{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    gap: 0.5rem;
+    flex-direction: column;
+    border: 1px solid #f0f1f4;
+    background: hsl(210, 25%, 97%);
+    border-radius: 12px;
+    padding: 1rem 1.3rem 0.5rem 1.3rem;
+    box-shadow: 0 2px 8px 0 rgba(35, 55, 90, 0.04);
+    transition: background-color 0.2s, box-shadow 0.2s;
+    label{
+        font-size: 1.07rem;
+        font-weight: 600;
+        color: #4257a3;
+        letter-spacing: 0.01em;
+        margin-bottom: 0.45rem;
+        padding: 0 0.2rem;
+        line-height: 1.4;
+        border-left: 3px solid #97bfff;
+        border-radius: 2px;
+        background: #f6f8ff;
+        display: inline-block;
+    }
+    .preset-select {
+        padding: 0.21rem 0.61rem;
+        min-width: 143px; 
+        font-size: .97em; 
+        border: $border-style-default;
+        border-radius: 0.46rem; 
+    }
+    .preset-save, .preset-delete {
+        padding: .21rem .91rem;
+        margin-left: 0.09rem;
+        font-weight: 500; 
+        border-radius: .5rem; 
+        border: none;
+        font-size: 0.97em; 
+        transition: background .13s; 
+        cursor: pointer; 
 
+    }
+    .preset-save { 
+        background: $secondary; 
+        color: white; 
+        &:hover { background: color.adjust($secondary, $lightness: -8%); } 
+    }
+    .preset-delete { 
+        background: $danger; 
+        color: white; 
+        &:hover { background: color.adjust($danger, $lightness: -8%); } 
+    }
 }
-.preset-save { 
-    background: $secondary; 
-    color: white; 
-    &:hover { background: color.adjust($secondary, $lightness: -8%); } 
-}
-.preset-delete { 
-    background: $danger; 
-    color: white; 
-    &:hover { background: color.adjust($danger, $lightness: -8%); } 
-}
-

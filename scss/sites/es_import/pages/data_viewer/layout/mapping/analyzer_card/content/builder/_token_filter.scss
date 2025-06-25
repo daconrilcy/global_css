@@ -3,7 +3,11 @@
 
 // === Token Filter Section ===
 .token-filters-section {
-    .token-filters-list { gap: 0.28rem; }
+    .token-filters-list { 
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.25rem;
+        gap: 0.25rem; }
 
     .draggable {
         display: flex; align-items: center; gap: 0.55rem;
@@ -25,7 +29,9 @@
             transition: opacity .15s;
         }
         .filter-params {
-            display: inline-flex; gap: 0.4rem; margin-left: 0.4rem;
+            display: inline-flex; 
+            gap: 0.4rem; 
+            margin-left: 0.4rem;
             input {
                 min-width: 90px; 
                 font-size: 0.98em; 
@@ -41,7 +47,8 @@
         &.disabled .filter-desc,
         &.disabled label { 
             opacity: 0.45; 
-            cursor: not-allowed; 
+            cursor: not-allowed;
+            pointer-events: none;
         }
     }
 }

@@ -1263,31 +1263,32 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 .tokenizer-section .tokenizer-params .tokenizer-param-group[style*="display:none"] {
   display: none !important;
 }
-.tokenizer-section .tokenizer-params .tokenizer-param-group .flex {
-  gap: 0.36rem;
-}
-.tokenizer-section .tokenizer-params .tokenizer-param-group .flex-col {
+.tokenizer-section .tokenizer-params .tokenizer-param-group div {
   display: flex;
+  gap: 0.5rem;
   flex-direction: column;
 }
-.tokenizer-section .tokenizer-params .tokenizer-param-group input {
+.tokenizer-section .tokenizer-params .tokenizer-param-group div input {
+  background: #f9fafb;
   min-width: 85px;
   font-size: 1em;
   padding: 0.17rem 0.5rem;
   border-radius: 0.48rem;
   border: 1px solid #e5e7eb;
-  background: #f9fafb;
 }
-.tokenizer-section .tokenizer-params .tokenizer-param-group input:focus {
+.tokenizer-section .tokenizer-params .tokenizer-param-group div input:focus {
   border-color: rgb(0, 119, 204);
   background: #fff;
 }
-.tokenizer-section .tokenizer-params .tokenizer-param-group label.sr-only {
+.tokenizer-section .tokenizer-params .tokenizer-param-group div input label {
   display: none;
 }
 
 .token-filters-section .token-filters-list {
-  gap: 0.28rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.25rem;
+  gap: 0.25rem;
 }
 .token-filters-section .draggable {
   display: flex;
@@ -1342,15 +1343,19 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 .token-filters-section .draggable.disabled .filter-desc, .token-filters-section .draggable.disabled label {
   opacity: 0.45;
   cursor: not-allowed;
+  pointer-events: none;
 }
 
 .char-filters-list {
-  gap: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.25rem;
+  gap: 0.5rem;
 }
 
 .char-filter-params {
   display: flex;
-  gap: 0.54rem;
+  gap: 0.5rem;
   margin-left: 2.5rem;
   margin-top: 0.2rem;
 }
@@ -1494,15 +1499,40 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   white-space: nowrap;
 }
 
-.preset-select {
+.preset-section {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  gap: 0.5rem;
+  flex-direction: column;
+  border: 1px solid #f0f1f4;
+  background: hsl(210, 25%, 97%);
+  border-radius: 12px;
+  padding: 1rem 1.3rem 0.5rem 1.3rem;
+  box-shadow: 0 2px 8px 0 rgba(35, 55, 90, 0.04);
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+.preset-section label {
+  font-size: 1.07rem;
+  font-weight: 600;
+  color: #4257a3;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.45rem;
+  padding: 0 0.2rem;
+  line-height: 1.4;
+  border-left: 3px solid #97bfff;
+  border-radius: 2px;
+  background: #f6f8ff;
+  display: inline-block;
+}
+.preset-section .preset-select {
   padding: 0.21rem 0.61rem;
   min-width: 143px;
   font-size: 0.97em;
   border: 1px solid #e5e7eb;
   border-radius: 0.46rem;
 }
-
-.preset-save, .preset-delete {
+.preset-section .preset-save, .preset-section .preset-delete {
   padding: 0.21rem 0.91rem;
   margin-left: 0.09rem;
   font-weight: 500;
@@ -1512,20 +1542,18 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   transition: background 0.13s;
   cursor: pointer;
 }
-
-.preset-save {
+.preset-section .preset-save {
   background: rgb(115, 92, 221);
   color: white;
 }
-.preset-save:hover {
+.preset-section .preset-save:hover {
   background: rgb(86.0050761421, 58.2416243655, 213.9583756345);
 }
-
-.preset-delete {
+.preset-section .preset-delete {
   background: rgb(255, 0, 0);
   color: white;
 }
-.preset-delete:hover {
+.preset-section .preset-delete:hover {
   background: rgb(214.2, 0, 0);
 }
 
