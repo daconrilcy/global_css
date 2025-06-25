@@ -1427,68 +1427,18 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   background: #f6f8ff;
   display: inline-block;
 }
-.analyzer-card-preview .test-input {
-  width: 100%;
-  font-size: 1em;
-  padding: 0.3rem 0.6rem;
-  border-radius: 0.5rem;
-  border: 1px solid #e5e7eb;
-  background: #f9fafb;
-}
-.analyzer-card-preview .test-input:focus {
-  border-color: rgb(0, 119, 204);
-  background: white;
-}
-.analyzer-card-preview .btn-test-analyzer {
-  background: rgb(0, 119, 204);
-  color: white;
-  padding: 0.28rem 1.01rem;
-  margin-left: 0.58rem;
-  font-size: 0.98em;
-  border-radius: 0.5rem;
-  border: none;
-  font-weight: 500;
-  cursor: pointer;
-}
-.analyzer-card-preview .btn-test-analyzer:hover {
-  background: rgb(0, 92.225, 158.1);
-}
-.analyzer-card-preview .test-result {
-  min-height: 60px;
-  max-height: 200px;
-  background: #f1f5f9;
-  color: #475569;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.43rem;
-  padding: 0.45rem 0.9rem;
-  margin-top: 0.3rem;
-  font-size: 0.9rem;
-  font-family: "Fira Code", "Fira Mono", "Consolas", monospace;
-  overflow-y: auto;
-  line-height: 1.5;
-}
-.analyzer-card-preview .test-result .token-chip {
-  display: inline-block;
-  background: rgb(115, 92, 221);
-  color: white;
-  padding: 0.12em 0.6em;
-  margin: 0 0.16em 0.18em 0;
-  border-radius: 0.55rem;
-  font-size: 0.9rem;
-  white-space: nowrap;
-}
 
 .preset-section .preset-select {
   min-width: 143px;
   font-size: 1em;
   padding: 0.17rem 0.5rem;
-  border-radius: 0.48rem;
+  border-radius: 0.5rem;
   border: 1px solid #e5e7eb;
   background: #f9fafb;
 }
 .preset-section .preset-select:focus {
   border-color: rgb(0, 119, 204);
-  background: #fff;
+  background: white;
 }
 .preset-section .preset-actions {
   padding: 1rem 1.5rem;
@@ -1555,6 +1505,53 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 .json-preview-section .btn-copy-json:hover {
   background: #475569;
   color: white;
+}
+
+.test-live-section .test-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.25rem;
+}
+.test-live-section .test-input-wrap input {
+  width: 100%;
+  font-size: 1em;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+.test-live-section .test-input-wrap input:focus {
+  border-color: rgb(0, 119, 204);
+  background: white;
+}
+.test-live-section .test-input-wrap .btn {
+  margin-left: 0.58rem;
+}
+.test-live-section .test-result {
+  min-height: 60px;
+  max-height: 200px;
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.43rem;
+  padding: 0.45rem 0.9rem;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  font-family: "Fira Code", "Fira Mono", "Consolas", monospace;
+  overflow-y: auto;
+  line-height: 1.5;
+}
+.test-live-section .test-result .token-chip {
+  display: inline-block;
+  background: rgb(115, 92, 221);
+  color: white;
+  padding: 0.12em 0.6em;
+  margin: 0 0.16em 0.18em 0;
+  border-radius: 0.55rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .analyzer-card-actions {

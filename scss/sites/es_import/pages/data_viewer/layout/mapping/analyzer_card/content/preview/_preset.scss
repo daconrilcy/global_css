@@ -8,9 +8,9 @@
         min-width: 143px;
         font-size: 1em; 
         padding: .17rem .5rem;
-        border-radius: 0.48rem; border: $border-style-default;
+        border-radius: 0.5rem; border: $border-style-default;
         background: $gray-50;
-        &:focus { border-color: $primary; background: $white; }
+        &:focus { border-color: $primary; background: white; }
     }
     .preset-actions{
         padding: 1rem 1.5rem;
