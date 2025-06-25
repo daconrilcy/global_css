@@ -1268,7 +1268,6 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
-  flex-direction: column;
 }
 .tokenizer-section .tokenizer-params .tokenizer-param-group div input[type=text], .tokenizer-section .tokenizer-params .tokenizer-param-group div input[type=number] {
   background: #f9fafb;
