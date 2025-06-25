@@ -2,7 +2,7 @@
 @use './../../variables' as *;
 
 // === Token Filter Section ===
-.token-filters-section {
+section{
     .token-filters-list { 
         display: flex;
         flex-direction: column;

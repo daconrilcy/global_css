@@ -70,9 +70,9 @@
         .tokenizer-param-group {
             display: flex; 
             flex-direction: column;
-            gap: 1.1rem; 
+            gap: 1rem; 
             align-items: flex-start; 
-            transition: opacity 0.13s;
+            transition: opacity 0.12s;
             &[style*="display:none"] { display: none !important; }
             div{
                 display: flex;
@@ -98,7 +98,7 @@
                         background: #f3f4f6;
                         color: #374151;
                         border-radius: 0.5rem;
-                        padding: 0.5rem 1rem;
+                        padding: 0.25rem 0.5rem;
                         font-weight: 600;
                         font-size: 0.8rem;
                         cursor: pointer;

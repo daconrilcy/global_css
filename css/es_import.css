@@ -1257,9 +1257,9 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 .tokenizer-section .tokenizer-params .tokenizer-param-group {
   display: flex;
   flex-direction: column;
-  gap: 1.1rem;
+  gap: 1rem;
   align-items: flex-start;
-  transition: opacity 0.13s;
+  transition: opacity 0.12s;
 }
 .tokenizer-section .tokenizer-params .tokenizer-param-group[style*="display:none"] {
   display: none !important;
@@ -1294,7 +1294,7 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   background: #f3f4f6;
   color: #374151;
   border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 0.5rem;
   font-weight: 600;
   font-size: 0.8rem;
   cursor: pointer;
@@ -1316,13 +1316,13 @@ input[type=checkbox]:checked + .tokenizer-section .tokenizer-params .tokenizer-p
   color: white;
 }
 
-.token-filters-section .token-filters-list {
+section .token-filters-list {
   display: flex;
   flex-direction: column;
   margin-top: 0.25rem;
   gap: 0.25rem;
 }
-.token-filters-section .draggable {
+section .draggable {
   display: flex;
   align-items: center;
   gap: 0.55rem;
@@ -1330,24 +1330,24 @@ input[type=checkbox]:checked + .tokenizer-section .tokenizer-params .tokenizer-p
   user-select: none;
   transition: background 0.12s;
 }
-.token-filters-section .draggable:active {
+section .draggable:active {
   cursor: grabbing;
 }
-.token-filters-section .draggable .drag-handle {
+section .draggable .drag-handle {
   font-size: 1.12em;
   color: #cbd5e1;
   margin-right: 0.19rem;
 }
-.token-filters-section .draggable .drag-handle:hover {
+section .draggable .drag-handle:hover {
   color: #475569;
 }
-.token-filters-section .draggable input[type=checkbox] {
+section .draggable input[type=checkbox] {
   margin-right: 0.1rem;
 }
-.token-filters-section .draggable .font-semibold {
+section .draggable .font-semibold {
   font-weight: 600;
 }
-.token-filters-section .draggable .filter-desc {
+section .draggable .filter-desc {
   margin-left: 0.4rem;
   color: rgb(0, 191, 179);
   font-size: 0.97em;
@@ -1355,12 +1355,12 @@ input[type=checkbox]:checked + .tokenizer-section .tokenizer-params .tokenizer-p
   opacity: 0.9;
   transition: opacity 0.15s;
 }
-.token-filters-section .draggable .filter-params {
+section .draggable .filter-params {
   display: inline-flex;
   gap: 0.4rem;
   margin-left: 0.4rem;
 }
-.token-filters-section .draggable .filter-params input {
+section .draggable .filter-params input {
   min-width: 90px;
   font-size: 0.98em;
   padding: 0.16rem 0.44rem;
@@ -1368,30 +1368,29 @@ input[type=checkbox]:checked + .tokenizer-section .tokenizer-params .tokenizer-p
   border-radius: 0.48rem;
   background: #f9fafb;
 }
-.token-filters-section .draggable .filter-params input:focus {
+section .draggable .filter-params input:focus {
   border-color: rgb(0, 119, 204);
   background: white;
 }
-.token-filters-section .draggable.disabled .filter-desc, .token-filters-section .draggable.disabled label {
+section .draggable.disabled .filter-desc, section .draggable.disabled label {
   opacity: 0.45;
   cursor: not-allowed;
   pointer-events: none;
 }
 
-.char-filters-list {
+.char-filters-section .char-filters-list {
   display: flex;
   flex-direction: column;
   margin-top: 0.25rem;
   gap: 0.5rem;
 }
-
-.char-filter-params {
+.char-filters-section .char-filter-params {
   display: flex;
   gap: 0.5rem;
   margin-left: 2.5rem;
   margin-top: 0.2rem;
 }
-.char-filter-params input {
+.char-filters-section .char-filter-params input {
   min-width: 120px;
   font-size: 1em;
   padding: 0.18rem 0.5rem;
@@ -1399,7 +1398,7 @@ input[type=checkbox]:checked + .tokenizer-section .tokenizer-params .tokenizer-p
   border: 1px solid #e5e7eb;
   background: #f9fafb;
 }
-.char-filter-params input:focus {
+.char-filters-section .char-filter-params input:focus {
   border-color: rgb(0, 119, 204);
   background: white;
 }
