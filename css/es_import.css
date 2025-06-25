@@ -1280,8 +1280,32 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   border-color: rgb(0, 119, 204);
   background: #fff;
 }
-.tokenizer-section .tokenizer-params .tokenizer-param-group div input label {
-  display: none;
+.tokenizer-section .tokenizer-params .tokenizer-param-group div .param-multiple {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.tokenizer-section .tokenizer-params .tokenizer-param-group div .param-multiple label {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  background-color: #f3f4f6;
+  cursor: pointer;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  transition: background 0.18s;
+}
+.tokenizer-section .tokenizer-params .tokenizer-param-group div .param-multiple label:hover {
+  background-color: #e5e7eb;
+}
+.tokenizer-section .tokenizer-params .tokenizer-param-group div .param-multiple label input[type=checkbox] {
+  accent-color: #3B82F6;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+}
+.tokenizer-section .tokenizer-params .tokenizer-param-group div .param-multiple label input[type=checkbox]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #60A5FA;
 }
 
 .token-filters-section .token-filters-list {

@@ -83,8 +83,35 @@
                     font-size: 1em; 
                     padding: .17rem .5rem;
                     border-radius: 0.48rem; border: $border-style-default;
-                &:focus { border-color: $primary; background: $white; }
-                label { display: none; }
+                    &:focus { border-color: $primary; background: $white; }
+                }
+                .param-multiple{
+                    display: flex;
+                    flex-wrap:wrap;
+                    gap: 1.5rem; 
+                    label{
+                        display: inline-flex;
+                        align-items: center;
+                        padding: 0.5rem 0.75rem; // py-2 px-3 (8px 12px)
+                        border-radius: 0.5rem; // rounded-lg (8px)
+                        background-color: #f3f4f6; // bg-gray-100
+                        cursor: pointer;
+                        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.04); // shadow-sm
+                        transition: background 0.18s;
+                        &:hover {
+                            background-color: #e5e7eb; // bg-gray-200
+                        }
+                        input[type="checkbox"]{
+                            accent-color: #3B82F6; // bleu-500 Tailwind
+                            border-radius: 0.25rem; // rounded (4px)
+                            margin-right: 0.5rem;
+                            // Focus visible : anneau/halo
+                            &:focus {
+                                outline: none;
+                                box-shadow: 0 0 0 2px #60A5FA; // bleu-400 Tailwind, épaisseur 2px
+                            }
+                        }
+                    }
                 }
             }
         }
