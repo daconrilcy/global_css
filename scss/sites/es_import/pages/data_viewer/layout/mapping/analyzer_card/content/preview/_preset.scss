@@ -3,17 +3,8 @@
 
 // === Presets section ===
 .preset-section{
-    display: flex;
-    align-items: center;
-    margin-top: 0.5rem;
-    gap: 0.5rem;
-    flex-direction: column;
-    border: 1px solid #f0f1f4;
-    background: hsl(210, 25%, 97%);
-    border-radius: 12px;
-    padding: 1rem 1.3rem 0.5rem 1.3rem;
-    box-shadow: 0 2px 8px 0 rgba(35, 55, 90, 0.04);
-    transition: background-color 0.2s, box-shadow 0.2s;
+
+    
     label{
         font-size: 1.07rem;
         font-weight: 600;

@@ -1397,6 +1397,23 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 .analyzer-card-preview::-webkit-scrollbar-thumb:hover {
   background: #64748b;
 }
+.analyzer-card-preview section {
+  display: flex;
+  margin-top: 0.5rem;
+  gap: 0.5rem;
+  flex-direction: column;
+  border: 1px solid #f0f1f4;
+  background: hsl(210, 25%, 97%);
+  border-radius: 12px;
+  padding: 1rem 1.3rem 0.5rem 1.3rem;
+  box-shadow: 0 2px 8px 0 rgba(35, 55, 90, 0.04);
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+.analyzer-card-preview section:hover, .analyzer-card-preview section:focus-within {
+  box-shadow: 0 4px 16px 0 rgba(25, 40, 70, 0.08);
+  border-color: #c9e0ff;
+  background: hsl(210, 25%, 93%);
+}
 .analyzer-card-preview .json-preview-wrap {
   position: relative;
   margin-bottom: 0.5rem;
@@ -1499,19 +1516,6 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   white-space: nowrap;
 }
 
-.preset-section {
-  display: flex;
-  align-items: center;
-  margin-top: 0.5rem;
-  gap: 0.5rem;
-  flex-direction: column;
-  border: 1px solid #f0f1f4;
-  background: hsl(210, 25%, 97%);
-  border-radius: 12px;
-  padding: 1rem 1.3rem 0.5rem 1.3rem;
-  box-shadow: 0 2px 8px 0 rgba(35, 55, 90, 0.04);
-  transition: background-color 0.2s, box-shadow 0.2s;
-}
 .preset-section label {
   font-size: 1.07rem;
   font-weight: 600;
