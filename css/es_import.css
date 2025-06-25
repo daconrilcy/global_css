@@ -1427,57 +1427,6 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   background: #f6f8ff;
   display: inline-block;
 }
-.analyzer-card-preview .json-preview-wrap {
-  position: relative;
-  margin-bottom: 0.5rem;
-}
-.analyzer-card-preview .json-preview {
-  background: #1e293b;
-  color: #b9e2be;
-  border-radius: 0.75rem;
-  padding: 0.9rem;
-  min-height: 120px;
-  max-height: 300px;
-  overflow: auto;
-  font-size: 0.9rem;
-  font-family: "Fira Code", "Fira Mono", "Consolas", monospace;
-  line-height: 1.4;
-  word-break: break-all;
-  white-space: pre-wrap;
-  border: 1px solid #e5e7eb;
-}
-.analyzer-card-preview .json-preview::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-.analyzer-card-preview .json-preview::-webkit-scrollbar-track {
-  background: #334155;
-  border-radius: 4px;
-}
-.analyzer-card-preview .json-preview::-webkit-scrollbar-thumb {
-  background: #64748b;
-  border-radius: 4px;
-}
-.analyzer-card-preview .json-preview::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
-}
-.analyzer-card-preview .btn-copy-json {
-  position: absolute;
-  top: 1rem;
-  right: 1.1rem;
-  background: #cbd5e1;
-  color: #1e293b;
-  padding: 0.19rem 0.77rem;
-  border-radius: 0.4rem;
-  border: none;
-  font-size: 0.91em;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(40, 40, 40, 0.06);
-}
-.analyzer-card-preview .btn-copy-json:hover {
-  background: #475569;
-  color: white;
-}
 .analyzer-card-preview .test-input {
   width: 100%;
   font-size: 1em;
@@ -1554,6 +1503,58 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 }
 .preset-section .preset-actions:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.json-preview-section .json-preview-wrap {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.json-preview-section .json-preview {
+  background: #1e293b;
+  color: #b9e2be;
+  border-radius: 0.75rem;
+  padding: 0.9rem;
+  min-height: 120px;
+  max-height: 300px;
+  overflow: auto;
+  font-size: 0.9rem;
+  font-family: "Fira Code", "Fira Mono", "Consolas", monospace;
+  line-height: 1.4;
+  word-break: break-all;
+  white-space: pre-wrap;
+  border: 1px solid #e5e7eb;
+}
+.json-preview-section .json-preview::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.json-preview-section .json-preview::-webkit-scrollbar-track {
+  background: #334155;
+  border-radius: 4px;
+}
+.json-preview-section .json-preview::-webkit-scrollbar-thumb {
+  background: #64748b;
+  border-radius: 4px;
+}
+.json-preview-section .json-preview::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+.json-preview-section .btn-copy-json {
+  position: absolute;
+  top: 1rem;
+  right: 1.1rem;
+  background: #cbd5e1;
+  color: #1e293b;
+  padding: 0.19rem 0.77rem;
+  border-radius: 0.4rem;
+  border: none;
+  font-size: 0.91em;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(40, 40, 40, 0.06);
+}
+.json-preview-section .btn-copy-json:hover {
+  background: #475569;
+  color: white;
 }
 
 .analyzer-card-actions {
