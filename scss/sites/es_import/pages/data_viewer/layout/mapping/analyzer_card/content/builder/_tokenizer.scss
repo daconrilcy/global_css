@@ -69,17 +69,20 @@
         flex-wrap: wrap;
         .tokenizer-param-group {
             display: flex; 
+            flex-direction: column;
             gap: 1.1rem; 
-            align-items: flex-end; 
+            align-items: flex-start; 
             transition: opacity 0.13s;
             &[style*="display:none"] { display: none !important; }
             div{
                 display: flex;
+                flex-direction: row;
                 gap: 0.5rem;
                 flex-direction: column;
                 input[type="text"], input[type="number"] {
                     background: $gray-50;
-                    min-width: 85px; 
+                    align-items: baseline;
+                    width: auto;
                     font-size: 1em; 
                     padding: .17rem .5rem;
                     border-radius: 0.48rem; border: $border-style-default;
@@ -88,6 +91,7 @@
                 .param-multiple{
                     display: flex;
                     flex-wrap:wrap;
+                    flex-direction: row;
                     gap: 0.5rem; 
                     label{
                         display: inline-flex;

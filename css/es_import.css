@@ -1256,8 +1256,9 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 }
 .tokenizer-section .tokenizer-params .tokenizer-param-group {
   display: flex;
+  flex-direction: column;
   gap: 1.1rem;
-  align-items: flex-end;
+  align-items: flex-start;
   transition: opacity 0.13s;
 }
 .tokenizer-section .tokenizer-params .tokenizer-param-group[style*="display:none"] {
@@ -1265,12 +1266,14 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 }
 .tokenizer-section .tokenizer-params .tokenizer-param-group div {
   display: flex;
+  flex-direction: row;
   gap: 0.5rem;
   flex-direction: column;
 }
 .tokenizer-section .tokenizer-params .tokenizer-param-group div input[type=text], .tokenizer-section .tokenizer-params .tokenizer-param-group div input[type=number] {
   background: #f9fafb;
-  min-width: 85px;
+  align-items: baseline;
+  width: auto;
   font-size: 1em;
   padding: 0.17rem 0.5rem;
   border-radius: 0.48rem;
@@ -1283,6 +1286,7 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 .tokenizer-section .tokenizer-params .tokenizer-param-group div .param-multiple {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   gap: 0.5rem;
 }
 .tokenizer-section .tokenizer-params .tokenizer-param-group div .param-multiple label {
