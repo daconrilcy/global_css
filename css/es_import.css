@@ -1219,7 +1219,7 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 .tokenizer-section .tokenizer-groups {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 0.25rem;
   margin-bottom: 0.5rem;
 }
 .tokenizer-section .tokenizer-list {
