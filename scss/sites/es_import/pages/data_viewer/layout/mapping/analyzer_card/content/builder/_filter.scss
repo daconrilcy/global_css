@@ -15,7 +15,6 @@ section{
         gap: 1rem;
         min-height: 42px;
         min-width: 380px;
-        padding: 0.25rem 0.5rem;
         .toggle-button{
             min-width: 260px;
             .normal-label{
@@ -55,14 +54,6 @@ section{
             &:hover { color: $gray-700; } }
         input[type="checkbox"] { margin-right: 0.1rem; }
         .font-semibold { font-weight: 600; }
-        .filter-desc {
-            margin-left: 0.4rem; 
-            color: $info; 
-            font-size: .97em; 
-            font-style: italic; 
-            opacity: 0.90; 
-            transition: opacity .15s;
-        }
         .filter-params {
             display: inline-flex; 
             gap: 0.4rem; 
@@ -76,7 +67,8 @@ section{
                 background: $gray-50;
                 &:focus { 
                     border-color: $primary; 
-                    background: white; }
+                    background: white; 
+                }
             }
         }
         &.disabled .filter-desc,

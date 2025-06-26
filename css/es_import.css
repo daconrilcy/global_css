@@ -1204,7 +1204,6 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   font-weight: 600;
   color: #475569;
   letter-spacing: 0.01em;
-  margin-bottom: 0.45rem;
   min-width: 120px;
   max-width: 200px;
   text-align: left;
@@ -1346,7 +1345,6 @@ section .draggable {
   gap: 1rem;
   min-height: 42px;
   min-width: 380px;
-  padding: 0.25rem 0.5rem;
   cursor: grab;
   user-select: none;
   transition: background 0.12s;
@@ -1394,14 +1392,6 @@ section .draggable input[type=checkbox] {
 }
 section .draggable .font-semibold {
   font-weight: 600;
-}
-section .draggable .filter-desc {
-  margin-left: 0.4rem;
-  color: rgb(0, 191, 179);
-  font-size: 0.97em;
-  font-style: italic;
-  opacity: 0.9;
-  transition: opacity 0.15s;
 }
 section .draggable .filter-params {
   display: inline-flex;
