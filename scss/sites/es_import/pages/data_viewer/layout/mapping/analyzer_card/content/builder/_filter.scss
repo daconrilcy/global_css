@@ -10,7 +10,42 @@ section{
         gap: 0.25rem; }
 
     .draggable {
-        display: flex; align-items: baseline; gap: 0.55rem;
+        display: flex; 
+        align-items: baseline; 
+        gap: 1rem;
+        min-height: 42px;
+        min-width: 380px;
+        padding: 0.25rem 0.5rem;
+        .toggle-button{
+            min-width: 260px;
+            .normal-label{
+                .filter-desc {
+                    display: none;
+                    position: absolute;
+                    left: 50%;
+                    top: -2.2rem;
+                    transform: translateX(-50%);
+                    min-width: 200px;
+                    background: #232f3e; // ou $gray-800
+                    color: #fff;
+                    font-size: 0.95em;
+                    padding: 0.48em 1.08em;
+                    border-radius: 0.8em;
+                    box-shadow: 0 4px 18px 0 rgba(10,18,26,0.18);
+                    z-index: 22;
+                    pointer-events: none;
+                    white-space: pre-line;
+                    opacity: 0;
+                    transition: opacity 0.15s;
+                }
+                &:hover .filter-desc,
+                &:focus .filter-desc {
+                    display: block;
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+            }
+        }
         cursor: grab; user-select: none; transition: background 0.12s;
         &:active { cursor: grabbing; }
         .drag-handle { 

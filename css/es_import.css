@@ -1205,6 +1205,12 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   color: #475569;
   letter-spacing: 0.01em;
   margin-bottom: 0.45rem;
+  min-width: 120px;
+  max-width: 200px;
+  text-align: left;
+  white-space: nowrap;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .tokenizer-section .json-errors {
@@ -1275,13 +1281,13 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 .tokenizer-section .tokenizer-params .tokenizer-param-group.visible {
   display: flex;
 }
-.tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) {
+.tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.no-style) {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
   align-items: baseline;
 }
-.tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) input[type=text], .tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) input[type=number] {
+.tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.no-style) input[type=text], .tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.no-style) input[type=number] {
   background: #f9fafb;
   align-items: baseline;
   width: auto;
@@ -1290,17 +1296,17 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   border-radius: 0.48rem;
   border: 1px solid #e5e7eb;
 }
-.tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) input[type=text]:focus, .tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) input[type=number]:focus {
+.tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.no-style) input[type=text]:focus, .tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.no-style) input[type=number]:focus {
   border-color: rgb(0, 119, 204);
   background: #fff;
 }
-.tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) .param-multiple {
+.tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.no-style) .param-multiple {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 0.5rem;
 }
-.tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) .param-multiple label {
+.tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.no-style) .param-multiple label {
   display: inline-block;
   align-items: center;
   background: rgb(200.1651785714, 222.9866071429, 238.8348214286);
@@ -1316,14 +1322,14 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   transition: background 0.15s, color 0.15s;
   user-select: none;
 }
-.tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) .param-multiple label input[type=checkbox] {
+.tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.no-style) .param-multiple label input[type=checkbox] {
   position: absolute;
   opacity: 0;
   width: 0;
   height: 0;
   pointer-events: none;
 }
-input[type=checkbox]:checked + .tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) .param-multiple label, .tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) .param-multiple label.selected {
+input[type=checkbox]:checked + .tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.no-style) .param-multiple label, .tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.no-style) .param-multiple label.selected {
   background: rgb(0, 119, 204);
   color: white;
 }
@@ -1337,10 +1343,40 @@ section .token-filters-list {
 section .draggable {
   display: flex;
   align-items: baseline;
-  gap: 0.55rem;
+  gap: 1rem;
+  min-height: 42px;
+  min-width: 380px;
+  padding: 0.25rem 0.5rem;
   cursor: grab;
   user-select: none;
   transition: background 0.12s;
+}
+section .draggable .toggle-button {
+  min-width: 260px;
+}
+section .draggable .toggle-button .normal-label .filter-desc {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: -2.2rem;
+  transform: translateX(-50%);
+  min-width: 200px;
+  background: #232f3e;
+  color: #fff;
+  font-size: 0.95em;
+  padding: 0.48em 1.08em;
+  border-radius: 0.8em;
+  box-shadow: 0 4px 18px 0 rgba(10, 18, 26, 0.18);
+  z-index: 22;
+  pointer-events: none;
+  white-space: pre-line;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+section .draggable .toggle-button .normal-label:hover .filter-desc, section .draggable .toggle-button .normal-label:focus .filter-desc {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
 }
 section .draggable:active {
   cursor: grabbing;

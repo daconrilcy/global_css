@@ -60,7 +60,7 @@
             align-items: flex-start; 
             transition: opacity 0.12s;
             &.visible{display: flex;}
-            div:not(.toogle-button){
+            div:not(.no-style){
                 display: flex;
                 flex-direction: row;
                 gap: 0.5rem;
