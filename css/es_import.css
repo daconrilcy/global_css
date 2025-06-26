@@ -1201,6 +1201,7 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   margin-bottom: 0.5rem;
 }
 .analyzer-card-builder .normal-label {
+  position: relative;
   font-weight: 600;
   color: #475569;
   letter-spacing: 0.01em;
