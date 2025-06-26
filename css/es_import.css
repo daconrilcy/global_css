@@ -1354,9 +1354,14 @@ section .draggable {
   align-items: baseline;
   gap: 1rem;
   min-width: 380px;
+  transition: background 0.15s, opacity 0.15s;
   cursor: grab;
   user-select: none;
   transition: background 0.12s;
+}
+section .draggable.dragging {
+  opacity: 0.5;
+  background: #e0e7ff;
 }
 section .draggable .toggle-button {
   min-width: 260px;
