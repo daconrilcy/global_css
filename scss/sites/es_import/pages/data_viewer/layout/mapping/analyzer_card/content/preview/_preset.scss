@@ -4,30 +4,31 @@
 
 // === Presets section ===
 .preset-section{
-    .preset-select {
-        min-width: 143px;
-        font-size: 1em; 
-        padding: .17rem .5rem;
-        border-radius: 0.5rem; border: $border-style-default;
-        background: $gray-50;
-        &:focus { border-color: $primary; background: white; }
-    }
-    .preset-actions{
-        padding: 1rem 1.5rem;
-        flex-shrink: 0;
-        border-top: 1px solid #f0f1f4;
-        background-color: transparent;
-        z-index: 1;
-        display: flex;
-        gap: 0.78rem;
-        justify-content:center;
-        transition: background-color 0.2s;
-        &:hover{
-            background-color: rgba(255,255,255,0.1);
+    .preset-fieldset{
+        .preset-select {
+            min-width: 143px;
+            font-size: 1em; 
+            padding: .17rem .5rem;
+            border-radius: 0.5rem; border: $border-style-default;
+            background: $gray-50;
+            &:focus { border-color: $primary; background: white; }
         }
-        .btn-delete{
-            width: auto;
+        .preset-actions{
+            padding: 1rem 1.5rem;
+            flex-shrink: 0;
+            border-top: 1px solid #f0f1f4;
+            background-color: transparent;
+            z-index: 1;
+            display: flex;
+            gap: 0.78rem;
+            justify-content:center;
+            transition: background-color 0.2s;
+            &:hover{
+                background-color: rgba(255,255,255,0.1);
+            }
+            .btn-delete{
+                width: auto;
+            }
         }
     }
-    
 }

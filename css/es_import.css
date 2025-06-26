@@ -1409,7 +1409,7 @@ section .draggable.disabled .filter-desc, section .draggable.disabled label {
   background: #64748b;
 }
 
-.preset-section .preset-select {
+.preset-section .preset-fieldset .preset-select {
   min-width: 143px;
   font-size: 1em;
   padding: 0.17rem 0.5rem;
@@ -1417,11 +1417,11 @@ section .draggable.disabled .filter-desc, section .draggable.disabled label {
   border: 1px solid #e5e7eb;
   background: #f9fafb;
 }
-.preset-section .preset-select:focus {
+.preset-section .preset-fieldset .preset-select:focus {
   border-color: rgb(0, 119, 204);
   background: white;
 }
-.preset-section .preset-actions {
+.preset-section .preset-fieldset .preset-actions {
   padding: 1rem 1.5rem;
   flex-shrink: 0;
   border-top: 1px solid #f0f1f4;
@@ -1432,18 +1432,18 @@ section .draggable.disabled .filter-desc, section .draggable.disabled label {
   justify-content: center;
   transition: background-color 0.2s;
 }
-.preset-section .preset-actions:hover {
+.preset-section .preset-fieldset .preset-actions:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.preset-section .preset-actions .btn-delete {
+.preset-section .preset-fieldset .preset-actions .btn-delete {
   width: auto;
 }
 
-.json-preview-section .json-preview-wrap {
+.json-preview-section .json-preview-fieldset .json-preview-wrap {
   position: relative;
   margin-bottom: 0.5rem;
 }
-.json-preview-section .json-preview {
+.json-preview-section .json-preview-fieldset .json-preview {
   background: #1e293b;
   color: #b9e2be;
   border-radius: 0.75rem;
@@ -1458,22 +1458,22 @@ section .draggable.disabled .filter-desc, section .draggable.disabled label {
   white-space: pre-wrap;
   border: 1px solid #e5e7eb;
 }
-.json-preview-section .json-preview::-webkit-scrollbar {
+.json-preview-section .json-preview-fieldset .json-preview::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
-.json-preview-section .json-preview::-webkit-scrollbar-track {
+.json-preview-section .json-preview-fieldset .json-preview::-webkit-scrollbar-track {
   background: #334155;
   border-radius: 4px;
 }
-.json-preview-section .json-preview::-webkit-scrollbar-thumb {
+.json-preview-section .json-preview-fieldset .json-preview::-webkit-scrollbar-thumb {
   background: #64748b;
   border-radius: 4px;
 }
-.json-preview-section .json-preview::-webkit-scrollbar-thumb:hover {
+.json-preview-section .json-preview-fieldset .json-preview::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
 }
-.json-preview-section .btn-copy-json {
+.json-preview-section .json-preview-fieldset .btn-copy-json {
   position: absolute;
   top: 1rem;
   right: 1.1rem;
@@ -1486,19 +1486,19 @@ section .draggable.disabled .filter-desc, section .draggable.disabled label {
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(40, 40, 40, 0.06);
 }
-.json-preview-section .btn-copy-json:hover {
+.json-preview-section .json-preview-fieldset .btn-copy-json:hover {
   background: #475569;
   color: white;
 }
 
-.test-live-section .test-input-wrap {
+.test-live-section .test-live-fieldset .test-input-wrap {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 0.5rem;
   margin-top: 0.25rem;
 }
-.test-live-section .test-input-wrap input {
+.test-live-section .test-live-fieldset .test-input-wrap input {
   width: 100%;
   font-size: 1em;
   padding: 0.3rem 0.6rem;
@@ -1506,14 +1506,14 @@ section .draggable.disabled .filter-desc, section .draggable.disabled label {
   border: 1px solid #e5e7eb;
   background: #f9fafb;
 }
-.test-live-section .test-input-wrap input:focus {
+.test-live-section .test-live-fieldset .test-input-wrap input:focus {
   border-color: rgb(0, 119, 204);
   background: white;
 }
-.test-live-section .test-input-wrap .btn {
+.test-live-section .test-live-fieldset .test-input-wrap .btn {
   margin-left: 0.58rem;
 }
-.test-live-section .test-result {
+.test-live-section .test-live-fieldset .test-result {
   min-height: 60px;
   max-height: 200px;
   background: #f1f5f9;
@@ -1527,7 +1527,7 @@ section .draggable.disabled .filter-desc, section .draggable.disabled label {
   overflow-y: auto;
   line-height: 1.5;
 }
-.test-live-section .test-result .token-chip {
+.test-live-section .test-live-fieldset .test-result .token-chip {
   display: inline-block;
   background: rgb(115, 92, 221);
   color: white;
