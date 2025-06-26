@@ -1404,7 +1404,7 @@ section .draggable.disabled .filter-desc, section .draggable.disabled label {
 .analyzer-card-preview::-webkit-scrollbar-thumb:hover {
   background: #64748b;
 }
-.analyzer-card-preview section, .analyzer-card-preview fieldset, .analyzer-card-preview .tokenizer-params section {
+.analyzer-card-preview section, .analyzer-card-preview fieldset, .analyzer-card-preview .tokenizer-param-group {
   display: flex;
   margin-top: 0.5rem;
   gap: 0.5rem;
@@ -1416,12 +1416,12 @@ section .draggable.disabled .filter-desc, section .draggable.disabled label {
   box-shadow: 0 2px 8px 0 rgba(35, 55, 90, 0.04);
   transition: background-color 0.2s, box-shadow 0.2s;
 }
-.analyzer-card-preview section:hover, .analyzer-card-preview section:focus-within, .analyzer-card-preview fieldset:hover, .analyzer-card-preview fieldset:focus-within, .analyzer-card-preview .tokenizer-params section:hover, .analyzer-card-preview .tokenizer-params section:focus-within {
+.analyzer-card-preview section:hover, .analyzer-card-preview section:focus-within, .analyzer-card-preview fieldset:hover, .analyzer-card-preview fieldset:focus-within, .analyzer-card-preview .tokenizer-param-group:hover, .analyzer-card-preview .tokenizer-param-group:focus-within {
   box-shadow: 0 4px 16px 0 rgba(25, 40, 70, 0.08);
   border-color: #c9e0ff;
   background: hsl(210, 25%, 93%);
 }
-.analyzer-card-preview section label, .analyzer-card-preview section legend, .analyzer-card-preview fieldset label, .analyzer-card-preview fieldset legend, .analyzer-card-preview .tokenizer-params section label, .analyzer-card-preview .tokenizer-params section legend {
+.analyzer-card-preview section label, .analyzer-card-preview section legend, .analyzer-card-preview fieldset label, .analyzer-card-preview fieldset legend, .analyzer-card-preview .tokenizer-param-group label, .analyzer-card-preview .tokenizer-param-group legend {
   font-size: 1.07rem;
   font-weight: 600;
   color: #4257a3;
