@@ -1272,13 +1272,13 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 .tokenizer-section .tokenizer-params .tokenizer-param-group.visible {
   display: flex;
 }
-.tokenizer-section .tokenizer-params .tokenizer-param-group div {
+.tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
   align-items: baseline;
 }
-.tokenizer-section .tokenizer-params .tokenizer-param-group div input[type=text], .tokenizer-section .tokenizer-params .tokenizer-param-group div input[type=number] {
+.tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) input[type=text], .tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) input[type=number] {
   background: #f9fafb;
   align-items: baseline;
   width: auto;
@@ -1287,17 +1287,17 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   border-radius: 0.48rem;
   border: 1px solid #e5e7eb;
 }
-.tokenizer-section .tokenizer-params .tokenizer-param-group div input[type=text]:focus, .tokenizer-section .tokenizer-params .tokenizer-param-group div input[type=number]:focus {
+.tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) input[type=text]:focus, .tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) input[type=number]:focus {
   border-color: rgb(0, 119, 204);
   background: #fff;
 }
-.tokenizer-section .tokenizer-params .tokenizer-param-group div .param-multiple {
+.tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) .param-multiple {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 0.5rem;
 }
-.tokenizer-section .tokenizer-params .tokenizer-param-group div .param-multiple label {
+.tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) .param-multiple label {
   display: inline-block;
   align-items: center;
   background: rgb(200.1651785714, 222.9866071429, 238.8348214286);
@@ -1313,14 +1313,14 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   transition: background 0.15s, color 0.15s;
   user-select: none;
 }
-.tokenizer-section .tokenizer-params .tokenizer-param-group div .param-multiple label input[type=checkbox] {
+.tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) .param-multiple label input[type=checkbox] {
   position: absolute;
   opacity: 0;
   width: 0;
   height: 0;
   pointer-events: none;
 }
-input[type=checkbox]:checked + .tokenizer-section .tokenizer-params .tokenizer-param-group div .param-multiple label, .tokenizer-section .tokenizer-params .tokenizer-param-group div .param-multiple label.selected {
+input[type=checkbox]:checked + .tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) .param-multiple label, .tokenizer-section .tokenizer-params .tokenizer-param-group div:not(.toogle-button) .param-multiple label.selected {
   background: rgb(0, 119, 204);
   color: white;
 }
