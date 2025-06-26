@@ -1254,7 +1254,7 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   font-size: 1rem;
 }
 .tokenizer-section .tokenizer-params {
-  display: none;
+  display: none !important;
   gap: 2rem;
   margin-top: 0.5rem;
   flex-wrap: wrap;
