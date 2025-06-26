@@ -1299,7 +1299,7 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 .tokenizer-section .tokenizer-params .tokenizer-param-group div .param-multiple label {
   display: inline-block;
   align-items: center;
-  background: hsl(204.5901639344, 54.4642857143%, 106.0784313725%);
+  background: rgb(239.5535714286, 245.9821428571, 250.4464285714);
   color: #374151;
   border-radius: 0.5rem;
   padding: 0.25rem 0.5rem;
