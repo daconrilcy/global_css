@@ -1,3 +1,4 @@
+@use "sass:color";
 @use './../../variables' as *;
 @use './../../../../../../../../../abstracts/colors' as *;
 @use './../../../../../../../../../abstracts/functions' as *;
@@ -73,6 +74,7 @@
                     &:focus { border-color: $primary; background: $white; }
                 }
                 .param-multiple{
+                    $color-base-label:color(blue-primary,light);
                     display: flex;
                     flex-wrap:wrap;
                     flex-direction: row;
@@ -80,7 +82,7 @@
                     label{
                         display: inline-block;
                         align-items: center;
-                        background: color(blue-primary,light);
+                        background: color.adjust($color-base-label, $lightness: +20%);
                         color: #374151;
                         border-radius: 0.5rem;
                         padding: 0.25rem 0.5rem;
