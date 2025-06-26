@@ -1359,7 +1359,7 @@ section .draggable .toggle-button .normal-label .filter-desc {
   top: -2.2rem;
   transform: translateX(-50%);
   min-width: 200px;
-  background: rgba(0, 119, 204, 0.7);
+  background: rgba(0, 119, 204, 0.45);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   box-shadow: 7px 7px 12px 0 rgba(10, 18, 26, 0.25);
