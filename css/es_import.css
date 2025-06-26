@@ -1174,6 +1174,7 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
 .analyzer-card-content div section .section-title {
   color: #334155;
   font-size: 1.1rem;
+  padding: 0.25rem;
   background-color: #f1f5f9;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
