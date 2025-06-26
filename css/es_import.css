@@ -1343,7 +1343,6 @@ section .draggable {
   display: flex;
   align-items: baseline;
   gap: 1rem;
-  min-height: 42px;
   min-width: 380px;
   cursor: grab;
   user-select: none;
