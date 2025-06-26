@@ -79,7 +79,7 @@
                     flex-wrap:wrap;
                     flex-direction: row;
                     gap: 0.5rem; 
-                    label{
+                    .normal-label{
                         display: inline-block;
                         align-items: center;
                         background: color.adjust($color-base-label, $lightness: +30%);
