@@ -1496,13 +1496,13 @@ section .draggable.disabled .filter-desc, section .draggable.disabled label {
   background: #1e293b;
   color: #b9e2be;
   border-radius: 0.75rem;
-  padding: 0.9rem;
+  padding: 0.25rem;
   min-height: 120px;
   max-height: 300px;
   overflow: auto;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   font-family: "Fira Code", "Fira Mono", "Consolas", monospace;
-  line-height: 1.4;
+  line-height: 1.2;
   word-break: break-all;
   white-space: pre-wrap;
   border: 1px solid #e5e7eb;

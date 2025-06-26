@@ -11,10 +11,10 @@
             background: $gray-900; 
             color: #b9e2be; 
             border-radius: .75rem; 
-            padding: .9rem;
+            padding: .25rem;
             min-height: 120px; max-height: 300px; overflow: auto;
-            font-size: 0.9rem; font-family: "Fira Code", "Fira Mono", "Consolas", monospace;
-            line-height: 1.4; word-break: break-all; white-space: pre-wrap;
+            font-size: 0.75rem; font-family: "Fira Code", "Fira Mono", "Consolas", monospace;
+            line-height: 1.2; word-break: break-all; white-space: pre-wrap;
             border: $border-style-default;
             &::-webkit-scrollbar { width: 8px; height: 8px; }
             &::-webkit-scrollbar-track { background: $gray-800; border-radius: 4px; }
