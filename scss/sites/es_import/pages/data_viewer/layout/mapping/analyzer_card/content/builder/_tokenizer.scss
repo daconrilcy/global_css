@@ -64,6 +64,7 @@
                 display: flex;
                 flex-direction: row;
                 gap: 0.5rem;
+                align-items: baseline;
                 input[type="text"], input[type="number"] {
                     background: $gray-50;
                     align-items: baseline;
@@ -79,7 +80,7 @@
                     flex-wrap:wrap;
                     flex-direction: row;
                     gap: 0.5rem; 
-                    .normal-label{
+                    label{
                         display: inline-block;
                         align-items: center;
                         background: color.adjust($color-base-label, $lightness: +30%);
