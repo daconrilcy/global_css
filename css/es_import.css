@@ -1177,6 +1177,7 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   background-color: #f1f5f9;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  width: 80%;
 }
 
 .analyzer-card-builder {
