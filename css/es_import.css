@@ -1359,17 +1359,20 @@ section .draggable .toggle-button .normal-label .filter-desc {
   top: -2.2rem;
   transform: translateX(-50%);
   min-width: 200px;
-  background: #232f3e;
-  color: #fff;
-  font-size: 0.95em;
-  padding: 0.48em 1.08em;
-  border-radius: 0.8em;
-  box-shadow: 0 4px 18px 0 rgba(10, 18, 26, 0.18);
+  background: rgba(0, 119, 204, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 7px 7px 12px 0 rgba(10, 18, 26, 0.25);
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
   z-index: 22;
   pointer-events: none;
   white-space: pre-line;
   opacity: 0;
   transition: opacity 0.15s;
+  text-align: center;
 }
 section .draggable .toggle-button .normal-label:hover .filter-desc, section .draggable .toggle-button .normal-label:focus .filter-desc {
   opacity: 1;

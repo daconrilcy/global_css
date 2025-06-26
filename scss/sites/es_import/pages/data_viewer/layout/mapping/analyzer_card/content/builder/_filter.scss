@@ -1,4 +1,5 @@
 @use './../../../../../../../../../abstracts/colors' as *;
+@use './../../../../../../../../../abstracts/functions' as *;
 @use './../../variables' as *;
 
 // === Token Filter Section ===
@@ -18,23 +19,27 @@ section{
             min-width: 260px;
             .normal-label{
                 .filter-desc {
+                    $desc-bck-color: color(blue-primary, base);
                     position: absolute;
                     display: block;
                     left: 50%;
                     top: -2.2rem;
                     transform: translateX(-50%);
                     min-width: 200px;
-                    background: #232f3e; // ou $gray-800
-                    color: #fff;
-                    font-size: 0.95em;
-                    padding: 0.48em 1.08em;
-                    border-radius: 0.8em;
-                    box-shadow: 0 4px 18px 0 rgba(10,18,26,0.18);
+                    background: rgba($desc-bck-color, 0.7);
+                    backdrop-filter: blur(8px); // flou sous l’élément
+                    -webkit-backdrop-filter: blur(8px); // pour Safari
+                    box-shadow: 7px 7px 12px 0 rgba(10, 18, 26, 0.25);
+                    color: white;
+                    font-size: 0.75rem;
+                    padding: 0.5rem;
+                    border-radius: 1rem;
                     z-index: 22;
                     pointer-events: none;
                     white-space: pre-line;
                     opacity: 0;
                     transition: opacity 0.15s;
+                    text-align: center;
                 }
                 &:hover .filter-desc,
                 &:focus .filter-desc {
