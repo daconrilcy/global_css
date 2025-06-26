@@ -1158,7 +1158,7 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   border-color: #c9e0ff;
   background: hsl(210, 25%, 93%);
 }
-.analyzer-card-content div section fieldset legend, .analyzer-card-content div section label {
+.analyzer-card-content div fieldset legend, .analyzer-card-content div section label {
   font-size: 1.07rem;
   font-weight: 600;
   color: #4257a3;

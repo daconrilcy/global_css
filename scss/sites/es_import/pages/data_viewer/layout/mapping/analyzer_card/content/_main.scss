@@ -26,20 +26,20 @@
             background: hsl(210, 25%, 93%);
         }
       }
+    }
 
-      fieldset legend, label{
-        font-size: 1.07rem;
-        font-weight: 600;
-        color: #4257a3;
-        letter-spacing: 0.01em;
-        margin-bottom: 0.45rem;
-        padding: 0 0.2rem;
-        line-height: 1.4;
-        border-left: 3px solid #97bfff;
-        border-radius: 2px;
-        background: #f6f8ff;
-        display: inline-block;
-      }
+    fieldset legend, section label{
+      font-size: 1.07rem;
+      font-weight: 600;
+      color: #4257a3;
+      letter-spacing: 0.01em;
+      margin-bottom: 0.45rem;
+      padding: 0 0.2rem;
+      line-height: 1.4;
+      border-left: 3px solid #97bfff;
+      border-radius: 2px;
+      background: #f6f8ff;
+      display: inline-block;
     }
   }
 }
