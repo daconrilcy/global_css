@@ -71,7 +71,7 @@
         gap: 2rem; 
         margin-top: 0.5rem; 
         flex-wrap: wrap;
-        &.visible{display: flex;}
+        &.visible{display: flex !important;}
         .tokenizer-param-group {
             display: none; 
             flex-direction: column;

@@ -1260,7 +1260,7 @@ html.dark-mode .dropdown-card-mapping-menu .dropdown-content .columns-list {
   flex-wrap: wrap;
 }
 .tokenizer-section .tokenizer-params.visible {
-  display: flex;
+  display: flex !important;
 }
 .tokenizer-section .tokenizer-params .tokenizer-param-group {
   display: none;
