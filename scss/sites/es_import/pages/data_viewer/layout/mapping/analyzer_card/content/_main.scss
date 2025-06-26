@@ -1,3 +1,8 @@
+@use "sass:color";
+@use './../../../../../../../../abstracts/colors' as *;
+@use './../../../../../../../../abstracts/functions' as *;
+@use './../variables' as *;
+
 // === Layout principal (builder/preview) ===
 .analyzer-card-content {
   display: flex; 
@@ -31,7 +36,7 @@
     fieldset legend, section .section-title{
       font-size: 1.07rem;
       font-weight: 600;
-      color: #4257a3;
+      color: $primary;
       letter-spacing: 0.01em;
       margin-bottom: 0.45rem;
       padding: 0 0.2rem;
@@ -40,6 +45,11 @@
       border-radius: 2px;
       background: #f6f8ff;
       display: inline-block;
+    }
+    section .section-title{
+      color: $gray-900;
+      border-left-color: $gray-700;
+      border-bottom: 3px solid $gray-700;
     }
   }
 }
