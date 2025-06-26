@@ -1,5 +1,6 @@
 @use './../../variables' as *;
 @use './../../../../../../../../../abstracts/colors' as *;
+@use './../../../../../../../../../abstracts/functions' as *;
 
 // === Tokenizer Section ===
 .tokenizer-section {
@@ -98,7 +99,7 @@
                     label{
                         display: inline-block;
                         align-items: center;
-                        background: #f3f4f6;
+                        background: color(blue-light,base);
                         color: #374151;
                         border-radius: 0.5rem;
                         padding: 0.25rem 0.5rem;
