@@ -19,6 +19,7 @@ section{
             .normal-label{
                 .filter-desc {
                     position: absolute;
+                    display: block;
                     left: 50%;
                     top: -2.2rem;
                     transform: translateX(-50%);
@@ -37,7 +38,7 @@ section{
                 }
                 &:hover .filter-desc,
                 &:focus .filter-desc {
-                    display: block;
+                    
                     opacity: 1;
                     pointer-events: auto;
                 }

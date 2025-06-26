@@ -1353,6 +1353,7 @@ section .draggable .toggle-button {
 }
 section .draggable .toggle-button .normal-label .filter-desc {
   position: absolute;
+  display: block;
   left: 50%;
   top: -2.2rem;
   transform: translateX(-50%);
@@ -1370,7 +1371,6 @@ section .draggable .toggle-button .normal-label .filter-desc {
   transition: opacity 0.15s;
 }
 section .draggable .toggle-button .normal-label:hover .filter-desc, section .draggable .toggle-button .normal-label:focus .filter-desc {
-  display: block;
   opacity: 1;
   pointer-events: auto;
 }
