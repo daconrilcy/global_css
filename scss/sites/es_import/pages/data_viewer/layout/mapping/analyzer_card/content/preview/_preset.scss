@@ -11,6 +11,7 @@
             padding: .17rem .5rem;
             border-radius: 0.5rem; border: $border-style-default;
             background: $gray-50;
+            color: $primary;
             &:focus { border-color: $primary; background: white; }
         }
         .preset-actions{

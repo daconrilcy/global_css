@@ -1465,6 +1465,7 @@ section .draggable.disabled .filter-desc, section .draggable.disabled label {
   border-radius: 0.5rem;
   border: 1px solid #e5e7eb;
   background: #f9fafb;
+  color: rgb(0, 119, 204);
 }
 .preset-section .preset-fieldset .preset-select:focus {
   border-color: rgb(0, 119, 204);
