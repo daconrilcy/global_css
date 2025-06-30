@@ -1365,6 +1365,7 @@ section .draggable.dragging {
 }
 section .draggable .toggle-button {
   min-width: 260px;
+  width: 75%;
 }
 section .draggable .toggle-button .normal-label .filter-desc {
   position: absolute;

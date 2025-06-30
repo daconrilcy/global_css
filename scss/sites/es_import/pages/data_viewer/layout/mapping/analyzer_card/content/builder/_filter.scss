@@ -22,6 +22,7 @@ section{
         }
         .toggle-button{
             min-width: 260px;
+            width: 75%;
             .normal-label{
                 .filter-desc {
                     $desc-bck-color: color(blue-primary, base);
